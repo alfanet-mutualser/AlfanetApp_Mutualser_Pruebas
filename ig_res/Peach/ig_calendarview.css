@@ -1,0 +1,103 @@
+.igcv_PeachControl
+{
+	border:solid 1px #97462C;
+}
+
+
+.igcv_PeachCaptionHeader
+{
+	background-color:#F0F0F0;
+	font-weight:bold;
+	font-size:8pt;
+	padding:3px;
+	width: 100%;
+	white-space: nowrap;
+	color:#97462C;
+	text-align:center;
+}
+
+
+.igcv_PeachDayHeader
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	font-size:10px;
+	border-bottom:solid 1px #4F7600;
+	height: 16px;
+	color:Black;
+}
+
+
+.igcv_PeachDay
+{
+	background-color:White;
+	font-size:11px;
+	border-width:0px;
+	cursor:hand;
+	text-align:center;
+}
+
+
+.igcv_PeachFooter
+{
+	background-color:#EEEEEE;
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	font-size:8pt;
+	padding:3px;
+	white-space: nowrap;
+	cursor:pointer;
+	text-align:center;
+}
+
+
+.igcv_PeachDropDown
+{
+	font-size:8pt;
+}
+
+
+.igcv_PeachOtherMonthDay
+{
+	background-color:White;
+	color:#B3B3B3;
+}
+
+
+.igcv_PeachWeekendDay
+{
+	background-color:#FAFAFA;
+}
+
+
+.igcv_PeachNavigationButton
+{
+	background-color:#F0F0F0;
+	background-image: url(images/bg_lines.png);
+	padding-right:3px;
+	padding-left:3px;
+	cursor:pointer;
+}
+
+
+.igcv_PeachTodayDay
+{
+	border:solid 1px #BB5503;
+}
+
+
+.igcv_PeachActivityDay
+{
+	font-weight:bold;
+}
+
+
+.igcv_PeachActiveDay
+{
+	background-color:#B95C07;
+	background-image:none;
+	font-weight:bold;
+	color:White;
+}
+
+

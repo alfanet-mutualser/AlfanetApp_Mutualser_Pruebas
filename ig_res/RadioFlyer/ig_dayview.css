@@ -1,0 +1,197 @@
+.igdv_RadioFlyerControl
+{
+	border:solid 1px #9C2131;
+}
+
+
+.igdv_RadioFlyerCaptionHeader
+{
+	background-color:#373736;
+	background-repeat:repeat-x;
+	background-position:center ;
+	background-image: url(images/header_large.gif);
+	font-weight:bold;
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 16px;
+	height: 30px;
+	color:Black;
+	text-align:center;
+}
+
+
+.igdv_RadioFlyerDayHeader
+{
+	background-color:#DAEAFF;
+	background-image: url(images/header_hover.gif);
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	border:solid 1px #F4F4F4;
+	border-right-color:#999999;
+	padding-left:2px;
+	height: 20px;
+	white-space: nowrap;
+	color:Black;
+	text-align:center;
+	vertical-align:middle;
+}
+
+
+.igdv_RadioFlyerNonWorkingTimeSlot
+{
+	background-color:#F0F0F0;
+	border-right:solid 1px #999999;
+	border-bottom:solid 1px #A5A5A5;
+	height: 20px;
+}
+
+
+.igdv_RadioFlyerWorkingTimeSlot
+{
+	background-color:White;
+	border-right:solid 1px #999999;
+	border-bottom:solid 1px #E6EDF7;
+	height: 20px;
+}
+
+
+.igdv_RadioFlyerAllDayEventArea
+{
+	background-color:#FAFAFA;
+}
+
+
+.igdv_RadioFlyerAllDayEvent
+{
+	background-color:WhiteSmoke;
+	font-size:8pt;
+	font-family: Tahoma,Verdana;
+	border-width:1px;
+	border-color:#6EDF73;
+	padding-left:3px;
+	height: 25px;
+	white-space: nowrap;
+	text-align:center;
+}
+
+
+.igdv_RadioFlyerAppointment
+{
+	background-color:White;
+	font-size:8pt;
+	font-family: Tahoma,Verdana;
+	border:solid 1px #999999;
+}
+
+
+.igdv_RadioFlyerActivityEdge
+{
+	font-size:1px;
+	height: 4px;
+	cursor:n-resize;
+}
+
+
+.igdv_RadioFlyerActivityEdgeLeft
+{
+	font-size:2px;
+	width: 6px;
+	cursor:move;
+}
+
+
+.igdv_RadioFlyerTodayHeader
+{
+	background-color:Black;
+	background-repeat:repeat-x;
+	background-position:center ;
+	background-image: url(images/header_hover.gif);
+	border-width:0px;
+	height: 17px;
+	color:White;
+}
+
+
+.igdv_RadioFlyerTimeSlotLabel
+{
+	background-color:#FCFCFC;
+	background-repeat:repeat-x;
+	background-position:bottom ;
+	background-image: url(images/item_back.gif);
+	font-size:16pt;
+	font-family: Arial, Helvetica, sans-serif;
+	border-right:solid 1px #9C2131;
+	border-bottom:solid 1px #9C2131;
+	width: 60px;
+	color:#9C2131;
+	text-align:center;
+	vertical-align:top;
+}
+
+
+.igdv_RadioFlyerTimeSlotLabelMinutes
+{
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.igdv_RadioFlyerAllDayEventSelected
+{
+	background-color:#D0D0D0;
+	border-top-width:2px;
+	border-bottom-width:2px;
+}
+
+
+.igdv_RadioFlyerAllDayEventAreaSelected
+{
+	background-color:White;
+}
+
+
+.igdv_RadioFlyerActivityHover
+{
+	z-index: 10000;
+}
+
+
+.igdv_RadioFlyerActivityEdgeBusy
+{
+	background-color:#E6EDF7;
+}
+
+
+.igdv_RadioFlyerActivityEdgeTentative
+{
+	background-color:#90C0FF;
+}
+
+
+.igdv_RadioFlyerActivityEdgeOutofOffice
+{
+	background-color:#900090;
+}
+
+
+.igdv_RadioFlyerActivityEdgeFree
+{
+	background-color:#F0F0F0;
+}
+
+
+.igdv_RadioFlyerNavigationButton
+{
+	background-color:Transparent;
+	border-width:0px;
+	width: 17px;
+	vertical-align:middle;
+}
+
+
+.igdv_RadioFlyerSelectedAppointment
+{
+	z-index: 9999;
+}
+
+

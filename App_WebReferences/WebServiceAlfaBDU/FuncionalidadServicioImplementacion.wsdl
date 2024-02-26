@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" name="FuncionalidadServicioImplementacion" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://172.23.24.171:8003/InteropAlfaBDU/?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://172.23.24.171:8003/InteropAlfaBDU/?xsd=xsd3" namespace="urn:InteropServiceSevenBDU.ServiceCommon.DataContracts" />
+      <xsd:import schemaLocation="http://172.23.24.171:8003/InteropAlfaBDU/?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://172.23.24.171:8003/InteropAlfaBDU/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ServicioComun" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ContratoServicio_IAB_001_InputMessage">
+    <wsdl:part name="parameters" element="tns:IAB_001" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IAB_001_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IAB_001Response" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IAB_001_InteropClientFaultFault_FaultMessage">
+    <wsdl:part xmlns:q1="urn:InteropServiceSevenBDU.ServiceCommon.DataContracts" name="detail" element="q1:InteropClientFault" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IAB_001_InteropServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q2="urn:InteropServiceSevenBDU.ServiceCommon.DataContracts" name="detail" element="q2:InteropServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IAB_003_InputMessage">
+    <wsdl:part name="parameters" element="tns:IAB_003" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IAB_003_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IAB_003Response" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IAB_003_InteropServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q3="urn:InteropServiceSevenBDU.ServiceCommon.DataContracts" name="detail" element="q3:InteropServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IAB_003_InteropClientFaultFault_FaultMessage">
+    <wsdl:part xmlns:q4="urn:InteropServiceSevenBDU.ServiceCommon.DataContracts" name="detail" element="q4:InteropClientFault" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_001_InputMessage">
+    <wsdl:part name="parameters" element="tns:IMB_001" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_001_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IMB_001Response" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_001_InteropClientFaultFault_FaultMessage">
+    <wsdl:part xmlns:q5="urn:InteropServiceSevenBDU.ServiceCommon.DataContracts" name="detail" element="q5:InteropClientFault" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_001_InteropServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q6="urn:InteropServiceSevenBDU.ServiceCommon.DataContracts" name="detail" element="q6:InteropServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_002_InputMessage">
+    <wsdl:part name="parameters" element="tns:IMB_002" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_002_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IMB_002Response" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_002_InteropServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q7="urn:InteropServiceSevenBDU.ServiceCommon.DataContracts" name="detail" element="q7:InteropServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_002_InteropClientFaultFault_FaultMessage">
+    <wsdl:part xmlns:q8="urn:InteropServiceSevenBDU.ServiceCommon.DataContracts" name="detail" element="q8:InteropClientFault" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_003_InputMessage">
+    <wsdl:part name="parameters" element="tns:IMB_003" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_003_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IMB_003Response" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_003_InteropClientFaultFault_FaultMessage">
+    <wsdl:part xmlns:q9="urn:InteropServiceSevenBDU.ServiceCommon.DataContracts" name="detail" element="q9:InteropClientFault" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_003_InteropServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q10="urn:InteropServiceSevenBDU.ServiceCommon.DataContracts" name="detail" element="q10:InteropServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_004_InputMessage">
+    <wsdl:part name="parameters" element="tns:IMB_004" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_004_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IMB_004Response" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_004_InteropClientFaultFault_FaultMessage">
+    <wsdl:part xmlns:q11="urn:InteropServiceSevenBDU.ServiceCommon.DataContracts" name="detail" element="q11:InteropClientFault" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_004_InteropServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q12="urn:InteropServiceSevenBDU.ServiceCommon.DataContracts" name="detail" element="q12:InteropServiceFault" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_005_InputMessage">
+    <wsdl:part name="parameters" element="tns:IMB_005" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_005_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IMB_005Response" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_005_InteropClientFaultFault_FaultMessage">
+    <wsdl:part xmlns:q13="urn:InteropServiceSevenBDU.ServiceCommon.DataContracts" name="detail" element="q13:InteropClientFault" />
+  </wsdl:message>
+  <wsdl:message name="ContratoServicio_IMB_005_InteropServiceFaultFault_FaultMessage">
+    <wsdl:part xmlns:q14="urn:InteropServiceSevenBDU.ServiceCommon.DataContracts" name="detail" element="q14:InteropServiceFault" />
+  </wsdl:message>
+  <wsdl:portType name="ContratoServicio">
+    <wsdl:operation name="IAB_001">
+      <wsdl:input wsaw:Action="http://tempuri.org/ContratoServicio/IAB_001" message="tns:ContratoServicio_IAB_001_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ContratoServicio/IAB_001Response" message="tns:ContratoServicio_IAB_001_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ContratoServicio/IAB_001InteropClientFaultFault" name="InteropClientFaultFault" message="tns:ContratoServicio_IAB_001_InteropClientFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ContratoServicio/IAB_001InteropServiceFaultFault" name="InteropServiceFaultFault" message="tns:ContratoServicio_IAB_001_InteropServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IAB_003">
+      <wsdl:input wsaw:Action="http://tempuri.org/ContratoServicio/IAB_003" message="tns:ContratoServicio_IAB_003_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ContratoServicio/IAB_003Response" message="tns:ContratoServicio_IAB_003_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ContratoServicio/IAB_003InteropServiceFaultFault" name="InteropServiceFaultFault" message="tns:ContratoServicio_IAB_003_InteropServiceFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ContratoServicio/IAB_003InteropClientFaultFault" name="InteropClientFaultFault" message="tns:ContratoServicio_IAB_003_InteropClientFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IMB_001">
+      <wsdl:input wsaw:Action="http://tempuri.org/ContratoServicio/IMB_001" message="tns:ContratoServicio_IMB_001_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ContratoServicio/IMB_001Response" message="tns:ContratoServicio_IMB_001_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ContratoServicio/IMB_001InteropClientFaultFault" name="InteropClientFaultFault" message="tns:ContratoServicio_IMB_001_InteropClientFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ContratoServicio/IMB_001InteropServiceFaultFault" name="InteropServiceFaultFault" message="tns:ContratoServicio_IMB_001_InteropServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IMB_002">
+      <wsdl:input wsaw:Action="http://tempuri.org/ContratoServicio/IMB_002" message="tns:ContratoServicio_IMB_002_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ContratoServicio/IMB_002Response" message="tns:ContratoServicio_IMB_002_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ContratoServicio/IMB_002InteropServiceFaultFault" name="InteropServiceFaultFault" message="tns:ContratoServicio_IMB_002_InteropServiceFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ContratoServicio/IMB_002InteropClientFaultFault" name="InteropClientFaultFault" message="tns:ContratoServicio_IMB_002_InteropClientFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IMB_003">
+      <wsdl:input wsaw:Action="http://tempuri.org/ContratoServicio/IMB_003" message="tns:ContratoServicio_IMB_003_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ContratoServicio/IMB_003Response" message="tns:ContratoServicio_IMB_003_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ContratoServicio/IMB_003InteropClientFaultFault" name="InteropClientFaultFault" message="tns:ContratoServicio_IMB_003_InteropClientFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ContratoServicio/IMB_003InteropServiceFaultFault" name="InteropServiceFaultFault" message="tns:ContratoServicio_IMB_003_InteropServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IMB_004">
+      <wsdl:input wsaw:Action="http://tempuri.org/ContratoServicio/IMB_004" message="tns:ContratoServicio_IMB_004_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ContratoServicio/IMB_004Response" message="tns:ContratoServicio_IMB_004_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ContratoServicio/IMB_004InteropClientFaultFault" name="InteropClientFaultFault" message="tns:ContratoServicio_IMB_004_InteropClientFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ContratoServicio/IMB_004InteropServiceFaultFault" name="InteropServiceFaultFault" message="tns:ContratoServicio_IMB_004_InteropServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IMB_005">
+      <wsdl:input wsaw:Action="http://tempuri.org/ContratoServicio/IMB_005" message="tns:ContratoServicio_IMB_005_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ContratoServicio/IMB_005Response" message="tns:ContratoServicio_IMB_005_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ContratoServicio/IMB_005InteropClientFaultFault" name="InteropClientFaultFault" message="tns:ContratoServicio_IMB_005_InteropClientFaultFault_FaultMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ContratoServicio/IMB_005InteropServiceFaultFault" name="InteropServiceFaultFault" message="tns:ContratoServicio_IMB_005_InteropServiceFaultFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ContratoServicio" type="tns:ContratoServicio">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="IAB_001">
+      <soap:operation soapAction="http://tempuri.org/ContratoServicio/IAB_001" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InteropClientFaultFault">
+        <soap:fault use="literal" name="InteropClientFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InteropServiceFaultFault">
+        <soap:fault use="literal" name="InteropServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="IAB_003">
+      <soap:operation soapAction="http://tempuri.org/ContratoServicio/IAB_003" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InteropServiceFaultFault">
+        <soap:fault use="literal" name="InteropServiceFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InteropClientFaultFault">
+        <soap:fault use="literal" name="InteropClientFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="IMB_001">
+      <soap:operation soapAction="http://tempuri.org/ContratoServicio/IMB_001" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InteropClientFaultFault">
+        <soap:fault use="literal" name="InteropClientFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InteropServiceFaultFault">
+        <soap:fault use="literal" name="InteropServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="IMB_002">
+      <soap:operation soapAction="http://tempuri.org/ContratoServicio/IMB_002" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InteropServiceFaultFault">
+        <soap:fault use="literal" name="InteropServiceFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InteropClientFaultFault">
+        <soap:fault use="literal" name="InteropClientFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="IMB_003">
+      <soap:operation soapAction="http://tempuri.org/ContratoServicio/IMB_003" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InteropClientFaultFault">
+        <soap:fault use="literal" name="InteropClientFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InteropServiceFaultFault">
+        <soap:fault use="literal" name="InteropServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="IMB_004">
+      <soap:operation soapAction="http://tempuri.org/ContratoServicio/IMB_004" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InteropClientFaultFault">
+        <soap:fault use="literal" name="InteropClientFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InteropServiceFaultFault">
+        <soap:fault use="literal" name="InteropServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="IMB_005">
+      <soap:operation soapAction="http://tempuri.org/ContratoServicio/IMB_005" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="InteropClientFaultFault">
+        <soap:fault use="literal" name="InteropClientFaultFault" namespace="" />
+      </wsdl:fault>
+      <wsdl:fault name="InteropServiceFaultFault">
+        <soap:fault use="literal" name="InteropServiceFaultFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FuncionalidadServicioImplementacion">
+    <wsdl:port name="BasicHttpBinding_ContratoServicio" binding="tns:BasicHttpBinding_ContratoServicio">
+      <soap:address location="http://172.23.24.171:8003/InteropAlfaBDU/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

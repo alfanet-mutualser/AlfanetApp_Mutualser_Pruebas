@@ -1,0 +1,59 @@
+.igtb_PeachControl
+{
+	background-color:#F0F0F0;
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	border-color:Transparent;
+}
+
+
+.igtb_PeachItem
+{
+	background-color:Transparent;
+}
+
+
+.igtb_PeachButton
+{
+	background-color:Transparent;
+	border:solid 1px Transparent;
+	padding-left:4px;
+}
+
+
+.igtb_PeachButtonHover
+{
+	background-position:center ;
+	background-image: url(images/header.gif);
+	border:solid 1px #E1E1E1;
+	color:Black;
+}
+
+
+.igtb_PeachButtonPressed
+{
+}
+
+
+.igtb_PeachLabel
+{
+}
+
+
+.igtb_PeachTextBox
+{
+	background-color:White;
+}
+
+
+.igtb_PeachSeparator
+{
+	background-color:Transparent;
+}
+
+
+.igtb_PeachButtonDisabled
+{
+}
+
+

@@ -1,0 +1,427 @@
+Imports Microsoft.VisualBasic
+Imports System
+Imports System.Data
+Imports System.Collections.Generic
+Imports System.Configuration
+Imports System.IO
+Imports System.Xml
+Imports System.Xml.Schema
+Imports System.Globalization
+Imports System.Text
+Imports System.Text.RegularExpressions
+Imports System.Web
+Imports System.Web.Security
+Imports System.Web.UI
+Imports System.Web.UI.WebControls
+Imports System.Web.UI.WebControls.WebParts
+Imports System.Web.UI.HtmlControls
+Imports System.Reflection
+Imports DevExpress.Web.ASPxHeadline
+Imports DevExpress.Web.ASPxSiteMapControl
+
+Partial Public Class BasePage
+	Inherits System.Web.UI.Page
+	Protected Enum DemoPageStatus
+		[Default]
+		[New]
+		Updated
+	End Enum
+	Public Const DefaultThemeName As String = "Aqua"
+	Private Const InvalidHighlightIndex As Integer = Int32.MinValue
+
+	Private DemoPageGroupsStatus As Dictionary(Of String, DemoPageStatus) = Nothing
+	Private DemoPageItemsStatus As Dictionary(Of String, DemoPageStatus) = Nothing
+	Private DemoPageHighlightedIndex As Dictionary(Of String, Integer) = Nothing
+	Private DemoPageSourceCodeFiles As Dictionary(Of String, List(Of String)) = Nothing
+	Private DemoPageCustomSourceCodeWidth As Dictionary(Of String, Unit) = Nothing
+	Private cssLink_Renamed As String = ""
+	Private demoName_Renamed As String = ""
+	Private Shared demoXmlDocument As XmlDocument = Nothing
+
+	Protected WriteOnly Property CSSLink() As String
+		Set(ByVal value As String)
+			cssLink_Renamed = value
+		End Set
+	End Property
+	Protected ReadOnly Property DemoName() As String
+		Get
+			Return demoName_Renamed
+		End Get
+	End Property
+	Public Shared Function GetDemoXmlDocument(ByVal page As Page) As XmlDocument
+		If BasePage.demoXmlDocument Is Nothing Then
+			BasePage.demoXmlDocument = New XmlDocument()
+            BasePage.demoXmlDocument.Load(page.MapPath("~/App_Data/Demos.xml"))
+		End If
+		Return BasePage.demoXmlDocument
+	End Function
+
+	Public ReadOnly Property SiteMapProvider() As UnboundSiteMapProvider
+		Get
+			If (Not IsSiteMapCreated) Then
+				Session("DemoUnboundProvider") = CreateSiteMapProvider()
+			End If
+			Return CType(Session("DemoUnboundProvider"), UnboundSiteMapProvider)
+		End Get
+	End Property
+	Public ReadOnly Property IsSiteMapCreated() As Boolean
+		Get
+			Return Session("DemoUnboundProvider") IsNot Nothing
+		End Get
+	End Property
+
+	Protected Function GetThemeCookieName() As String
+		Dim cookieName As String = "DemoCurrentThemeNew"
+		Dim path As String = Page.Request.ApplicationPath
+
+		Dim startPos As Integer = path.IndexOf("ASPx")
+		If startPos <> -1 Then
+			Dim endPos As Integer = path.IndexOf("/", startPos)
+			If endPos <> -1 Then
+				cookieName = path.Substring(startPos, endPos - startPos)
+			End If
+		End If
+		Return cookieName
+	End Function
+
+	' Page PreInit 
+	Protected Sub Page_PreInit(ByVal sender As Object, ByVal e As EventArgs)
+		Dim themeName As String = DefaultThemeName
+		If Page.Request.Cookies(GetThemeCookieName()) IsNot Nothing Then
+			themeName = Page.Request.Cookies(GetThemeCookieName()).Value
+		End If
+
+		Dim clientScriptBlock As String = "var DXCurrentThemeCookieName = """ & GetThemeCookieName() & """;"
+		Page.ClientScript.RegisterClientScriptBlock(Me.GetType(), "DXCurrentThemeCookieName", clientScriptBlock, True)
+
+		Me.Theme = themeName
+	End Sub
+	' Page Init 
+	Protected Overrides Sub OnInit(ByVal e As EventArgs)
+		MyBase.OnInit(e)
+		ClearDemoProperties()
+		InitDemoProperties()
+	End Sub
+	' Page Load 
+	Protected Overrides Sub OnLoad(ByVal e As EventArgs)
+		MyBase.OnLoad(e)
+
+		' Scripts
+		RegisterScript("Utilities", "~/Scripts/Utilities.js")
+		' CSS
+		RegisterCSSLink("~/CSS/styles.css")
+		If (Not String.IsNullOrEmpty(Me.cssLink_Renamed)) Then
+			RegisterCSSLink(Me.cssLink_Renamed)
+		End If
+	End Sub
+	' Functions 
+	Public Sub PrepareStatusHeadlineGroups(ByVal sender As ASPxHeadline)
+		PrepareStatusHeadlineCore(sender, Me.DemoPageGroupsStatus)
+	End Sub
+	Public Sub PrepareStatusHeadlineItems(ByVal sender As ASPxHeadline)
+		PrepareStatusHeadlineCore(sender, Me.DemoPageItemsStatus)
+	End Sub
+	Protected Overridable Function IsCurrentPage(ByVal oUrl As Object) As Boolean
+		If oUrl Is Nothing Then
+			Return False
+		End If
+
+		Dim result As Boolean = False
+		Dim url As String = oUrl.ToString()
+		If url.ToLower() = Page.Request.AppRelativeCurrentExecutionFilePath.ToLower() Then
+			result = True
+		End If
+		Return result
+	End Function
+	' Events 
+	Protected Overridable Sub TraceEvent(ByVal memo As HtmlGenericControl, ByVal sender As Object, ByVal args As EventArgs, ByVal eventName As String)
+		Dim s As String = ""
+		Dim properties() As PropertyInfo = args.GetType().GetProperties(BindingFlags.Instance Or BindingFlags.Public)
+		For Each propertyInfo As PropertyInfo In properties
+			If propertyInfo.PropertyType.IsValueType Then
+				s &= propertyInfo.Name & " = " & (propertyInfo.GetValue(args, Nothing)) & "<br />"
+			Else
+				s &= propertyInfo.Name & " = " & ("[" & propertyInfo.PropertyType.Name & "]") & "<br />"
+			End If
+		Next propertyInfo
+
+		memo.InnerHtml &= "<table cellspacing=""0"" cellpadding=""0"" border=""0""><tr><td valign=""top"" style=""width: 100px;"">Sender:</td><td valign=""top"">" & (TryCast(sender, Control)).ID & "</td></tr><tr><td valign=""top"">EventType:</td><td valign=""top""><b>" & eventName & "</b></td></tr><tr><td valign=""top"">Arguments:</td><td valign=""top"">" & s & "</td></tr></table><br />"
+	End Sub
+	Protected Overridable Sub ClearEvents(ByVal memo As HtmlGenericControl)
+		memo.InnerHtml = ""
+	End Sub
+	Protected Overridable Sub InitEvents(ByVal memo As HtmlGenericControl)
+		Page.ClientScript.RegisterStartupScript(GetType(BasePage), "ScrollEvents", "document.getElementById('" & memo.ClientID & "').scrollTop = 100000;", True)
+	End Sub
+	Protected Overridable Function GetStatus(ByVal dataItem As Object, ByVal name As String) As Boolean
+		Dim hierarchyData As IHierarchyData = (TryCast(dataItem, IHierarchyData))
+		Dim xmlElement As XmlElement = TryCast(hierarchyData.Item, XmlElement)
+		Return GetStatusCore(xmlElement, name)
+	End Function
+
+	' Private Functions 
+	Private Sub PrepareStatusHeadlineCore(ByVal hl As ASPxHeadline, ByVal colStatus As Dictionary(Of String, DemoPageStatus))
+		If hl IsNot Nothing AndAlso colStatus IsNot Nothing AndAlso colStatus.ContainsKey(GetStatusKey(hl.ContentText, hl.NavigateUrl)) Then
+			Select Case colStatus(GetStatusKey(hl.ContentText, hl.NavigateUrl))
+				Case DemoPageStatus.New
+					hl.TailImage.Url = "~/Images/New.png"
+					hl.TailImage.Width = Unit.Pixel(20)
+					hl.TailImage.Height = Unit.Pixel(11)
+				Case DemoPageStatus.Updated
+					hl.TailImage.Url = "~/Images/Updated.png"
+					hl.TailImage.Width = Unit.Pixel(34)
+					hl.TailImage.Height = Unit.Pixel(11)
+			End Select
+		End If
+	End Sub
+	Private Function GetStatusKey(ByVal text As String, ByVal url As String) As String
+		Return text & "-" & url
+	End Function
+	Protected Function GetItemStatus(ByVal item As DevExpress.Web.ASPxNavBar.NavBarItem) As DemoPageStatus
+		Dim key As String = GetStatusKey(item.Text, item.NavigateUrl)
+		If DemoPageItemsStatus.ContainsKey(key) Then
+		Return DemoPageItemsStatus(key)
+		End If
+		Return DemoPageStatus.Default
+	End Function
+	Public Function IsHighlighted(ByVal item As DevExpress.Web.ASPxNavBar.NavBarItem) As Boolean
+		Dim key As String = GetStatusKey(item.Text, item.NavigateUrl)
+		Return DemoPageHighlightedIndex.ContainsKey(key)
+	End Function
+	Public Function GetHighlightedIndex(ByVal item As DevExpress.Web.ASPxNavBar.NavBarItem) As Integer
+		Dim key As String = GetStatusKey(item.Text, item.NavigateUrl)
+		Return DemoPageHighlightedIndex(key)
+	End Function
+	Public Function GetSourceCodeFiles(ByVal item As DevExpress.Web.ASPxNavBar.NavBarItem) As List(Of String)
+		If item Is Nothing Then
+		Return Nothing
+		End If
+		Dim key As String = GetStatusKey(item.Text, item.NavigateUrl)
+		If DemoPageSourceCodeFiles.ContainsKey(key) Then
+			Return DemoPageSourceCodeFiles(key)
+		Else
+			Return Nothing
+		End If
+	End Function
+	Public Function GetCustomSourceCodeWidth(ByVal item As DevExpress.Web.ASPxNavBar.NavBarItem) As Unit
+		If item Is Nothing Then
+		Return Unit.Empty
+		End If
+		Dim key As String = GetStatusKey(item.Text, item.NavigateUrl)
+		If DemoPageCustomSourceCodeWidth.ContainsKey(key) Then
+			Return DemoPageCustomSourceCodeWidth(key)
+		Else
+			Return Unit.Empty
+		End If
+	End Function
+	Private Sub ClearDemoProperties()
+		Me.DemoPageGroupsStatus = Nothing
+		Me.DemoPageItemsStatus = Nothing
+		Me.DemoPageHighlightedIndex = Nothing
+		Me.DemoPageSourceCodeFiles = Nothing
+		Me.DemoPageCustomSourceCodeWidth = Nothing
+	End Sub
+	Private Sub InitDemoProperties()
+		Me.DemoPageGroupsStatus = New Dictionary(Of String, DemoPageStatus)()
+		Me.DemoPageItemsStatus = New Dictionary(Of String, DemoPageStatus)()
+		Me.DemoPageHighlightedIndex = New Dictionary(Of String, Integer)()
+		Me.DemoPageSourceCodeFiles = New Dictionary(Of String,List(Of String))()
+		Me.DemoPageCustomSourceCodeWidth = New Dictionary(Of String, Unit)()
+
+		Dim xmlDoc As XmlDocument = GetDemoXmlDocument(Page)
+		If String.IsNullOrEmpty(DemoName) Then
+			Me.demoName_Renamed = "ASPxperience"
+			If xmlDoc.DocumentElement.Attributes("Name") IsNot Nothing Then
+				Me.demoName_Renamed = xmlDoc.DocumentElement.Attributes("Name").Value
+			End If
+		End If
+		For Each node As XmlNode In xmlDoc.SelectNodes("//DemoGroup")
+			AddPageStatus(Me.DemoPageGroupsStatus, node)
+			For Each nodeItem As XmlNode In node.SelectNodes("Demo")
+				AddPageStatus(Me.DemoPageItemsStatus, nodeItem)
+				AddPageHighlightedIndex(Me.DemoPageHighlightedIndex, nodeItem)
+				AddPageSourceCodeFiles(Me.DemoPageSourceCodeFiles, nodeItem)
+				AddPageCustomSourceCodeWidth(Me.DemoPageCustomSourceCodeWidth, nodeItem)
+			Next nodeItem
+		Next node
+
+	End Sub
+	Private Sub AddPageStatus(ByVal ret As Dictionary(Of String, DemoPageStatus), ByVal node As XmlNode)
+		Dim url As String = GetAttributeValue(node.Attributes, "NavigateUrl")
+		Dim text As String = GetAttributeValue(node.Attributes, "Text")
+		Dim status As DemoPageStatus = DemoPageStatus.Default
+		If GetStatusCore(node, "IsNew") Then
+			status = DemoPageStatus.New
+		ElseIf GetStatusCore(node, "IsUpdated") Then
+			status = DemoPageStatus.Updated
+		End If
+
+		ret.Add(GetStatusKey(text, url), status)
+	End Sub
+	Private Sub AddPageHighlightedIndex(ByVal ret As Dictionary(Of String, Integer), ByVal node As XmlNode)
+		Dim index As Integer = GetHighlightedIndexCore(node, "HighlightedIndex")
+		If index = InvalidHighlightIndex Then
+		Return
+		End If
+
+		Dim url As String = GetAttributeValue(node.Attributes, "NavigateUrl")
+		Dim text As String = GetAttributeValue(node.Attributes, "Text")
+		ret.Add(GetStatusKey(text, url), index)
+	End Sub
+	Private Sub AddPageSourceCodeFiles(ByVal ret As Dictionary(Of String, List(Of String)), ByVal node As XmlNode)
+		Dim files As List(Of String) = Nothing
+
+		For Each nodeFiles As XmlNode In node.SelectNodes("SourceCodeFiles")
+			For Each nodeFile As XmlNode In nodeFiles.SelectNodes("File")
+				Dim fileName As String = GetAttributeValue(nodeFile.Attributes, "Name")
+				If (Not String.IsNullOrEmpty(fileName)) Then
+					If files Is Nothing Then
+						files = New List(Of String)()
+					End If
+					files.Add(fileName)
+				End If
+			Next nodeFile
+		Next nodeFiles
+
+		If files IsNot Nothing Then
+			Dim url As String = GetAttributeValue(node.Attributes, "NavigateUrl")
+			Dim text As String = GetAttributeValue(node.Attributes, "Text")
+			ret.Add(GetStatusKey(text, url), files)
+		End If
+	End Sub
+	Private Sub AddPageCustomSourceCodeWidth(ByVal ret As Dictionary(Of String, Unit), ByVal node As XmlNode)
+		For Each nodeFiles As XmlNode In node.SelectNodes("SourceCodeFiles")
+			Dim widthAttribute As XmlAttribute = nodeFiles.Attributes("PageControlWidth")
+			If widthAttribute IsNot Nothing Then
+				Dim width As Unit = Unit.Parse(widthAttribute.Value)
+				If (Not width.IsEmpty) Then
+					Dim url As String = GetAttributeValue(node.Attributes, "NavigateUrl")
+					Dim text As String = GetAttributeValue(node.Attributes, "Text")
+					ret.Add(GetStatusKey(text, url), width)
+					Exit For
+				End If
+			End If
+		Next nodeFiles
+	End Sub
+	Private Function GetStatusCore(ByVal element As XmlElement, ByVal name As String) As Boolean
+		Dim ret As Boolean = False
+
+		Dim value As String = GetAttributeValue(element.Attributes, name)
+		Boolean.TryParse(value, ret)
+		Return ret
+	End Function
+	Private Function GetStatusCore(ByVal node As XmlNode, ByVal name As String) As Boolean
+		Dim ret As Boolean = False
+		Dim value As String = GetAttributeValue(node.Attributes, name)
+		Boolean.TryParse(value, ret)
+		Return ret
+	End Function
+	Private Function GetHighlightedIndexCore(ByVal node As XmlNode, ByVal name As String) As Integer
+		Dim ret As Integer = InvalidHighlightIndex
+		Dim value As String = GetAttributeValue(node.Attributes, name)
+		If (Not Integer.TryParse(value, ret)) Then
+		Return InvalidHighlightIndex
+		End If
+		Return ret
+	End Function
+	Private Function GetAttributeValue(ByVal attributes As XmlAttributeCollection, ByVal name As String) As String
+		If attributes(name) IsNot Nothing Then
+			Return attributes(name).Value
+		Else
+			Return ""
+		End If
+	End Function
+	Private Sub RegisterScript(ByVal key As String, ByVal url As String)
+		Page.ClientScript.RegisterClientScriptInclude(key, Page.ResolveUrl(url))
+	End Sub
+	Private Sub RegisterCSSLink(ByVal url As String)
+		Dim link As New HtmlLink()
+		Page.Header.Controls.Add(link)
+		link.EnableViewState = False
+		link.Attributes.Add("type", "text/css")
+		link.Attributes.Add("rel", "stylesheet")
+		link.Href = url
+	End Sub
+	Protected Function CreateSiteMapProvider() As UnboundSiteMapProvider
+		Dim provider As New UnboundSiteMapProvider("", "")
+
+		Dim categoryDemoNode As SiteMapNode = provider.RootNode
+		For Each groupNode As XmlNode In GetDemoXmlDocument(Page).SelectNodes("//DemoGroup[not(@Visible=""false"")]")
+			Dim groupIsNew As Boolean = False
+			If groupNode.Attributes("IsNew") IsNot Nothing Then
+				Dim value As String = groupNode.Attributes("IsNew").Value
+				Boolean.TryParse(value, groupIsNew)
+			End If
+			Dim groupIsUpdated As Boolean = False
+			If groupNode.Attributes("IsUpdated") IsNot Nothing Then
+				Dim value As String = groupNode.Attributes("IsUpdated").Value
+				Boolean.TryParse(value, groupIsUpdated)
+			End If
+
+			Dim attributes As New System.Collections.Specialized.NameValueCollection()
+			attributes.Add("IsNew", groupIsNew.ToString())
+			attributes.Add("IsUpdated", groupIsUpdated.ToString())
+			Dim groupDemoNode As SiteMapNode = provider.CreateNode("", groupNode.Attributes("Text").Value, "", Nothing, attributes)
+
+			Dim beginCategory As Boolean = False
+			If groupNode.Attributes("BeginCategory") IsNot Nothing AndAlso Boolean.TryParse(groupNode.Attributes("BeginCategory").Value, beginCategory) AndAlso beginCategory Then
+				categoryDemoNode = provider.CreateNode("", "")
+				provider.AddSiteMapNode(categoryDemoNode, provider.RootNode)
+			End If
+
+			provider.AddSiteMapNode(groupDemoNode, categoryDemoNode)
+
+			For Each itemNode As XmlNode In groupNode.SelectNodes("Demo")
+				Dim itemIsNew As Boolean = False
+				If itemNode.Attributes("IsNew") IsNot Nothing Then
+					Dim value As String = itemNode.Attributes("IsNew").Value
+					Boolean.TryParse(value, itemIsNew)
+				End If
+				Dim itemIsUpdated As Boolean = False
+				If itemNode.Attributes("IsUpdated") IsNot Nothing Then
+					Dim value As String = itemNode.Attributes("IsUpdated").Value
+					Boolean.TryParse(value, itemIsUpdated)
+				End If
+				attributes = New System.Collections.Specialized.NameValueCollection()
+				attributes.Add("IsNew", itemIsNew.ToString())
+				attributes.Add("IsUpdated", itemIsUpdated.ToString())
+				Dim itemDemoNode As SiteMapNode = provider.CreateNode(itemNode.Attributes("NavigateUrl").Value, itemNode.Attributes("Text").Value, "", Nothing, attributes)
+				provider.AddSiteMapNode(itemDemoNode, groupDemoNode)
+			Next itemNode
+		Next groupNode
+		Return provider
+	End Function
+	Public Overridable Sub EnsureSiteMapIsBound()
+	End Sub
+End Class
+
+Partial Public Class AppearancePage
+	Inherits BasePage
+	Protected Overridable Sub mSelector_ItemDataBound(ByVal source As Object, ByVal e As DevExpress.Web.ASPxMenu.MenuItemEventArgs)
+		If GetStatus(e.Item.DataItem, "IsUpdated") Then
+			e.Item.Text &= " <span style=""color: #2D9404;"">(updated)</span>"
+		End If
+		If GetStatus(e.Item.DataItem, "IsNew") Then
+			e.Item.Text &= " <span style=""color: #BD0808;"">(new)</span>"
+		End If
+	End Sub
+	Protected Overridable Function GetHeaderTitle(ByVal title As String, ByVal text As String) As String
+		Dim name As String = title & " - "
+		If text.IndexOf("<") > 0 Then
+			name &= text.Substring(0, text.IndexOf("<"))
+		Else
+			name &= text
+		End If
+		Return name
+	End Function
+	Protected Overridable Function GetCurrentAppearanceName() As String
+		Return "Appearances/" & GetCurrentAppearanceNameCore() & ".ascx"
+	End Function
+	Protected Overridable Function GetCurrentAppearanceNameCore() As String
+		Dim name As String = Page.Request.QueryString("Name")
+		If String.IsNullOrEmpty(name) Then
+			name = ""
+		End If
+		Return name
+	End Function
+End Class

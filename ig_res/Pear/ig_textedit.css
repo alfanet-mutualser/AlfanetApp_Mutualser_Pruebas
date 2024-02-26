@@ -1,0 +1,55 @@
+.igtxt_PearEditWithButtons
+{
+	background-color:#EEF5DD;
+	font-family: Verdana;
+	border:solid 1px #BBD17E;
+}
+
+
+.igtxt_PearEdit
+{
+	background-color:#EEF5DD;
+	font-family: Verdana;
+	border:solid 1px #BBD17E;
+}
+
+
+.igtxt_PearEditInContainer
+{
+	background-color:Transparent;
+	border-width:0px;
+	margin:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+
+.igtxt_PearButton
+{
+	background-color:#A1C806;
+	font-size:1px;
+	border:solid 1px #EAF2FB;
+}
+
+
+.igtxt_PearButtonHover
+{
+	background-color:#B4B4B4;
+	border:solid 1px #ABC1DE;
+}
+
+
+.igtxt_PearButtonPressed
+{
+	background-color:#FFA738;
+	border:solid 1px #ABC1DE;
+}
+
+
+.igtxt_PearButtonDisabled
+{
+	background-color:#EAF2FB;
+	border:solid 1px White;
+}
+
+

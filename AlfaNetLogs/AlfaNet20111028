@@ -1,0 +1,5 @@
+2011-10-28 09:52:54,373 _NuevoDocRecibido1 user Radicar - 192.168.1.100 1 390411 1?20111028?20111028?28/10/2011?05/11/2011?724?Pruebas con el Visor de Imagenes Viernes 28 de Octubre?664?12?TRA1348??8?311?
+2011-10-28 11:42:20,154 _NuevoDocEnviadoInt user cmdAceptar_Click - 192.168.1.100 1 Error al crear registro. Verifique que los parametros sean validosInstrucción INSERT en conflicto con la restricción FOREIGN KEY "FK_Registro_Medio". El conflicto ha aparecido en la base de datos "AlfaNetMT", tabla "dbo.Medio", column 'MedioCodigo'. 2?311?724?PRUEBA CON REGISTRO DE IMAGENES PARA EL VISOR, VIERNES 28 DE OCTUBRE 2011?PQR?ADPOSTAL?????aa?10.12.2?311?
+2011-10-28 11:43:19,357 _NuevoDocEnviadoInt user cmdAceptar_Click - 192.168.1.100 1 429630 2?311?724?PRUEBA CON REGISTRO DE IMAGENES PARA EL VISOR, VIERNES 28 DE OCTUBRE 2011?506?12?????TRA1348?10.12.2?311?
+2011-10-28 12:16:09,076 _DocEnviado user cmdBuscar_Click - 192.168.1.101 7 01/07/2011?28/10/2011???????????311??Detalle:
+2011-10-28 17:15:26,311 _DocRecibido user cmdBuscar_Click - 192.168.1.100 6 ??390411?390411?390411???????311??Detalle:

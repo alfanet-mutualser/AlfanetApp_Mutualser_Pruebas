@@ -1,0 +1,64 @@
+.igtr_RadioFlyerControl
+{
+	border-width:0px;
+	color:Black;
+}
+
+
+.igtr_RadioFlyerIsland
+{
+}
+
+
+.igtr_RadioFlyerNode
+{
+	color:Black;
+}
+
+
+.igtr_RadioFlyerParent
+{
+}
+
+
+.igtr_RadioFlyerLeaf
+{
+	margin-top:0px;
+	margin-bottom:0px;
+	color:Black;
+}
+
+
+.igtr_RadioFlyerEdit
+{
+}
+
+
+.igtr_RadioFlyerRoot
+{
+	font-weight:bold;
+	color:#990033;
+}
+
+
+.igtr_RadioFlyerHover
+{
+	cursor:hand;
+	color:#990033;
+	text-decoration:underline;
+}
+
+
+.igtr_RadioFlyerSelected
+{
+	font-weight:bold;
+	color:Black;
+}
+
+
+.igtr_RadioFlyerDisabled
+{
+	color: LightGrey;
+}
+
+

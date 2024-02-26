@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<siteMap>
+  <siteMapNode title="Home" url="Default2.aspx">
+    <siteMapNode title="Login" url="~/AlfaNetInicio/InicioLogin/MainLogin.aspx">
+      <siteMapNode title="Iniciar Sesion" url="~/AlfaNetInicio/InicioLogin/LoginIniciar.aspx" />
+  </siteMapNode>
+    <siteMapNode title="Password" url="~/AlfaNetInicio/InicioPassword/MainPassword.aspx">
+      <siteMapNode title="Cambiar Password" url="~/AlfaNetInicio/InicioPassword/PasswordCambiar/PasswordCambiar.aspx" />     
+      <siteMapNode title="Recuperar Password" url="~/AlfaNetInicio/InicioPassword/PasswordRecuperar.aspx" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

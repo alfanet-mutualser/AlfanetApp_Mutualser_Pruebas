@@ -1,0 +1,135 @@
+.igwv_RadioFlyerControl
+{
+	border-width:0px;
+	margin-top:2px;
+	color:#9C2131;
+}
+
+
+.igwv_RadioFlyerCaptionHeader
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-position:center ;
+	background-image: url(images/header_large.gif);
+	font-size:x-small;
+	font-family: Arial, Helvetica, sans-serif;
+	border-color:#9C2131;
+	border-width:1px 1px 0px 1px;
+	border-style:solid solid solid solid;
+	padding-top:3px;
+	padding-bottom:2px;
+	line-height: 16px;
+	height: 31;
+	color:White;
+	text-align:center;
+}
+
+
+.igwv_RadioFlyerDayHeader
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-position:center ;
+	background-image: url(images/header_hover.gif);
+	font-weight:bold;
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0px 2px 0px 0px;
+	height: 18px;
+	cursor:default;
+	color:Black;
+	text-align:right;
+}
+
+
+.igwv_RadioFlyerDay
+{
+	background-position:bottom ;
+	background-image: url(images/body_back.gif);
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
+	cursor:hand;
+}
+
+
+.igwv_RadioFlyerAppointment
+{
+	margin:0px 1px 0px 1px;
+	padding:2px;
+	line-height: 150%;
+	white-space: nowrap;
+	cursor:pointer;
+}
+
+
+.igwv_RadioFlyerAllDayEvent
+{
+	background-color:#FAFAFA;
+	border:solid 1px Silver;
+}
+
+
+.igwv_RadioFlyerNavigationButton
+{
+	background-color:Transparent;
+	border-width:0px;
+	width: 17px;
+	cursor:hand;
+	vertical-align:middle;
+}
+
+
+.igwv_RadioFlyerDayArea
+{
+	border:solid 1px #9C2131;
+}
+
+
+.igwv_RadioFlyerTodayHeader
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-position:center ;
+	background-image: url(images/header_orange.gif);
+	font-weight:bold;
+	color:Black;
+}
+
+
+.igwv_RadioFlyerToday
+{
+}
+
+
+.igwv_RadioFlyerSelectedAppointment
+{
+	background-color:#DAEAFF;
+	margin-top:1px;
+	margin-right:1px;
+	margin-left:1px;
+	padding:1px;
+	cursor:pointer;
+	color:Black;
+}
+
+
+.igwv_RadioFlyerActiveDayHeader
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-position:center ;
+	background-image: url(images/header_silver.gif);
+	font-weight:bold;
+	color:Black;
+}
+
+
+.igwv_RadioFlyerActiveDay
+{
+	background-color:White;
+	background-image:none;
+}
+
+

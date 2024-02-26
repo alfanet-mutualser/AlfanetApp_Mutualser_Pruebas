@@ -1,0 +1,134 @@
+﻿.message_container
+{
+    text-align:justify;
+}
+#LMessagePlantilla
+{
+    text-align:justify;
+}
+.link_wizard
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:16px;
+}
+.link_wizard:hover 
+{ 
+    color: red;
+    text-decoration: none;
+    
+}
+
+.link_wizard::visited  
+{
+    text-decoration: underline;                        
+}
+
+.passcertificate_wizard
+{
+    width:90%;
+}
+.campopass_wizard
+{
+    width:35%;    
+} 
+
+.validacion_wizard
+{
+    color:Red;
+    font-size:16px;
+}
+.certificate_wizard
+{
+    width:45%;
+}
+.titles_wizard
+{
+    text-align:center;    
+}
+.table_wizard
+{
+    width:80%;    
+    position:relative;
+    top:3%;
+    left:12%;
+}
+.table_wizard td
+{
+    
+    
+}
+.panels_wizard
+{
+    
+    
+}
+.Links
+{
+    font-size:large;
+    font-weight:bolder;
+}
+
+.LabelPlantillas
+{
+    color:Blue;
+    border-color:Black;
+    font-size:larger;
+    font-weight:bolder;
+}
+
+.LabelPlantillasNegro
+{
+    color:Black;
+    border-color:Black;
+    font-size:x-large;
+    font-weight:bolder;
+}
+.DDLPlantillas
+{
+    width:300px;
+}
+.LabelTabla
+{
+    font-weight:bold;
+    color:Blue;
+}
+
+.bordepanel
+{
+    border-color:Gray;
+    border-style:ridge;
+    
+}
+
+/*
+Stilos para la tabla de la pagina Registrar PLantilla
+*/
+
+table.altrowstable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #a9c6c9;
+	border-collapse: collapse;
+}
+table.altrowstable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #a9c6c9;
+}
+table.altrowstable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #FFFFFF;
+}
+.oddrowcolor
+{
+    background-image:url(Images/LightBlue.jpg);
+}
+.evenrowcolor
+{
+    background-color:#EEEEEE;
+}

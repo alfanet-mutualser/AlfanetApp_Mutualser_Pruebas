@@ -1,0 +1,191 @@
+.igdv_PearControl
+{
+	border:solid 1px #4F7600;
+}
+
+
+.igdv_PearCaptionHeader
+{
+	background-color:#636A4C;
+	background-repeat:repeat-x;
+	font-weight:bold;
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	border-bottom:solid 1px #FFFFFF;
+	height: 24px;
+	color:Black;
+	text-align:center;
+}
+
+
+.igdv_PearDayHeader
+{
+	background-color:#AEBA85;
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	border:solid 1px #F4F4F4;
+	border-right-color:#999999;
+	padding-left:2px;
+	height: 20px;
+	white-space: nowrap;
+	color:White;
+	text-align:center;
+	vertical-align:middle;
+}
+
+
+.igdv_PearNonWorkingTimeSlot
+{
+	background-color:#D5E88F;
+	border-right:solid 1px #999999;
+	border-bottom:solid 1px #636A4C;
+	height: 20px;
+}
+
+
+.igdv_PearWorkingTimeSlot
+{
+	background-color:White;
+	border-right:solid 1px #999999;
+	border-bottom:solid 1px #E6EDF7;
+	height: 20px;
+}
+
+
+.igdv_PearAllDayEventArea
+{
+	background-color:#FAFAFA;
+}
+
+
+.igdv_PearAllDayEvent
+{
+	background-color:WhiteSmoke;
+	font-size:8pt;
+	font-family: Tahoma,Verdana;
+	border-width:1px;
+	border-color:#6EDF73;
+	padding-left:3px;
+	height: 25px;
+	white-space: nowrap;
+	text-align:center;
+}
+
+
+.igdv_PearAppointment
+{
+	background-color:White;
+	font-size:8pt;
+	font-family: Tahoma,Verdana;
+	border:solid 1px #999999;
+}
+
+
+.igdv_PearActivityEdge
+{
+	font-size:1px;
+	height: 4px;
+	cursor:n-resize;
+}
+
+
+.igdv_PearActivityEdgeLeft
+{
+	font-size:2px;
+	width: 6px;
+	cursor:move;
+}
+
+
+.igdv_PearTodayHeader
+{
+	background-color:#636A4C;
+	background-repeat:repeat-x;
+	background-position:center ;
+	border-width:0px;
+	height: 17px;
+	color:White;
+}
+
+
+.igdv_PearTimeSlotLabel
+{
+	background-color:#BBD17E;
+	font-size:16pt;
+	font-family: Arial, Helvetica, sans-serif;
+	border-right:solid 1px #4F7600;
+	border-bottom:solid 1px #4F7600;
+	width: 60px;
+	color:White;
+	text-align:center;
+	vertical-align:top;
+}
+
+
+.igdv_PearTimeSlotLabelMinutes
+{
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.igdv_PearAllDayEventSelected
+{
+	background-color:#D0D0D0;
+	border-top-width:2px;
+	border-bottom-width:2px;
+}
+
+
+.igdv_PearAllDayEventAreaSelected
+{
+	background-color:White;
+}
+
+
+.igdv_PearActivityHover
+{
+	z-index: 10000;
+}
+
+
+.igdv_PearActivityEdgeBusy
+{
+	background-color:#E6EDF7;
+}
+
+
+.igdv_PearActivityEdgeTentative
+{
+	background-color:#90C0FF;
+}
+
+
+.igdv_PearActivityEdgeOutofOffice
+{
+	background-color:#900090;
+}
+
+
+.igdv_PearActivityEdgeFree
+{
+	background-color:#F0F0F0;
+}
+
+
+.igdv_PearNavigationButton
+{
+	background-color:Transparent;
+	border-width:0px;
+	width: 17px;
+	vertical-align:middle;
+}
+
+
+.igdv_PearSelectedAppointment
+{
+	z-index: 9999;
+	height: 20px;
+}
+
+

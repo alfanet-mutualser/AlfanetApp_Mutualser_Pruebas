@@ -1,0 +1,238 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Assembly="Infragistics2.WebUI.UltraWebNavigator.v7.1" Namespace="Infragistics.WebUI.UltraWebNavigator"
+    TagPrefix="ignav" %>
+
+<%@ Register Assembly="Infragistics2.WebUI.Misc.v7.1" Namespace="Infragistics.WebUI.Misc"
+    TagPrefix="igmisc" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <title>AlfaNet Version 1.2.0</title>
+        <link rel="Stylesheet"
+            type="text/css"
+            href="AlfaNetStyle.css" />
+        <link rel="shortcut icon" 
+            href="LogoAlfaNet.ico" 
+            type="image/x-icon" />
+    </head>
+    <body style="margin: 5px">
+        <form id="form1" runat="server">
+            <div>
+                <table style="vertical-align: top; width: 100%; text-align: center">
+                    <tr>
+                        <td style="vertical-align: top; width: 15%">
+                        </td>
+                        <td style="vertical-align: top">
+                            <asp:ScriptManager ID="ScriptManager1" runat="server">
+                            </asp:ScriptManager>
+                  
+                            <table id="MainMasterTable" style="vertical-align: top; width: 100%; text-align: center;">
+                                <tr>
+                                    <td colspan="1" style="vertical-align: top; text-align: left; width: 868px;">
+                                        <igmisc:WebPanel ID="WebPanel2" runat="server" BackColor="SteelBlue" Style="vertical-align: top;
+                                                text-align: left" Width="100%" StyleSetName="ElectricBlue">
+                                            <Template>
+                                                <ignav:UltraWebMenu id="UltraWebMenu1"  runat="server" BackColor="SteelBlue" 
+                                                        TopItemSpacing="Compact" ItemPaddingSubMenus="0" EnableAppStyling="True" 
+                                                        Cursor="Hand" BorderCollapse="True"  StyleSetName="ElectricBlue"  
+                                                        ItemSpacingTop="0" ItemPaddingTop="0" Font-Size="9pt" 
+                                                        Font-Names="Microsoft Sans Serif"  EnhancedRendering="True" 
+                                                        DataSourceID="SiteMapDataSource1" JavaScriptFilename="" 
+                                                        JavaScriptFileNameCommon="" LeafItemImageUrl="" ParentItemImageUrl="" 
+                                                        TopAligment="Center" >
+
+                                                    <IslandStyle Cursor="Default" BorderWidth="1px" BorderStyle="Outset" ForeColor="Black">
+                                                    </IslandStyle>
+
+                                                    <HoverItemStyle Cursor="Hand" BackColor="DarkBlue" BorderColor="ControlLightLight" 
+                                                            BorderWidth="1px" BorderStyle="Solid" Font-Bold="True" Font-Names="MS Sans Serif" 
+                                                            Font-Size="11pt" ForeColor="White">
+                                                    </HoverItemStyle>
+
+                                                    <Images>
+                                                        <BackgroundImage Url="~/AlfaNetImagen/MainMaster/LightBlue.jpg">
+                                                        </BackgroundImage>
+                                                    </Images>
+
+                                                    <ItemStyle Cursor="Hand" BorderWidth="0px" Font-Bold="False" Font-Names="Century Gothic" 
+                                                            Font-Size="Small" ForeColor="Black" Height="30px" Width="100px">
+                                                        <Padding Top="1px" Left="5px" Right="5px" Bottom="1px">
+                                                        </Padding>
+                                                    </ItemStyle>
+
+                                                    <DisabledStyle BorderStyle="Dashed" Font-Size="11pt" ForeColor="LightGray" Height="40px">
+                                                    </DisabledStyle>
+
+                                                    <SeparatorStyle CustomRules="background-repeat:repeat-x; ">
+                                                    </SeparatorStyle>
+
+                                                    <ExpandEffects Type="RandomDissolve" Duration="400" Opacity="900" ShadowColor="Black" 
+                                                            ShadowWidth="10">
+                                                    </ExpandEffects>
+                                                    <MenuClientSideEvents InitializeMenu="" ItemChecked="" ItemClick="" ItemHover=""
+                                                            SubMenuDisplay="" />
+                                                </ignav:UltraWebMenu> 
+                                            </Template>
+                                        </igmisc:WebPanel>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="vertical-align: top; text-align: left; width: 868px;">
+                                        <table style="width: 100%; text-align: right; vertical-align: top; height: 100%;">
+                                            <tr>
+                                                <td style="vertical-align: top; text-align: right;">
+                                                    <table style="width: 100%; height: 16%">
+                                                        <tr>
+                                                            <td colspan="1" style="text-align: left;">
+                                                                <asp:ImageButton ID="btnCerrar" runat="server" CausesValidation="False" 
+                                                                        ImageAlign="Right" ImageUrl="~/AlfaNetImagen/ToolBar/cross.png" 
+                                                                        OnClientClick="return exit();" Style="vertical-align: top"
+                                                                        ToolTip="Cerrar" Visible="False" />
+                                                                <asp:LinkButton ID="LnkCerrar" runat="server" ForeColor="Red" 
+                                                                        OnClientClick="return exit();" Visible="False">
+                                                                        Cerrar
+                                                                </asp:LinkButton>
+                                                            </td>
+                                                            <td colspan="2" style="text-align: right;">
+                                                                <asp:LoginView ID="LoginViewAlfaNet" runat="server">
+                                                                    <LoggedInTemplate>
+                                                                        &nbsp;
+                                                                        &nbsp;
+                                                                        <asp:Label ID="LblDependencia" runat="server" Font-Bold="False" 
+                                                                                Text="Label" Font-Size="Small">
+                                                                        </asp:Label>
+                                                                        <asp:LoginName ID="LoginName1" runat="server" Font-Bold="False" 
+                                                                                ForeColor="White" Style="vertical-align: top; color: black; 
+                                                                                text-align: left" Font-Strikeout="False" Font-Size="Small" />
+                                                                        <asp:Label ID="Label2" runat="server" Text="| Conectado |" 
+                                                                                Font-Bold="False" Font-Size="Small">
+                                                                        </asp:Label>
+                                                                        <asp:LoginStatus ID="LoginStatus1" runat="server"
+                                                                            Font-Bold="False" ForeColor="Red" LogoutAction="Redirect" 
+                                                                            LogoutPageUrl="~/AlfaNetInicio/InicioLogin/LoginIniciar.aspx"
+                                                                            LoginText=" Iniciar sesión" LogoutText=" Cerrar sesión" 
+                                                                            BackColor="MenuHighlight" Font-Size="Small" />
+                                                                    </LoggedInTemplate>
+                                                                    <AnonymousTemplate>
+                                                                        <strong>
+                                                                            <span style="color: red">
+                                                                                <asp:Label ID="Label1" runat="server" Text="Usted no ha iniciado sesion." 
+                                                                                        Width="100%" Font-Size="X-Small">
+                                                                                </asp:Label>
+                                                                            </span>
+                                                                        </strong>
+                                                                    </AnonymousTemplate>
+                                                                </asp:LoginView>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                 </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 868px">
+                                        <asp:Panel ID="PnlContent" runat="server" Width="100%">
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td style="text-align: left;">
+                                                        <table border="0" cellpadding="0" cellspacing="0" style="width: 100%; background-color: white;">
+                                                            <tr>
+                                                                <td style="width: 9px; height: 1px;">
+                                                                    <asp:Image ID="ImgTablita_01" runat="server" 
+                                                                            ImageUrl="~/AlfaNetImagen/MainMaster/Tabla/tablita_01.png" />
+                                                                </td>
+                                                                <td style="width: 100%; height: 6px" >
+                                                                    <asp:Image ID="tablita_02" runat="server" 
+                                                                            ImageUrl="~/AlfaNetImagen/MainMaster/Tabla/tablita_02.png" 
+                                                                            Width="100%" Height="6px" />
+                                                                </td>
+                                                                <td style="width: 6px; height: 6px;" >
+                                                                   <asp:Image ID="ImgTablita_03" runat="server" 
+                                                                        ImageUrl="~/AlfaNetImagen/MainMaster/Tabla/tablita_03.png" />
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="border-left: #317796 thin solid; width: 9px; height: 226px;">
+                                                                </td>
+                                                                <td width="100%"  >
+                                                                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+                                                                    </asp:ContentPlaceHolder>
+                                                                    <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Bold="False" 
+                                                                            Font-Size="8pt" ForeColor="Black" Width="100%" Enabled="False">
+                                                                    </asp:SiteMapPath>
+                                                                </td>
+                                                                <td style="width: 6px; border-right: #317796 thin solid; height: 226px;">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width: 9px; vertical-align: text-top; height: 6px;">
+                                                                    <asp:Image ID="ImgTablita_07" runat="server" 
+                                                                            ImageUrl="~/AlfaNetImagen/MainMaster/Tabla/tablita_07.png" />
+                                                                </td>
+                                                                <td align="center" style="height: 6px">
+                                                                    <asp:Image ID="ImgTablita_08" runat="server" BorderStyle="None" 
+                                                                            ImageUrl="~/AlfaNetImagen/MainMaster/Tabla/tablita_08.png" 
+                                                                            Width="100%" Height="6px" />
+                                                                </td>
+                                                                <td style="width: 6px; height: 6px;" >
+                                                                    <asp:Image ID="ImgTablita_09" runat="server" 
+                                                                            ImageUrl="~/AlfaNetImagen/MainMaster/Tabla/tablita_09.png" />
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </asp:Panel>
+                                        &nbsp;
+                                        <asp:HyperLink runat="server"  ID="HyperLink1" Font-Bold="True" Font-Size="Smaller"
+                                                Font-Underline="False" ForeColor="Silver" Style="vertical-align : middle;
+                                                cursor: hand; text-align: center" Visible="False">
+                                            www.archivar.net
+                                        </asp:HyperLink>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="1" style="vertical-align: top; text-align: left; width: 868px;">
+                                        <igmisc:WebPanel ID="WebPanel3" runat="server" Width="100%" 
+                                                style="vertical-align: top; text-align: left" 
+                                                StyleSetName="ElectricBlue" BackColor="SteelBlue" Font-Bold="True">
+                                            <Header Text="AlfaNet - Copyright 2009 - Compa&#241;ia&amp;nbsp;Colombiana de Organizaci&#243;n Empresarial&amp;nbsp;ARCHIVAR LTDA - Calle 26 A Nro 13-97 Ofc 2003 Telefono: 3155062636 &amp;nbsp;Bogot&#225;&amp;nbsp;">
+                                            </Header>
+                                            <Template>
+                                                <table style="width: 100%; height: 100%; background-color: #FFFFFF;">
+                                                    <tr>
+                                                        <td style="width: 33%; vertical-align: middle; text-align: left;" 
+                                                                runat="server" id="Td1">
+                                                            <asp:Image ID="Image1" runat="server" 
+                                                                    ImageUrl="~/AlfaNetImagen/Logo/LogoAlfaNet.jpg" />
+                                                        </td>
+                                                        <td style="text-align: center; width: 33%;" id="Td2" runat="server" >
+                                                        </td>
+                                                        <td style="vertical-align: middle; text-align: right; width: 33%;">
+                                                            <asp:Image ID="Image2" runat="server" 
+                                                                    ImageUrl="~/AlfaNetImagen/Logo/powbyaspnet.gif" />
+                                                        </td>    
+                                                    </tr>
+                                                </table>
+                                            </Template>
+                                        </igmisc:WebPanel>
+                                    </td>
+                                </tr>
+                            </table>
+                            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" 
+                                    ShowStartingNode="False" SiteMapProvider="MenuSiteMapProvider"/>
+                        </td>
+                        <td style="vertical-align: top; width: 15%; height: 100%;">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </body>
+</html>

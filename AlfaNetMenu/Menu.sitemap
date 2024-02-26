@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<siteMap>
+  <siteMapNode title="Home" description="Home" url="Default.aspx">
+    <siteMapNode title="Inicio" url="~/AlfaNetInicio/MainInicio.aspx">
+
+			<siteMapNode title="Login" url="~/AlfaNetInicio/InicioLogin/MainLogin.aspx">
+				<siteMapNode title="Iniciar Sesion" url="~/AlfaNetInicio/InicioLogin/LoginIniciar.aspx" />
+			</siteMapNode>
+			<!-- <siteMapNode title="Password" url="~/AlfaNetInicio/InicioPassword/MainPassword.aspx"> -->
+				<!-- <siteMapNode title="Cambiar Password" url="~/AlfaNetInicio/InicioPassword/PasswordCambiar/PasswordCambiar.aspx" /> -->
+				<!-- <siteMapNode title="Recuperar Password" url="~/AlfaNetInicio/InicioPassword/PasswordRecuperar.aspx" /> -->
+			<!-- </siteMapNode> -->
+
+    </siteMapNode>
+    <siteMapNode title="Documentos" url="~/AlfaNetDocumentos/MainDocumentos.aspx">
+		<siteMapNode title="Recibidos" url="~/AlfaNetDocumentos/DocRecibido/NuevoDocRecibido1.aspx">
+		<siteMapNode title="Facturas" url="~/AlfaNetDocumentos/DocRecibido/Facturas.aspx"/>
+		
+		</siteMapNode>
+		<siteMapNode title="Enviados" url="~/AlfaNetDocumentos/DocEnviado/NuevoDocEnviadoInt.aspx">
+			<siteMapNode title="Plantilla" url="~/AlfaNetDocumentos/DocEnviado/Defaultt.aspx"/>
+		</siteMapNode>
+		<siteMapNode title="Migracion" url="~/AlfaNetAdministracion/AdminImagenes/MigracionMasiva.aspx"/>	
+	</siteMapNode>
+	  
+	<siteMapNode title="WorkFlow" url="~/AlfaNetWorkFlow/MainIniWorkFlow.aspx">
+			<siteMapNode title="WorkFlow(Escritorio)" url="~/AlfaNetWorkFlow/AlfaNetWF/WorkFlow.aspx" Target="_Blank" />
+			<siteMapNode title="Trabajos Anteriores" url="~/AlfaNetWorkFlow/AlfaNetWF/WorkFlowAnteriores.aspx" />
+			<!--<siteMapNode title="Diseñador de procesos" url="~/AlfaNetWorkFlow/WFProceso.aspx" />-->
+			<!--<siteMapNode title="Historico" url="~/AlfaNetWorkFlow/AlfaNetWF/Historial.aspx">
+				--><!--<siteMapNode title="Historico Recibida" url="~/AlfaNetWorkFlow/AlfaNetWF/HistorialWF.aspx"/>
+				<siteMapNode title="Historico Enviada" url="~/AlfaNetWorkFlow/AlfaNetWF/HistorialWFEnviada.aspx"/>--><!--
+			</siteMapNode>-->
+    </siteMapNode>
+	  
+    <siteMapNode title="Administracion" url="~/AlfaNetAdministracion/MainAdministracion.aspx">
+
+		<siteMapNode title="Maestros" url="~/AlfaNetAdministracion/AdminMaestros/MainMaestro.aspx" horizontal-Aling ="Left">
+			<siteMapNode title="Ciudades" url="~/AlfaNetAdministracion/AdminMaestros/MaestroCiudad.aspx" Horizontal-Aling ="Left" />
+			<siteMapNode title="Departamentos" url="~/AlfaNetAdministracion/AdminMaestros/MaestroDepartamento.aspx" />
+			<siteMapNode title="Dependencias" url="~/AlfaNetAdministracion/AdminMaestros/MaestroDependencia.aspx" />
+			<siteMapNode title="Expedientes" url="~/AlfaNetAdministracion/AdminMaestros/MaestroExpediente.aspx" />
+			<siteMapNode title="Grupos" url="~/AlfaNetAdministracion/AdminMaestros/MaestroGrupo.aspx" />
+			<siteMapNode title="Medios" url="~/AlfaNetAdministracion/AdminMaestros/MaestroMedio.aspx" />
+			<siteMapNode title="Naturalezas" url="~/AlfaNetAdministracion/AdminMaestros/MaestroNaturaleza.aspx" />
+			<siteMapNode title="Paises" url="~/AlfaNetAdministracion/AdminMaestros/MaestroPais.aspx" />
+			<siteMapNode title="Procedencias" url="~/AlfaNetAdministracion/AdminMaestros/MaestroProcedencia.aspx" />
+			<siteMapNode title="Series" url="~/AlfaNetAdministracion/AdminMaestros/MaestroSerie.aspx" />
+			<siteMapNode title="WorkFlow Acciones" url="~/AlfaNetAdministracion/AdminMaestros/MaestroWorkFlowAccion.aspx" />
+			<siteMapNode title="WorkFlow Procesos" url="~/AlfaNetAdministracion/AdminMaestros/MaestroWorkFlowProceso.aspx" />
+			</siteMapNode>
+			
+
+		<siteMapNode title="Usuarios" url="~/AlfaNetAdministracion/AdminUsuario/MainUsuario.aspx" horizontal-Aling ="Left">
+			<siteMapNode title="Maestro de usuarios" url="~/AlfaNetAdministracion/AdminUsuario/MaestroUsuario.aspx" />
+		</siteMapNode>
+		<siteMapNode title="Re-Archivar" url="~/AlfaNetAdministracion/AdminDocumentos/ReArchviar.aspx" horizontal-Aling ="Left" >
+			<!--<siteMapNode title="Maestro de usuarios" url="~/AlfaNetAdministracion/AdminUsuario/MaestroUsuario.aspx" >-->
+		</siteMapNode>
+		<siteMapNode title="Des-Archivar" url="~/AlfaNetAdministracion/AdminDocumentos/DesArchivar.aspx" horizontal-Aling ="Left" >
+			<!--<siteMapNode title="Maestro de usuarios" url="~/AlfaNetAdministracion/AdminUsuario/MaestroUsuario.aspx" >-->
+		</siteMapNode>
+		<siteMapNode title="Tramites en línea" url="~/PQR.aspx"/>
+		<siteMapNode title="Transf. Doc. Pendientes" url="~/AlfaNetAdministracion/AdminDocumentos/TransDocPendientes.aspx"/>
+		<siteMapNode title="Plantillas" url="~/AlfaNetPlantilla/EditorPlantillas.aspx">
+			<siteMapNode title="Permisos Plantillas" url="~/AlfaNetPlantilla/PermisosPlantillas.aspx"/>
+		</siteMapNode>
+		
+		<siteMapNode title="Reportes Logs" url="#">
+        <siteMapNode title="Logs Movimiento" url="~/AlfaNetReportes/ReportesLog/LogsMovimiento.aspx" />
+        <siteMapNode title="Logs Imagenes" url="~/AlfaNetReportes/ReportesLog/LogsImagenes.aspx" />
+        <siteMapNode title="Logs Plantillas" url="~/AlfaNetReportes/ReportesLog/LogsPlantilla.aspx" />
+        <siteMapNode title="Logs Plantillas Permisos" url="~/AlfaNetReportes/ReportesLog/LogsPlantillasPermisos.aspx" />
+        <siteMapNode title="Logs Errores" url="~/AlfaNetReportes/ReportesLog/LogsErrores.aspx" />
+        <siteMapNode title="Logs Login" url="~/AlfaNetReportes/ReportesLog/LogsLogin.aspx" />
+        <siteMapNode title="Logs Tablas Maestros" url="~/AlfaNetReportes/ReportesLog/LogsTablasMaestros.aspx" />
+        <!-- <siteMapNode title="Logs PQR" url="~/AlfaNetReportes/ReportesLog/LogsPQR.aspx" /> -->
+        <siteMapNode title="Logs Prestamos" url="~/AlfaNetReportes/ReportesLog/LogsPrestamos.aspx" />
+        <siteMapNode title="Logs Stickers" url="~/AlfaNetReportes/ReportesLog/LogsStickers.aspx" />
+        <!-- <siteMapNode title="Logs Correos" url="~/AlfaNetReportes/ReportesLog/LogsCorreos.aspx" /> -->
+        <siteMapNode title="Logs Reportes" url="~/AlfaNetReportes/ReportesLog/LogsReportes.aspx" />
+      </siteMapNode>
+		
+		<!--<siteMapNode title="Migracion Masiva" url="~/AlfaNetAdministracion/AdminImagenes/MigracionMasiva.aspx"/>-->
+	</siteMapNode>
+    <siteMapNode title="Consultas" url="~/AlfaNetConsultas/MainConsultas.aspx">
+		<siteMapNode title="Gestion" url="~/AlfaNetConsultas/Gestion/MainConsultas.aspx">
+			<siteMapNode title="Expedientes" url="~/AlfaNetConsultas/Gestion/Expediente.aspx" />
+			<siteMapNode title="Recibidos" url="~/AlfaNetConsultas/Gestion/DocRecibido.aspx" />
+			<siteMapNode title="Enviados" url="~/AlfaNetConsultas/Gestion/DocEnviado.aspx" />
+			<!--<siteMapNode title="Facturas" url="~/AlfaNetConsultas/Gestion/ConsultaFacturas.aspx" /> -->
+			<siteMapNode title="Facturas" url="~/AlfaNetConsultas/Gestion/ConsultaFactura.aspx" />
+			<siteMapNode title="Series" url="~/AlfaNetConsultas/Gestion/ConsultaSerie.aspx" />
+			<siteMapNode title="Documentos por Series" url="~/AlfaNetConsultas/Gestion/ConsSeriesLimite.aspx" />
+			<siteMapNode title="Gestion de Tareas" url="~/AlfaNetConsultas/Gestion/GestionTDocRecibido.aspx" />
+			
+			
+		</siteMapNode>
+ 
+	</siteMapNode>
+    <siteMapNode title="Reportes" url="~/AlfaNetReportes/MainReportes.aspx">
+		
+		<siteMapNode title="Dinamicos" url="~/AlfaNetConsultas/Gestion/MainReportesDinamicos.aspx">
+			<siteMapNode title="Documentos Recibidos" url="~/AlfaNetReportes/Dinamicos/ConsultasRecibida.aspx" />
+			<siteMapNode title="Documentos Enviados" url="~/AlfaNetReportes/Dinamicos/ConsultasEnviada.aspx" />
+			<siteMapNode title="Gestion Tareas" url="~/AlfaNetReportes/Dinamicos/ConsultaGTRecibida.aspx" />
+			<siteMapNode title="Informe Gestion" url="~/AlfaNetReportes/Dinamicos/InformeGestion.aspx" />
+			<siteMapNode title="Reporte Radicadores" url="~/AlfaNetReportes/Dinamicos/Reporteradicadores.aspx" />
+			<siteMapNode title="Reporte Medios" url="~/AlfaNetReportes/Dinamicos/ReporteMediosdeenvio.aspx" />
+			<siteMapNode title="Reporte Devoluciones" url="~/AlfaNetReportes/Dinamicos/ReporteDevoluciones.aspx" />
+			<siteMapNode title="Documentos sin Imagenes" url="~/AlfaNetReportes/Dinamicos/ReporteRadRegSinDocs.aspx" />
+		</siteMapNode>
+
+		<siteMapNode title="Ciudades" url="~/AlfaNetReportes/ReportesMaestros/ReporteCiudad.aspx" />
+		<siteMapNode title="Departamentos"  url="~/AlfaNetReportes/ReportesMaestros/ReporteDepartamento.aspx" />
+		<siteMapNode title="Dependencias"   url="~/AlfaNetReportes/ReportesMaestros/ReporteDependencia.aspx" />
+		<siteMapNode title="Expedientes"  url="~/AlfaNetReportes/ReportesMaestros/ReporteExpediente.aspx" />
+		<!--<siteMapNode title="Grupos" Aling="Left"  url="~/AlfaNetReportes/ReportesMaestros/ReporteGrupo.aspx" />-->
+		<siteMapNode title="Medios" Aling="Left"  url="~/AlfaNetReportes/ReportesMaestros/ReporteMedio.aspx" />
+		<siteMapNode title="Naturalezas" Aling="Left"  url="~/AlfaNetReportes/ReportesMaestros/ReporteNaturaleza.aspx" />
+		<siteMapNode title="Paises" Aling="Left"  url="~/AlfaNetReportes/ReportesMaestros/ReportePais.aspx" />
+
+		<!--<siteMapNode title="Perfiles" Aling="Left"  url="~/AlfaNetReportes/ReportesMaestros/ReportePerfil.aspx" />-->
+		<siteMapNode title="Procedencias" Aling="Left"  url="~/AlfaNetReportes/ReportesMaestros/ReporteProcedencia.aspx" />
+		<siteMapNode title="Procesos" Aling="Left"  url="~/AlfaNetReportes/ReportesMaestros/ReporteProcesos.aspx" />
+		<siteMapNode title="Series" Aling="Left"  url="~/AlfaNetReportes/ReportesMaestros/ReporteSerie.aspx" />
+		<siteMapNode title="Usuarios" Aling="Left"  url="~/AlfaNetReportes/ReportesMaestros/ReporteUsuarioxroles.aspx" />
+		<siteMapNode title="Seguridad" Aling="Left"  url="~/AlfaNetReportes/ReportesMaestros/ReporteSeguridad.aspx" />
+		<!--<siteMapNode title="Imagen Upload" Aling="Left"  url="~/AlfaNetImagen/VisorImagenes/ImagenUpload.aspx" />
+		<siteMapNode title="Prueba" Aling="Left"  url="~/Default3.aspx" />
+		<siteMapNode title="Visor Imagen2" Aling="Left"  url="~/AlfaNetImagen/VisorImagenes/ImagenUploadwebimageviewer.aspx" />-->
+		
+	</siteMapNode>
+	  <siteMapNode title="Prestamos" url="~/AlfaNetControlPrestamos//MainIniPrestamos.aspx">
+		  <siteMapNode title="Prestamos" url="~/AlfaNetControlPrestamos/AlfaNetPrestamos/Prestamos.aspx"/>
+		  <siteMapNode title="Devoluciones" url="~/AlfaNetControlPrestamos/AlfaNetPrestamos/Devoluciones.aspx" />
+		  <siteMapNode title="Consulta" url="~/AlfaNetControlPrestamos/AlfaNetPrestamos/ConsultaPrestamos.aspx" />
+	  </siteMapNode>
+    <siteMapNode title="Ayuda" url="~/AlfaNetAyuda/MainAyuda.aspx">
+		<siteMapNode title="Manual en linea" url="~/AlfaNetManual/Index.aspx" target="_blank"/>
+		<siteMapNode title="Manual en linea Interactivo" url="~/AlfaNetManual/ManualInteractivo/Interactivo.aspx" target="_blank"/>
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
+<!---->

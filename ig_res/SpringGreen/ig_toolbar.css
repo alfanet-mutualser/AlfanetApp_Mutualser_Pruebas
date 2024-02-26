@@ -1,0 +1,59 @@
+.igtb_SpringGreenControl
+{
+	background-color:#F0F0F0;
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	border-color:Transparent;
+}
+
+
+.igtb_SpringGreenItem
+{
+	background-color:Transparent;
+}
+
+
+.igtb_SpringGreenButton
+{
+	background-color:Transparent;
+	border:solid 1px Transparent;
+	padding-left:4px;
+}
+
+
+.igtb_SpringGreenButtonHover
+{
+	background-position:center ;
+	background-image: url(images/header.gif);
+	border:solid 1px #E1E1E1;
+	color:White;
+}
+
+
+.igtb_SpringGreenButtonPressed
+{
+}
+
+
+.igtb_SpringGreenLabel
+{
+}
+
+
+.igtb_SpringGreenTextBox
+{
+	background-color:White;
+}
+
+
+.igtb_SpringGreenSeparator
+{
+	background-color:Transparent;
+}
+
+
+.igtb_SpringGreenButtonDisabled
+{
+}
+
+

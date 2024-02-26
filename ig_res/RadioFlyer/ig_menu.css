@@ -1,0 +1,94 @@
+.igmn_RadioFlyerControl
+{
+	background-color:WhiteSmoke;
+	background-repeat:repeat-x;
+	background-position:bottom ;
+	background-image: url(images/item_back.gif);
+	border-color:Transparent;
+	color:White;
+}
+
+
+.igmn_RadioFlyerIsland
+{
+	background-color:WhiteSmoke;
+	background-position:bottom ;
+	background-image: url(images/body_back.gif);
+	border:solid 1px DarkGray;
+	text-align:left;
+}
+
+
+.igmn_RadioFlyerItem
+{
+	background-color:Transparent;
+	border:solid 1px Transparent;
+	cursor:hand;
+	color:Black;
+}
+
+
+.igmn_RadioFlyerLeaf
+{
+	text-align:left;
+}
+
+
+.igmn_RadioFlyerParent
+{
+}
+
+
+.igmn_RadioFlyerTopLevelLeaf
+{
+}
+
+
+.igmn_RadioFlyerTopLevelParent
+{
+}
+
+
+.igmn_RadioFlyerHeader
+{
+}
+
+
+.igmn_RadioFlyerSeparator
+{
+	background-color:Yellow;
+	color:Black;
+}
+
+
+.igmn_RadioFlyerHover
+{
+	background-position:center ;
+	background-image: url(images/header_large.gif);
+	border:solid 1px Firebrick;
+	color:White;
+}
+
+
+.igmn_RadioFlyerTopLevelHover
+{
+	background-position:center ;
+	background-image: url(images/header_large.gif);
+	border:solid 1px Firebrick;
+	color:White;
+}
+
+
+.igmn_RadioFlyerTopSelected
+{
+}
+
+
+.igmn_RadioFlyerDisabled
+{
+	font-size:xx-small;
+	font-family: Verdana;
+	color: LightGrey;
+}
+
+

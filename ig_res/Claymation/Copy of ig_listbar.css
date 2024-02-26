@@ -1,0 +1,167 @@
+BODY
+{
+}
+
+
+.iglb_ClaymationControl
+{
+	margin-bottom:0px;
+}
+
+
+.iglb_ClaymationControl_Exp
+{
+}
+
+
+.iglb_ClaymationButton
+{
+	background-image: url(images/header.png);
+	font-size:smaller;
+	padding-top:2px;
+	padding-bottom:1px;
+	padding-left:3px;
+	color:#FFFFFF;
+}
+
+
+.iglb_ClaymationButtonHover
+{
+	background-image: url(images/header_hover.png);
+	font-size:smaller;
+	padding-top:2px;
+	padding-bottom:1px;
+	padding-left:3px;
+}
+
+
+.iglb_ClaymationButtonSelected
+{
+	background-image: url(images/header_hover.png);
+	font-size:smaller;
+	padding-top:2px;
+	padding-bottom:1px;
+	padding-left:3px;
+}
+
+
+.iglb_ClaymationHeaderCollapsed
+{
+	background-image: url(images/header.png);
+	font-size:smaller;
+	padding-top:0px;
+	padding-bottom:3px;
+	padding-left:3px;
+	color:#FFFFFF;
+}
+
+
+.iglb_ClaymationHeaderExpanded
+{
+	background-image: url(images/header.png);
+	font-size:smaller;
+	padding-top:0px;
+	padding-bottom:3px;
+	padding-left:3px;
+	color:#FFFFFF;
+}
+
+
+.iglb_ClaymationHeaderHover
+{
+	background-image: url(images/header_hover.png);
+	font-size:smaller;
+	padding-top:0px;
+	padding-bottom:3px;
+	padding-left:3px;
+}
+
+
+.iglb_ClaymationGroup
+{
+}
+
+
+.iglb_ClaymationGroup_Exp
+{
+	margin-bottom:0px;
+}
+
+
+.iglb_ClaymationItem
+{
+	margin-top:8px;
+	margin-bottom:3px;
+	padding-left:4px;
+	text-align:left;
+}
+
+
+.iglb_ClaymationItem_Exp
+{
+	font-size:xx-small;
+	margin-top:4px;
+	margin-bottom:0px;
+	padding-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	text-align:left;
+}
+
+
+.iglb_ClaymationItemHover
+{
+	font-size:xx-small;
+	margin-top:8px;
+	margin-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:#9C2131;
+	text-align:left;
+	text-decoration:underline;
+}
+
+
+.iglb_ClaymationItemHover_Exp
+{
+	font-size:xx-small;
+	margin-top:4px;
+	margin-bottom:0px;
+	padding-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:#9C2131;
+	text-align:left;
+	text-decoration:underline;
+}
+
+
+.iglb_ClaymationItemSelected
+{
+	background-color:#FAFAFA;
+	font-weight:bold;
+	font-size:xx-small;
+	margin-top:8px;
+	margin-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:#9C2131;
+	text-align:left;
+}
+
+
+.iglb_ClaymationItemSelected_Exp
+{
+	background-color:#FAFAFA;
+	font-weight:bold;
+	font-size:xx-small;
+	margin-top:4px;
+	margin-bottom:0px;
+	padding-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:#9C2131;
+	text-align:left;
+}
+
+

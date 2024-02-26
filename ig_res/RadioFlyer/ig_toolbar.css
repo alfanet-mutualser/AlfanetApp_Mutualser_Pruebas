@@ -1,0 +1,62 @@
+.igtb_RadioFlyerControl
+{
+	background-color:#F0F0F0;
+	background-position:bottom ;
+	background-image: url(images/item_back.gif);
+	border-color:Transparent;
+}
+
+
+.igtb_RadioFlyerItem
+{
+	background-color:Transparent;
+}
+
+
+.igtb_RadioFlyerButton
+{
+	background-color:Transparent;
+	font-weight:bold;
+	border:solid 1px Transparent;
+	padding-left:4px;
+	color:Brown;
+}
+
+
+.igtb_RadioFlyerButtonHover
+{
+	background-image: url(images/header.gif);
+	border:solid 1px #CE9CA5;
+	color:White;
+}
+
+
+.igtb_RadioFlyerButtonPressed
+{
+}
+
+
+.igtb_RadioFlyerLabel
+{
+	font-weight:bold;
+	color:Brown;
+}
+
+
+.igtb_RadioFlyerTextBox
+{
+	background-color:White;
+}
+
+
+.igtb_RadioFlyerSeparator
+{
+	background-color:Transparent;
+}
+
+
+.igtb_radioflyerButtonDisabled
+{
+}
+
+

@@ -1,0 +1,92 @@
+.igcal_SpringGreenControl
+{
+	border:solid 1px #4C7B04;
+	cursor:hand;
+}
+
+
+.igcal_SpringGreenCalendar
+{
+}
+
+
+.igcal_SpringGreenDOW
+{
+	font-weight:bold;
+	font-size:xx-small;
+	border-width:0px;
+	border-bottom:solid 1px #4F7600;
+	padding:5px 0px 0px 0px;
+}
+
+
+.igcal_SpringGreenDay
+{
+	font-size:xx-small;
+	border-width:0px;
+}
+
+
+.igcal_SpringGreenNextPrev
+{
+	background-color:#4C7B04;
+	padding-right:5px;
+	padding-left:5px;
+}
+
+
+.igcal_SpringGreenFooter
+{
+	background-color:#F0F0F0;
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	padding-top:5px;
+	text-align:center;
+}
+
+
+.igcal_SpringGreenHeader
+{
+	background-color:#4C7B04;
+	font-weight:bold;
+	font-size:10px;
+	height: 16px;
+	color:White;
+}
+
+
+.igcal_SpringGreenDropDown
+{
+}
+
+
+.igcal_SpringGreenWeekendDay
+{
+}
+
+
+.igcal_SpringGreenOtherMonthDay
+{
+	color:#B3B3B3;
+}
+
+
+.igcal_SpringGreenWeekendDayMajor
+{
+}
+
+
+.igcal_SpringGreenTodayDay
+{
+	font-weight:bold;
+	border:solid 1px #6D7B05;
+}
+
+
+.igcal_SpringGreenSelectedDay
+{
+	background-color:#4C7B04;
+	color:White;
+}
+
+

@@ -1,0 +1,103 @@
+.ig_GreenGelControl
+{
+	font-size:x-small;
+	font-family: Verdana;
+	cursor:default;
+}
+
+
+.ig_GreenGelItem
+{
+	background-color:White;
+	font-size:10px;
+	font-family: verdana;
+	padding-left:1px;
+}
+
+
+.ig_GreenGelButton
+{
+	cursor:hand;
+}
+
+
+.ig_GreenGelButtonHover
+{
+}
+
+
+.ig_GreenGelButtonPressed
+{
+}
+
+
+.ig_GreenGelButtonDisabled
+{
+}
+
+
+.ig_GreenGelHover
+{
+}
+
+
+.ig_GreenGelSelected
+{
+}
+
+
+.ig_GreenGelDisabled
+{
+}
+
+
+.ig_GreenGelHeader
+{
+}
+
+
+.ig_GreenGelFooter
+{
+}
+
+
+.ig_GreenGelEditWithButtons
+{
+}
+
+
+.ig_GreenGelEdit
+{
+}
+
+
+.ig_GreenGelEditInContainer
+{
+}
+
+
+.ig_GreenGelAlt
+{
+	border-top:solid 1px #E3EFFF;
+	border-right:solid 0px #FFFFFF;
+	border-bottom:solid 1px #E3EFFF;
+	border-left:solid 0px #FFFFFF;
+}
+
+
+.ig_GreenGelDropDown
+{
+}
+
+
+.ig_GreenGelEditSelected
+{
+}
+
+
+Body
+{
+	cursor:default;
+}
+
+

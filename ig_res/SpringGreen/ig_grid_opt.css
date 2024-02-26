@@ -1,0 +1,194 @@
+.igtbl_SpringGreenControl
+{
+	border:solid 1px #4C7B04;
+}
+
+
+.igtbl_SpringGreenPagerArea
+{
+	background-color:#F6FDF5;
+	border-width:0px;
+	padding:15px;
+}
+
+
+.igtbl_SpringGreenPageCurrent
+{
+	margin-right:10px;
+}
+
+
+.igtbl_SpringGreenPageLink
+{
+	margin-right:10px;
+	color:#5E8C05;
+}
+
+
+.igtbl_SpringGreenGroupByBox
+{
+	background-image: url(images/tab_top_hover_f.gif);
+	height: 25px;
+}
+
+
+.igtbl_SpringGreenAddNewBox
+{
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+}
+
+
+TBODY.igtbl_SpringGreenItem TR TD, THEAD.igtbl_SpringGreenItem TR TH, TFOOT.igtbl_SpringGreenItem TR TH, TBODY.igtbl_SpringGreenItem TR TH
+{
+	background-image: url(images/itembg.gif);
+	border-top:solid 1px #E1E1E1;
+	border-right-width:0px;
+	height: 30px;
+}
+
+
+.igtbl_SpringGreenFilterOperandButton
+{
+	background-color:Transparent;
+	background-repeat:no-repeat;
+	background-position:center ;
+	background-image: url(images/submit_up.gif);
+	border-width:0px;
+	padding-top:2px;
+	width: 18px;
+}
+
+
+TBODY.igtbl_SpringGreenItem TR.igtbl_SpringGreenAlt TD
+{
+	background-color:White;
+	background-image:none;
+	border-width:0px;
+	border-top-width:1px;
+	border-top-color:#E1E1E1;
+}
+
+
+.igtbl_SpringGreenEdit
+{
+	background-color:White;
+	font-size:x-small;
+	font-family: Verdana;
+	border:solid 1px Transparent;
+	padding-top:7px;
+	text-align:left;
+	vertical-align:middle;
+}
+
+
+.igtbl_SpringGreenButton
+{
+}
+
+
+TBODY.igtbl_SpringGreenItem TR TD.igtbl_SpringGreenFxdCell
+{
+}
+
+
+THEAD.igtbl_SpringGreenHeader TR TH, TFOOT.igtbl_SpringGreenHeader TR TH, TBODY.igtbl_SpringGreenHeader TR TH
+{
+	background-position:center ;
+	background-image: url(images/header.gif);
+	border-width:0px;
+	padding-top:3px;
+	padding-bottom:3px;
+	height: 30px;
+	color:White;
+	text-align:left;
+}
+
+
+TFOOT.igtbl_SpringGreenFooter TR TH
+{
+	background-color:#F6FDF5;
+	background-image:none;
+}
+
+
+TBODY.igtbl_SpringGreenHeader TR TH.igtbl_SpringGreenLabel
+{
+	background-color:White;
+	background-image:none;
+	border-right:solid 1px #E1E1E1;
+	border-top-width:1px;
+	border-top-color:#E1E1E1;
+	height: 25px;
+}
+
+
+TBODY.igtbl_SpringGreenHeader TR TH.igtbl_SpringGreenExpArea, TFOOT.igtbl_SpringGreenHeader TR TH.igtbl_SpringGreenExpArea
+{
+	background-color:#F6FDF5;
+	background-image:none;
+	border-top:solid 1px Silver;
+	text-align:center;
+}
+
+
+TBODY.igtbl_SpringGreenHeader TR TH.igtbl_SpringGreenGrpItem
+{
+}
+
+
+THEAD.igtbl_SpringGreenHeader TR TH.igtbl_SpringGreenFxdHeader
+{
+}
+
+
+.igtbl_SpringGreenGroupBandLabel
+{
+}
+
+
+TFOOT.igtbl_SpringGreenHeader TR TH.igtbl_SpringGreenFxdFooter
+{
+}
+
+
+.igtbl_SpringGreenDropDown
+{
+	background-color:WhiteSmoke;
+	font-size:xx-small;
+	font-family: Verdana;
+	border:solid 1px #407003;
+}
+
+
+.igtbl_SpringGreenDropDownSel
+{
+}
+
+
+TBODY.igtbl_SpringGreenItem TR.igtbl_SpringGreenSelected TD, TBODY.igtbl_SpringGreenItem TR TD.igtbl_SpringGreenSelected, .igtbl_SpringGreenSelected
+{
+	background-color:#467504;
+	background-position:center ;
+	background-image: url(images/header_hover.gif);
+	border-right-color:#467504;
+	border-left-color:#467504;
+	color:Black;
+}
+
+
+TBODY.igtbl_SpringGreenItem TR TD.igtbl_SpringGreenActiveBorder_TB, .igtbl_SpringGreenActiveBorder_TB
+{
+}
+
+
+TBODY.igtbl_SpringGreenItem TR TD.igtbl_SpringGreenActiveBorder_L, .igtbl_SpringGreenActiveBorder_L
+{
+}
+
+
+TBODY.igtbl_SpringGreenItem TR TD.igtbl_SpringGreenActiveBorder_R, .igtbl_SpringGreenActiveBorder_R
+{
+}
+
+

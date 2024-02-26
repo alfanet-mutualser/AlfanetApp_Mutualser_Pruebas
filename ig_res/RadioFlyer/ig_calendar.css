@@ -1,0 +1,91 @@
+.igcal_RadioFlyerControl
+{
+	border:solid 1px #9C2131;
+	cursor:hand;
+}
+
+
+.igcal_RadioFlyerCalendar
+{
+}
+
+
+.igcal_RadioFlyerDOW
+{
+	font-weight:bold;
+	font-size:xx-small;
+	border-bottom-style:solid;
+	padding:5px 0px 0px 0px;
+}
+
+
+.igcal_RadioFlyerDay
+{
+	font-size:xx-small;
+	border-width:0px;
+}
+
+
+.igcal_RadioFlyerNextPrev
+{
+	background-color:#9C2131;
+	padding-right:5px;
+	padding-left:5px;
+}
+
+
+.igcal_RadioFlyerFooter
+{
+	background-color:WhiteSmoke;
+	border-top:solid 1px WhiteSmoke;
+	padding-top:5px;
+	padding-bottom:3px;
+	text-align:center;
+}
+
+
+.igcal_RadioFlyerHeader
+{
+	background-color:#9C2131;
+	font-weight:bold;
+	font-size:10px;
+	height: 16px;
+	color:White;
+}
+
+
+.igcal_RadioFlyerDropDown
+{
+}
+
+
+.igcal_RadioFlyerWeekendDay
+{
+}
+
+
+.igcal_RadioFlyerOtherMonthDay
+{
+	color:#B3B3B3;
+}
+
+
+.igcal_RadioFlyerWeekendDayMajor
+{
+}
+
+
+.igcal_RadioFlyerTodayDay
+{
+	font-weight:bold;
+	border:solid 1px #9C2131;
+}
+
+
+.igcal_RadioFlyerSelectedDay
+{
+	background-color:#9C2131;
+	color:White;
+}
+
+

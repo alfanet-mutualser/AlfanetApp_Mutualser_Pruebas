@@ -1,0 +1,43 @@
+Imports Microsoft.VisualBasic
+
+Namespace Cooproconas.Search
+
+    Public Class SearchWordInfo
+
+        Private _SearchWordsID As Integer
+        Private _Word As String
+        Private _HitCount As Integer
+
+        Public Sub New()
+        End Sub
+
+        Public Property SearchWordsID() As Integer
+            Get
+                Return _SearchWordsID
+            End Get
+            Set(ByVal value As Integer)
+                _SearchWordsID = value
+            End Set
+        End Property
+
+        Public Property Word() As String
+            Get
+                Return _Word
+            End Get
+            Set(ByVal value As String)
+                _Word = value
+            End Set
+        End Property
+
+        Public Property HitCount() As Integer
+            Get
+                Return _HitCount
+            End Get
+            Set(ByVal value As Integer)
+                _HitCount = value
+            End Set
+        End Property
+
+    End Class
+
+End Namespace

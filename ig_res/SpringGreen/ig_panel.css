@@ -1,0 +1,50 @@
+.igpnl_SpringGreenControl
+{
+	border:solid 1px #4C7B04;
+}
+
+
+.igpnl_SpringGreenPanel
+{
+	background-color:#F8F8F8;
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+}
+
+
+.igpnl_SpringGreenHeaderExpanded
+{
+	background-position:center ;
+	background-image: url(images/header.gif);
+	font-weight:bold;
+	font-size:xx-small;
+	font-family: Verdana;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding-top:4px;
+	padding-bottom:4px;
+	cursor:hand;
+	color:White;
+}
+
+
+.igpnl_SpringGreenHeaderCollapsed
+{
+}
+
+
+.igpnl_SpringGreenHeaderHover
+{
+	background-image: url(images/header_hover.gif);
+	color:#4C7B04;
+}
+
+
+.igpnl_SpringGreenGroupBoxControl
+{
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	border:solid 1px #4C7B04;
+}
+
+

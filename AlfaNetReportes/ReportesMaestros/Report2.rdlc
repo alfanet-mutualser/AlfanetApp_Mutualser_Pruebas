@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="ConnStrSQLServer">
+      <rd:DataSourceID>01eb387c-397f-43dd-9eaa-be3ed6950a20</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="Fecha">
+      <DataType>String</DataType>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Fecha</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>2.5cm</RightMargin>
+  <LeftMargin>2.5cm</LeftMargin>
+  <PageHeader>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Image Name="image1">
+        <Sizing>Fit</Sizing>
+        <Top>0.5cm</Top>
+        <Width>3.25cm</Width>
+        <MIMEType>image/jpeg</MIMEType>
+        <Source>External</Source>
+        <Style />
+        <ZIndex>4</ZIndex>
+        <Left>0.75cm</Left>
+        <Height>1.25cm</Height>
+        <Value>http://192.168.1.101/AlfaNet/AlfaNetImagen/Logo/LogoEmpresaal50.PNG</Value>
+      </Image>
+      <Textbox Name="textbox11">
+        <Top>1.25cm</Top>
+        <Width>6.5cm</Width>
+        <Style>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>7.5cm</Left>
+        <Height>0.50265cm</Height>
+        <Value>=Parameters!Fecha.Value</Value>
+      </Textbox>
+      <Line Name="line1">
+        <Top>2cm</Top>
+        <Width>9.5cm</Width>
+        <Style>
+          <BorderColor>
+            <Default>DimGray</Default>
+          </BorderColor>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <BorderWidth>
+            <Default>2pt</Default>
+          </BorderWidth>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <Left>6.25cm</Left>
+        <Height>0cm</Height>
+      </Line>
+      <Textbox Name="textbox5">
+        <Top>0.5cm</Top>
+        <Width>7.75cm</Width>
+        <Style>
+          <Color>Red</Color>
+          <FontSize>16pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>7.125cm</Left>
+        <Height>0.75cm</Height>
+        <Value>REPORTE DE USUARIOS</Value>
+      </Textbox>
+      <Line Name="line2">
+        <Top>0.25cm</Top>
+        <Width>15cm</Width>
+        <Style>
+          <BorderColor>
+            <Default>DimGray</Default>
+          </BorderColor>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <BorderWidth>
+            <Default>2pt</Default>
+          </BorderWidth>
+        </Style>
+        <Left>0.75cm</Left>
+        <Height>0cm</Height>
+      </Line>
+    </ReportItems>
+    <Height>2.25cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageHeader>
+  <BottomMargin>2.5cm</BottomMargin>
+  <rd:ReportID>034ffd70-2b53-44ac-a74c-34c9cfe849f8</rd:ReportID>
+  <EmbeddedImages>
+    <EmbeddedImage Name="logoempresa">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <PageWidth>21cm</PageWidth>
+  <DataSets>
+    <DataSet Name="DSaspnet_Users_aspnet_Profile_PorpertyUsers">
+      <Fields>
+        <Field Name="UserId">
+          <DataField>UserId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UserName">
+          <DataField>UserName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PropertyNames">
+          <DataField>PropertyNames</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PropertyValuesString">
+          <DataField>PropertyValuesString</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>ConnStrSQLServer</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>dbo.aspnet_Profile_PorpertyUsers</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DSaspnet_Users</rd:DataSetName>
+        <rd:TableName>aspnet_Profile_PorpertyUsers</rd:TableName>
+        <rd:TableAdapterName>aspnet_Profile_PorpertyUsersTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>FillProfilePropertyUser</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetProfilePropertyUser</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="DSUsuario_Usuariosxdependencia1">
+      <Fields>
+        <Field Name="DependenciaCodigo">
+          <DataField>DependenciaCodigo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NombresUsuario">
+          <DataField>NombresUsuario</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ApellidosUsuario">
+          <DataField>ApellidosUsuario</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UserId">
+          <DataField>UserId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UserName">
+          <DataField>UserName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IsApproved">
+          <DataField>IsApproved</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>ConnStrSQLServer</DataSourceName>
+        <CommandText>SELECT     Usuariosxdependencia.DependenciaCodigo, Usuariosxdependencia.NombresUsuario, Usuariosxdependencia.ApellidosUsuario, 
+                      Usuariosxdependencia.UserId, aspnet_Users.UserName, aspnet_Membership.IsApproved
+FROM         Usuariosxdependencia INNER JOIN
+                      aspnet_Users ON Usuariosxdependencia.UserId = aspnet_Users.UserId INNER JOIN
+                      aspnet_Membership ON aspnet_Users.UserId = aspnet_Membership.UserId</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DSUsuario</rd:DataSetName>
+        <rd:TableName>Usuariosxdependencia1</rd:TableName>
+        <rd:TableAdapterName>Usuariosxdependencia1TableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>17.16666cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Table Name="table1">
+        <DataSetName>DSUsuario_Usuariosxdependencia1</DataSetName>
+        <Top>0.25cm</Top>
+        <Width>15.16666cm</Width>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox13">
+                      <rd:DefaultName>textbox13</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>4</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="UserName">
+                      <rd:DefaultName>UserName</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>3</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!UserName.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="NombresUsuario">
+                      <rd:DefaultName>NombresUsuario</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>2</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!NombresUsuario.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="ApellidosUsuario">
+                      <rd:DefaultName>ApellidosUsuario</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>1</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!ApellidosUsuario.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="IsApproved">
+                      <rd:DefaultName>IsApproved</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!IsApproved.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox12">
+                      <rd:DefaultName>textbox12</rd:DefaultName>
+                      <Style>
+                        <FontWeight>700</FontWeight>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>14</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox1">
+                      <rd:DefaultName>textbox1</rd:DefaultName>
+                      <Style>
+                        <FontWeight>700</FontWeight>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>13</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>User Name</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox2">
+                      <rd:DefaultName>textbox2</rd:DefaultName>
+                      <Style>
+                        <FontWeight>700</FontWeight>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>12</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Nombres Usuario</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox3">
+                      <rd:DefaultName>textbox3</rd:DefaultName>
+                      <Style>
+                        <FontWeight>700</FontWeight>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>11</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Apellidos Usuario</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox4">
+                      <rd:DefaultName>textbox4</rd:DefaultName>
+                      <Style>
+                        <FontWeight>700</FontWeight>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>10</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Estado</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <TableColumns>
+          <TableColumn>
+            <Width>0.25cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.25cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>5.33333cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>5.33333cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2cm</Width>
+          </TableColumn>
+        </TableColumns>
+        <Height>1.90476cm</Height>
+        <Footer>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox14">
+                      <rd:DefaultName>textbox14</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>9</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox7">
+                      <rd:DefaultName>textbox7</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>8</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox8">
+                      <rd:DefaultName>textbox8</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>7</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox9">
+                      <rd:DefaultName>textbox9</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>6</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox6">
+                      <rd:DefaultName>textbox6</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>5</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.63492cm</Height>
+            </TableRow>
+          </TableRows>
+        </Footer>
+      </Table>
+    </ReportItems>
+    <Height>2.5cm</Height>
+  </Body>
+  <Language>es-ES</Language>
+  <PageFooter>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Textbox Name="textbox10">
+        <Top>0.125cm</Top>
+        <Width>8cm</Width>
+        <Style>
+          <Color>Navy</Color>
+          <FontSize>7pt</FontSize>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>4cm</Left>
+        <Height>0.5cm</Height>
+        <Value>AlfaNet - Copryght 2007 - Archivar Ltda</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.75cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageFooter>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

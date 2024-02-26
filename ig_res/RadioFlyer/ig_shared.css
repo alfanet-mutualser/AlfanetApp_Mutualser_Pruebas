@@ -1,0 +1,105 @@
+.ig_RadioFlyerControl
+{
+	background-color:White;
+	font-size:xx-small;
+	font-family: verdana;
+	cursor:default;
+	color:Black;
+}
+
+
+.ig_RadioFlyerItem
+{
+	background-color:White;
+	font-size:10px;
+	font-family: verdana;
+	padding-left:1px;
+}
+
+
+.ig_RadioFlyerButton
+{
+	cursor:hand;
+}
+
+
+.ig_RadioFlyerButtonHover
+{
+}
+
+
+.ig_RadioFlyerButtonPressed
+{
+}
+
+
+.ig_RadioFlyerButtonDisabled
+{
+}
+
+
+.ig_RadioFlyerHover
+{
+}
+
+
+.ig_RadioFlyerSelected
+{
+}
+
+
+.ig_RadioFlyerDisabled
+{
+}
+
+
+.ig_RadioFlyerHeader
+{
+	background-color:Transparent;
+}
+
+
+.ig_RadioFlyerFooter
+{
+}
+
+
+.ig_RadioFlyerEditWithButtons
+{
+}
+
+
+.ig_RadioFlyerEdit
+{
+}
+
+
+.ig_RadioFlyerEditInContainer
+{
+}
+
+
+.ig_RadioFlyerAlt
+{
+	border-top:solid 1px #E3EFFF;
+	border-right:solid 0px #FFFFFF;
+	border-bottom:solid 1px #E3EFFF;
+	border-left:solid 0px #FFFFFF;
+}
+
+
+.ig_RadioFlyerDropDown
+{
+}
+
+
+.ig_RadioFlyerEditSelected
+{
+}
+
+
+Body
+{
+}
+
+

@@ -1,0 +1,181 @@
+.iglb_PeachControl
+{
+	font-size:medium;
+	border:solid 1px #97462C;
+	margin-bottom:0px;
+}
+
+
+.iglb_PeachControl_Exp
+{
+	font-size:medium;
+	border:solid 1px #97462C;
+}
+
+
+.iglb_PeachButton
+{
+	background-position:center ;
+	background-image: url(images/header.gif);
+	font-size:smaller;
+	padding-top:2px;
+	padding-bottom:1px;
+	padding-left:3px;
+	cursor:hand;
+}
+
+
+.iglb_PeachButtonHover
+{
+	background-position:center ;
+	background-image: url(images/header_hover.gif);
+	font-size:smaller;
+	padding-top:2px;
+	padding-bottom:1px;
+	padding-left:3px;
+	cursor:hand;
+}
+
+
+.iglb_PeachButtonSelected
+{
+	background-position:center ;
+	background-image: url(images/header_hover.gif);
+	font-size:smaller;
+	padding-top:2px;
+	padding-bottom:1px;
+	padding-left:3px;
+	cursor:hand;
+}
+
+
+.iglb_PeachHeaderCollapsed
+{
+	background-position:center ;
+	background-image: url(images/header.gif);
+	font-size:smaller;
+	padding-top:0px;
+	padding-bottom:3px;
+	padding-left:3px;
+	cursor:hand;
+}
+
+
+.iglb_PeachHeaderExpanded
+{
+	background-position:center ;
+	background-image: url(images/header.gif);
+	font-size:smaller;
+	padding-top:0px;
+	padding-bottom:3px;
+	padding-left:3px;
+	cursor:hand;
+}
+
+
+.iglb_PeachHeaderHover
+{
+	background-position:center ;
+	background-image: url(images/header_hover.gif);
+	font-size:smaller;
+	padding-top:0px;
+	padding-bottom:3px;
+	padding-left:3px;
+	cursor:hand;
+}
+
+
+.iglb_PeachGroup
+{
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+}
+
+
+.iglb_PeachGroup_Exp
+{
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	margin-bottom:0px;
+}
+
+
+.iglb_PeachItem
+{
+	font-size:x-small;
+	margin-top:8px;
+	margin-bottom:3px;
+	padding-left:4px;
+	text-align:left;
+}
+
+
+.iglb_PeachItem_Exp
+{
+	background-color:Transparent;
+	font-size:x-small;
+	margin-top:4px;
+	margin-bottom:0px;
+	padding-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	text-align:left;
+}
+
+
+.iglb_PeachItemHover
+{
+	font-size:x-small;
+	margin-top:8px;
+	margin-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:#B95C07;
+	text-align:left;
+	text-decoration:underline;
+}
+
+
+.iglb_PeachItemHover_Exp
+{
+	font-size:x-small;
+	margin-top:4px;
+	margin-bottom:0px;
+	padding-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:#B95C07;
+	text-align:left;
+	text-decoration:underline;
+}
+
+
+.iglb_PeachItemSelected
+{
+	background-color:Transparent;
+	font-weight:bold;
+	font-size:x-small;
+	margin-top:8px;
+	margin-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:#B95C07;
+	text-align:left;
+}
+
+
+.iglb_PeachItemSelected_Exp
+{
+	background-color:Transparent;
+	font-weight:bold;
+	font-size:x-small;
+	margin-top:4px;
+	margin-bottom:0px;
+	padding-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:#B95C07;
+	text-align:left;
+}
+
+

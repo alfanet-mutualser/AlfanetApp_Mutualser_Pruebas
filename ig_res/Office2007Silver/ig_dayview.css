@@ -1,0 +1,192 @@
+.igdv_Office2007SilverControl
+{
+}
+
+
+.igdv_Office2007SilverCaptionHeader
+{
+	background-color:#DCE1E8;
+	background-repeat:repeat-x;
+	background-image: url(images/caption_bg.jpg);
+	font-weight:bold;
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	border-bottom:solid 1px #D2D2D2;
+	border-right-color:#D2D2D2;
+	padding-bottom:5px;
+	line-height: 20px;
+	height: 25px;
+	color:Black;
+	text-align:center;
+}
+
+
+.igdv_Office2007SilverDayHeader
+{
+	background-color:Transparent;
+	background-repeat:repeat-x;
+	background-image: url(images/day_header.jpg);
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0px 2px 0px 0px;
+	height: 16px;
+	line-height: 16px;
+	color:Black;
+}
+
+
+.igdv_Office2007SilverNonWorkingTimeSlot
+{
+	background-color:#E8EAEC;
+	border-right:solid 1px #999999;
+	border-bottom:solid 1px #C7CBD1;
+	height: 20px;
+}
+
+
+.igdv_Office2007SilverWorkingTimeSlot
+{
+	background-color:White;
+	border-right:solid 1px #999999;
+	border-bottom:solid 1px #C7CBD1;
+	height: 20px;
+}
+
+
+.igdv_Office2007SilverAllDayEventArea
+{
+	background-color:#FAFAFA;
+}
+
+
+.igdv_Office2007SilverAllDayEvent
+{
+	background-color:WhiteSmoke;
+	font-size:8pt;
+	font-family: Tahoma,Verdana;
+	border-width:1px;
+	border-color:#7CBD13;
+	padding-left:3px;
+	height: 25px;
+	white-space: nowrap;
+	text-align:center;
+}
+
+
+.igdv_Office2007SilverAppointment
+{
+	background-color:White;
+	font-size:8pt;
+	font-family: Tahoma,Verdana;
+	border:solid 1px #999999;
+}
+
+
+.igdv_Office2007SilverActivityEdge
+{
+	font-size:1px;
+	height: 4px;
+	cursor:n-resize;
+}
+
+
+.igdv_Office2007SilverActivityEdgeLeft
+{
+	font-size:2px;
+	width: 6px;
+	cursor:move;
+}
+
+
+.igdv_Office2007SilverTodayHeader
+{
+	background-repeat:repeat-x;
+	background-image: url(images/day_header.jpg);
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0px 2px 0px 0px;
+	height: 16px;
+	line-height: 16px;
+	color:Black;
+}
+
+
+.igdv_Office2007SilverTimeSlotLabel
+{
+	background-color:#FAFAFA;
+	font-size:16pt;
+	font-family: Arial, Helvetica, sans-serif;
+	border-right:solid 1px #A8A8A8;
+	border-bottom:solid 1px #A8A8A8;
+	width: 60px;
+	text-align:center;
+	vertical-align:top;
+}
+
+
+.igdv_Office2007SilverTimeSlotLabelMinutes
+{
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.igdv_Office2007SilverAllDayEventSelected
+{
+	background-color:#D0D0D0;
+	border-top-width:2px;
+	border-bottom-width:2px;
+}
+
+
+.igdv_Office2007SilverAllDayEventAreaSelected
+{
+	background-color:White;
+}
+
+
+.igdv_Office2007SilverActivityHover
+{
+	z-index: 10000;
+}
+
+
+.igdv_Office2007SilverActivityEdgeBusy
+{
+	background-color:#C7CBD1;
+}
+
+
+.igdv_Office2007SilverActivityEdgeTentative
+{
+	background-color:#90C0FF;
+}
+
+
+.igdv_Office2007SilverActivityEdgeOutofOffice
+{
+	background-color:#900090;
+}
+
+
+.igdv_Office2007SilverActivityEdgeFree
+{
+	background-color:#F0F0F0;
+}
+
+
+.igdv_Office2007SilverNavigationButton
+{
+	background-color:Transparent;
+	border-width:0px;
+	width: 25px;
+	vertical-align:middle;
+}
+
+
+.igdv_Office2007SilverSelectedAppointment
+{
+	z-index: 9999;
+}
+
+

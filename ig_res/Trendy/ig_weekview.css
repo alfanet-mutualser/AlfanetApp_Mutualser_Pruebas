@@ -1,0 +1,131 @@
+.igwv_TrendyControl
+{
+	border-width:0px;
+	margin-top:2px;
+}
+
+
+.igwv_TrendyCaptionHeader
+{
+	background-color:#CECECE;
+	background-repeat:repeat-x;
+	background-image: url(images/header.gif);
+	font-weight:bold;
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top:solid 1px #006F4A;
+	border-right:solid 1px #006F4A;
+	border-bottom:solid 0px #006F4A;
+	border-left:solid 1px #006F4A;
+	padding-top:3px;
+	padding-bottom:3px;
+	line-height: 16px;
+	height: 17px;
+	color:White;
+	text-align:center;
+}
+
+
+.igwv_TrendyDayHeader
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-image: url(images/header.gif);
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0px 2px 0px 0px;
+	height: 18px;
+	cursor:default;
+	text-align:right;
+}
+
+
+.igwv_TrendyDay
+{
+	background-position:bottom ;
+	background-image: url(images/footer.gif);
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
+	cursor:hand;
+}
+
+
+.igwv_TrendyAppointment
+{
+	margin:0px 1px 0px 1px;
+	padding:2px;
+	line-height: 150%;
+	white-space: nowrap;
+	cursor:pointer;
+}
+
+
+.igwv_TrendyAllDayEvent
+{
+	background-color:#FAFAFA;
+	border:solid 1px Silver;
+}
+
+
+.igwv_TrendyNavigationButton
+{
+	background-color:Transparent;
+	border-width:0px;
+	width: 17px;
+	cursor:hand;
+	vertical-align:middle;
+}
+
+
+.igwv_TrendyDayArea
+{
+	border:solid 1px #109A48;
+}
+
+
+.igwv_TrendyTodayHeader
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-image: url(images/bg_diagonal.gif);
+	font-weight:bold;
+	color:#109A48;
+}
+
+
+.igwv_TrendyToday
+{
+}
+
+
+.igwv_TrendySelectedAppointment
+{
+	background-color:#DAEAFF;
+	margin-top:1px;
+	margin-right:1px;
+	margin-left:1px;
+	padding:1px;
+	cursor:pointer;
+	color:#052684;
+}
+
+
+.igwv_TrendyActiveDayHeader
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-position:center ;
+	background-image: url(images/header.gif);
+	font-weight:bold;
+	color:White;
+}
+
+
+.igwv_TrendyActiveDay
+{
+	background-color:#E6EDF7;
+	background-image: url(images/cross.gif);
+}
+
+

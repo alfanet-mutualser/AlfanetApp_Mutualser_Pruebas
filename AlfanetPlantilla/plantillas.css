@@ -1,0 +1,37 @@
+﻿.message
+{
+	color:Red;	
+}
+.contenedorPermisosPlantilla
+{
+	width:90%;	
+}
+.tableContent
+{
+	width:90%;
+}
+.celdaHisq
+{
+	width:37%;
+}
+.celdaCentro
+{
+	width:2%;
+}
+.celdaDer
+{
+	width:60%;
+}
+.txtDependencias
+{
+	width:100%;	
+}
+.ddlPlantillas
+{
+	width:100%;	
+}
+.ltbDependencias
+{
+	width:100%;
+	min-height:200px;
+}

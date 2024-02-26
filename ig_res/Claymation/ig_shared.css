@@ -1,0 +1,106 @@
+.ig_ClaymationControl
+{
+	background-color:White;
+	font-size:xx-small;
+	font-family: verdana;
+	border:solid 1px #ACACAC;
+	cursor:default;
+	color:Black;
+}
+
+
+.ig_ClaymationItem
+{
+	background-color:White;
+	font-size:10px;
+	font-family: verdana;
+	padding-left:1px;
+}
+
+
+.ig_ClaymationButton
+{
+	cursor:hand;
+}
+
+
+.ig_ClaymationButtonHover
+{
+}
+
+
+.ig_ClaymationButtonPressed
+{
+}
+
+
+.ig_ClaymationButtonDisabled
+{
+}
+
+
+.ig_ClaymationHover
+{
+}
+
+
+.ig_ClaymationSelected
+{
+}
+
+
+.ig_ClaymationDisabled
+{
+}
+
+
+.ig_ClaymationHeader
+{
+}
+
+
+.ig_ClaymationFooter
+{
+}
+
+
+.ig_ClaymationEditWithButtons
+{
+}
+
+
+.ig_ClaymationEdit
+{
+}
+
+
+.ig_ClaymationEditInContainer
+{
+}
+
+
+.ig_ClaymationAlt
+{
+	border-top:solid 1px #D3D3D3;
+	border-right:solid 0px #FFFFFF;
+	border-bottom:solid 1px #D3D3D3;
+	border-left:solid 0px #FFFFFF;
+}
+
+
+.ig_ClaymationDropDown
+{
+}
+
+
+.ig_ClaymationEditSelected
+{
+}
+
+
+Body
+{
+	cursor:default;
+}
+
+

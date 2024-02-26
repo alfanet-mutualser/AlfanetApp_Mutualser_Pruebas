@@ -1,0 +1,134 @@
+.igwv_GreenGelControl
+{
+	border-width:0px;
+	margin-top:2px;
+}
+
+
+.igwv_GreenGelCaptionHeader
+{
+	background-color:#CECECE;
+	background-repeat:repeat-x;
+	background-position:center ;
+	background-image: url(images/header_hover.gif);
+	font-weight:bold;
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	border:solid 1px #135E04;
+	border-right-color:#052684;
+	border-bottom-width:0px;
+	border-bottom-color:#052684;
+	border-left-color:#052684;
+	padding-top:4px;
+	padding-bottom:2px;
+	line-height: 16px;
+	height: 17px;
+	color:#135E04;
+	text-align:center;
+}
+
+
+.igwv_GreenGelDayHeader
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-position:center ;
+	background-image: url(images/header.gif);
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0px 2px 0px 0px;
+	height: 18px;
+	cursor:default;
+	text-align:right;
+}
+
+
+.igwv_GreenGelDay
+{
+	background-position:bottom ;
+	background-image: url(images/addnew.gif);
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top:1px;
+	overflow-x: hidden;
+	cursor:hand;
+}
+
+
+.igwv_GreenGelAppointment
+{
+	margin:0px 1px 0px 1px;
+	padding:2px;
+	line-height: 150%;
+	white-space: nowrap;
+	cursor:pointer;
+}
+
+
+.igwv_GreenGelAllDayEvent
+{
+	background-color:#FAFAFA;
+	border:solid 1px Silver;
+}
+
+
+.igwv_GreenGelNavigationButton
+{
+	background-color:Transparent;
+	border-width:0px;
+	width: 17px;
+	cursor:hand;
+	vertical-align:middle;
+}
+
+
+.igwv_GreenGelDayArea
+{
+	border:solid 1px #135E04;
+}
+
+
+.igwv_GreenGelTodayHeader
+{
+	background-color:#135E04;
+	background-repeat:repeat-x;
+	background-image:none;
+	font-weight:bold;
+	color:White;
+}
+
+
+.igwv_GreenGelToday
+{
+}
+
+
+.igwv_GreenGelSelectedAppointment
+{
+	background-color:#DAEAFF;
+	margin-top:1px;
+	margin-right:1px;
+	margin-left:1px;
+	padding:1px;
+	cursor:pointer;
+	color:#135E04;
+}
+
+
+.igwv_GreenGelActiveDayHeader
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-position:center ;
+	background-image: url(images/active_hatch.gif);
+	color:Black;
+}
+
+
+.igwv_GreenGelActiveDay
+{
+	background-color:White;
+	background-image:none;
+}
+
+

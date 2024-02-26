@@ -1,0 +1,97 @@
+.igmn_SpringGreenControl
+{
+	background-color:WhiteSmoke;
+	background-repeat:repeat-x;
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	border-color:Transparent;
+}
+
+
+.igmn_SpringGreenIsland
+{
+	background-color:WhiteSmoke;
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	border:solid 1px #D2D2D2;
+}
+
+
+.igmn_SpringGreenItem
+{
+	background-color:Transparent;
+	border:solid 1px Transparent;
+	height: 20px;
+	cursor:hand;
+}
+
+
+.igmn_SpringGreenLeaf
+{
+}
+
+
+.igmn_SpringGreenParent
+{
+}
+
+
+.igmn_SpringGreenTopLevelLeaf
+{
+}
+
+
+.igmn_SpringGreenTopLevelParent
+{
+}
+
+
+.igmn_SpringGreenHeader
+{
+}
+
+
+.igmn_SpringGreenSeparator
+{
+	background-color:Yellow;
+	color:Black;
+}
+
+
+.igmn_SpringGreenHover
+{
+	background-color:Transparent;
+	background-position:center ;
+	background-image: url(images/header.gif);
+	border:solid 1px #D2D2D2;
+	padding:0px;
+	height: 20px;
+	color:White;
+}
+
+
+.igmn_SpringGreenTopLevelHover
+{
+	background-color:Transparent;
+	background-position:center ;
+	background-image: url(images/header.gif);
+	border:solid 1px #D2D2D2;
+	padding:0px;
+	height: 20px;
+	color:White;
+}
+
+
+.igmn_SpringGreenTopSelected
+{
+}
+
+
+.igmn_SpringGreenDisabled
+{
+	font-size:x-small;
+	font-family: Verdana;
+	color:#D2D2D2;
+}
+
+

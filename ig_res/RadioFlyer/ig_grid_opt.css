@@ -1,0 +1,204 @@
+.igtbl_RadioFlyerControl
+{
+	border:solid 1px #9C2131;
+}
+
+
+.igtbl_RadioFlyerPagerArea
+{
+	background-position:bottom ;
+	background-image: url(images/item_back.gif);
+	border-width:0px;
+	padding-top:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+}
+
+
+.igtbl_RadioFlyerPageCurrent
+{
+	background-repeat:no-repeat;
+	background-image: url(images/submit_hover.gif);
+	font-weight:bold;
+	margin-right:10px;
+	padding:3px 7px 6px 5px;
+	color:White;
+}
+
+
+.igtbl_RadioFlyerPageLink
+{
+	margin-right:10px;
+	color:#940019;
+}
+
+
+.igtbl_RadioFlyerGroupByBox
+{
+	background-position:bottom ;
+	background-image: url(images/item_back.gif);
+	height: 35px;
+}
+
+
+.igtbl_RadioFlyerAddNewBox
+{
+	background-position:bottom ;
+	background-image: url(images/body_back.gif);
+}
+
+
+TBODY.igtbl_RadioFlyerItem TR TD, THEAD.igtbl_RadioFlyerItem TR TH, TFOOT.igtbl_RadioFlyerItem TR TH, TBODY.igtbl_RadioFlyerItem TR TH
+{
+	background-position:bottom ;
+	background-image: url(images/item_back.gif);
+	border-top:solid 1px Gainsboro;
+	border-bottom:solid 1px Transparent;
+	height: 30px;
+}
+
+
+.igtbl_RadioFlyerFilterOperandButton
+{
+	background-color:Transparent;
+	background-repeat:no-repeat;
+	background-position:center ;
+	background-image: url(images/submit_disabled.gif);
+	border-width:0px;
+	padding-top:2px;
+	width: 18px;
+}
+
+
+TBODY.igtbl_RadioFlyerItem TR.igtbl_RadioFlyerAlt TD
+{
+	background-color:White;
+	background-position:top ;
+	background-image: url(images/item_back.gif);
+	border-bottom:solid 1px Transparent;
+}
+
+
+.igtbl_RadioFlyerEdit
+{
+	background-color:White;
+	font-size:x-small;
+	font-family: Verdana;
+	border:solid 1px Transparent;
+	padding-top:9px;
+	text-align:left;
+	vertical-align:middle;
+}
+
+
+.igtbl_RadioFlyerButton
+{
+}
+
+
+TBODY.igtbl_RadioFlyerItem TR TD.igtbl_RadioFlyerFxdCell
+{
+}
+
+
+THEAD.igtbl_RadioFlyerHeader TR TH, TFOOT.igtbl_RadioFlyerHeader TR TH, TBODY.igtbl_RadioFlyerHeader TR TH
+{
+	background-position:center ;
+	background-image: url(images/header_large.gif);
+	border-width:0px;
+	padding-top:3px;
+	padding-bottom:4px;
+	height: 30px;
+	color:White;
+	text-align:left;
+}
+
+
+TFOOT.igtbl_RadioFlyerFooter TR TH
+{
+	background-color:#FCEFF1;
+	background-image:none;
+}
+
+
+TBODY.igtbl_RadioFlyerHeader TR TH.igtbl_RadioFlyerLabel
+{
+	background-color:#F0F0F0;
+	background-image:none;
+	border-top-width:1px;
+	border-top-color:White;
+	height: 28px;
+}
+
+
+TBODY.igtbl_RadioFlyerHeader TR TH.igtbl_RadioFlyerExpArea, TFOOT.igtbl_RadioFlyerHeader TR TH.igtbl_RadioFlyerExpArea
+{
+	background-color:#FCEFF1;
+	background-image:none;
+	border-top:solid 1px #FFFFFF;
+}
+
+
+TBODY.igtbl_RadioFlyerHeader TR TH.igtbl_RadioFlyerGrpItem
+{
+}
+
+
+THEAD.igtbl_RadioFlyerHeader TR TH.igtbl_RadioFlyerFxdHeader
+{
+}
+
+
+.igtbl_RadioFlyerGroupBandLabel
+{
+}
+
+
+TFOOT.igtbl_RadioFlyerHeader TR TH.igtbl_RadioFlyerFxdFooter
+{
+}
+
+
+.igtbl_RadioFlyerDropDown
+{
+	background-color:WhiteSmoke;
+	font-size:xx-small;
+	font-family: Verdana;
+	border:solid 1px #A50819;
+}
+
+
+.igtbl_RadioFlyerDropDownSel
+{
+}
+
+
+TBODY.igtbl_RadioFlyerItem TR.igtbl_RadioFlyerSelected TD, TBODY.igtbl_RadioFlyerItem TR TD.igtbl_RadioFlyerSelected, .igtbl_RadioFlyerSelected
+{
+	background-color:#F0F0F0;
+	background-position:center ;
+	background-image: url(images/header_large.gif);
+	font-weight:bold;
+	color:White;
+}
+
+
+TBODY.igtbl_RadioFlyerItem TR TD.igtbl_RadioFlyerActiveBorder_TB, .igtbl_RadioFlyerActiveBorder_TB
+{
+	border-top:solid 1px #D10022;
+	border-bottom:solid 1px #D10022;
+}
+
+
+TBODY.igtbl_RadioFlyerItem TR TD.igtbl_RadioFlyerActiveBorder_L, .igtbl_RadioFlyerActiveBorder_L
+{
+	border-left:solid 1px #D10022;
+}
+
+
+TBODY.igtbl_RadioFlyerItem TR TD.igtbl_RadioFlyerActiveBorder_R, .igtbl_RadioFlyerActiveBorder_R
+{
+	border-right:solid 1px #D10022;
+}
+
+

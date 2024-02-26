@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="ConnStrSQLServer">
+      <rd:DataSourceID>8e3e52cf-ff81-4f9e-85a5-b5b97984a4ee</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <ReportParameters>
+    <ReportParameter Name="Fecha">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Fecha</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>2.5cm</RightMargin>
+  <LeftMargin>2.5cm</LeftMargin>
+  <PageHeader>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Textbox Name="textbox15">
+        <Top>1.75cm</Top>
+        <Width>7.5cm</Width>
+        <Style>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>4</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>7cm</Left>
+        <Height>0.50265cm</Height>
+        <Value>=Parameters!Fecha.Value</Value>
+      </Textbox>
+      <Line Name="line1">
+        <Top>2.5cm</Top>
+        <Width>8.5cm</Width>
+        <Style>
+          <BorderColor>
+            <Default>DimGray</Default>
+          </BorderColor>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <BorderWidth>
+            <Default>2pt</Default>
+          </BorderWidth>
+        </Style>
+        <ZIndex>3</ZIndex>
+        <Left>6.5cm</Left>
+      </Line>
+      <Textbox Name="textbox3">
+        <rd:DefaultName>textbox3</rd:DefaultName>
+        <Top>0.5cm</Top>
+        <Width>8.5cm</Width>
+        <Style>
+          <Color>Red</Color>
+          <FontSize>12pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>2</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>6.5cm</Left>
+        <Height>1cm</Height>
+        <Value>REPORTE PRESTAMOS ARCHIVO FISICO</Value>
+      </Textbox>
+      <Line Name="line2">
+        <Top>0.25cm</Top>
+        <Width>14.5cm</Width>
+        <Style>
+          <BorderColor>
+            <Default>DimGray</Default>
+          </BorderColor>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <BorderWidth>
+            <Default>2pt</Default>
+          </BorderWidth>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <Left>0.5cm</Left>
+        <Height>0cm</Height>
+      </Line>
+      <Image Name="image1">
+        <Sizing>Fit</Sizing>
+        <Top>0.25cm</Top>
+        <Width>3.5cm</Width>
+        <MIMEType>image/jpeg</MIMEType>
+        <Source>Embedded</Source>
+        <Style />
+        <Left>0.5cm</Left>
+        <Height>2cm</Height>
+        <Value>logo</Value>
+      </Image>
+    </ReportItems>
+    <Height>2.5cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageHeader>
+  <BottomMargin>2.5cm</BottomMargin>
+  <rd:ReportID>2f7a1e46-b20d-467f-882e-5a03a6338a71</rd:ReportID>
+  <EmbeddedImages>
+    <EmbeddedImage Name="logo">
+      <MIMEType>image/png</MIMEType>
+<ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <PageWidth>21cm</PageWidth>
+  <DataSets>
+    <DataSet Name="DSPrestamos_Prestamos">
+      <Fields>
+        <Field Name="PrestamoCodigo">
+          <DataField>PrestamoCodigo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="GrupoCodigo">
+          <DataField>GrupoCodigo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="WFMovimientoFecha">
+          <DataField>WFMovimientoFecha</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="DependenciaCodigo">
+          <DataField>DependenciaCodigo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SerieCodigo">
+          <DataField>SerieCodigo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PrestamoCarpeta">
+          <DataField>PrestamoCarpeta</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SerieNombre">
+          <DataField>SerieNombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DependenciaNombre">
+          <DataField>DependenciaNombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PrestamoEstado">
+          <DataField>PrestamoEstado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="WFMovimientoFechaDevolucion">
+          <DataField>WFMovimientoFechaDevolucion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>ConnStrSQLServer</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>dbo.Prestamo_ReadPrestamo</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DSPrestamos</rd:DataSetName>
+        <rd:TableName>Prestamos</rd:TableName>
+        <rd:TableAdapterName>PrestamosTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>FillPrestamos</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetPrestamos</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>16cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Table Name="table1">
+        <DataSetName>DSPrestamos_Prestamos</DataSetName>
+        <Top>0.25cm</Top>
+        <Width>15.24998cm</Width>
+        <Details>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="PrestamoCodigo">
+                      <rd:DefaultName>PrestamoCodigo</rd:DefaultName>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>5</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!PrestamoCodigo.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="WFMovimientoFecha">
+                      <rd:DefaultName>WFMovimientoFecha</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>4</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!WFMovimientoFecha.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="PrestamoCarpeta">
+                      <rd:DefaultName>PrestamoCarpeta</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>3</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!PrestamoCarpeta.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="SerieNombre">
+                      <rd:DefaultName>SerieNombre</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>2</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!SerieNombre.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="DependenciaNombre">
+                      <rd:DefaultName>DependenciaNombre</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>1</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!DependenciaNombre.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="WFMovimientoFechaDevolucion">
+                      <rd:DefaultName>WFMovimientoFechaDevolucion</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <CanGrow>true</CanGrow>
+                      <Value>=Fields!WFMovimientoFechaDevolucion.Value</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.5cm</Height>
+            </TableRow>
+          </TableRows>
+        </Details>
+        <Header>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox1">
+                      <rd:DefaultName>textbox1</rd:DefaultName>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>17</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Prestamo</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox2">
+                      <rd:DefaultName>textbox2</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>16</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Fecha Prestamo</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox4">
+                      <rd:DefaultName>textbox4</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>15</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Carpeta</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox5">
+                      <rd:DefaultName>textbox5</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>14</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Serie</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox6">
+                      <rd:DefaultName>textbox6</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>13</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Dependencia</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox11">
+                      <rd:DefaultName>textbox11</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>12</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value>Fecha Devolucion</Value>
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.5cm</Height>
+            </TableRow>
+          </TableRows>
+        </Header>
+        <TableColumns>
+          <TableColumn>
+            <Width>1.74286cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.17857cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>3.48571cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.17857cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>3.48571cm</Width>
+          </TableColumn>
+          <TableColumn>
+            <Width>2.17856cm</Width>
+          </TableColumn>
+        </TableColumns>
+        <Height>1.5cm</Height>
+        <Footer>
+          <TableRows>
+            <TableRow>
+              <TableCells>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox8">
+                      <rd:DefaultName>textbox8</rd:DefaultName>
+                      <Style>
+                        <TextAlign>Left</TextAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>11</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox9">
+                      <rd:DefaultName>textbox9</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>10</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox10">
+                      <rd:DefaultName>textbox10</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>9</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox7">
+                      <rd:DefaultName>textbox7</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>8</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox12">
+                      <rd:DefaultName>textbox12</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>7</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+                <TableCell>
+                  <ReportItems>
+                    <Textbox Name="textbox14">
+                      <rd:DefaultName>textbox14</rd:DefaultName>
+                      <Style>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                      <ZIndex>6</ZIndex>
+                      <CanGrow>true</CanGrow>
+                      <Value />
+                    </Textbox>
+                  </ReportItems>
+                </TableCell>
+              </TableCells>
+              <Height>0.5cm</Height>
+            </TableRow>
+          </TableRows>
+        </Footer>
+      </Table>
+    </ReportItems>
+    <Height>2cm</Height>
+  </Body>
+  <Language>es-ES</Language>
+  <PageFooter>
+    <PrintOnFirstPage>true</PrintOnFirstPage>
+    <ReportItems>
+      <Textbox Name="textbox13">
+        <Top>0.125cm</Top>
+        <Width>8cm</Width>
+        <Style>
+          <Color>Navy</Color>
+          <FontSize>7pt</FontSize>
+          <TextAlign>Center</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <CanGrow>true</CanGrow>
+        <Left>4.5cm</Left>
+        <Height>0.5cm</Height>
+        <Value>AlfaNet - Copyright 2009 - Archivar Ltda</Value>
+      </Textbox>
+    </ReportItems>
+    <Height>0.75cm</Height>
+    <PrintOnLastPage>true</PrintOnLastPage>
+  </PageFooter>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

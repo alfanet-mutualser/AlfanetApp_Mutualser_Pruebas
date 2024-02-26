@@ -1,0 +1,59 @@
+.igtr_PeachControl
+{
+	border-color:Transparent;
+}
+
+
+.igtr_PeachIsland
+{
+}
+
+
+.igtr_PeachNode
+{
+	cursor:hand;
+}
+
+
+.igtr_PeachParent
+{
+}
+
+
+.igtr_PeachLeaf
+{
+}
+
+
+.igtr_PeachEdit
+{
+}
+
+
+.igtr_PeachRoot
+{
+	font-weight:bold;
+	color:#97462C;
+}
+
+
+.igtr_PeachHover
+{
+	color:#97462C;
+	text-decoration:underline;
+}
+
+
+.igtr_PeachSelected
+{
+	font-weight:bold;
+	color:#97462C;
+}
+
+
+.igtr_PeachDisabled
+{
+	color:#E1E1E1;
+}
+
+

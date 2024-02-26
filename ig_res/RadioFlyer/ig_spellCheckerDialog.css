@@ -1,0 +1,148 @@
+.igspell_RadioFlyerWrapper
+{
+	background-repeat:no-repeat;
+	background-image: url(images/radiofly.jpg);
+	font-size:x-small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin:0px;
+	padding:5px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+
+.igspell_RadioFlyerDocumentTextPanel
+{
+	background-color:#FCFCFC;
+	background-repeat:repeat-x;
+	background-position:bottom ;
+	background-image: url(images/item_back.gif);
+	border:solid 1px #CCCCCC;
+	position: absolute;
+	height: 85px;
+	width: 230px;
+	left: 10px;
+	top: 76px;
+	overflow: auto;
+}
+
+
+.igspell_RadioFlyerButton
+{
+	background-color:Transparent;
+	background-repeat:no-repeat;
+	background-image: url(images/button_bg.png);
+	font-size:10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-width:0px;
+	width: 95px;
+	height: 21px;
+	position: absolute;
+	left: 250px;
+	cursor:hand;
+}
+
+
+.igspell_RadioFlyerChangeToBox
+{
+	background-repeat:repeat-x;
+	background-position:bottom ;
+	background-image: url(images/item_back.gif);
+	border:solid 1px #CCCCCC;
+	position: absolute;
+	left: 10px;
+	top: 197px;
+	width: 230px;
+	height: 25px;
+}
+
+
+.igspell_RadioFlyerSuggestions
+{
+	background-color:#FCFCFC;
+	background-repeat:repeat-x;
+	background-position:bottom ;
+	background-image: url(images/item_back.gif);
+	border:solid 1px #CCCCCC;
+	position: absolute;
+	left: 10px;
+	top: 262px;
+	width: 340px;
+	height: 109px;
+}
+
+
+.igspell_RadioFlyerLabel
+{
+	font-weight:bold;
+	font-size:xx-small;
+	margin-bottom:2px;
+	position: absolute;
+	left: 10px;
+	color:#151C55;
+}
+
+
+.igspell_RadioFlyerBadWord
+{
+	border-bottom:solid 1px Red;
+}
+
+
+.igspell_RadioFlyerIgnoreButton
+{
+	top: 76px;
+}
+
+
+.igspell_RadioFlyerIgnoreAllButton
+{
+	top: 102px;
+}
+
+
+.igspell_RadioFlyerChangeButton
+{
+	top: 197px;
+}
+
+
+.igspell_RadioFlyerChangeAllButton
+{
+	top: 223px;
+}
+
+
+.igspell_RadioFlyerFinishButton
+{
+	top: 374px;
+}
+
+
+.igspell_RadioFlyerAddButton
+{
+	top: 128px;
+}
+
+
+.igspell_RadioFlyerChangeToLabel
+{
+	top: 180px;
+	color:#1E1E1E;
+}
+
+
+.igspell_RadioFlyerSuggestionsLabel
+{
+	top: 246px;
+	color:#1E1E1E;
+}
+
+
+.igspell_RadioFlyerNotFoundLabel
+{
+	top: 10px;
+}
+
+

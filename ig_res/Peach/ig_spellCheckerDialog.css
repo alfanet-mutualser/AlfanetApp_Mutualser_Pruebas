@@ -1,0 +1,144 @@
+.igspell_PeachWrapper
+{
+	background-repeat:no-repeat;
+	background-image: url(images/peach.jpg);
+	font-size:x-small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin:0px;
+	padding:5px;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+
+.igspell_PeachDocumentTextPanel
+{
+	background-color:White;
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	border:solid 1px #CCCCCC;
+	position: absolute;
+	height: 85px;
+	width: 230px;
+	left: 10px;
+	top: 76px;
+	overflow: auto;
+}
+
+
+.igspell_PeachButton
+{
+	background-color:Transparent;
+	background-repeat:no-repeat;
+	background-image: url(images/button_bg.png);
+	font-size:10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-width:0px;
+	width: 95px;
+	height: 21px;
+	position: absolute;
+	left: 250px;
+	cursor:hand;
+}
+
+
+.igspell_PeachChangeToBox
+{
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	border:solid 1px #CCCCCC;
+	position: absolute;
+	left: 10px;
+	top: 197px;
+	width: 230px;
+	height: 25px;
+}
+
+
+.igspell_PeachSuggestions
+{
+	background-color:Transparent;
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	border:solid 1px #CCCCCC;
+	position: absolute;
+	left: 10px;
+	top: 262px;
+	width: 340px;
+	height: 109px;
+	color:Transparent;
+}
+
+
+.igspell_PeachLabel
+{
+	font-weight:bold;
+	font-size:xx-small;
+	margin-bottom:2px;
+	position: absolute;
+	left: 10px;
+	color:#151C55;
+}
+
+
+.igspell_PeachBadWord
+{
+	border-bottom:solid 1px Red;
+}
+
+
+.igspell_PeachIgnoreButton
+{
+	top: 76px;
+}
+
+
+.igspell_PeachIgnoreAllButton
+{
+	top: 102px;
+}
+
+
+.igspell_PeachChangeButton
+{
+	top: 197px;
+}
+
+
+.igspell_PeachChangeAllButton
+{
+	top: 223px;
+}
+
+
+.igspell_PeachFinishButton
+{
+	top: 374px;
+}
+
+
+.igspell_PeachAddButton
+{
+	top: 128px;
+}
+
+
+.igspell_PeachChangeToLabel
+{
+	top: 180px;
+}
+
+
+.igspell_PeachSuggestionsLabel
+{
+	top: 246px;
+}
+
+
+.igspell_PeachNotFoundLabel
+{
+	top: 10px;
+}
+
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<siteMap>
+	<siteMapNode title="Home" url="Default2.aspx">
+
+		<siteMapNode title="Documentos" url="~/AlfaNetConsultas/ConsDocumentos/MainConsultas.aspx">
+			<siteMapNode title="Enviados" url="~/Documentos/DocEnviado/MainDocEnviadoInterno.aspx">
+				<siteMapNode title="Enviado Interno" url="~/Documentos/DocRecibido/EnvIntDocumentoNuevo.aspx" />
+				<siteMapNode title="Enviado Externo" url="~/Documentos/DocRecibido/EnvIntDocumentoEditar.aspx" />
+			</siteMapNode>
+			<siteMapNode title="Recibidos" url="~/AlfaNetConsultas/DocEnviado/MainDocEnviadoExterno.aspx">
+			</siteMapNode>
+		</siteMapNode>
+		<siteMapNode title="Expedientes" url="~/AlfaNetConsultas/ConsExpedientes/MainConsultas.aspx">
+		</siteMapNode>
+		<siteMapNode title="Inventario" url="~/AlfaNetConsultas/ConsInventario/MainConsultas.aspx">
+		</siteMapNode>
+
+	</siteMapNode>
+</siteMap>

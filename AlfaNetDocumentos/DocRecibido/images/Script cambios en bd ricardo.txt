@@ -1,0 +1,4 @@
+alter table Radicado
+add codigoddest varchar (6)
+drop table radicado 
+horaradicado

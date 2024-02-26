@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://172.23.24.171:8003/InteropAlfaBDU/?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ServicioComun" />
+  <xs:element name="IAB_001">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ServicioComun" minOccurs="0" name="request" nillable="true" type="q1:IAB_001Request" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IAB_001Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ServicioComun" minOccurs="0" name="IAB_001Result" nillable="true" type="q2:IAB_001Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IAB_003">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ServicioComun" minOccurs="0" name="request" nillable="true" type="q3:IAB_003Request" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IAB_003Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ServicioComun" minOccurs="0" name="IAB_003Result" nillable="true" type="q4:IAB_003Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMB_001">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMB_001Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/ServicioComun" minOccurs="0" name="IMB_001Result" nillable="true" type="q5:IMB_001Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMB_002">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/ServicioComun" minOccurs="0" name="request" nillable="true" type="q6:IMB_002Request" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMB_002Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/ServicioComun" minOccurs="0" name="IMB_002Result" nillable="true" type="q7:IMB_002Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMB_003">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/ServicioComun" minOccurs="0" name="request" nillable="true" type="q8:IMB_003Request" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMB_003Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/ServicioComun" minOccurs="0" name="IMB_003Result" nillable="true" type="q9:IMB_003Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMB_004">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/ServicioComun" minOccurs="0" name="request" nillable="true" type="q10:IMB_004Request" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMB_004Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/ServicioComun" minOccurs="0" name="IMB_004Result" nillable="true" type="q11:IMB_004Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMB_005">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/ServicioComun" minOccurs="0" name="request" nillable="true" type="q12:IMB_005Request" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IMB_005Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/ServicioComun" minOccurs="0" name="IMB_005Result" nillable="true" type="q13:IMB_005Response" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,53 @@
+Imports Microsoft.VisualBasic
+Imports System.io
+
+Namespace Cooproconas
+
+    Partial Public Class Utiles
+
+        ' descargar el archivo
+        Public Shared Sub DownloadFile(ByVal Response As HttpResponse, ByVal fname As String, ByVal name As String, ByVal forceDownload As Boolean)
+            Dim objFile As New System.IO.FileInfo(fname)
+            Dim objResponse As System.Web.HttpResponse = System.Web.HttpContext.Current.Response
+            If objFile.Exists Then
+                objResponse.ClearContent()
+                objResponse.ClearHeaders()
+                objResponse.AppendHeader("content-disposition", "attachment; filename=" + name)
+                objResponse.AppendHeader("Content-Length", objFile.Length.ToString())
+
+                Response.WriteFile(objFile.FullName)
+
+                objResponse.ContentType = GetContentType(objFile.Extension.Replace(".", ""))
+
+                objResponse.Flush()
+                objResponse.Close()
+            End If
+        End Sub
+
+        ' Determina el tipo de archivo
+        Public Shared Function GetContentType(ByVal extension As String) As String
+
+            Dim contentType As String
+
+            Select Case extension.ToLower
+                Case "txt" : contentType = "text/plain"
+                Case "htm", "html" : contentType = "text/html"
+                Case "rtf" : contentType = "text/richtext"
+                Case "jpg", "jpeg" : contentType = "image/jpeg"
+                Case "gif" : contentType = "image/gif"
+                Case "bmp" : contentType = "image/bmp"
+                Case "mpg", "mpeg" : contentType = "video/mpeg"
+                Case "avi" : contentType = "video/avi"
+                Case "pdf" : contentType = "application/pdf"
+                Case "doc", "dot" : contentType = "application/msword"
+                Case "csv", "xls", "xlt" : contentType = "application/x-msexcel"
+                Case Else : contentType = "application/octet-stream"
+            End Select
+
+            Return contentType
+
+        End Function
+
+    End Class
+
+End Namespace

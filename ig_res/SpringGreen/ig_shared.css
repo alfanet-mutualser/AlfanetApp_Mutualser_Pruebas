@@ -1,0 +1,105 @@
+.ig_SpringGreenControl
+{
+	background-color:White;
+	font-size:xx-small;
+	font-family: verdana;
+	cursor:default;
+	color:Black;
+}
+
+
+.ig_SpringGreenItem
+{
+	background-color:White;
+	font-size:10px;
+	font-family: verdana;
+	padding-left:1px;
+}
+
+
+.ig_SpringGreenButton
+{
+	cursor:hand;
+}
+
+
+.ig_SpringGreenButtonHover
+{
+}
+
+
+.ig_SpringGreenButtonPressed
+{
+}
+
+
+.ig_SpringGreenButtonDisabled
+{
+}
+
+
+.ig_SpringGreenHover
+{
+}
+
+
+.ig_SpringGreenSelected
+{
+}
+
+
+.ig_SpringGreenDisabled
+{
+}
+
+
+.ig_SpringGreenHeader
+{
+}
+
+
+.ig_SpringGreenFooter
+{
+}
+
+
+.ig_SpringGreenEditWithButtons
+{
+}
+
+
+.ig_SpringGreenEdit
+{
+}
+
+
+.ig_SpringGreenEditInContainer
+{
+}
+
+
+.ig_SpringGreenAlt
+{
+	border-top:solid 1px #E3EFFF;
+	border-right:solid 0px #FFFFFF;
+	border-bottom:solid 1px #E3EFFF;
+	border-left:solid 0px #FFFFFF;
+}
+
+
+.ig_SpringGreenDropDown
+{
+}
+
+
+.ig_SpringGreenEditSelected
+{
+}
+
+
+Body
+{
+	cursor:default;
+}
+
+

@@ -1,0 +1,108 @@
+.igspl_OfficeBlueControl
+{
+	border : #CCCCCC solid 1px;
+}
+
+
+.igspl_OfficeBluePane
+{
+		
+	background-repeat:repeat-x;
+	
+}
+
+.igspl_OfficeBlueVSplitBar
+{
+	
+	background-image:url(./images/igspl_splitVert.gif);
+	background-repeat:repeat-y;
+	background-position:center;
+	border-left:0px;
+	border-right:0px;
+	border-top:0px #909090 solid;
+	border-bottom:0px #606060 solid;
+	cursor:e-resize;
+	font-size:1px;	
+	
+}
+
+.igspl_OfficeBlueHSplitBar
+{
+	
+	background-image:url(./images/igspl_splitHoriz.gif);
+	background-position:center;
+	background-repeat:repeat-x;
+	border-top:0px;
+	border-bottom:0px;
+	height:30px;
+	cursor:n-resize;
+	font-size:1px;
+}
+
+.igspl_OfficeBlueVSplitBarHover
+{
+	background-image:url(./images/igspl_splitVertHover.gif);
+}
+
+.igspl_OfficeBlueHSplitBarHover
+{
+	background-image:url(./images/igspl_splitHorizHover.gif);
+	background-repeat:repeat-x;
+}
+
+.igspl_OfficeBlueVSplitBarPressed
+{
+	background-image:url(./images/igspl_splitVerPressed.gif);
+}
+
+.igspl_OfficeBlueHSplitBarPressed
+{
+	
+	background-image:url(./images/igspl_splitHorizPressed.gif);
+	background-position:center;
+	background-repeat:repeat-x;
+}
+
+.igspl_OfficeBlueHSplitBarShadow
+{
+	background-image:url(./images/igspl_splitHorizHover.gif);
+	border:1px dotted black;
+	filter:alpha(opacity:70);
+	opacity:0.7;
+}
+
+.igspl_OfficeBlueVSplitBarShadow
+{
+	background-image:url(./images/igspl_splitVertHover.gif);
+	border:1px dotted black;
+	filter:alpha(opacity:70);
+	opacity:0.7;
+}
+
+.igspl_OfficeBlueVSplitBarShadowLimit
+{
+	background:yellow;
+	border-style:solid;
+}
+
+.igspl_OfficeBlueHSplitBarShadowLimit
+{
+	background:yellow;
+	border-style:solid;
+}
+
+.igspl_OfficeBlueCollapseSplitBarButton
+{
+	/*background-color:#E0E0E0;*/
+	cursor : pointer;
+}
+
+.igspl_OfficeBlueHSplitBarHeight
+{
+	height:6px;
+}
+
+.igspl_OfficeBlueVSplitBarWidth
+{
+	width:6px;
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<siteMap>
+	<siteMapNode title="Home" url="Default2.aspx">
+		<siteMapNode title="Procesos" url="~/AlfaNetWorkFlow/MainWorkFlow.aspx">
+			<siteMapNode title="Diseñador de procesos" url="~/AlfaNetWorkFlow/WFProceso.aspx" />
+		</siteMapNode>
+	</siteMapNode>
+</siteMap>

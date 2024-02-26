@@ -1,0 +1,98 @@
+.igmn_PeachControl
+{
+	background-color:WhiteSmoke;
+	background-repeat:repeat-x;
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	border-color:Transparent;
+}
+
+
+.igmn_PeachIsland
+{
+	background-color:WhiteSmoke;
+	background-repeat:repeat-x;
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	border:solid 1px Gainsboro;
+}
+
+
+.igmn_PeachItem
+{
+	background-color:Transparent;
+	border:solid 1px Transparent;
+	height: 20px;
+	cursor:hand;
+}
+
+
+.igmn_PeachLeaf
+{
+}
+
+
+.igmn_PeachParent
+{
+}
+
+
+.igmn_PeachTopLevelLeaf
+{
+}
+
+
+.igmn_PeachTopLevelParent
+{
+}
+
+
+.igmn_PeachHeader
+{
+}
+
+
+.igmn_PeachSeparator
+{
+	background-color:Yellow;
+	color:Black;
+}
+
+
+.igmn_PeachHover
+{
+	background-color:Transparent;
+	background-position:center ;
+	background-image: url(images/header.gif);
+	border:solid 1px #C3C3C3;
+	padding:0px;
+	height: 20px;
+	color:Black;
+}
+
+
+.igmn_PeachTopLevelHover
+{
+	background-color:Transparent;
+	background-position:center ;
+	background-image: url(images/header.gif);
+	border:solid 1px #E1E1E1;
+	padding:0px;
+	height: 20px;
+	color:Black;
+}
+
+
+.igmn_PeachTopSelected
+{
+}
+
+
+.igmn_PeachDisabled
+{
+	font-size:x-small;
+	font-family: Verdana;
+	color:#D2D2D2;
+}
+
+

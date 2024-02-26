@@ -1,0 +1,199 @@
+.igdv_PeachControl
+{
+	border:solid 1px #97462C;
+}
+
+
+.igdv_PeachCaptionHeader
+{
+	background-color:#CECECE;
+	background-repeat:repeat-x;
+	background-position:center ;
+	background-image: url(images/header_hover.gif);
+	font-weight:bold;
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	border-bottom:solid 1px #97462C;
+	line-height: 16px;
+	height: 17px;
+	color:#97462C;
+	text-align:center;
+}
+
+
+.igdv_PeachDayHeader
+{
+	background-color:#DAEAFF;
+	background-image: url(images/header_hover.gif);
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	border-style:solid;
+	border-width:0px;
+	border-right-width:1px;
+	border-right-color:#97462C;
+	padding-left:2px;
+	height: 20px;
+	white-space: nowrap;
+	color:Black;
+	text-align:center;
+	vertical-align:middle;
+}
+
+
+.igdv_PeachNonWorkingTimeSlot
+{
+	background-color:#FFD6A5;
+	border-right:solid 1px #999999;
+	border-bottom:solid 1px #97462C;
+	height: 20px;
+}
+
+
+.igdv_PeachWorkingTimeSlot
+{
+	background-color:White;
+	border-right:solid 1px #999999;
+	border-bottom:solid 1px #E6EDF7;
+	height: 20px;
+}
+
+
+.igdv_PeachAllDayEventArea
+{
+	background-color:#FAFAFA;
+}
+
+
+.igdv_PeachAllDayEvent
+{
+	background-color:WhiteSmoke;
+	font-size:8pt;
+	font-family: Tahoma,Verdana;
+	border-width:1px;
+	padding-left:3px;
+	height: 25px;
+	white-space: nowrap;
+	text-align:center;
+}
+
+
+.igdv_PeachAppointment
+{
+	background-color:White;
+	font-size:8pt;
+	font-family: Tahoma,Verdana;
+	border:solid 1px #999999;
+}
+
+
+.igdv_PeachActivityEdge
+{
+	font-size:1px;
+	height: 20px;
+	cursor:n-resize;
+}
+
+
+.igdv_PeachActivityEdgeLeft
+{
+	font-size:2px;
+	width: 6px;
+	cursor:move;
+}
+
+
+.igdv_PeachTodayHeader
+{
+	background-color:Black;
+	background-repeat:repeat-x;
+	background-position:center ;
+	background-image: url(images/header.gif);
+	border-width:0px;
+	height: 17px;
+	color:Black;
+}
+
+
+.igdv_PeachTimeSlotLabel
+{
+	background-color:#F0F0F0;
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	font-size:16pt;
+	font-family: Arial, Helvetica, sans-serif;
+	border-right:solid 1px #97462C;
+	border-bottom:solid 1px Transparent;
+	border-left:solid 1px Transparent;
+	width: 60px;
+	color:#97462C;
+	text-align:center;
+	vertical-align:top;
+}
+
+
+.igdv_PeachTimeSlotLabelMinutes
+{
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.igdv_PeachAllDayEventSelected
+{
+	background-color:#D0D0D0;
+	border-top-width:2px;
+	border-bottom-width:2px;
+}
+
+
+.igdv_PeachAllDayEventAreaSelected
+{
+	background-color:White;
+}
+
+
+.igdv_PeachActivityHover
+{
+	z-index: 10000;
+}
+
+
+.igdv_PeachActivityEdgeBusy
+{
+	background-color:#E6EDF7;
+}
+
+
+.igdv_PeachActivityEdgeTentative
+{
+	background-color:#90C0FF;
+}
+
+
+.igdv_PeachActivityEdgeOutofOffice
+{
+	background-color:#900090;
+}
+
+
+.igdv_PeachActivityEdgeFree
+{
+	background-color:#F0F0F0;
+}
+
+
+.igdv_PeachNavigationButton
+{
+	background-color:Transparent;
+	border-width:0px;
+	width: 17px;
+	vertical-align:middle;
+}
+
+
+.igdv_PeachSelectedAppointment
+{
+	z-index: 9999;
+}
+
+

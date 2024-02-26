@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetDependenciaByText">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDependenciaByTextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDependenciaByTextResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetExpedienteByTextNombre">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetExpedienteByTextNombreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetExpedienteByTextNombreResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMedioByText">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMedioByTextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetMedioByTextResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNaturalezaByText">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetNaturalezaByTextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetNaturalezaByTextResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProcedenciaByTextNombre">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProcedenciaByTextNombreResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProcedenciaByTextNombreResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSerieByText">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSerieByTextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSerieByTextResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRadicadoByCodigo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRadicadoByCodigoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRadicadoByCodigoResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWFAccionTextByText">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="prefixText" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWFAccionTextByTextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWFAccionTextByTextResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetDependenciaByTextSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDependenciaByText" />
+  </wsdl:message>
+  <wsdl:message name="GetDependenciaByTextSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDependenciaByTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetExpedienteByTextNombreSoapIn">
+    <wsdl:part name="parameters" element="tns:GetExpedienteByTextNombre" />
+  </wsdl:message>
+  <wsdl:message name="GetExpedienteByTextNombreSoapOut">
+    <wsdl:part name="parameters" element="tns:GetExpedienteByTextNombreResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMedioByTextSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMedioByText" />
+  </wsdl:message>
+  <wsdl:message name="GetMedioByTextSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMedioByTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetNaturalezaByTextSoapIn">
+    <wsdl:part name="parameters" element="tns:GetNaturalezaByText" />
+  </wsdl:message>
+  <wsdl:message name="GetNaturalezaByTextSoapOut">
+    <wsdl:part name="parameters" element="tns:GetNaturalezaByTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProcedenciaByTextNombreSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProcedenciaByTextNombre" />
+  </wsdl:message>
+  <wsdl:message name="GetProcedenciaByTextNombreSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProcedenciaByTextNombreResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSerieByTextSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSerieByText" />
+  </wsdl:message>
+  <wsdl:message name="GetSerieByTextSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSerieByTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRadicadoByCodigoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRadicadoByCodigo" />
+  </wsdl:message>
+  <wsdl:message name="GetRadicadoByCodigoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRadicadoByCodigoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWFAccionTextByTextSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWFAccionTextByText" />
+  </wsdl:message>
+  <wsdl:message name="GetWFAccionTextByTextSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWFAccionTextByTextResponse" />
+  </wsdl:message>
+  <wsdl:portType name="AutoCompleteSoap">
+    <wsdl:operation name="GetDependenciaByText">
+      <wsdl:input message="tns:GetDependenciaByTextSoapIn" />
+      <wsdl:output message="tns:GetDependenciaByTextSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetExpedienteByTextNombre">
+      <wsdl:input message="tns:GetExpedienteByTextNombreSoapIn" />
+      <wsdl:output message="tns:GetExpedienteByTextNombreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMedioByText">
+      <wsdl:input message="tns:GetMedioByTextSoapIn" />
+      <wsdl:output message="tns:GetMedioByTextSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNaturalezaByText">
+      <wsdl:input message="tns:GetNaturalezaByTextSoapIn" />
+      <wsdl:output message="tns:GetNaturalezaByTextSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProcedenciaByTextNombre">
+      <wsdl:input message="tns:GetProcedenciaByTextNombreSoapIn" />
+      <wsdl:output message="tns:GetProcedenciaByTextNombreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSerieByText">
+      <wsdl:input message="tns:GetSerieByTextSoapIn" />
+      <wsdl:output message="tns:GetSerieByTextSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRadicadoByCodigo">
+      <wsdl:input message="tns:GetRadicadoByCodigoSoapIn" />
+      <wsdl:output message="tns:GetRadicadoByCodigoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWFAccionTextByText">
+      <wsdl:input message="tns:GetWFAccionTextByTextSoapIn" />
+      <wsdl:output message="tns:GetWFAccionTextByTextSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="AutoCompleteSoap" type="tns:AutoCompleteSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDependenciaByText">
+      <soap:operation soapAction="http://tempuri.org/GetDependenciaByText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExpedienteByTextNombre">
+      <soap:operation soapAction="http://tempuri.org/GetExpedienteByTextNombre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMedioByText">
+      <soap:operation soapAction="http://tempuri.org/GetMedioByText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNaturalezaByText">
+      <soap:operation soapAction="http://tempuri.org/GetNaturalezaByText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProcedenciaByTextNombre">
+      <soap:operation soapAction="http://tempuri.org/GetProcedenciaByTextNombre" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSerieByText">
+      <soap:operation soapAction="http://tempuri.org/GetSerieByText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRadicadoByCodigo">
+      <soap:operation soapAction="http://tempuri.org/GetRadicadoByCodigo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWFAccionTextByText">
+      <soap:operation soapAction="http://tempuri.org/GetWFAccionTextByText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="AutoCompleteSoap12" type="tns:AutoCompleteSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDependenciaByText">
+      <soap12:operation soapAction="http://tempuri.org/GetDependenciaByText" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetExpedienteByTextNombre">
+      <soap12:operation soapAction="http://tempuri.org/GetExpedienteByTextNombre" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMedioByText">
+      <soap12:operation soapAction="http://tempuri.org/GetMedioByText" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNaturalezaByText">
+      <soap12:operation soapAction="http://tempuri.org/GetNaturalezaByText" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProcedenciaByTextNombre">
+      <soap12:operation soapAction="http://tempuri.org/GetProcedenciaByTextNombre" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSerieByText">
+      <soap12:operation soapAction="http://tempuri.org/GetSerieByText" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRadicadoByCodigo">
+      <soap12:operation soapAction="http://tempuri.org/GetRadicadoByCodigo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWFAccionTextByText">
+      <soap12:operation soapAction="http://tempuri.org/GetWFAccionTextByText" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AutoComplete">
+    <wsdl:port name="AutoCompleteSoap" binding="tns:AutoCompleteSoap">
+      <soap:address location="http://localhost:2990/AutoComplete.asmx" />
+    </wsdl:port>
+    <wsdl:port name="AutoCompleteSoap12" binding="tns:AutoCompleteSoap12">
+      <soap12:address location="http://localhost:2990/AutoComplete.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

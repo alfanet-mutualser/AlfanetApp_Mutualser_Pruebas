@@ -1,0 +1,61 @@
+﻿<%@ Page Language="C#" MasterPageFile="~/MainMaster.master" %>
+
+
+<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
+  <script type="text/vbscript" language="VBScript">
+   
+Sub Select_OnClick 
+  UploadCtl.Select 
+End Sub 
+Sub Remove_OnClick 
+
+  UploadCtl.RemoveHighlighted 
+End Sub 
+
+Sub RemoveAll_OnClick 
+  UploadCtl.RemoveAll 
+End Sub 
+
+Sub Upload_OnClick 
+  UploadCtl.Upload 
+End Sub 
+</script> 
+
+
+<object width=100%  height=200 
+	ID="UploadCtl" 
+	CLASSID="CLSID:E87F6C8E-16C0-11D3-BEF7-009027438003" 
+	CODEBASE="XUpload.ocx"> 
+
+<param name="server" value="192.168.0.10">
+<param name="script" value="AlfaNetFBSCGR/CodeMigrar.aspx">
+
+<param name="EnablePopupMenu" value="True">
+
+</object> 
+
+<!-- Microsoft workaround for the Click-to-Activate problem -->
+<script type="text/javascript" src="ie_workaround.js"></script>
+
+<P>
+<INPUT TYPE=BUTTON NAME="SELECT" VALUE="Select">
+<INPUT TYPE=BUTTON NAME="REMOVE" VALUE="Remove">
+<INPUT TYPE=BUTTON NAME="REMOVEALL" VALUE="Remove All">
+<INPUT TYPE=BUTTON NAME="UPLOAD" VALUE="Upload">
+    <p>
+
+<iframe src="Default3.aspx" runat="server" id="Default3" style="width: 100%; height: 300px"></iframe> <%--frameset rows="18%,*" framespacing="0" border="0" frameborder="NO" NORESIZE>
+    <frame name="menu" src="Default3.aspx"> <!-- aki es el menu -->
+    <frame name="lodemas" src="Default3.aspx"> <!-- aki el resto de la pagina -->
+</frameset>--%>
+        &nbsp;</p>
+
+</asp:Content>
+<%--<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderCentro" runat="server">
+<div id="DIV1" style="width: 100%;
+    height: 100px; behavior: url(Default3.aspx);" runat="server">
+</div>
+
+
+</asp:Content> --%>
+

@@ -1,0 +1,58 @@
+.igtxt_PeachEditWithButtons
+{
+	background-color:Transparent;
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	font-family: Verdana;
+	border:solid 1px #97462C;
+}
+
+
+.igtxt_PeachEdit
+{
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	font-family: Verdana;
+	border:solid 1px #97462C;
+}
+
+
+.igtxt_PeachEditInContainer
+{
+	background-color:Transparent;
+	border-width:0px;
+	margin:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+
+.igtxt_PeachButton
+{
+	background-color:#DE8068;
+	font-size:1px;
+	border:solid 1px #AD6051;
+}
+
+
+.igtxt_PeachButtonHover
+{
+	background-color:#CA735F;
+	border:solid 1px #AD6051;
+}
+
+
+.igtxt_PeachButtonPressed
+{
+	background-color:#FFA738;
+	border:solid 1px #ABC1DE;
+}
+
+
+.igtxt_PeachButtonDisabled
+{
+	background-color:#EAF2FB;
+	border:solid 1px White;
+}
+
+

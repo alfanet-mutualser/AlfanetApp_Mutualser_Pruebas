@@ -1,0 +1,105 @@
+.igcmb_RadioFlyerControl
+{
+}
+
+
+.igcmb_RadioFlyerEditWithButtons
+{
+	border:solid 1px #D2D2D2;
+}
+
+
+.igcmb_RadioFlyerPagerArea
+{
+}
+
+
+.igcmb_RadioFlyerPageCurrent
+{
+}
+
+
+.igcmb_RadioFlyerPageLink
+{
+}
+
+
+.igcmb_RadioFlyerItem
+{
+	background-position:bottom ;
+	background-image: url(images/item_back.gif);
+	border-top:solid 1px Gainsboro;
+}
+
+
+.igcmb_RadioFlyerAlt
+{
+	background-color:White;
+	background-position:top ;
+	background-image: url(images/item_back.gif);
+	border-width:0px;
+	border-top-width:1px;
+}
+
+
+.igcmb_RadioFlyerHeader
+{
+	background-position:center ;
+	background-image: url(images/header_large.gif);
+	border-width:0px;
+	padding-top:5px;
+	padding-bottom:5px;
+	color:White;
+	text-align:left;
+}
+
+
+.igcmb_RadioFlyerFooter
+{
+}
+
+
+.igcmb_RadioFlyerLabel
+{
+	background-image: url(images/label.gif);
+	border-top:solid 1px White;
+}
+
+
+.igcmb_RadioFlyerSelected
+{
+	background-color:#F0F0F0;
+	background-position:center ;
+	background-image: url(images/header_large.gif);
+	font-weight:bold;
+	color:White;
+}
+
+
+.igcmb_RadioFlyerEditSelected
+{
+	background-color:White;
+	font-size:x-small;
+	font-family: Verdana;
+	border:solid 1px Transparent;
+	padding-top:9px;
+	text-align:left;
+	vertical-align:middle;
+}
+
+
+.igcmb_RadioFlyerActiveBorderTopBottom
+{
+}
+
+
+.igcmb_RadioFlyerActiveBorderLeft
+{
+}
+
+
+.igcmb_RadioFlyerActiveBorderRight
+{
+}
+
+

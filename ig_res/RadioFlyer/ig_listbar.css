@@ -1,0 +1,178 @@
+.iglb_RadioFlyerControl
+{
+	font-variant:normal;
+	font-size:medium;
+	border:solid 1px #9C2131;
+	margin-bottom:0px;
+}
+
+
+.iglb_RadioFlyerControl_Exp
+{
+	font-size:medium;
+	border:solid 1px #9C2131;
+}
+
+
+.iglb_RadioFlyerButton
+{
+	background-position:center ;
+	background-image: url(images/header.gif);
+	font-size:smaller;
+	padding-top:2px;
+	padding-bottom:1px;
+	padding-left:3px;
+	cursor:hand;
+	color:White;
+}
+
+
+.iglb_RadioFlyerButtonHover
+{
+	background-image: url(images/header_hover.gif);
+	font-size:smaller;
+	padding-top:2px;
+	padding-bottom:1px;
+	padding-left:3px;
+	cursor:hand;
+}
+
+
+.iglb_RadioFlyerButtonSelected
+{
+	background-image: url(images/header_hover.gif);
+	font-size:smaller;
+	padding-top:2px;
+	padding-bottom:1px;
+	padding-left:3px;
+	cursor:hand;
+}
+
+
+.iglb_RadioFlyerHeaderCollapsed
+{
+	background-image: url(images/header.gif);
+	font-size:smaller;
+	padding-top:0px;
+	padding-bottom:3px;
+	padding-left:3px;
+	color:White;
+}
+
+
+.iglb_RadioFlyerHeaderExpanded
+{
+	background-image: url(images/header.gif);
+	font-size:smaller;
+	padding-top:0px;
+	padding-bottom:3px;
+	padding-left:3px;
+	color:White;
+}
+
+
+.iglb_RadioFlyerHeaderHover
+{
+	background-image: url(images/header_hover.gif);
+	font-size:smaller;
+	padding-top:0px;
+	padding-bottom:3px;
+	padding-left:3px;
+	cursor:hand;
+}
+
+
+.iglb_RadioFlyerGroup
+{
+	background-repeat:repeat-x;
+	background-position:bottom ;
+	background-image: url(images/body_back.gif);
+}
+
+
+.iglb_RadioFlyerGroup_Exp
+{
+	background-repeat:repeat-x;
+	background-position:bottom ;
+	background-image: url(images/body_back.gif);
+	margin-bottom:0px;
+}
+
+
+.iglb_RadioFlyerItem
+{
+	font-size:xx-small;
+	margin-top:8px;
+	margin-bottom:3px;
+	padding-left:4px;
+	text-align:left;
+}
+
+
+.iglb_RadioFlyerItem_Exp
+{
+	background-color:Transparent;
+	font-size:xx-small;
+	margin-top:4px;
+	margin-bottom:0px;
+	padding-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	text-align:left;
+}
+
+
+.iglb_RadioFlyerItemHover
+{
+	font-size:xx-small;
+	margin-top:8px;
+	margin-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:#9C2131;
+	text-align:left;
+	text-decoration:underline;
+}
+
+
+.iglb_RadioFlyerItemHover_Exp
+{
+	font-size:xx-small;
+	margin-top:4px;
+	margin-bottom:0px;
+	padding-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:#9C2131;
+	text-align:left;
+	text-decoration:underline;
+}
+
+
+.iglb_RadioFlyerItemSelected
+{
+	font-weight:bold;
+	font-size:xx-small;
+	margin-top:8px;
+	margin-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:#9C2131;
+	text-align:left;
+}
+
+
+.iglb_RadioFlyerItemSelected_Exp
+{
+	font-weight:bold;
+	font-size:xx-small;
+	margin-top:4px;
+	margin-bottom:0px;
+	padding-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:#9C2131;
+	text-align:left;
+}
+
+

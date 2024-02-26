@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <!--<siteMapNode url="Nodo.aspx" title="Manual Interactivo de AlfaNet"  description="">
+		<siteMapNode title="Menú Inicio e Inicio de Sesión">
+			<siteMapNode url="~/AlfaNetManual/ManualInteractivo/InicioSesion.aspx" title="Cómo Iniciar de Sesión"  description="" />
+		</siteMapNode>
+		<siteMapNode title="Menú Documentos">
+			<siteMapNode url="~/AlfaNetManual/ManualInteractivo/RadicarDocumento.aspx" title="Cómo Radicar un Documento"  description="" />
+			<siteMapNode url="~/AlfaNetManual/ManualInteractivo/EnviarDocumento.aspx" title="Cómo Enviar un Documento"  description="" />
+			<siteMapNode url="~/AlfaNetManual/ManualInteractivo/Como buscar un Documento enviado existente.aspx" title="Cómo Buscar un Documento Enviado Existente"  description="" />
+			<siteMapNode url="~/AlfaNetManual/ManualInteractivo/BuscarRadicadoRecibidoExistente.aspx" title="Cómo Buscar un Documento Radicado Recibido Existente"  description="" />
+		</siteMapNode>
+		<siteMapNode title="Menú WorkFlow">
+			<siteMapNode url="~/AlfaNetManual/ManualInteractivo/DocumentosRecibidosExternos.aspx" title="Cómo trabajar con el panel Documentos Recibidos Externos"  description="" />
+			<siteMapNode url="~/AlfaNetManual/ManualInteractivo/DocumentosEnviadosExternos.aspx" title="Cómo trabajar con el panel Documentos Enviados Externos"  description="" />
+			<siteMapNode url="~/AlfaNetManual/ManualInteractivo/DocumentosEnviadosInternos.aspx" title="Cómo trabajar con el panel Documentos Enviados Internos"  description="" />
+			
+		</siteMapNode>
+	</siteMapNode>-->	
+</siteMap>

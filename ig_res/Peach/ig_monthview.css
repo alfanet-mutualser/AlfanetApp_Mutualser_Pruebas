@@ -1,0 +1,237 @@
+.igmv_PeachControl
+{
+	font-size:x-small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border:solid 1px #97462C;
+	margin:0px;
+	overflow: auto;
+	position: relative;
+}
+
+
+.igmv_PeachCaptionHeader
+{
+	background-color:#CECECE;
+	background-position:center ;
+	background-image: url(images/header_hover.gif);
+	font-weight:bold;
+	font-size:x-small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-width:0px;
+	height: 1%;
+	line-height: 20px;
+	text-align:center;
+}
+
+
+.igmv_PeachDayHeader
+{
+	background-color:Gainsboro;
+	background-position:center ;
+	background-image: url(images/header.gif);
+	font-size:xx-small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-top:solid 1px Silver;
+	border-left:solid 1px Silver;
+	padding-top:0px;
+	padding-right:2px;
+	height: 3%;
+	text-align:right;
+	vertical-align:top;
+}
+
+
+.igmv_PeachDay
+{
+	background-color:#D2D2D2;
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	border-left:solid 1px Silver;
+	height: 9%;
+	cursor:hand;
+	color:Black;
+	vertical-align:top;
+}
+
+
+.igmv_PeachAppointment
+{
+	background-color:DarkGray;
+	background-repeat:repeat-x;
+	font-size:xx-small;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	margin-top:1px;
+	margin-right:1px;
+	margin-left:1px;
+	padding-left:1px;
+	line-height: 15px;
+	cursor:hand;
+	text-align:left;
+}
+
+
+.igmv_PeachAllDayEvent
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	font-size:xx-small;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	border:solid 1px #000000;
+	margin-top:1px;
+	margin-right:1px;
+	margin-left:1px;
+	line-height: 15px;
+	cursor:hand;
+	text-align:left;
+}
+
+
+.igmv_PeachNavigationButton
+{
+	background-color:Transparent;
+	border-width:0px;
+	margin:0px;
+	padding:0px;
+	position: absolute;
+	top: 2px;
+	width: 12px;
+	cursor:hand;
+}
+
+
+.igmv_PeachWeekNumber
+{
+	background-color:#FBE7DC;
+	font-size:10pt;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	border-top:solid 1px Silver;
+	padding-right:1px;
+	width: 20px;
+	text-align:center;
+}
+
+
+.igmv_PeachCompressedDay
+{
+	border-left:solid 1px Silver;
+	height: 4%;
+	vertical-align:top;
+}
+
+
+tr.igmv_PeachCaptionHeader td.igmv_PeachWeekNumber
+{
+	background-color:#CECECE;
+	background-position:center ;
+	background-image: url(images/header_hover.gif);
+	border-width:0px;
+	line-height: 19px;
+	height: 1%;
+}
+
+
+.igmv_PeachMonthDayOfWeekHeader
+{
+	background-position:bottom ;
+	background-image: url(images/itembg.gif);
+	font-size:x-small;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	border-top:solid 1px Silver;
+	border-bottom:solid 1px Silver;
+	margin-top:1px;
+	margin-right:1px;
+	margin-left:1px;
+	height: 5%;
+	line-height: 14px;
+	cursor:default;
+	text-align:center;
+}
+
+
+.igmv_PeachOtherMonthDayHeader
+{
+	background-position:center ;
+	background-image: url(images/header.gif);
+	font-size:xx-small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-top:solid 1px Silver;
+	border-left:solid 1px Silver;
+	padding-top:0px;
+	padding-right:2px;
+	height: 3%;
+	text-align:right;
+	vertical-align:top;
+}
+
+
+.igmv_PeachOtherMonthDay
+{
+	background-color:#FBF5F2;
+	border-left:solid 1px Silver;
+	cursor:hand;
+	color:Black;
+	vertical-align:top;
+}
+
+
+.igmv_PeachOtherCompressedDay
+{
+	border-left:solid 1px Silver;
+	height: 4%;
+	vertical-align:top;
+}
+
+
+.igmv_PeachTodayHeader
+{
+	background-position:center ;
+	background-image: url(images/header_hover.gif);
+}
+
+
+.igmv_PeachToday
+{
+	border:solid 1px Black;
+}
+
+
+.igmv_PeachSelectedAppointment
+{
+	background-color:#316AC5;
+	color:White;
+}
+
+
+.igmv_PeachActiveDayHeader
+{
+	padding-top:0px;
+	padding-right:2px;
+	height: 3%;
+}
+
+
+.igmv_PeachActiveDay
+{
+	background-color:White;
+	background-image:none;
+}
+
+
+.igmv_NavigationButtonPrev
+{
+	left: 3px;
+}
+
+
+.igmv_NavigationButtonNext
+{
+	right: 3px;
+}
+
+
+.igmv_PeachControl table
+{
+	border-collapse:Collapse;
+}
+
+

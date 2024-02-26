@@ -1,0 +1,141 @@
+.igdw_OfficeBlueControl
+{
+	background:none;
+	border:0px;
+}
+
+.igdw_OfficeBlueHeaderArea
+{
+	font-weight:bold;
+	color:white;
+	height:29px;
+	cursor:default;
+	border:0px;
+}
+
+.igdw_OfficeBlueBodyContent
+{
+	border:1px solid #9AB3D5;
+	background-color:White;
+	
+	
+}
+
+.igdw_OfficeBlueHeaderButton
+{
+	cursor:pointer;
+	margin:1px;
+}
+
+.igdw_OfficeBlueHeaderCaption
+{
+	margin-left:6px;
+	margin-top:16px;
+	padding-top:10px;
+	color:#15428B;
+}
+
+.igdw_OfficeBlueHeaderButtonArea
+{
+	vertical-align:middle;
+	width:120px;
+}
+
+.igdw_OfficeBlueHeaderImage
+{
+	cursor:default;
+}
+
+.igdw_OfficeBlueModalBackground
+{
+	background:white;
+	filter:alpha(opacity:50);
+	opacity:0.5;
+	z-index:99999;
+}
+
+.igdw_OfficeBlueResizingHandle
+{
+	cursor:se-resize;
+}
+
+/* used only when header visible */
+.igdw_OfficeBlueHeaderCornerLeft
+{
+	font-size:1px;
+	width:9px;
+	background:url(./images/igdw_Topleft.gif) top left;
+}
+/* used only when header visible */
+.igdw_OfficeBlueHeaderContent
+{
+	background:url(./images/igdw_top.gif);
+}
+/* used only when header visible */
+.igdw_OfficeBlueHeaderCornerRight
+{
+	font-size:1px;
+	width:9px;
+	background:url(./images/igdw_TopRight.gif) top right;
+}
+
+/* used only when header hidden */
+.igdw_OfficeBlueBodyCornerTopLeft
+{
+	font-size:1px;
+	height:9px;
+	width:9px;
+	background:url(./images/igdw_TopLeftHidden.gif) top left;
+}
+/* used only when header hidden */
+.igdw_OfficeBlueBodyEdgeTop
+{
+	font-size:1px;
+	height:9px;
+	background:url(./images/igdw_topHidden.gif);
+}
+/* used only when header hidden */
+.igdw_OfficeBlueBodyCornerTopRight
+{
+	font-size:1px;
+	height:9px;
+	width:9px;
+	background:url(./images/igdw_TopRightHidden.gif) top right;
+}
+
+.igdw_OfficeBlueBodyEdgeLeft
+{
+	font-size:1px;
+	width:9px;
+	background:url(./images/igdw_EdgeLeft.gif) top left;
+}
+.igdw_OfficeBlueBodyEdgeRight
+{
+	font-size:1px;
+	width:9px;
+	background:url(./images/igdw_EdgeRight.gif) top right;
+}
+.igdw_OfficeBlueBodyCornerBottomLeft
+{
+	font-size:1px;
+	width:9px;
+	height:9px;
+	background:url(./images/igdw_BottomLeft.gif) bottom left;
+}
+.igdw_OfficeBlueBodyContentArea
+{
+	vertical-align:top;
+}
+.igdw_OfficeBlueBodyCornerBottomRight
+{
+	font-size:1px;
+	width:9px;
+	height:9px;
+	background:url(./images/igdw_BottomRight.gif) bottom right;
+}
+.igdw_OfficeBlueBodyEdgeBottom
+{
+	font-size:1px;
+	height:9px;
+	background:url(./images/igdw_Bottom.gif) bottom;
+}

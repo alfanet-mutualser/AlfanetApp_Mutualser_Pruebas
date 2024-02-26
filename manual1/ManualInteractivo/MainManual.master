@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainManual.master.cs" Inherits="AlfaNetManual_MainManual" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Manual de Usuario</title>
+<script language="javascript" type="text/javascript">
+// <!CDATA[
+
+function IMG1_onclick() {
+
+}
+
+// ]]>
+</script>
+
+    
+
+    <link href="../AlfaNetStyle.css" rel="stylesheet" type="text/css" />
+
+    
+</head>
+<body style="margin-top: 0px; margin-left: 15%; clip: rect(20% auto auto auto); margin-right: 15%; position: static">
+    <form id="form1" runat="server">
+    <div>
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp; &nbsp;
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 98%; height: 100%">
+            <tr>
+                <td colspan="2" style="background-color: snow; width: 100%; height: 17px; vertical-align: top; text-align: center;">
+                    &nbsp; &nbsp; <img src="../../AlfaNetImagen/Manual/ENCABEZADO.jpg" style="text-align: center; vertical-align: super;" /><br />
+                    <br />
+                </td>
+
+            </tr>
+            <tr>
+                <td style="width: 4%; background-image: url(AlfaNetImagen/Manual/BordeMenu.jpg); background-color: white; vertical-align: top; height: 439px; overflow: hidden;">
+                    &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;</td>
+                <td style="background-color: #ffffff; width: 72%; height: 439px;">
+                    <table style="width: 798px">
+                        <tr>
+                            <td style="width: 115px; height: 119px">
+                            </td>
+                            <td style="width: 100px; height: 119px">
+                                <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0"
+                                    style="width: 505px; height: 139px">
+                                    <param name="movie" value="Videos/TituloChevere.swf">
+                                    <param name="quality" value="high">
+                                    <embed height="600" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high"
+                                        src="Alfanet 
+            animacion 3D negro.swf" type="application/x-shockwave-flash" width="800"></embed>
+                                </object>
+                            </td>
+                            <td style="width: 100px; height: 119px">
+                            </td>
+                        </tr>
+                    </table>
+                    <asp:HyperLink ID="HyperLink1" runat="server" ImageUrl="~/AlfaNetImagen/Manual/home.jpg"
+                        NavigateUrl="~/AlfaNetWorkFlow/AlfaNetWF/WorkFlow.aspx"></asp:HyperLink>&nbsp;
+                    <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+                        <br />
+        </asp:contentplaceholder>
+                    &nbsp;
+                    &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+                </td>
+            </tr>
+        </table>
+        &nbsp;
+        </div>
+    </form>
+</body>
+</html>

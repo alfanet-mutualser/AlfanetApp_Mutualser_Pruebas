@@ -1,0 +1,126 @@
+.igwv_Office2007SilverControl
+{
+	border-width:0px;
+	margin-top:2px;
+}
+
+
+.igwv_Office2007SilverCaptionHeader
+{
+	background-color:#DDE1E8;
+	background-repeat:repeat-x;
+	background-image: url(images/caption_bg.jpg);
+	font-size:medium;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top:solid 1px #D2D2D2;
+	border-right:solid 1px #D2D2D2;
+	border-bottom:solid 0px #D2D2D2;
+	border-left:solid 1px #D2D2D2;
+	padding-top:3px;
+	padding-bottom:2px;
+	line-height: 16px;
+	height: 35px;
+	color:Black;
+	text-align:center;
+}
+
+
+.igwv_Office2007SilverDayHeader
+{
+	background-image: url(images/day_header.jpg);
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0px 2px 0px 0px;
+	height: 18px;
+	cursor:default;
+	text-align:right;
+}
+
+
+.igwv_Office2007SilverDay
+{
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
+	cursor:hand;
+}
+
+
+.igwv_Office2007SilverAppointment
+{
+	margin:0px 1px 0px 1px;
+	padding:2px;
+	line-height: 150%;
+	white-space: nowrap;
+	cursor:pointer;
+}
+
+
+.igwv_Office2007SilverAllDayEvent
+{
+	background-color:#FAFAFA;
+	border:solid 1px Silver;
+}
+
+
+.igwv_Office2007SilverNavigationButton
+{
+	background-color:Transparent;
+	border-width:0px;
+	margin-right:5px;
+	margin-left:5px;
+	width: 22px;
+	cursor:hand;
+	vertical-align:middle;
+}
+
+
+.igwv_Office2007SilverDayArea
+{
+	border:solid 1px #D2D2D2;
+}
+
+
+.igwv_Office2007SilverTodayHeader
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-position:top ;
+	background-image: url(images/active_day_header.jpg);
+	color:Black;
+}
+
+
+.igwv_Office2007SilverToday
+{
+}
+
+
+.igwv_Office2007SilverSelectedAppointment
+{
+	background-color:#DAEAFF;
+	margin-top:1px;
+	margin-right:1px;
+	margin-left:1px;
+	padding:1px;
+	cursor:pointer;
+	color:Black;
+}
+
+
+.igwv_Office2007SilverActiveDayHeader
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-image: url(images/day_header_active.jpg);
+	color:Black;
+}
+
+
+.igwv_Office2007SilverActiveDay
+{
+	background-color:WhiteSmoke;
+	background-repeat:repeat-x;
+}
+
+

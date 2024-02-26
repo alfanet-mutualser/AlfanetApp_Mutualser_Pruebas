@@ -1,0 +1,288 @@
+﻿.igg_Control
+{
+	
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;	
+	background-repeat:repeat-x;	
+	border-left:1px solid #C5C7CB;
+	border-right:1px solid #C5C7CB;
+	border-bottom:1px solid #C5C7CB;  
+	
+	
+}
+
+TBODY.igg_Item TR TD
+{
+	
+	border-top:solid 1px #EBEBEB; 
+	background-color:#F7F7F7;
+	text-align:left;
+	padding-top:8px;
+	padding-bottom:8px;
+	vertical-align:text-top;
+		padding-left:5px;
+}
+
+TBODY TR.igg_Alt TD
+{
+	background-color:White;
+	padding-top:8px;
+	padding-bottom:8px;
+	text-align:left;
+	vertical-align:text-top;
+}
+
+.igg_Header
+{
+	background-color:#D2D2D2;
+	height:40px;
+	text-align:left;
+	background-image:url(images/igg_header.gif);
+	padding-left:5px;
+	
+
+}
+
+.igg_Footer
+{
+	background-color:#E4F0FA;
+    background-image:url(images/igg_footer.gif);
+	height:30px;
+}
+
+TBODY TR TD.igg_SelectedCell
+{
+	background-color:white;
+	background-image:url(images/igg_Selected.gif);
+	color:white;
+	
+}
+
+TBODY TR TD.igg_Hover
+{
+	background-color:Navy;
+}
+
+.igg_PageLink
+{
+	text-decoration:underline;
+	color:blue;
+	cursor:hand;
+}
+/* Scrollbar */
+
+.igg_HorizontalControl 
+{
+	height:18px;
+}
+
+.igg_LeftScrollButton
+{
+	background-image:url(./images/h_prev_up.gif);
+	background-repeat:no-repeat;
+	height:18px;
+	width:18px;
+}
+
+.igg_LeftScrollHover
+{
+	background-image:url(./images/h_prev_hover.gif);
+	background-repeat:no-repeat;
+	height:18px;
+	width:18px;
+}
+
+.igg_LeftScrollPressed
+{
+	background-image:url(./images/h_prev_down.gif);
+	background-repeat:no-repeat;
+	height:18px;
+	width:18px;
+}
+
+.igg_HorizontalTrack
+{
+	background-image:url(./images/h_bg.png);
+	background-repeat:repeat-x;
+}
+
+.igg_HorizontalTrackBar
+{
+	background-image:url(./images/h_track_bar_up.gif);
+	background-repeat:no-repeat;
+	background-position:center;
+	border-style:outset;
+	border-width:1px;
+	border-color:Gray;
+	height:16px;
+}
+
+.igg_HorizontalTrackBarHover
+{
+	background-image:url(./images/h_track_bar_hover.gif);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.igg_HorizontalTrackBarPressed
+{
+	background-image:url(./images/h_track_bar_down.gif);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.igg_RightScrollButton
+{
+	background-image:url(./images/h_next_up.gif);
+	background-repeat:no-repeat;
+	height:18px;
+	width:18px;
+}
+
+.igg_RightScrollHover
+{
+	background-image:url(./images/h_next_hover.gif);
+	background-repeat:no-repeat;
+	height:18px;
+	width:18px;
+}
+
+.igg_RightScrollPressed
+{
+	background-image:url(./images/h_next_down.gif);
+	background-repeat:no-repeat;
+	height:18px;
+	width:18px;
+}
+
+.igg_VerticalControl 
+{
+	width:18px;
+}
+
+.igg_UpScrollButton
+{
+	background-image:url(./images/v_prev_up.gif);
+	background-repeat:no-repeat;
+	height:18px;
+	width:18px;
+}
+
+.igg_UpScrollHover
+{
+	background-image:url(./images/v_prev_hover.gif);
+	background-repeat:no-repeat;
+	height:18px;
+	width:18px;
+}
+
+.igg_UpScrollPressed
+{
+	background-image:url(./images/v_prev_down.gif);
+	background-repeat:no-repeat;
+	height:18px;
+	width:18px;
+}
+
+.igg_VerticalTrack
+{
+	background-image:url(./images/v_bg.png);
+	background-repeat:repeat-y;
+}
+
+.igg_VerticalTrackBar
+{
+	background-image:url(./images/v_track_bar_up.gif);
+	background-repeat:no-repeat;
+	border-style:outset;
+	border-width:1px;
+	border-color:Gray;
+	width:16px;
+	background-position:center;
+}
+
+.igg_VerticalTrackBarHover
+{
+	background-image:url(./images/v_track_bar_hover.gif);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.igg_VerticalTrackBarPressed
+{
+	background-image:url(./images/v_track_bar_down.gif);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+
+.igg_DownScrollButton
+{
+	background-image:url(./images/v_next_up.gif);
+	background-repeat:no-repeat;
+	height:18px;
+	width:18px;
+}
+
+.igg_DownScrollHover
+{
+	background-image:url(./images/v_next_hover.gif);
+	background-repeat:no-repeat;
+	height:18px;
+	width:18px;
+}
+
+.igg_DownScrollPressed
+{
+	background-image:url(./images/v_next_down.gif);
+	background-repeat:no-repeat;
+	height:18px;
+	width:18px;
+}
+
+.igg_HeaderFiller
+{
+	background-image:url(./images/igg_HeaderFiller.gif);
+	background-position:right;
+	background-position:top;
+
+}
+.igg_FooterFiller
+{
+	background-image:url(./images/igg_footerfiller.gif);
+	background-position:right;
+	background-position:top;
+
+}
+
+.igg_HorizontalScrollbarFiller
+{
+	background-color:#D2D2D2;
+
+}
+
+.igg_Pager {
+
+	
+	background-image:url(./images/igg_bottom.gif);
+	background-position:bottom;
+	text-align:right;
+	height:30px;
+	padding-top:15px;
+	padding-right:40px;
+
+}
+
+.igg_PageCurrent
+{
+	color: #666666;
+	font-weight:bold;
+	padding:5px;
+	
+	}
+
+.igg_PageLink {
+	padding:5px;
+	font-weight:bold;
+	color:white;
+	
+	}

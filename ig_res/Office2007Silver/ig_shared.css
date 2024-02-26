@@ -1,0 +1,106 @@
+.ig_Office2007SilverControl
+{
+	background-color:White;
+	font-size:xx-small;
+	font-family: verdana;
+	border:solid 1px #ACACAC;
+	cursor:default;
+	color:Black;
+}
+
+
+.ig_Office2007SilverItem
+{
+	background-color:White;
+	font-size:10px;
+	font-family: verdana;
+	padding-left:1px;
+}
+
+
+.ig_Office2007SilverButton
+{
+	cursor:hand;
+}
+
+
+.ig_Office2007SilverButtonHover
+{
+}
+
+
+.ig_Office2007SilverButtonPressed
+{
+}
+
+
+.ig_Office2007SilverButtonDisabled
+{
+}
+
+
+.ig_Office2007SilverHover
+{
+}
+
+
+.ig_Office2007SilverSelected
+{
+}
+
+
+.ig_Office2007SilverDisabled
+{
+}
+
+
+.ig_Office2007SilverHeader
+{
+}
+
+
+.ig_Office2007SilverFooter
+{
+}
+
+
+.ig_Office2007SilverEditWithButtons
+{
+}
+
+
+.ig_Office2007SilverEdit
+{
+}
+
+
+.ig_Office2007SilverEditInContainer
+{
+}
+
+
+.ig_Office2007SilverAlt
+{
+	border-top:solid 1px #E3EFFF;
+	border-right:solid 0px #FFFFFF;
+	border-bottom:solid 1px #E3EFFF;
+	border-left:solid 0px #FFFFFF;
+}
+
+
+.ig_Office2007SilverDropDown
+{
+}
+
+
+.ig_Office2007SilverEditSelected
+{
+}
+
+
+Body
+{
+	cursor:default;
+}
+
+

@@ -1,0 +1,54 @@
+.igtxt_ClaymationEditWithButtons
+{
+	font-family: Verdana;
+	border:solid 1px #C0C0C0;
+}
+
+
+.igtxt_ClaymationEdit
+{
+	background-color:#F0F0F0;
+	font-family: Verdana;
+	border:solid 1px Gainsboro;
+}
+
+
+.igtxt_ClaymationEditInContainer
+{
+	background-color:#F0F0F0;
+	border-width:0px;
+	margin:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+
+.igtxt_ClaymationButton
+{
+	background-color:#A5A5A5;
+	font-size:1px;
+	border:solid 1px Gainsboro;
+}
+
+
+.igtxt_ClaymationButtonHover
+{
+	background-color:#C3C3C3;
+	border:solid 1px Gainsboro;
+}
+
+
+.igtxt_ClaymationButtonPressed
+{
+	background-color:#BBBCBE;
+	border:solid 0px White;
+}
+
+
+.igtxt_ClaymationButtonDisabled
+{
+	background-color:#F0F0F0;
+	border:solid 1px White;
+}
+
+

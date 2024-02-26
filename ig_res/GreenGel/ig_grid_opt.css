@@ -1,0 +1,203 @@
+.igtbl_GreenGelControl
+{
+	background-color:White;
+	border:solid 1px #135E04;
+}
+
+
+.igtbl_GreenGelPagerArea
+{
+	background-color:#F3FFEF;
+	border-width:0px;
+	padding-top:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+}
+
+
+.igtbl_GreenGelPageCurrent
+{
+	margin-right:10px;
+}
+
+
+.igtbl_GreenGelPageLink
+{
+	margin-right:10px;
+	color:#135E04;
+}
+
+
+.igtbl_GreenGelGroupByBox
+{
+	background-position:bottom bottom ;
+	background-image: url(images/addnew.gif);
+	font-size:xx-small;
+	height: 30px;
+	color:#135E04;
+}
+
+
+.igtbl_GreenGelAddNewBox
+{
+	background-position:bottom ;
+	background-image: url(images/addnew.gif);
+}
+
+
+TBODY.igtbl_GreenGelItem TR TD, THEAD.igtbl_GreenGelItem TR TH, TFOOT.igtbl_GreenGelItem TR TH, TBODY.igtbl_GreenGelItem TR TH
+{
+	background-position:bottom ;
+	background-image: url(images/tab_bottom_hover_f.gif);
+	border-top:solid 1px Gainsboro;
+	border-bottom:solid 1px Transparent;
+	height: 30px;
+}
+
+
+.igtbl_GreenGelFilterOperandButton
+{
+	background-color:Transparent;
+	background-repeat:no-repeat;
+	background-position:center ;
+	background-image: url(images/submit_up.gif);
+	border-width:0px;
+	padding-top:2px;
+	width: 18px;
+}
+
+
+TBODY.igtbl_GreenGelItem TR.igtbl_GreenGelAlt TD
+{
+	background-color:White;
+	background-position:top ;
+	background-image:none;
+	border-top:solid 1px LightGrey;
+}
+
+
+.igtbl_GreenGelEdit
+{
+	background-color:White;
+	font-size:x-small;
+	font-family: Verdana;
+	border:solid 1px Transparent;
+	padding-top:7px;
+	text-align:left;
+	vertical-align:middle;
+}
+
+
+.igtbl_GreenGelButton
+{
+}
+
+
+TBODY.igtbl_GreenGelItem TR TD.igtbl_GreenGelFxdCell
+{
+}
+
+
+THEAD.igtbl_GreenGelHeader TR TH, TFOOT.igtbl_GreenGelHeader TR TH, TBODY.igtbl_GreenGelHeader TR TH
+{
+	background-position:center ;
+	background-image: url(images/header.gif);
+	border-width:0px;
+	border-top:solid 1px #E1E1E1;
+	padding-top:3px;
+	padding-bottom:3px;
+	height: 30px;
+	color:#135E04;
+	text-align:left;
+}
+
+
+TFOOT.igtbl_GreenGelFooter TR TH
+{
+	background-color:White;
+	background-image:none;
+	height: 20px;
+}
+
+
+TBODY.igtbl_GreenGelHeader TR TH.igtbl_GreenGelLabel
+{
+	background-color:WhiteSmoke;
+	background-image:none;
+	border-top-width:1px;
+	border-top-color:#E1E1E1;
+	border-right-width:1px;
+	border-right-color:#F0F0F0;
+	height: 25px;
+}
+
+
+TBODY.igtbl_GreenGelHeader TR TH.igtbl_GreenGelExpArea, TFOOT.igtbl_GreenGelHeader TR TH.igtbl_GreenGelExpArea
+{
+	background-color:White;
+	background-image:none;
+	border-top:solid 1px #D0E0B1;
+	text-align:center;
+}
+
+
+TBODY.igtbl_GreenGelHeader TR TH.igtbl_GreenGelGrpItem
+{
+}
+
+
+THEAD.igtbl_GreenGelHeader TR TH.igtbl_GreenGelFxdHeader
+{
+}
+
+
+.igtbl_GreenGelGroupBandLabel
+{
+}
+
+
+TFOOT.igtbl_GreenGelHeader TR TH.igtbl_GreenGelFxdFooter
+{
+}
+
+
+.igtbl_GreenGelDropDown
+{
+	background-color:WhiteSmoke;
+	font-size:xx-small;
+	font-family: Verdana;
+	border:solid 1px LightGrey;
+}
+
+
+.igtbl_GreenGelDropDownSel
+{
+}
+
+
+TBODY.igtbl_GreenGelItem TR.igtbl_GreenGelSelected TD, TBODY.igtbl_GreenGelItem TR TD.igtbl_GreenGelSelected, .igtbl_GreenGelSelected
+{
+	background-color:#E1E1E1;
+	background-image: url(images/header_large.gif);
+}
+
+
+TBODY.igtbl_GreenGelItem TR TD.igtbl_GreenGelActiveBorder_TB, .igtbl_GreenGelActiveBorder_TB
+{
+	border-top:solid 1px DarkOliveGreen;
+	border-bottom:solid 1px DarkOliveGreen;
+}
+
+
+TBODY.igtbl_GreenGelItem TR TD.igtbl_GreenGelActiveBorder_L, .igtbl_GreenGelActiveBorder_L
+{
+	border-left:solid 1px DarkOliveGreen;
+}
+
+
+TBODY.igtbl_GreenGelItem TR TD.igtbl_GreenGelActiveBorder_R, .igtbl_GreenGelActiveBorder_R
+{
+	border-right:solid 1px DarkOliveGreen;
+}
+
+

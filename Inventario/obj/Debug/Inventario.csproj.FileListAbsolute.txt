@@ -1,0 +1,5 @@
+C:\Users\DESARROLLO\Desktop\aplicaciones pruebas\Desarrollos\Inventario\Inventario\Inventario\bin\Inventario.dll
+C:\Users\DESARROLLO\Desktop\aplicaciones pruebas\Desarrollos\Inventario\Inventario\Inventario\bin\Inventario.pdb
+C:\Users\DESARROLLO\Desktop\aplicaciones pruebas\Desarrollos\Inventario\Inventario\Inventario\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\DESARROLLO\Desktop\aplicaciones pruebas\Desarrollos\Inventario\Inventario\Inventario\obj\Debug\Inventario.dll
+C:\Users\DESARROLLO\Desktop\aplicaciones pruebas\Desarrollos\Inventario\Inventario\Inventario\obj\Debug\Inventario.pdb

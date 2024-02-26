@@ -1,0 +1,71 @@
+Imports DotNetNuke
+Imports DotNetNuke.Services.Search
+Imports System.Collections.Generic
+
+Namespace Cooproconas.Search
+
+    Public Class SearchEngine
+
+        Public Shared Sub AddABusquedas(ByVal ModuleTitle As String, ByVal Descripcion As String, ByVal UsuarioPub As Integer, _
+        ByVal FechaPub As Date, ByVal ModuleID As Integer, ByVal ClaveID As String, ByVal Contenido As String, ByVal GuidID As String)
+
+            Dim SearchItemId As Integer
+            Dim NewItem As SearchItemInfo
+            Dim OldItem As SearchItemInfo
+            Dim Descrip As String = Descripcion
+
+            If Descripcion.Trim = "" Then
+                Descrip = ModuleTitle
+            End If
+
+            NewItem = New SearchItemInfo(ModuleTitle, Descrip, UsuarioPub, FechaPub, _
+                                             ModuleID, ClaveID, Contenido, GuidID)
+
+            OldItem = SearchDataStoreController.GetSearchItem(ModuleID, ClaveID)
+            If Not OldItem Is Nothing Then
+                SearchItemId = OldItem.SearchItemId
+                SearchDataStoreController.DeleteSearchItemWords(SearchItemId)
+                NewItem.SearchItemId = SearchItemId
+                SearchDataStoreController.UpdateSearchItem(NewItem)
+            Else
+                SearchItemId = SearchDataStoreController.AddSearchItem(NewItem)
+            End If
+
+            Dim DBWords As List(Of SearchWordInfo) = CBO.FillCollection(Of SearchWordInfo)(Data.DataProvider.Instance.GetSearchWords())
+
+            Dim separator As String() = {" ", ",", ";", "-", ".", "!", ":"}
+            ModuleTitle = ModuleTitle + " " + Descripcion
+            Dim ContentWords() As String = ModuleTitle.Split(separator, StringSplitOptions.RemoveEmptyEntries)
+            Array.Sort(ContentWords)
+
+            Dim word As String
+            For Each word In ContentWords
+                Dim SearchWordId As Integer = -1
+                Dim i As Integer = 0
+                While i < DBWords.Count And SearchWordId < 0
+                    If DBWords(i).Word = word Then
+                        SearchWordId = DBWords(i).SearchWordsID
+                    End If
+                    i += 1
+                End While
+                If SearchWordId < 0 Then
+                    SearchWordId = Data.DataProvider.Instance.AddSearchWord(word)
+                End If
+                Dim SearchItemWordId As Integer = Data.DataProvider.Instance.AddSearchItemWord(SearchItemId, SearchWordId, 1)
+                Dim ContentPositions As Integer = 0
+                Dim tmpWord As String
+                For Each tmpWord In ContentWords
+                    If tmpWord = word Then
+                        ContentPositions += 1
+                    End If
+                Next
+                Data.DataProvider.Instance.AddSearchItemWordPosition(SearchItemWordId, ContentPositions.ToString)
+            Next
+
+        End Sub
+
+    End Class
+
+End Namespace
+
+

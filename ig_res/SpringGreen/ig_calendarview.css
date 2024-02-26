@@ -1,0 +1,102 @@
+.igcv_SpringGreenControl
+{
+	border:solid 1px #4C7B04;
+}
+
+
+.igcv_SpringGreenCaptionHeader
+{
+	background-color:#4C7B04;
+	font-weight:bold;
+	font-size:8pt;
+	padding:3px;
+	width: 100%;
+	white-space: nowrap;
+	color:White;
+	text-align:center;
+}
+
+
+.igcv_SpringGreenDayHeader
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	font-size:10px;
+	border-bottom:solid 1px #4F7600;
+	height: 16px;
+	color:Black;
+}
+
+
+.igcv_SpringGreenDay
+{
+	background-color:White;
+	font-size:11px;
+	border-width:0px;
+	cursor:hand;
+	text-align:center;
+}
+
+
+.igcv_SpringGreenFooter
+{
+	background-color:#EEEEEE;
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	font-size:8pt;
+	padding:3px;
+	white-space: nowrap;
+	cursor:pointer;
+	text-align:center;
+}
+
+
+.igcv_SpringGreenDropDown
+{
+	font-size:8pt;
+}
+
+
+.igcv_SpringGreenOtherMonthDay
+{
+	background-color:White;
+	color:#B3B3B3;
+}
+
+
+.igcv_SpringGreenWeekendDay
+{
+	background-color:#FAFAFA;
+}
+
+
+.igcv_SpringGreenNavigationButton
+{
+	background-color:#4C7B04;
+	background-image: url(images/bg_lines.png);
+	padding-right:3px;
+	padding-left:3px;
+	cursor:pointer;
+}
+
+
+.igcv_SpringGreenTodayDay
+{
+	border:solid 1px #6D7B05;
+}
+
+
+.igcv_SpringGreenActivityDay
+{
+	font-weight:bold;
+}
+
+
+.igcv_SpringGreenActiveDay
+{
+	background-color:#4C7B04;
+	background-image:none;
+	color:White;
+}
+
+

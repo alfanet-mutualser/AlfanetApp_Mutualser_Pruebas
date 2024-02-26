@@ -1,0 +1,54 @@
+.igtb_GreenGelControl
+{
+	background-color:#F0F0F0;
+	background-position:bottom ;
+	background-image: url(images/addnew.gif);
+	border:solid 1px WhiteSmoke;
+}
+
+
+.igtb_GreenGelItem
+{
+	background-color:Transparent;
+}
+
+
+.igtb_GreenGelButton
+{
+	background-color:Transparent;
+	border:solid 1px Transparent;
+	padding-left:4px;
+}
+
+
+.igtb_GreenGelButtonHover
+{
+	background-position:center ;
+	background-image: url(images/header_hover.gif);
+	border:solid 1px #E1E1E1;
+	color:#135E04;
+}
+
+
+.igtb_GreenGelButtonPressed
+{
+}
+
+
+.igtb_GreenGelLabel
+{
+}
+
+
+.igtb_GreenGelTextBox
+{
+	background-color:White;
+}
+
+
+.igtb_GreenGelSeparator
+{
+	background-color:Transparent;
+}
+
+

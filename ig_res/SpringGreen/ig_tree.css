@@ -1,0 +1,64 @@
+.igtr_SpringGreenControl
+{
+	border-width:0px;
+	color:Black;
+}
+
+
+.igtr_SpringGreenIsland
+{
+}
+
+
+.igtr_SpringGreenNode
+{
+	color:DimGray;
+}
+
+
+.igtr_SpringGreenParent
+{
+}
+
+
+.igtr_SpringGreenLeaf
+{
+	margin-top:0px;
+	margin-bottom:0px;
+	color:DimGray;
+}
+
+
+.igtr_SpringGreenEdit
+{
+}
+
+
+.igtr_SpringGreenRoot
+{
+	font-weight:bold;
+	color:#4C7B04;
+}
+
+
+.igtr_SpringGreenHover
+{
+	cursor:hand;
+	color:#4C7B04;
+	text-decoration:underline;
+}
+
+
+.igtr_SpringGreenSelected
+{
+	font-weight:bold;
+	color:#4C7B04;
+}
+
+
+.igtr_SpringGreenDisabled
+{
+	color:#E1E1E1;
+}
+
+

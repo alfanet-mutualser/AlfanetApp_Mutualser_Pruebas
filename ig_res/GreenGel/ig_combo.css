@@ -1,0 +1,108 @@
+.igcmb_GreenGelControl
+{
+	border:solid 1px #135E04;
+}
+
+
+.igcmb_GreenGelEditWithButtons
+{
+	border:solid 1px #9ACD32;
+	cursor:hand;
+}
+
+
+.igcmb_GreenGelPagerArea
+{
+}
+
+
+.igcmb_GreenGelPageCurrent
+{
+}
+
+
+.igcmb_GreenGelPageLink
+{
+}
+
+
+.igcmb_GreenGelItem
+{
+	background-position:bottom ;
+	background-image: url(images/tab_bottom_hover_f.gif);
+	border-width:0px;
+	border-top:solid 1px LightGrey;
+}
+
+
+.igcmb_GreenGelAlt
+{
+	background-color:White;
+	background-position:top ;
+	background-image:none;
+	border-top:solid 1px LightGrey;
+}
+
+
+.igcmb_GreenGelHeader
+{
+	background-position:center ;
+	background-image: url(images/header.gif);
+	border-width:0px;
+	padding-top:3px;
+	padding-bottom:3px;
+	color:#135E04;
+	text-align:left;
+}
+
+
+.igcmb_GreenGelFooter
+{
+}
+
+
+.igcmb_GreenGelLabel
+{
+	background-color:WhiteSmoke;
+	background-image:none;
+	border-top-width:1px;
+	border-top-color:#E1E1E1;
+	border-right-width:1px;
+	border-right-color:#F0F0F0;
+}
+
+
+.igcmb_GreenGelSelected
+{
+	background-color:#E1E1E1;
+	background-image: url(images/header_large.gif);
+}
+
+
+.igcmb_GreenGelEditSelected
+{
+	background-color:White;
+	font-size:x-small;
+	font-family: Verdana;
+	border:solid 1px Transparent;
+	padding-top:7px;
+	text-align:left;
+	vertical-align:middle;
+}
+
+
+.igcmb_GreenGelActiveBorderTopBottom
+{
+}
+
+
+.igcmb_GreenGelActiveBorderLeft
+{
+}
+
+
+.igcmb_GreenGelActiveBorderRight
+{
+}
+
+

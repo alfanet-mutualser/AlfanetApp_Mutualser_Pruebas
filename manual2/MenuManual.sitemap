@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode title="Home" description="Home" url="Default.aspx">
+	 <siteMapNode title="Manual AlfaNet" >
+		<siteMapNode title="Presentacion" url="~/AlfaNetManual/Presentacion.aspx">
+		</siteMapNode>
+		
+		<siteMapNode title="Modo de Uso Manual" url="~/AlfaNetManual/UsoManual.aspx">
+		</siteMapNode>
+		
+		<siteMapNode title="Presentacion General Modulos" url="~/AlfaNetManual/GeneralModulos.aspx">
+		</siteMapNode>
+
+		<siteMapNode title="Modulos">
+
+			<siteMapNode title="Inicio" >
+				<siteMapNode title="Acceso a AlfaNet" url="~/AlfaNetManual/AccesoAlfaNet.aspx" />
+				<siteMapNode title="Modulo de Inicio" url="~/AlfaNetManual/ModuloInicio.aspx" />
+				<siteMapNode title="Inicio de Sesión" url="~/AlfaNetManual/InicioSesion.aspx" />
+			</siteMapNode>
+
+			<siteMapNode title="Documentos Recibidos" >
+				<siteMapNode title="Documentos Recibidos" url="~/AlfaNetManual/DocumentoRecibido.aspx" />
+				<siteMapNode title="Impresión del Sticker" url="~/AlfaNetManual/ImprimirSticker.aspx" />
+				<siteMapNode title="Registro de Radicación" url="~/AlfaNetManual/RegistroRadicados.aspx" />
+				<siteMapNode title="Tablas de Mantenimiento" url="~/AlfaNetManual/TablasMantenimiento.aspx" />
+			</siteMapNode>
+			<siteMapNode title="Documentos Enviados" >
+				<siteMapNode title="Documentos Enviados" url="~/AlfaNetManual/DocumentoEnviado.aspx" />
+				<siteMapNode title="Interfaz de Registro" url="~/AlfaNetManual/InterfazEnviados.aspx"/>
+				<siteMapNode title="Registro de Documentos" url="~/AlfaNetManual/RegistroEnviados.aspx"/>
+			</siteMapNode>
+			<siteMapNode title="WorkFlow">
+			<siteMapNode title="WorkFlow" url="~/AlfaNetManual/WorkFlow.aspx" />
+			</siteMapNode>
+			<siteMapNode title="Administracion" >
+			<siteMapNode title="Administracion" url="~/AlfaNetManual/Administracion.aspx" />
+			</siteMapNode>
+			<siteMapNode title="Consultas" >
+				<siteMapNode title="Documentos Recibidos" >
+				<siteMapNode title="Documentos Recibidos" url="~/AlfaNetManual/ConsultaRecibido.aspx" />
+				<siteMapNode title="Opciones de Consulta" url="~/AlfaNetManual/OpcionesConsultaRecibido.aspx"/>
+				</siteMapNode>
+				<siteMapNode title="Documentos Enviados" >
+				<siteMapNode title="Documentos Enviados" url="~/AlfaNetManual/ConsultaEnviado.aspx"/>
+				<siteMapNode title="Plantilla Documentos Enviados" url="~/AlfaNetManual/PlantillaEnviados.aspx"/>
+				</siteMapNode>
+				<siteMapNode title="Gestion de Tareas" url="~/AlfaNetManual/GestionTareas.aspx"/>
+				</siteMapNode>
+			<siteMapNode title="Reportes">
+				<siteMapNode title="Reportes" url="~/AlfaNetManual/Reportes.aspx" />
+			</siteMapNode>
+			<siteMapNode title="Prestamos" >
+				<siteMapNode title="Prestamos" url="~/AlfaNetManual/Prestamos.aspx" />
+			</siteMapNode>
+			</siteMapNode>
+
+		</siteMapNode>
+    </siteMapNode>
+</siteMap>

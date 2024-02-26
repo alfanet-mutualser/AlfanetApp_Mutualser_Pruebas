@@ -1,0 +1,400 @@
+.igtab_GreenGelControl
+{
+	background-color:#F4FAEC;
+	background-position:bottom ;
+	background-image: url(images/addnew.gif);
+	border:solid 1px #80BC1B;
+}
+
+
+.igtab_GreenGelControl_Outer
+{
+	border-left-width:0px;
+	border-left-style:solid;
+}
+
+
+.igtab_GreenGelDefaultTab_Top
+{
+	background-color:White;
+	font-size:9pt;
+	font-family: Tahoma;
+	border:solid 1px #135E04;
+	padding:2px;
+	text-align:center;
+}
+
+
+.igtab_GreenGelDefaultTab_Top_Rounded
+{
+	background-color:Transparent !important;
+	background-image: url(images/tab_top_normal.gif);
+	font-size:10pt;
+	font-family: Tahoma;
+	border-style:solid;
+	border-width:0px;
+	border-bottom-width:1px;
+	border-bottom-color:#80BC1B;
+	padding:2px 8px 1px 10px;
+	height: 100%;
+	cursor:pointer;
+	color:#135E04;
+	text-align:center;
+}
+
+
+.igtab_GreenGelDefaultTab_Top_Edge
+{
+	background-position:right top ;
+	font-size:2px;
+	padding:0px;
+}
+
+
+.igtab_GreenGelButton
+{
+}
+
+
+.igtab_GreenGelDefaultTab_Bottom
+{
+	background-color:White;
+	font-size:9pt;
+	font-family: Tahoma;
+	border:solid 1px #135E04;
+	padding:2px;
+}
+
+
+.igtab_GreenGelDefaultTab_Bottom_Rounded
+{
+	background-color:Transparent !important;
+	background-repeat:no-repeat;
+	background-position:left bottom ;
+	background-image: url(images/tab_bottom_normal.gif);
+	font-size:9pt;
+	font-family: Tahoma;
+	border:solid 1px #535353;
+	border-right-width:0px;
+	border-bottom-width:0px;
+	border-left-width:0px;
+	padding:3px 5px 5px 8px;
+	height: 100%;
+	cursor:pointer;
+	color:#135E04;
+}
+
+
+.igtab_GreenGelDefaultTab_Bottom_Edge
+{
+	background-position:right bottom ;
+	font-size:2px;
+	padding:0px;
+}
+
+
+.igtab_GreenGelDefaultTab_Left
+{
+	background-color:White;
+	font-size:9pt;
+	font-family: Tahoma;
+	border:solid 1px #135E04;
+	padding:2px;
+}
+
+
+.igtab_GreenGelDefaultTab_Left_Rounded
+{
+	background-color:Transparent !important;
+	background-repeat:no-repeat;
+	background-position:left top ;
+	background-image: url(images/tab_left_normal.gif);
+	font-size:9pt;
+	font-family: Tahoma;
+	border:solid 1px #535353;
+	border-top-width:0px;
+	border-bottom-width:0px;
+	border-left-width:0px;
+	margin-top:0px;
+	margin-right:5px;
+	margin-bottom:0px;
+	padding:5px 0px 0px 4px;
+	cursor:pointer;
+	color:#135E04;
+}
+
+
+.igtab_GreenGelDefaultTab_Left_Edge
+{
+	background-position:left bottom ;
+	font-size:2px;
+	padding:3px;
+}
+
+
+.igtab_GreenGelDefaultTab_Right
+{
+	background-color:Transparent;
+	font-size:9pt;
+	font-family: Tahoma;
+	border:solid 1px #135E04;
+	padding:2px;
+}
+
+
+.igtab_GreenGelDefaultTab_Right_Rounded
+{
+	background-color:Transparent !important;
+	background-repeat:no-repeat;
+	background-position:right top ;
+	background-image: url(images/tab_right_normal.gif);
+	font-size:9pt;
+	font-family: Tahoma;
+	border:solid 1px #535353;
+	border-top-width:0px;
+	border-right-width:0px;
+	border-bottom-width:0px;
+	padding:5px 4px 0px 0px;
+	cursor:pointer;
+	color:#135E04;
+}
+
+
+.igtab_GreenGelDefaultTab_Right_Edge
+{
+	background-position:right bottom ;
+	font-size:2px;
+	padding:0px;
+}
+
+
+.igtab_GreenGelButtonHover
+{
+}
+
+
+.igtab_GreenGelButtonPressed
+{
+}
+
+
+.igtab_GreenGelButtonDisabled
+{
+}
+
+
+.igtab_GreenGelHoverTab_Top
+{
+	background-color:#F0F0FF;
+	background-image: url(images/tab_top_hover_f.gif);
+}
+
+
+.igtab_GreenGelSeparator_Top
+{
+	border-bottom:solid 1px #80BC1B;
+	border-top-width:0px;
+	border-right-width:0px;
+	border-left-width:0px;
+}
+
+
+.igtab_GreenGelHoverTab_Top_Rounded
+{
+	background-image: url(images/tab_top.gif);
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	color:#135E04;
+}
+
+
+.igtab_GreenGelHoverTab_Bottom
+{
+	background-color:White;
+	background-position:bottom ;
+	background-image: url(images/tab_bottom_hover_f.gif);
+}
+
+
+.igtab_GreenGelSeparator_Bottom
+{
+	border-top:solid 1px #535353;
+	border-right-width:0px;
+	border-bottom-width:0px;
+	border-left-width:0px;
+}
+
+
+.igtab_GreenGelHoverTab_Bottom_Rounded
+{
+	background-image: url(images/tab_bottom.gif);
+	color:#135E04;
+}
+
+
+.igtab_GreenGelHoverTab_Left
+{
+	background-color:#F0F0FF;
+	background-image: url(images/tab_left_hover_f.gif);
+}
+
+
+.igtab_GreenGelSeparator_Left
+{
+	border-right:solid 1px #535353;
+	border-top-width:0px;
+	border-bottom-width:0px;
+	border-left-width:0px;
+}
+
+
+.igtab_GreenGelHoverTab_Left_Rounded
+{
+	background-image: url(images/tab_left.gif);
+	color:#135E04;
+}
+
+
+.igtab_GreenGelHoverTab_Right
+{
+	background-color:White;
+	background-position:right ;
+	background-image: url(images/tab_right_hover_f.gif);
+}
+
+
+.igtab_GreenGelSeparator_Right
+{
+	border-left:solid 1px #535353;
+	border-top-width:0px;
+	border-right-width:0px;
+	border-bottom-width:0px;
+}
+
+
+.igtab_GreenGelHoverTab_Right_Rounded
+{
+	background-image: url(images/tab_right.gif);
+	color:#135E04;
+}
+
+
+.igtab_GreenGelSelectedTab_Top
+{
+	background-color:#80BC1B;
+	background-image: url(images/tab_top_f.gif);
+	border-bottom-color:#535353;
+	color:Black;
+}
+
+
+.igtab_GreenGelSelectedTab_Top_Rounded
+{
+	background-image: url(images/tab_top.gif);
+	border-width:0px;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	cursor:default;
+	color:#135E04;
+}
+
+
+.igtab_GreenGelSelectedTab_Bottom
+{
+	background-color:#80BC1B;
+	background-position:bottom ;
+	background-image: url(images/tab_bottom_f.gif);
+	color:Black;
+}
+
+
+.igtab_GreenGelSelectedTab_Bottom_Rounded
+{
+	background-image: url(images/tab_bottom.gif);
+	cursor:default;
+	color:#135E04;
+}
+
+
+.igtab_GreenGelSelectedTab_Left
+{
+	background-color:#80BC1B;
+	background-image: url(images/tab_left_f.gif);
+	color:Black;
+}
+
+
+.igtab_GreenGelSelectedTab_Left_Rounded
+{
+	background-image: url(images/tab_left.gif);
+	border-color:#535353;
+	cursor:default;
+	color:#135E04;
+}
+
+
+.igtab_GreenGelSelectedTab_Right
+{
+	background-color:#80BC1B;
+	background-position:right ;
+	background-image: url(images/tab_right_f.gif);
+	color:Black;
+}
+
+
+.igtab_GreenGelSelectedTab_Right_Rounded
+{
+	background-image: url(images/tab_right.gif);
+	cursor:default;
+	color:#135E04;
+}
+
+
+.igtab_GreenGelDisabledTab_Top
+{
+	color:Gainsboro;
+}
+
+
+.igtab_GreenGelDisabledTab_Top_Rounded
+{
+	color:Gainsboro;
+}
+
+
+.igtab_GreenGelDisabledTab_Bottom
+{
+	color:Gainsboro;
+}
+
+
+.igtab_GreenGelDisabledTab_Bottom_Rounded
+{
+	color:Gainsboro;
+}
+
+
+.igtab_GreenGelDisabledTab_Left
+{
+	color:Gainsboro;
+}
+
+
+.igtab_GreenGelDisabledTab_Left_Rounded
+{
+	color:Gainsboro;
+}
+
+
+.igtab_GreenGelDisabledTab_Right
+{
+	color:Gainsboro;
+}
+
+
+.igtab_GreenGelDisabledTab_Right_Rounded
+{
+	color:Gainsboro;
+}
+
+

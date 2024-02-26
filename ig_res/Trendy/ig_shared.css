@@ -1,0 +1,106 @@
+.ig_TrendyControl
+{
+	background-color:White;
+	font-size:xx-small;
+	font-family: verdana;
+	border:solid 1px #109A48;
+	cursor:default;
+	color:Black;
+}
+
+
+.ig_TrendyItem
+{
+	background-color:White;
+	font-size:10px;
+	font-family: verdana;
+	padding-left:1px;
+}
+
+
+.ig_TrendyButton
+{
+	cursor:hand;
+}
+
+
+.ig_TrendyButtonHover
+{
+}
+
+
+.ig_TrendyButtonPressed
+{
+}
+
+
+.ig_TrendyButtonDisabled
+{
+}
+
+
+.ig_TrendyHover
+{
+}
+
+
+.ig_TrendySelected
+{
+}
+
+
+.ig_TrendyDisabled
+{
+}
+
+
+.ig_TrendyHeader
+{
+}
+
+
+.ig_TrendyFooter
+{
+}
+
+
+.ig_TrendyEditWithButtons
+{
+}
+
+
+.ig_TrendyEdit
+{
+}
+
+
+.ig_TrendyEditInContainer
+{
+}
+
+
+.ig_TrendyAlt
+{
+	border-top:solid 1px #E3EFFF;
+	border-right:solid 0px #FFFFFF;
+	border-bottom:solid 1px #E3EFFF;
+	border-left:solid 0px #FFFFFF;
+}
+
+
+.ig_TrendyDropDown
+{
+}
+
+
+.ig_TrendyEditSelected
+{
+}
+
+
+Body
+{
+	cursor:default;
+}
+
+

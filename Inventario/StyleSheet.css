@@ -1,0 +1,13 @@
+﻿body {
+}
+.PropLabels
+{
+	font-family: Arial, Sans-Serif;
+	font-size:12px;
+	color: White;
+	background-color: CornFlowerBlue;
+	border-color: White;
+	border-style:dotted;
+	border-width:1px;
+	font-weight: bold;
+}

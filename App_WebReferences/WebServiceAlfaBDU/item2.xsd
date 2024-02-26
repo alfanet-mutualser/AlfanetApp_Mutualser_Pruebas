@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ServicioComun" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServicioComun" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="IAB_001Request">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NitOperador" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sucursal" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IAB_001Request" nillable="true" type="tns:IAB_001Request" />
+  <xs:complexType name="IAB_001Response">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfIAB_001Item" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IAB_001Response" nillable="true" type="tns:IAB_001Response" />
+  <xs:complexType name="ArrayOfIAB_001Item">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IAB_001Item" nillable="true" type="tns:IAB_001Item" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIAB_001Item" nillable="true" type="tns:ArrayOfIAB_001Item" />
+  <xs:complexType name="IAB_001Item">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ciudad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CorreoElecontronico1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CorreoElecontronico2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Departamento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DireccionEmpresa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PaginaWeb" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RazonSocial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sucursal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono2" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IAB_001Item" nillable="true" type="tns:IAB_001Item" />
+  <xs:complexType name="IAB_003Request">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClaseServicio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NitOperador" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroExpediente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sucursal" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IAB_003Request" nillable="true" type="tns:IAB_003Request" />
+  <xs:complexType name="IAB_003Response">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfIAB_003Item" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IAB_003Response" nillable="true" type="tns:IAB_003Response" />
+  <xs:complexType name="ArrayOfIAB_003Item">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IAB_003Item" nillable="true" type="tns:IAB_003Item" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIAB_003Item" nillable="true" type="tns:ArrayOfIAB_003Item" />
+  <xs:complexType name="IAB_003Item">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClaseServicio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Estado" type="xs:boolean" />
+      <xs:element minOccurs="0" name="EstadoVerificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaCreacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaFinResolucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaInicioResolucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FolioFinal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FolioInicial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroExpediente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sucursal" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IAB_003Item" nillable="true" type="tns:IAB_003Item" />
+  <xs:complexType name="IMB_001Response">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfIMB_001Item" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IMB_001Response" nillable="true" type="tns:IMB_001Response" />
+  <xs:complexType name="ArrayOfIMB_001Item">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IMB_001Item" nillable="true" type="tns:IMB_001Item" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIMB_001Item" nillable="true" type="tns:ArrayOfIMB_001Item" />
+  <xs:complexType name="IMB_001Item">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoServicio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IMB_001Item" nillable="true" type="tns:IMB_001Item" />
+  <xs:complexType name="IMB_002Request">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NUI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TIPONUI" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IMB_002Request" nillable="true" type="tns:IMB_002Request" />
+  <xs:complexType name="IMB_002Response">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:IMB_002Item" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IMB_002Response" nillable="true" type="tns:IMB_002Response" />
+  <xs:complexType name="IMB_002Item">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Ciudad" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CorreoElecontronico" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Departamento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DireccionEmpresa" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nit" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreRepresentante" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RazonSocial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Telefono" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IMB_002Item" nillable="true" type="tns:IMB_002Item" />
+  <xs:complexType name="IMB_003Request">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NUI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroExpediente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoNUI" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IMB_003Request" nillable="true" type="tns:IMB_003Request" />
+  <xs:complexType name="IMB_003Response">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfIMB_003Item" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IMB_003Response" nillable="true" type="tns:IMB_003Response" />
+  <xs:complexType name="ArrayOfIMB_003Item">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IMB_003Item" nillable="true" type="tns:IMB_003Item" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIMB_003Item" nillable="true" type="tns:ArrayOfIMB_003Item" />
+  <xs:complexType name="IMB_003Item">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CodigoServicio" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstadoVerificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaCreacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaFinResolucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaInicioResolucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FolioFinal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FolioInicial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Nombre" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroDocumento" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroExpediente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Observaciones" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Recomendaciones" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ServiciosAuxiliaresAyuda" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Sucursal" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IMB_003Item" nillable="true" type="tns:IMB_003Item" />
+  <xs:complexType name="IMB_004Request">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NUI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroExpediente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoNUI" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IMB_004Request" nillable="true" type="tns:IMB_004Request" />
+  <xs:complexType name="IMB_004Response">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfIMB_004Item" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IMB_004Response" nillable="true" type="tns:IMB_004Response" />
+  <xs:complexType name="ArrayOfIMB_004Item">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IMB_004Item" nillable="true" type="tns:IMB_004Item" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIMB_004Item" nillable="true" type="tns:ArrayOfIMB_004Item" />
+  <xs:complexType name="IMB_004Item">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClaseTramite" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EstadoProcesoResolucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Expiracion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaCuadro" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaExpedicionLey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaFinal" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaInicial" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FechaResolucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Ley" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NUI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroCuadroTecnico" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroExpediente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroRadicacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroResolucion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Objeto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Observaciones" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IMB_004Item" nillable="true" type="tns:IMB_004Item" />
+  <xs:complexType name="IMB_005Request">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="NUI" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroExpediente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoNUI" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IMB_005Request" nillable="true" type="tns:IMB_005Request" />
+  <xs:complexType name="IMB_005Response">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Result" nillable="true" type="tns:ArrayOfIMB_005Item" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IMB_005Response" nillable="true" type="tns:IMB_005Response" />
+  <xs:complexType name="ArrayOfIMB_005Item">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IMB_005Item" nillable="true" type="tns:IMB_005Item" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIMB_005Item" nillable="true" type="tns:ArrayOfIMB_005Item" />
+  <xs:complexType name="IMB_005Item">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CiudadContacto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodigoExpediente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactoNotificar" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Descripcion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DireccionContacto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DocumentoNotificacion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Encabezado" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Fecha" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NombreContacto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="QuienNotifica" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RenunciaTerminos" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Sujeto" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TipoContacto" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IMB_005Item" nillable="true" type="tns:IMB_005Item" />
+</xs:schema>

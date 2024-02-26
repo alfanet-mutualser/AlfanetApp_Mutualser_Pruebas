@@ -1,0 +1,237 @@
+.igmv_RadioFlyerControl
+{
+	font-size:x-small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border:solid 1px #9C2131;
+	margin:0px;
+	overflow: auto;
+	position: relative;
+}
+
+
+.igmv_RadioFlyerCaptionHeader
+{
+	background-color:#CECECE;
+	background-position:center center ;
+	background-image: url(images/header_large.gif);
+	font-size:x-small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-width:0px;
+	height: 1%;
+	line-height: 30px;
+	color:White;
+	text-align:center;
+}
+
+
+.igmv_RadioFlyerDayHeader
+{
+	background-color:Gainsboro;
+	background-position:center ;
+	background-image: url(images/header.gif);
+	font-size:xx-small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-top:solid 1px Silver;
+	border-left:solid 1px Silver;
+	padding-top:0px;
+	padding-right:2px;
+	height: 3%;
+	line-height: 15px;
+	color:White;
+	text-align:right;
+	vertical-align:top;
+}
+
+
+.igmv_RadioFlyerDay
+{
+	background-color:White;
+	background-position:bottom ;
+	background-image: url(images/body_back.gif);
+	border-left:solid 1px Silver;
+	height: 10%;
+	cursor:hand;
+	color:Black;
+	vertical-align:top;
+}
+
+
+.igmv_RadioFlyerAppointment
+{
+	background-color:DarkGray;
+	background-repeat:repeat-x;
+	font-size:xx-small;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	margin-top:1px;
+	margin-right:1px;
+	margin-left:1px;
+	padding-left:1px;
+	line-height: 15px;
+	cursor:hand;
+	text-align:left;
+}
+
+
+.igmv_RadioFlyerAllDayEvent
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	font-size:xx-small;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	border:solid 1px #000000;
+	margin-top:1px;
+	margin-right:1px;
+	margin-left:1px;
+	line-height: 15px;
+	cursor:hand;
+	text-align:left;
+}
+
+
+.igmv_RadioFlyerNavigationButton
+{
+	background-color:Transparent;
+	border-width:0px;
+	margin:0px;
+	padding:5px 0px 0px 0px;
+	position: absolute;
+	top: 2px;
+	width: 12px;
+	cursor:hand;
+}
+
+
+.igmv_RadioFlyerWeekNumber
+{
+	background-color:#FCFCFC;
+	background-repeat:repeat-x;
+	background-position:bottom ;
+	background-image: url(images/item_back.gif);
+	font-size:10pt;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	border-top:solid 1px Silver;
+	padding-right:1px;
+	width: 20px;
+	text-align:center;
+}
+
+
+.igmv_RadioFlyerCompressedDay
+{
+	border-left:solid 1px Silver;
+	height: 4%;
+	vertical-align:top;
+}
+
+
+tr.igmv_RadioFlyerCaptionHeader td.igmv_RadioFlyerWeekNumber
+{
+	background-color:#CECECE;
+	background-position:center center ;
+	background-image: url(images/header_large.gif);
+	border-width:0px;
+	line-height: 19px;
+	height: 1%;
+}
+
+
+.igmv_RadioFlyerMonthDayOfWeekHeader
+{
+	font-size:8pt;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	border-top:solid 1px Silver;
+	border-bottom:solid 1px Silver;
+	margin-top:1px;
+	margin-right:1px;
+	margin-left:1px;
+	height: 4%;
+	line-height: 14px;
+	cursor:default;
+	text-align:center;
+}
+
+
+.igmv_RadioFlyerOtherMonthDayHeader
+{
+	background-position:center ;
+	background-image: url(images/header_hover.gif);
+	font-size:xx-small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-top:solid 1px Silver;
+	border-left:solid 1px Silver;
+	padding-top:0px;
+	padding-right:2px;
+	height: 3%;
+	line-height: 15px;
+	color:DimGray;
+	text-align:right;
+	vertical-align:top;
+}
+
+
+.igmv_RadioFlyerOtherMonthDay
+{
+	background-color:WhiteSmoke;
+	border-left:solid 1px Silver;
+	height: 12%;
+	cursor:hand;
+	color:Black;
+	vertical-align:top;
+}
+
+
+.igmv_RadioFlyerOtherCompressedDay
+{
+	border-left:solid 1px Silver;
+	height: 4%;
+	vertical-align:top;
+}
+
+
+.igmv_RadioFlyerTodayHeader
+{
+}
+
+
+.igmv_RadioFlyerToday
+{
+}
+
+
+.igmv_RadioFlyerSelectedAppointment
+{
+	background-color:#316AC5;
+	color:White;
+}
+
+
+.igmv_RadioFlyerActiveDayHeader
+{
+}
+
+
+.igmv_RadioFlyerActiveDay
+{
+	background-color:White;
+	background-image:none;
+}
+
+
+.igmv_NavigationButtonNext
+{
+	right: 3px;
+}
+
+
+.igmv_RadioFlyerControl table
+{
+	border-collapse:Collapse;
+}
+
+
+.igmv_NavigationButtonPrev
+{
+	left: 3px;
+}
+
+

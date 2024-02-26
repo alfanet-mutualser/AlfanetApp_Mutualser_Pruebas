@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSUsuariosxRoles" targetNamespace="http://tempuri.org/DSUsuariosxRoles.xsd" xmlns:mstns="http://tempuri.org/DSUsuariosxRoles.xsd" xmlns="http://tempuri.org/DSUsuariosxRoles.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnStrSQLServer" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnStrSQLServer (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnStrSQLServer.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DTUsuariosxRolesTableAdapter" GeneratorDataComponentClassName="DTUsuariosxRolesTableAdapter" Name="DTUsuariosxRoles" UserDataComponentName="DTUsuariosxRolesTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnStrSQLServer (Web.config)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT     Usuariosxdependencia.DependenciaCodigo, Usuariosxdependencia.NombresUsuario, Usuariosxdependencia.ApellidosUsuario, Usuariosxdependencia.UserId, 
+                      aspnet_Users.UserName, aspnet_Roles.RoleName, aspnet_Membership.IsApproved
+FROM         Usuariosxdependencia INNER JOIN
+                      aspnet_Users ON Usuariosxdependencia.UserId = aspnet_Users.UserId INNER JOIN
+                      aspnet_Membership ON aspnet_Users.UserId = aspnet_Membership.UserId INNER JOIN
+                      aspnet_UsersInRoles ON aspnet_Users.UserId = aspnet_UsersInRoles.UserId INNER JOIN
+                      aspnet_Roles ON aspnet_UsersInRoles.RoleId = aspnet_Roles.RoleId</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="DependenciaCodigo" DataSetColumn="DependenciaCodigo" />
+              <Mapping SourceColumn="NombresUsuario" DataSetColumn="NombresUsuario" />
+              <Mapping SourceColumn="ApellidosUsuario" DataSetColumn="ApellidosUsuario" />
+              <Mapping SourceColumn="UserId" DataSetColumn="UserId" />
+              <Mapping SourceColumn="UserName" DataSetColumn="UserName" />
+              <Mapping SourceColumn="RoleName" DataSetColumn="RoleName" />
+              <Mapping SourceColumn="IsApproved" DataSetColumn="IsApproved" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSUsuariosxRoles" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DSUsuariosxRoles" msprop:Generator_DataSetName="DSUsuariosxRoles" msprop:EnableTableAdapterManager="False">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTUsuariosxRoles" msprop:Generator_UserTableName="DTUsuariosxRoles" msprop:Generator_RowDeletedName="DTUsuariosxRolesRowDeleted" msprop:Generator_RowChangedName="DTUsuariosxRolesRowChanged" msprop:Generator_RowClassName="DTUsuariosxRolesRow" msprop:Generator_RowChangingName="DTUsuariosxRolesRowChanging" msprop:Generator_RowEvArgName="DTUsuariosxRolesRowChangeEvent" msprop:Generator_RowEvHandlerName="DTUsuariosxRolesRowChangeEventHandler" msprop:Generator_TableClassName="DTUsuariosxRolesDataTable" msprop:Generator_TableVarName="tableDTUsuariosxRoles" msprop:Generator_RowDeletingName="DTUsuariosxRolesRowDeleting" msprop:Generator_TablePropName="DTUsuariosxRoles">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="DependenciaCodigo" msprop:Generator_UserColumnName="DependenciaCodigo" msprop:Generator_ColumnVarNameInTable="columnDependenciaCodigo" msprop:Generator_ColumnPropNameInRow="DependenciaCodigo" msprop:Generator_ColumnPropNameInTable="DependenciaCodigoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombresUsuario" msprop:Generator_UserColumnName="NombresUsuario" msprop:Generator_ColumnVarNameInTable="columnNombresUsuario" msprop:Generator_ColumnPropNameInRow="NombresUsuario" msprop:Generator_ColumnPropNameInTable="NombresUsuarioColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ApellidosUsuario" msprop:Generator_UserColumnName="ApellidosUsuario" msprop:Generator_ColumnVarNameInTable="columnApellidosUsuario" msprop:Generator_ColumnPropNameInRow="ApellidosUsuario" msprop:Generator_ColumnPropNameInTable="ApellidosUsuarioColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserId" msprop:Generator_UserColumnName="UserId" msprop:Generator_ColumnVarNameInTable="columnUserId" msprop:Generator_ColumnPropNameInRow="UserId" msprop:Generator_ColumnPropNameInTable="UserIdColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="UserName" msprop:Generator_UserColumnName="UserName" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RoleName" msprop:Generator_UserColumnName="RoleName" msprop:Generator_ColumnVarNameInTable="columnRoleName" msprop:Generator_ColumnPropNameInRow="RoleName" msprop:Generator_ColumnPropNameInTable="RoleNameColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="256" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IsApproved" msprop:Generator_UserColumnName="IsApproved" msprop:Generator_ColumnVarNameInTable="columnIsApproved" msprop:Generator_ColumnPropNameInRow="IsApproved" msprop:Generator_ColumnPropNameInTable="IsApprovedColumn" type="xs:boolean" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,50 @@
+.igpnl_PeachControl
+{
+	border:solid 1px #97462C;
+}
+
+
+.igpnl_PeachPanel
+{
+	background-color:#F8F8F8;
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+}
+
+
+.igpnl_PeachHeaderExpanded
+{
+	background-position:center ;
+	background-image: url(images/header.gif);
+	font-weight:bold;
+	font-size:xx-small;
+	font-family: Verdana;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding-top:4px;
+	padding-bottom:4px;
+	cursor:hand;
+	color:Black;
+}
+
+
+.igpnl_PeachHeaderCollapsed
+{
+}
+
+
+.igpnl_PeachHeaderHover
+{
+	background-position:center ;
+	background-image: url(images/header_hover.gif);
+}
+
+
+.igpnl_PeachGroupBoxControl
+{
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	border:solid 1px #97462C;
+}
+
+

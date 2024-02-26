@@ -1,0 +1,9 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DataProvider.Resources.resources
+obj\Debug\DataProvider.vbproj.GenerateResource.Cache
+bin\Debug\DataProvider.dll
+bin\Debug\DataProvider.pdb
+bin\Debug\DataProvider.xml
+obj\Debug\DataProvider.dll
+obj\Debug\DataProvider.xml
+obj\Debug\DataProvider.pdb

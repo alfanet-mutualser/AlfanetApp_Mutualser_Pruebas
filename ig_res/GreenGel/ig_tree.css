@@ -1,0 +1,60 @@
+.igtr_GreenGelControl
+{
+	border-color:Transparent;
+}
+
+
+.igtr_GreenGelIsland
+{
+}
+
+
+.igtr_GreenGelNode
+{
+	cursor:hand;
+}
+
+
+.igtr_GreenGelParent
+{
+}
+
+
+.igtr_GreenGelLeaf
+{
+}
+
+
+.igtr_GreenGelEdit
+{
+}
+
+
+.igtr_GreenGelRoot
+{
+	font-weight:bold;
+	color:#135E04;
+}
+
+
+.igtr_GreenGelHover
+{
+	color:#135E04;
+	text-decoration:underline;
+}
+
+
+.igtr_GreenGelSelected
+{
+	font-weight:bold;
+	color:#135E04;
+}
+
+
+.igtr_GreenGelDisabled
+{
+	font-size:xx-small;
+	color:Gainsboro;
+}
+
+

@@ -1,0 +1,11 @@
+﻿ @font-face {    
+        font-family: "3OF9_NEW.TTF";    
+        font-style: normal;    
+        src: url(3OF9_NEW.TTF); /*if IE */    
+        src: local("3OF9_NEW"), url("3OF9_NEW.TTF") format("truetype"); /* non-IE */    
+}      
+
+
+  .LabelBarra {
+   font-family: 3OF9_NEW,3 of 9 Barcode;
+   }

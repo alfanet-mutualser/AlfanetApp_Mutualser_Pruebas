@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<siteMap>
+  <siteMapNode title="Home" url="Default2.aspx">
+
+
+    <siteMapNode title="Maestros" url="~/AlfaNetAdministracion/AdminMaestros/MainMaestro.aspx">
+      <siteMapNode title="Ciudades" url="~/AlfaNetAdministracion/AdminMaestros/MaestroCiudad.aspx" />  
+      <siteMapNode title="Departamentos" url="~/AlfaNetAdministracion/AdminMaestros/MaestroDepartamento.aspx" />
+      <siteMapNode title="Dependencias" url="~/AlfaNetAdministracion/AdminMaestros/MaestroDependencia.aspx" />
+      <siteMapNode title="Expedientes" url="~/AlfaNetAdministracion/AdminMaestros/MaestroExpediente.aspx" />
+	  <siteMapNode title="Grupos" url="~/AlfaNetAdministracion/AdminMaestros/MaestroGrupo.aspx" />
+	  <siteMapNode title="Medios" url="~/AlfaNetAdministracion/AdminMaestros/MaestroMedio.aspx" />
+      <siteMapNode title="Naturalezas" url="~/AlfaNetAdministracion/AdminMaestros/MaestroNaturaleza.aspx" />
+      <siteMapNode title="Paises" url="~/AlfaNetAdministracion/AdminMaestros/MaestroPais.aspx" />
+      <siteMapNode title="Procedencias" url="~/AlfaNetAdministracion/AdminMaestros/MaestroProcedencia.aspx" />
+      <siteMapNode title="Series" url="~/AlfaNetAdministracion/AdminMaestros/MaestroSerie.aspx" />
+	  <siteMapNode title="WorkFlow Acciones" url="~/AlfaNetAdministracion/AdminMaestros/MaestroWorkFlowAccion.aspx" />
+	  <siteMapNode title="WorkFlow Procesos" url="~/AlfaNetAdministracion/AdminMaestros/MaestroWorkFlowProceso.aspx" />
+	</siteMapNode>
+	  
+	<siteMapNode title="Usuarios" url="~/AlfaNetAdministracion/AdminUsuario/MainUsuario.aspx" >
+		<siteMapNode title="Maestro de usuarios" url="~/AlfaNetAdministracion/AdminUsuario/MaestroUsuario.aspx" />
+	</siteMapNode>
+		
+	<siteMapNode title="Sitio Web" roles="*" url="http://200.118.124.144/AlfaNetAdmin/default.aspx?applicationPhysicalPath=E:\AlfaNet\&amp;applicationUrl=\AlfaNet" />
+ 
+  </siteMapNode>
+</siteMap>

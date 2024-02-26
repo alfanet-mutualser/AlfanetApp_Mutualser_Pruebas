@@ -1,0 +1,92 @@
+.igcal_GreenGelControl
+{
+	font-family: Verdana;
+	border:solid 1px #135E04;
+	cursor:hand;
+}
+
+
+.igcal_GreenGelCalendar
+{
+}
+
+
+.igcal_GreenGelDOW
+{
+	font-weight:bold;
+	font-size:xx-small;
+	border-width:0px;
+	border-bottom:solid 1px #4F7600;
+	padding:5px 0px 0px 0px;
+}
+
+
+.igcal_GreenGelDay
+{
+	font-size:xx-small;
+	border-width:0px;
+}
+
+
+.igcal_GreenGelNextPrev
+{
+	background-color:#135E04;
+	padding-right:5px;
+	padding-left:5px;
+}
+
+
+.igcal_GreenGelFooter
+{
+	background-color:#F0F0F0;
+	background-position:bottom ;
+	background-image: url(images/addnew.gif);
+	padding:3px;
+	text-align:center;
+}
+
+
+.igcal_GreenGelHeader
+{
+	background-color:#135E04;
+	font-weight:bold;
+	font-size:10px;
+	height: 16px;
+	color:White;
+}
+
+
+.igcal_GreenGelDropDown
+{
+}
+
+
+.igcal_GreenGelWeekendDay
+{
+}
+
+
+.igcal_GreenGelOtherMonthDay
+{
+	color:#B3B3B3;
+}
+
+
+.igcal_GreenGelWeekendDayMajor
+{
+}
+
+
+.igcal_GreenGelTodayDay
+{
+	border:solid 1px #6D7B05;
+}
+
+
+.igcal_GreenGelSelectedDay
+{
+	background-color:#6D7B05;
+	color:White;
+}
+
+

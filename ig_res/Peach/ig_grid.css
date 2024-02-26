@@ -1,0 +1,192 @@
+.igtbl_PeachControl
+{
+	border:solid 1px #97462C;
+}
+
+
+.igtbl_PeachPagerArea
+{
+	border-width:0px;
+	padding:10px;
+}
+
+
+.igtbl_PeachPageCurrent
+{
+	margin-right:10px;
+}
+
+
+.igtbl_PeachPageLink
+{
+	margin-right:10px;
+	color:Brown;
+}
+
+
+.igtbl_PeachGroupByBox
+{
+	background-position:center ;
+	background-image: url(images/header_hover.gif);
+	border-bottom:solid 1px #D2D2D2;
+}
+
+
+.igtbl_PeachAddNewBox
+{
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+}
+
+
+.igtbl_PeachItem
+{
+	background-position:bottom ;
+	background-image: url(images/itembg.gif);
+	border-top:solid 1px #E1E1E1;
+	height: 30px;
+}
+
+
+.igtbl_PeachFilterOperandButton
+{
+	background-color:Transparent;
+	background-repeat:no-repeat;
+	background-position:center ;
+	background-image: url(images/submit_disabled.gif);
+	border-width:0px;
+	padding-top:2px;
+	width: 18px;
+}
+
+
+.igtbl_PeachAlt
+{
+	background-color:#FDFAFA;
+	background-image:none;
+	border-width:0px;
+	border-top:solid 1px #E1E1E1;
+}
+
+
+.igtbl_PeachEdit
+{
+	background-color:White;
+	font-size:x-small;
+	font-family: Verdana;
+	border:solid 1px Transparent;
+	padding-top:7px;
+	text-align:left;
+	vertical-align:middle;
+}
+
+
+.igtbl_PeachButton
+{
+}
+
+
+.igtbl_PeachFxdCell
+{
+}
+
+
+.igtbl_PeachHeader
+{
+	background-position:center ;
+	background-image: url(images/header.gif);
+	border-width:0px;
+	padding-top:5px;
+	padding-bottom:4px;
+	color:#603000;
+	text-align:left;
+}
+
+
+.igtbl_PeachFooter
+{
+	background-color:#D2D2D2;
+	background-image:none;
+}
+
+
+.igtbl_PeachLabel
+{
+	background-color:WhiteSmoke;
+	background-image:none;
+	border-top-width:1px;
+	border-top-color:#E1E1E1;
+	border-right-width:1px;
+	border-right-color:#F0F0F0;
+}
+
+
+.igtbl_PeachExpArea
+{
+	background-color:#D2D2D2;
+	background-image:none;
+	border-top:solid 1px #E1E1E1;
+	height: 10px;
+	text-align:center;
+}
+
+
+.igtbl_PeachGrpItem
+{
+}
+
+
+.igtbl_PeachFxdHeader
+{
+}
+
+
+.igtbl_PeachGroupBandLabel
+{
+}
+
+
+.igtbl_PeachFxdFooter
+{
+}
+
+
+.igtbl_PeachDropDown
+{
+	background-color:WhiteSmoke;
+	font-size:xx-small;
+	font-family: Verdana;
+	border:solid 1px #EB8D65;
+}
+
+
+.igtbl_PeachDropDownSel
+{
+}
+
+
+.igtbl_PeachSelected
+{
+	background-color:#FFB580;
+	background-image: url(images/header.gif);
+	border-right-color:#FFB580;
+	border-left-color:#FFB580;
+	color:Black;
+}
+
+
+.igtbl_PeachActiveBorderTopBottom
+{
+}
+
+
+.igtbl_PeachActiveBorderLeft
+{
+}
+
+
+.igtbl_PeachActiveBorderRight
+{
+}
+
+

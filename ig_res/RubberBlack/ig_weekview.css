@@ -1,0 +1,131 @@
+.igwv_RubberBlackControl
+{
+	border-width:0px;
+	margin-top:2px;
+}
+
+
+.igwv_RubberBlackCaptionHeader
+{
+	background-color:#CECECE;
+	background-repeat:repeat-x;
+	background-position:center ;
+	background-image: url(images/header.jpg);
+	font-weight:bold;
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top:solid 1px DimGray;
+	border-right:solid 1px DimGray;
+	border-bottom:solid 0px #D2D2D2;
+	border-left:solid 1px DimGray;
+	line-height: 26px;
+	height: 22px;
+	color:White;
+	text-align:center;
+}
+
+
+.igwv_RubberBlackDayHeader
+{
+	background-color:#E1E1E1;
+	background-image: url(images/gradient.png);
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0px 2px 0px 0px;
+	height: 18px;
+	cursor:default;
+	text-align:right;
+}
+
+
+.igwv_RubberBlackDay
+{
+	background-color:#D2D2D2;
+	background-position:top ;
+	background-image: url(images/menu_bg.gif);
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
+	overflow-x: hidden;
+	cursor:hand;
+}
+
+
+.igwv_RubberBlackAppointment
+{
+	margin:0px 1px 0px 1px;
+	padding:2px;
+	line-height: 150%;
+	white-space: nowrap;
+	cursor:pointer;
+}
+
+
+.igwv_RubberBlackAllDayEvent
+{
+	background-color:#FAFAFA;
+	border:solid 1px Silver;
+}
+
+
+.igwv_RubberBlackNavigationButton
+{
+	background-color:Transparent;
+	border-width:0px;
+	width: 17px;
+	cursor:hand;
+	vertical-align:middle;
+}
+
+
+.igwv_RubberBlackDayArea
+{
+	border:solid 1px #878787;
+}
+
+
+.igwv_RubberBlackTodayHeader
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-position:top ;
+	background-image: url(images/header_hover.jpg);
+	font-weight:bold;
+	color:White;
+}
+
+
+.igwv_RubberBlackToday
+{
+}
+
+
+.igwv_RubberBlackSelectedAppointment
+{
+	background-color:#DAEAFF;
+	margin-top:1px;
+	margin-right:1px;
+	margin-left:1px;
+	padding:1px;
+	cursor:pointer;
+	color:Black;
+}
+
+
+.igwv_RubberBlackActiveDayHeader
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	color:Black;
+}
+
+
+.igwv_RubberBlackActiveDay
+{
+	background-color:#F6F6F6;
+	background-repeat:repeat-x;
+	background-position:bottom ;
+	background-image: url(images/bg.gif);
+}
+
+

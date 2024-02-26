@@ -1,0 +1,100 @@
+<%@ Page Language="C#" MasterPageFile="~/MainMaster.master" AutoEventWireup="true"
+    CodeFile="NewRadicado.aspx.cs" Inherits="_NewRadicado" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+
+   
+<%@ import Namespace="System.Configuration" %>
+
+
+<asp:Content ID="Content1" runat="server" ContentPlaceHolderID="ContentPlaceHolder1">
+    <table style="width: 100%; height: 5%">
+        <tr>
+            <td style="text-align: center">
+                <table style="width: 80%; height: 100%">
+                    <tr>
+                        <td>
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="TxtNumeroExterno"
+                                Enabled="False" ErrorMessage="Debe Digitar Un Número de Radicado" SetFocusOnError="True"
+                                ValidationGroup="ValGroup1">*</asp:RequiredFieldValidator></td>
+                        <td>
+                            <asp:Label ID="LblNroExterno" runat="server" CssClass="LabelStyle" Font-Bold="True"
+                                Font-Italic="False" Text="Numero Externo:" Width="145px"></asp:Label></td>
+                        <td>
+                            <asp:TextBox ID="TxtNumeroExterno" runat="server" TabIndex="6" Width="97px"></asp:TextBox></td>
+                        <td colspan="2">
+                            <asp:Label ID="LblFechaRadicacion" runat="server" CssClass="LabelStyle" Font-Bold="True"
+                                Text="Fecha de Radicacion:" Width="145px"></asp:Label>
+                            <asp:Label ID="DateFechaRad" runat="server" BackColor="Lavender" BorderStyle="Inset"
+                                Font-Bold="False" Font-Size="Small"></asp:Label></td>
+                    </tr>
+                </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="SelDateFechaProcedencia"
+                                ErrorMessage="Seleccione la fecha de Procedencia" SetFocusOnError="True">*</asp:RequiredFieldValidator></td>
+                        <td style="color: #000000">
+                            <asp:Label ID="LblFechaProcedencia" runat="server" CssClass="LabelStyle" Font-Bold="True"
+                                Text="Fecha Procedencia:" Width="145px"></asp:Label></td>
+                        <td colspan="2">
+                            <cc1:CalendarExtender ID="CEPro" runat="server" Format="dd/MM/yyyy" PopupButtonID="Image1"
+                                TargetControlID="SelDateFechaProcedencia">
+                            </cc1:CalendarExtender>
+                            <asp:TextBox ID="SelDateFechaProcedencia" runat="server" TabIndex="6" ValidationGroup="1"
+                                Width="97px"></asp:TextBox>&nbsp;
+                                <asp:Image ID="Image1" runat="server" ImageUrl="~/AlfaNetImagen/ToolBar/calendario.gif" />
+                        </td>
+                        <td style="width: 9px">
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="SelDateFechaVencimiento"
+                                ErrorMessage="Debe Ingresar Fecha de Vencimiento" SetFocusOnError="True">*</asp:RequiredFieldValidator>
+                                <asp:RangeValidator
+                                    ID="RangeVFecVen" runat="server" ControlToValidate="SelDateFechaVencimiento"
+                                    ErrorMessage="La Fecha de Vencimiento debe ser Mayor que la Fecha de Radicacion"
+                                    MaximumValue="31/12/2050" Type="Date">*</asp:RangeValidator>
+                        </td>
+                        <td>
+                            <asp:Label ID="LblFechaVencimiento" runat="server" CssClass="LabelStyle" Font-Bold="True"
+                                Text="Fecha Vencimiento:" Width="145px"></asp:Label>
+                        </td>
+                        <td colspan="2">
+                            <cc1:CalendarExtender ID="CEVen" runat="server" Format="dd/MM/yyyy" PopupButtonID="Image2"
+                                TargetControlID="SelDateFechaVencimiento">
+                            </cc1:CalendarExtender>
+                            <asp:TextBox ID="SelDateFechaVencimiento" runat="server" TabIndex="7" ValidationGroup="1"
+                                Width="97px"></asp:TextBox>&nbsp;
+                                <asp:Image ID="Image2" runat="server" ImageUrl="~/AlfaNetImagen/ToolBar/calendario.gif" />
+                        </td>
+                    </tr>
+                </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                <asp:UpdatePanel id="UpdatePanel2" runat="server" UpdateMode="Conditional">
+                    <contenttemplate>
+<TABLE style="WIDTH: 100%; HEIGHT: 1px"><TBODY><TR><TD><asp:RequiredFieldValidator id="RequiredFieldValidator6" runat="server" __designer:wfdid="w81" ControlToValidate="TxtProcedencia" ErrorMessage="Debe ingresar la Procedencia" SetFocusOnError="True">*</asp:RequiredFieldValidator> </TD><TD style="COLOR: #000000"><asp:Label id="LblProcedencia" runat="server" Width="145px" Font-Bold="True" Text="Procedencia:" CssClass="LabelStyle" __designer:wfdid="w82">
+                </asp:Label> <asp:RadioButtonList id="RadBtnLstFindby" runat="server" Width="145px" Font-Size="Smaller" ForeColor="RoyalBlue" Height="1px" Font-Italic="False" __designer:wfdid="w83" AutoPostBack="True" OnSelectedIndexChanged="RadBtnLstFindby_SelectedIndexChanged" RepeatDirection="Horizontal"><asp:ListItem Selected="True" Value="1">Nombre</asp:ListItem>
+<asp:ListItem Value="2">Codigo</asp:ListItem>
+</asp:RadioButtonList> </TD><TD><cc1:AutoCompleteExtender id="AutoCompleteExtender2" runat="server" __designer:wfdid="w84" TargetControlID="TxtProcedencia" CompletionInterval="100" MinimumPrefixLength="0" ServiceMethod="GetProcedenciaByTextNombre" ServicePath="../../AutoComplete.asmx">
+                </cc1:AutoCompleteExtender> <asp:TextBox id="TxtProcedencia" tabIndex=10 runat="server" Width="424px" Font-Size="8pt" Height="28px" CssClass="TxtAutoComplete" __designer:wfdid="w85" TextMode="MultiLine"></asp:TextBox> </TD><TD><asp:ImageButton id="ImgBtnFindProcedencia" onclick="ImgBtnFindProcedencia_Click" runat="server" Width="15px" ImageUrl="~/AlfaNetImagen/ToolBar/zoom.png" Height="15px" __designer:wfdid="w86" ValidationGroup="false" ToolTip="Buscar Procedencia" CausesValidation="False"></asp:ImageButton> </TD><TD><asp:ImageButton id="ImgBtnNewProcedencia" runat="server" Width="15px" ImageUrl="~/AlfaNetImagen/ToolBar/Add.png" Height="15px" __designer:wfdid="w87" ToolTip="Nueva Procedencia" CausesValidation="False" OnClientClick="hidden = open('../../AlfaNetAdministracion/AdminMaestros/MaestroProcedencia.aspx', 'NewWindow','top=0,left=0, width=800,height=600,status=yes, resizable=yes,scrollbars=yes');"></asp:ImageButton> </TD></TR></TBODY></TABLE>
+</contenttemplate>
+                    <triggers>
+<asp:AsyncPostBackTrigger ControlID="ImgBtnFindProcedencia" EventName="Click"></asp:AsyncPostBackTrigger>
+</triggers>
+                </asp:UpdatePanel></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</asp:Content>
+

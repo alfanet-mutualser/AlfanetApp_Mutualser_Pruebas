@@ -1,0 +1,104 @@
+.ig_AppletiniControl
+{
+	font-size:xx-small;
+	font-family: verdana;
+	cursor:default;
+	color:Black;
+}
+
+
+.ig_AppletiniItem
+{
+	background-color:White;
+	font-size:10px;
+	font-family: verdana;
+	padding-left:1px;
+}
+
+
+.ig_AppletiniButton
+{
+	cursor:hand;
+}
+
+
+.ig_AppletiniButtonHover
+{
+}
+
+
+.ig_AppletiniButtonPressed
+{
+}
+
+
+.ig_AppletiniButtonDisabled
+{
+}
+
+
+.ig_AppletiniHover
+{
+}
+
+
+.ig_AppletiniSelected
+{
+}
+
+
+.ig_AppletiniDisabled
+{
+}
+
+
+.ig_AppletiniHeader
+{
+}
+
+
+.ig_AppletiniFooter
+{
+}
+
+
+.ig_AppletiniEditWithButtons
+{
+}
+
+
+.ig_AppletiniEdit
+{
+}
+
+
+.ig_AppletiniEditInContainer
+{
+}
+
+
+.ig_AppletiniAlt
+{
+	border-top:solid 1px #E3EFFF;
+	border-right:solid 0px #FFFFFF;
+	border-bottom:solid 1px #E3EFFF;
+	border-left:solid 0px #FFFFFF;
+}
+
+
+.ig_AppletiniDropDown
+{
+}
+
+
+.ig_AppletiniEditSelected
+{
+}
+
+
+Body
+{
+	cursor:default;
+}
+
+

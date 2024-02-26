@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="getCabinets">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HashCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCabinetsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getCabinetsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFields">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CabinetID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="HashCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getFieldsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getFieldsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getItemList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ListID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="HashCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getItemListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getItemListResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDocuments">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CabinetID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="Values" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HashCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDocumentsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getDocumentsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getImages">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CabinetID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="DocID" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="HashCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getImagesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getImagesResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="setDocument">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CabinetID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="BatchID" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="FI" type="s:long" />
+            <s:element minOccurs="1" maxOccurs="1" name="FF" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="Values" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Files" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HashCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="setDocumentResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="setDocumentResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sFileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bytFileByteArr" type="s:base64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="HashCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SaveFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SaveFileResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetInboxZaffiro">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MetaData" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FieldSeparator" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FilePath" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="HashCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetInboxZaffiroResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SetInboxZaffiroResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getCabinetsSoapIn">
+    <wsdl:part name="parameters" element="tns:getCabinets" />
+  </wsdl:message>
+  <wsdl:message name="getCabinetsSoapOut">
+    <wsdl:part name="parameters" element="tns:getCabinetsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getFieldsSoapIn">
+    <wsdl:part name="parameters" element="tns:getFields" />
+  </wsdl:message>
+  <wsdl:message name="getFieldsSoapOut">
+    <wsdl:part name="parameters" element="tns:getFieldsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getItemListSoapIn">
+    <wsdl:part name="parameters" element="tns:getItemList" />
+  </wsdl:message>
+  <wsdl:message name="getItemListSoapOut">
+    <wsdl:part name="parameters" element="tns:getItemListResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDocumentsSoapIn">
+    <wsdl:part name="parameters" element="tns:getDocuments" />
+  </wsdl:message>
+  <wsdl:message name="getDocumentsSoapOut">
+    <wsdl:part name="parameters" element="tns:getDocumentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="getImagesSoapIn">
+    <wsdl:part name="parameters" element="tns:getImages" />
+  </wsdl:message>
+  <wsdl:message name="getImagesSoapOut">
+    <wsdl:part name="parameters" element="tns:getImagesResponse" />
+  </wsdl:message>
+  <wsdl:message name="setDocumentSoapIn">
+    <wsdl:part name="parameters" element="tns:setDocument" />
+  </wsdl:message>
+  <wsdl:message name="setDocumentSoapOut">
+    <wsdl:part name="parameters" element="tns:setDocumentResponse" />
+  </wsdl:message>
+  <wsdl:message name="SaveFileSoapIn">
+    <wsdl:part name="parameters" element="tns:SaveFile" />
+  </wsdl:message>
+  <wsdl:message name="SaveFileSoapOut">
+    <wsdl:part name="parameters" element="tns:SaveFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="SetInboxZaffiroSoapIn">
+    <wsdl:part name="parameters" element="tns:SetInboxZaffiro" />
+  </wsdl:message>
+  <wsdl:message name="SetInboxZaffiroSoapOut">
+    <wsdl:part name="parameters" element="tns:SetInboxZaffiroResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ZaffiroIntegratorSoap">
+    <wsdl:operation name="getCabinets">
+      <wsdl:input message="tns:getCabinetsSoapIn" />
+      <wsdl:output message="tns:getCabinetsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getFields">
+      <wsdl:input message="tns:getFieldsSoapIn" />
+      <wsdl:output message="tns:getFieldsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getItemList">
+      <wsdl:input message="tns:getItemListSoapIn" />
+      <wsdl:output message="tns:getItemListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDocuments">
+      <wsdl:input message="tns:getDocumentsSoapIn" />
+      <wsdl:output message="tns:getDocumentsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getImages">
+      <wsdl:input message="tns:getImagesSoapIn" />
+      <wsdl:output message="tns:getImagesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="setDocument">
+      <wsdl:input message="tns:setDocumentSoapIn" />
+      <wsdl:output message="tns:setDocumentSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveFile">
+      <wsdl:input message="tns:SaveFileSoapIn" />
+      <wsdl:output message="tns:SaveFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetInboxZaffiro">
+      <wsdl:input message="tns:SetInboxZaffiroSoapIn" />
+      <wsdl:output message="tns:SetInboxZaffiroSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ZaffiroIntegratorSoap" type="tns:ZaffiroIntegratorSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getCabinets">
+      <soap:operation soapAction="http://tempuri.org/getCabinets" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFields">
+      <soap:operation soapAction="http://tempuri.org/getFields" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getItemList">
+      <soap:operation soapAction="http://tempuri.org/getItemList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDocuments">
+      <soap:operation soapAction="http://tempuri.org/getDocuments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getImages">
+      <soap:operation soapAction="http://tempuri.org/getImages" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setDocument">
+      <soap:operation soapAction="http://tempuri.org/setDocument" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveFile">
+      <soap:operation soapAction="http://tempuri.org/SaveFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetInboxZaffiro">
+      <soap:operation soapAction="http://tempuri.org/SetInboxZaffiro" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ZaffiroIntegratorSoap12" type="tns:ZaffiroIntegratorSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getCabinets">
+      <soap12:operation soapAction="http://tempuri.org/getCabinets" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFields">
+      <soap12:operation soapAction="http://tempuri.org/getFields" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getItemList">
+      <soap12:operation soapAction="http://tempuri.org/getItemList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDocuments">
+      <soap12:operation soapAction="http://tempuri.org/getDocuments" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getImages">
+      <soap12:operation soapAction="http://tempuri.org/getImages" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setDocument">
+      <soap12:operation soapAction="http://tempuri.org/setDocument" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveFile">
+      <soap12:operation soapAction="http://tempuri.org/SaveFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetInboxZaffiro">
+      <soap12:operation soapAction="http://tempuri.org/SetInboxZaffiro" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ZaffiroIntegrator">
+    <wsdl:port name="ZaffiroIntegratorSoap" binding="tns:ZaffiroIntegratorSoap">
+      <soap:address location="http://zeus/ZaffiroIntegrator/ZaffiroIntegrator.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ZaffiroIntegratorSoap12" binding="tns:ZaffiroIntegratorSoap12">
+      <soap12:address location="http://zeus/ZaffiroIntegrator/ZaffiroIntegrator.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

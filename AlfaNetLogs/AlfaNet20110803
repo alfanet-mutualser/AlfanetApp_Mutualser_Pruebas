@@ -1,0 +1,6 @@
+2011-08-03 18:06:31,765 _DocEnviado user cmdBuscar_Click - 192.168.1.100 7 ??1?3000?3000????????311??
+2011-08-03 18:07:50,468 _DocEnviado user cmdBuscar_Click - 192.168.1.100 7 ??25220?500000?500000????????311??
+2011-08-03 18:12:13,750 _NuevoDocRecibido1 user Radicar - 192.168.1.110 1 390032 1?4568963?489?02/08/2011?11/08/2011?724??588?14?TRA354??20?311?
+2011-08-03 18:13:38,390 _DocEnviado user cmdBuscar_Click - 192.168.1.100 7 ??25220?500000?500000????????311??
+2011-08-03 18:20:14,531 _DocEnviado user cmdBuscar_Click - 192.168.1.100 7 ??25220?500000?500000????????311??
+2011-08-03 20:12:51,140 _NuevoDocEnviadoInt user cmdAceptar_Click - 192.168.1.114 1 Error al crear registro. Verifique que los parametros sean validosInstrucción INSERT en conflicto con la restricción FOREIGN KEY "FK_Registro_Serie". El conflicto ha aparecido en la base de datos "AlfaNetMT", tabla "dbo.Serie", column 'SerieCodigo'. 2?562?45460?ss?713?19?????TRA1348?af?311?

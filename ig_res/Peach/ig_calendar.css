@@ -1,0 +1,94 @@
+.igcal_PeachControl
+{
+	border:solid 1px #97462C;
+	cursor:hand;
+}
+
+
+.igcal_PeachCalendar
+{
+}
+
+
+.igcal_PeachDOW
+{
+	background-color:#F0F0F0;
+	font-weight:bold;
+	font-size:xx-small;
+	border-width:0px;
+	border-bottom-style:solid;
+	padding:2px 0px 0px 0px;
+}
+
+
+.igcal_PeachDay
+{
+	font-size:xx-small;
+	border-width:0px;
+}
+
+
+.igcal_PeachNextPrev
+{
+	background-color:#F0F0F0;
+	padding-right:5px;
+	padding-left:5px;
+}
+
+
+.igcal_PeachFooter
+{
+	background-color:#F0F0F0;
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	padding-top:5px;
+	padding-bottom:5px;
+	text-align:center;
+}
+
+
+.igcal_PeachHeader
+{
+	background-color:#F0F0F0;
+	font-weight:bold;
+	font-size:10px;
+	height: 16px;
+	color:#A05223;
+}
+
+
+.igcal_PeachDropDown
+{
+}
+
+
+.igcal_PeachWeekendDay
+{
+}
+
+
+.igcal_PeachOtherMonthDay
+{
+	color:#B3B3B3;
+}
+
+
+.igcal_PeachWeekendDayMajor
+{
+}
+
+
+.igcal_PeachTodayDay
+{
+	border:solid 1px #BB5503;
+}
+
+
+.igcal_PeachSelectedDay
+{
+	background-color:#B95C07;
+	font-weight:bold;
+	color:White;
+}
+
+

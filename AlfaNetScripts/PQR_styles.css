@@ -1,0 +1,325 @@
+﻿body {
+	margin:0;
+    padding: 0px 0px 0px 40px;
+	background:#fff;
+	font:9pt Calibri,Arial, Helvetica, sans-serif;
+	color:#555;
+	line-height:180%;
+}
+
+
+
+
+.textopqr 
+{
+	font:100% Calibri,Arial, Helvetica, sans-serif;
+	color:#555;
+	width: 320px;
+	background: transparent url('../AlfaNetImagen/bg.png') no-repeat;
+	background-repeat:no-repeat;
+	color : #747862;
+	height:20px;
+	border:0;
+	padding:4px 8px;
+	margin-bottom:0px;
+
+}
+.textopqrciudad
+{
+	font:100% Calibri,Arial, Helvetica, sans-serif;
+	color:#555;
+	width: 320px;
+	background: transparent url('../AlfaNetImagen/bg.png') no-repeat;
+	background-repeat:no-repeat;
+	color : #747862;
+	height:20px;
+	border:0;
+	padding:4px 8px;
+	margin-bottom:0px;
+
+}
+
+.textopqrdll 
+{
+	font:100% Calibri,Arial, Helvetica, sans-serif;
+	color:#555;
+	width: 320px;
+	background: transparent url('../AlfaNetImagen/bg.png') no-repeat;
+	background-repeat:no-repeat;
+	color : #747862;
+	height:20px;
+	border:0;
+	padding:4px 3px;
+	margin-bottom:0px;
+
+}
+
+.textopqr2 
+{
+	font:100% Calibri,Arial, Helvetica, sans-serif;
+	color:#555;
+	width: 141px;
+	background: transparent url('../AlfaNetImagen/bgn.png') no-repeat;
+	color : #747862;
+	height:20px;
+	border:0;
+	padding:4px 1px;
+	margin-bottom:0px;
+}
+
+.ddlpqr 
+{
+	font:100% Calibri,Arial, Helvetica, sans-serif;
+	color:#555;
+	width: 319px;
+	height: 20px;
+	background: transparent url('../AlfaNetImagen/bgddl.png') no-repeat;
+	color : #747862;
+	border:0;
+	padding:4px 0px 4px;
+	margin-bottom:0px;
+}
+
+.ddlv2 
+{
+ border-color:White;
+ background: transparent;
+	
+}
+
+
+.ddlver 
+{
+	font:100% Calibri,Arial, Helvetica, sans-serif;
+	border: none 0 White;
+	
+}
+
+.detpqr 
+{
+	font:100% Calibri,Arial, Helvetica, sans-serif;
+	color:#555;
+	width: 320px;
+	height: 133px;
+	background: transparent url('../AlfaNetImagen/bgdet.png') no-repeat;
+	color : #747862;
+	overflow:auto;
+	border:0;
+	padding:4px 1px;
+	margin-bottom:0px;
+}
+
+h1{
+	font-size:180%;
+	font-weight:normal;
+	color:#555;
+}
+
+h2
+	{
+		font-size:20px;
+		color:#CC3300;
+	}
+	
+	
+
+	
+
+#requ
+{
+	color:Red;
+}	
+	
+a{
+	text-decoration:none;
+	color:#f30;	
+}
+p{
+	clear:both;
+	margin:0;
+	padding:.5em 0;
+}
+pre{
+	display:block;
+	font:100% "Courier New", Courier, monospace;
+	padding:10px;
+	border:1px solid #bae2f0;
+	background:#e3f4f9;	
+	margin:.5em 0;
+	overflow:auto;
+	width:800px;
+}
+
+#tooltip{
+	position:absolute;
+	border:1px solid #333;
+	background:#f7f5d1;
+	padding:2px 5px;
+	color:#333;
+	display:none;
+	}	
+
+
+	/*Estilos internos para el panel*/
+    
+    .contenedor_1{
+    position: relative;
+    left: 3px; /*Number should match -left shadow depth below*/
+    top: 50px; /*Number should match -top shadow depth below*/
+    }
+    
+     .contenedor_2{
+    position: relative;
+    left: 5px; /*Number should match -left shadow depth below*/
+    top: 5px; /*Number should match -top shadow depth below*/
+    }
+
+    .contenedor_shad{
+    /* container width*/
+    background-color: #d1cfd0;
+    }
+
+    .contenedor_shad .innerconten{
+    /* Add container height here if desired */
+    background-color: white;
+    border: 1px solid gray;
+    padding: 6px;
+    position: relative;
+    left: -5px; /*shadow depth*/
+    top: -5px; /*shadow depth*/
+    }
+    
+    
+    /*Estilos apara los menus de ayuda*/
+    #example-content-1 {
+	display: none;        /* required */
+	position: absolute;   /* required */
+	padding: 10px;
+	/*border: 1px solid black;
+	background-color: white;*/
+	}
+	
+	#example-content-2 {
+	display: none;        /* required */
+	position: absolute;   /* required */
+	padding: 10px;
+	/*border: 1px solid black;
+	background-color: white;*/
+	}
+	
+	  #example-content-3 {
+	display: none;        /* required */
+	position: absolute;   /* required */
+	padding: 10px;
+	/*border: 1px solid black;
+	background-color: white;*/
+	}
+	
+	#example-content-4 {
+	display: none;        /* required */
+	position: absolute;   /* required */
+	padding: 10px;
+	/*border: 1px solid black;
+	background-color: white;*/
+	}
+	  #example-content-5 {
+	display: none;        /* required */
+	position: absolute;   /* required */
+	padding: 10px;
+	/*border: 1px solid black;
+	background-color: white;*/
+	}
+	
+	#example-content-6 {
+	display: none;        /* required */
+	position: absolute;   /* required */
+	padding: 10px;
+	/*border: 1px solid black;
+	background-color: white;*/
+	}
+	  #example-content-7 {
+	display: none;        /* required */
+	position: absolute;   /* required */
+	padding: 10px;
+	/*border: 1px solid black;
+	background-color: white;*/
+	}
+	
+	#example-content-8 {
+	display: none;        /* required */
+	position: absolute;   /* required */
+	padding: 10px;
+	/*border: 1px solid black;
+	background-color: white;*/
+	}
+	  #example-content-9 {
+	display: none;        /* required */
+	position: absolute;   /* required */
+	padding: 10px;
+	/*border: 1px solid black;
+	background-color: white;*/
+	}
+	
+	#example-content-10 {
+	display: none;        /* required */
+	position: absolute;   /* required */
+	padding: 10px;
+	/*border: 1px solid black;
+	background-color: white;*/
+	}
+	
+	#example-content-11 {
+	display: none;        /* required */
+	position: absolute;   /* required */
+	padding: 10px;
+	/*border: 1px solid black;
+	background-color: white;*/
+	}
+	
+	 .jqmOverlay { background-color: #FFF; }
+            .jqmWindow {
+                background: #888888 url(modal_bckgrn.gif) left top repeat-x;
+                color: #fff;
+                border: 1px solid #888888;
+                padding: 0 0px 50px;
+            }
+
+            button.jqmClose {
+                background: none;
+                border: 0px solid #EAEAEB;
+                color: #000;
+                clear: right;
+                float: right;
+                padding: 0;
+                margin-top:5px;
+                margin-left:5px;
+                cursor: pointer;
+                font-size: 8px;
+
+                letter-spacing: 1px;
+            }
+
+            button.jqmClose:hover, button.jqmClose:active {
+                color: #FFF;
+				border: 0px solid #FFF;
+            }
+
+            #jqmTitle {
+                background: transparent;
+                color: black;
+                text-transform: capitalize;
+                height: 50px;
+                padding: 0px 5px 0 10px;
+
+            }
+
+            #jqmContent {
+                width: 100%;
+                height: 90%;
+                display: block;
+                clear: both;
+                margin: 0;
+                margin-top: 0px;
+                background: #e8e8e8;
+                border: 1px solid #888888;
+            }

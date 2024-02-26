@@ -1,0 +1,238 @@
+.igmv_RubberBlackControl
+{
+	font-size:x-small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border:solid 1px #4B4B4B;
+	margin:0px;
+	overflow: auto;
+	position: relative;
+}
+
+
+.igmv_RubberBlackCaptionHeader
+{
+	background-color:#CECECE;
+	background-position:center ;
+	background-image: url(images/header.jpg);
+	font-weight:bold;
+	font-size:x-small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-width:0px;
+	height: 7%;
+	line-height: 20px;
+	color:White;
+	text-align:center;
+}
+
+
+.igmv_RubberBlackDayHeader
+{
+	background-color:Gainsboro;
+	font-size:xx-small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-top:solid 1px Silver;
+	border-left-color:Transparent;
+	padding-top:0px;
+	padding-right:2px;
+	height: 3%;
+	line-height: 15px;
+	text-align:right;
+	vertical-align:top;
+}
+
+
+.igmv_RubberBlackDay
+{
+	background-color:White;
+	background-position:top ;
+	background-image: url(images/menu_bg.gif);
+	border-left:solid 1px #E1E1E1;
+	height: 8%;
+	cursor:hand;
+	color:Black;
+	vertical-align:top;
+}
+
+
+.igmv_RubberBlackAppointment
+{
+	background-color:DarkGray;
+	background-repeat:repeat-x;
+	font-size:xx-small;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	margin-top:1px;
+	margin-right:1px;
+	margin-left:1px;
+	padding-left:1px;
+	line-height: 15px;
+	cursor:hand;
+	text-align:left;
+}
+
+
+.igmv_RubberBlackAllDayEvent
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	font-size:xx-small;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	border:solid 1px #000000;
+	margin-top:1px;
+	margin-right:1px;
+	margin-left:1px;
+	line-height: 15px;
+	cursor:hand;
+	text-align:left;
+}
+
+
+.igmv_RubberBlackNavigationButton
+{
+	background-color:Transparent;
+	border-width:0px;
+	margin:0px;
+	padding:10px 0px 0px 0px;
+	position: absolute;
+	top: 2px;
+	width: 12px;
+	cursor:hand;
+}
+
+
+.igmv_RubberBlackWeekNumber
+{
+	background-color:Gray;
+	font-weight:bold;
+	font-size:10pt;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	border-top:solid 1px Silver;
+	padding-right:1px;
+	width: 20px;
+	color:White;
+	text-align:center;
+}
+
+
+.igmv_RubberBlackCompressedDay
+{
+	border-left:solid 1px Silver;
+	height: 4%;
+	vertical-align:top;
+}
+
+
+tr.igmv_RubberBlackCaptionHeader td.igmv_RubberBlackWeekNumber
+{
+	background-color:#CECECE;
+	background-position:center ;
+	background-image: url(images/header.jpg);
+	border-width:0px;
+	line-height: 19px;
+	height: 1%;
+}
+
+
+.igmv_RubberBlackMonthDayOfWeekHeader
+{
+	background-position:top ;
+	background-image: url(images/gradient.png);
+	font-size:8pt;
+	font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
+	border-top:solid 1px Silver;
+	border-bottom:solid 1px Silver;
+	margin-top:1px;
+	margin-right:1px;
+	margin-left:1px;
+	height: 1%;
+	line-height: 14px;
+	cursor:default;
+	text-align:center;
+}
+
+
+.igmv_RubberBlackOtherMonthDayHeader
+{
+	font-size:xx-small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	border-top:solid 1px Silver;
+	border-left:solid 1px Silver;
+	padding-top:0px;
+	padding-right:2px;
+	height: 3%;
+	line-height: 15px;
+	color:Silver;
+	text-align:right;
+	vertical-align:top;
+}
+
+
+.igmv_RubberBlackOtherMonthDay
+{
+	background-color:WhiteSmoke;
+	border-left:solid 1px Silver;
+	height: 12%;
+	cursor:hand;
+	color:Black;
+	vertical-align:top;
+}
+
+
+.igmv_RubberBlackOtherCompressedDay
+{
+	border-left:solid 1px Silver;
+	height: 4%;
+	vertical-align:top;
+}
+
+
+.igmv_RubberBlackTodayHeader
+{
+}
+
+
+.igmv_RubberBlackToday
+{
+}
+
+
+.igmv_RubberBlackSelectedAppointment
+{
+	background-color:#316AC5;
+	color:White;
+}
+
+
+.igmv_RubberBlackActiveDayHeader
+{
+	background-color:#E89A00;
+	background-position:center ;
+	background-image: url(images/header_hover.jpg);
+	color:White;
+}
+
+
+.igmv_RubberBlackActiveDay
+{
+	background-position:bottom ;
+	background-image: url(images/bg.gif);
+}
+
+
+.igmv_NavigationButtonPrev
+{
+	left: 3px;
+}
+
+
+.igmv_RubberBlackControl table
+{
+	border-collapse:Collapse;
+}
+
+
+.igmv_NavigationButtonNext
+{
+	right: 3px;
+}
+
+

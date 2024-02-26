@@ -1,0 +1,58 @@
+﻿using System;
+using System.Data;
+using System.Configuration;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+using Oracle.DataAccess.Client;
+
+/// <summary>
+/// Descripción breve de DAL_Ciudad
+/// </summary>
+public class DAL_Ciudad
+{
+	public DAL_Ciudad()
+	{
+	}
+
+    #region Variables
+        OraDataClass oraDataClass = new OraDataClass();
+        DataSet DataSet;
+    #endregion
+
+    #region Metodos
+
+        /// <summary>
+        /// Metodos para el maestro de ciudades.
+        /// </summary>
+        /// <remarks>
+        /// Autor: Anderson Ardila
+        /// Fecha: 10 Marzo 2010
+        /// </remarks>
+        /// 
+
+    
+
+        public DataTable TraerCiudades()
+        {
+            OracleParameter[] Parametros = new OracleParameter[2];
+            DataSet = new DataSet();
+
+            Parametros[0] = new OracleParameter("@sys_refcursor", OracleDbType.RefCursor);
+            Parametros[0].Direction = ParameterDirection.Output;
+
+            Parametros[1] = new OracleParameter("@Status", OracleDbType.Varchar2);
+            Parametros[1].Direction = ParameterDirection.Output;
+            Parametros[1].Size = 4000;
+
+            DataSet = oraDataClass.GetDataSet("ALFANET.CIUDAD_READCIUDAD", Parametros, true);
+
+            return DataSet.Tables[0];
+        }
+
+    #endregion
+
+}

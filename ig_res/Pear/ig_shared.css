@@ -1,0 +1,105 @@
+.ig_PearControl
+{
+	background-color:White;
+	font-size:xx-small;
+	font-family: verdana;
+	cursor:default;
+	color:Black;
+}
+
+
+.ig_PearItem
+{
+	background-color:White;
+	font-size:10px;
+	font-family: verdana;
+	padding-left:1px;
+}
+
+
+.ig_PearButton
+{
+	cursor:hand;
+}
+
+
+.ig_PearButtonHover
+{
+}
+
+
+.ig_PearButtonPressed
+{
+}
+
+
+.ig_PearButtonDisabled
+{
+}
+
+
+.ig_PearHover
+{
+}
+
+
+.ig_PearSelected
+{
+}
+
+
+.ig_PearDisabled
+{
+}
+
+
+.ig_PearHeader
+{
+}
+
+
+.ig_PearFooter
+{
+}
+
+
+.ig_PearEditWithButtons
+{
+}
+
+
+.ig_PearEdit
+{
+}
+
+
+.ig_PearEditInContainer
+{
+}
+
+
+.ig_PearAlt
+{
+	border-top:solid 1px #E3EFFF;
+	border-right:solid 0px #FFFFFF;
+	border-bottom:solid 1px #E3EFFF;
+	border-left:solid 0px #FFFFFF;
+}
+
+
+.ig_PearDropDown
+{
+}
+
+
+.ig_PearEditSelected
+{
+}
+
+
+Body
+{
+	cursor:default;
+}
+
+

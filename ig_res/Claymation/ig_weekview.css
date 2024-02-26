@@ -1,0 +1,130 @@
+.igwv_ClaymationControl
+{
+	border-width:0px;
+	margin-top:2px;
+}
+
+
+.igwv_ClaymationCaptionHeader
+{
+	background-color:#CECECE;
+	background-repeat:repeat-x;
+	background-image: url(images/monthview_header.jpg);
+	font-weight:bold;
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top:solid 1px #ACACAC;
+	border-right:solid 1px #ACACAC;
+	border-bottom:solid 0px #ACACAC;
+	border-left:solid 1px #ACACAC;
+	padding-top:4px;
+	line-height: 16px;
+	height: 17px;
+	color:Black;
+	text-align:center;
+}
+
+
+.igwv_ClaymationDayHeader
+{
+	background-repeat:repeat-x;
+	background-position:top ;
+	background-image: url(images/active_day_header.jpg);
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	border-bottom:solid 1px #D2D2D2;
+	padding:0px 2px 0px 0px;
+	height: 18px;
+	cursor:default;
+	text-align:right;
+}
+
+
+.igwv_ClaymationDay
+{
+	background-position:bottom ;
+	background-image: url(images/addnew.gif);
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top:2px;
+	overflow-x: hidden;
+	cursor:hand;
+}
+
+
+.igwv_ClaymationAppointment
+{
+	margin:0px 1px 0px 1px;
+	padding:2px;
+	line-height: 150%;
+	white-space: nowrap;
+	cursor:pointer;
+}
+
+
+.igwv_ClaymationAllDayEvent
+{
+	background-color:#FAFAFA;
+	border:solid 1px Silver;
+}
+
+
+.igwv_ClaymationNavigationButton
+{
+	background-color:Transparent;
+	border-width:0px;
+	width: 17px;
+	cursor:hand;
+	vertical-align:middle;
+}
+
+
+.igwv_ClaymationDayArea
+{
+	border:solid 1px #ACACAC;
+}
+
+
+.igwv_ClaymationTodayHeader
+{
+	background-color:White;
+	background-repeat:repeat-x;
+	background-position:top ;
+	background-image: url(images/active_day_header.jpg);
+	color:Black;
+}
+
+
+.igwv_ClaymationToday
+{
+}
+
+
+.igwv_ClaymationSelectedAppointment
+{
+	background-color:#DAEAFF;
+	margin-top:1px;
+	margin-right:1px;
+	margin-left:1px;
+	padding:1px;
+	cursor:pointer;
+	color:Black;
+}
+
+
+.igwv_ClaymationActiveDayHeader
+{
+	background-color:#B4B4B4;
+	background-repeat:repeat-x;
+	color:Black;
+}
+
+
+.igwv_ClaymationActiveDay
+{
+	background-color:#F1F2F4;
+	background-repeat:repeat-x;
+	background-image: url(images/day_bg.gif);
+}
+
+

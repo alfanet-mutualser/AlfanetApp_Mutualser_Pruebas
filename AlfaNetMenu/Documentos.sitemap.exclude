@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<siteMap>
+  <siteMapNode title="Home" url="Default2.aspx">
+	  <siteMapNode title="Recibidos" url="~/AlfaNetDocumentos/DocRecibido/NuevoDocRecibido1.aspx"/>
+	  <siteMapNode title="Enviados" url="~/AlfaNetDocumentos/DocEnviado/NuevoDocEnviadoInt.aspx"/>
+	  <siteMapNode title="PQR" url="~/AlfaNetDocumentos/Clases/DocPQR.aspx"/>
+  </siteMapNode>
+</siteMap>

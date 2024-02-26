@@ -1,0 +1,68 @@
+Imports Microsoft.VisualBasic
+Imports DotNetNuke
+Imports DotNetNuke.Entities.Modules
+
+Namespace Cooproconas.Busqueda
+
+    Public Class PopupBuscar
+
+        ' Devuelve el Link para buscar un proceso
+        Public Shared Function linkPopupBuscar(ByVal PAGINA As PortalModuleBase, ByVal CAMPO As TextBox, ByVal ETIQUETA As Label, ByVal TABID As Integer, ByVal MIDID As Integer, Optional ByVal FILTRO As String = "")
+            jsPopupBuscar(CAMPO.Page)
+
+            Dim slParams(0) As String
+            slParams(0) = "mid=" + MIDID.ToString
+
+            Dim NavigateString As String = NavigateURL(TABID)
+            If FILTRO <> "" Then
+                If NavigateString.IndexOf("?") >= 0 Then
+                    NavigateString += "&FILTRO=" + FILTRO
+                Else
+                    NavigateString += "?FILTRO=" + FILTRO
+                End If
+            End If
+
+            Dim cmdLink As String = "javascript:PopupBuscar(" + _
+                                    "'dnn:ctr" + PAGINA.ModuleId.ToString + ":" + PAGINA.ID + ":" + CAMPO.ID + "', " + _
+                                    "'dnn_ctr" + PAGINA.ModuleId.ToString + "_" + PAGINA.ID + "_" + ETIQUETA.ID + "', " + _
+                                    "'" + NavigateString + "'); "
+            Return cmdLink
+        End Function
+
+        ' Agregar el js para buscar un proceso
+        Public Shared Sub jsPopupBuscar(ByVal PAGINA As Page)
+
+            Dim oLink As New HtmlGenericControl("script")
+
+            If PAGINA.Request.ApplicationPath = "/" Then
+                oLink.Attributes("src") = "/js/PopupBuscar.js"
+            Else
+                oLink.Attributes("src") = PAGINA.Request.ApplicationPath + "/js/PopupBuscar.js"
+            End If
+
+            Dim oCSS As Control = PAGINA.Page.FindControl("CSS")
+            If Not oCSS Is Nothing Then
+                oCSS.Controls.AddAt(0, oLink)
+            End If
+        End Sub
+
+        ' Agregar el js para Ejecutar Programas
+        Public Shared Sub jsEjecutar(ByVal PAGINA As Page)
+
+            Dim oLink As New HtmlGenericControl("script")
+
+            If PAGINA.Request.ApplicationPath = "/" Then
+                oLink.Attributes("src") = "/js/RunApp.js"
+            Else
+                oLink.Attributes("src") = PAGINA.Request.ApplicationPath + "/js/RunApp.js"
+            End If
+
+            Dim oCSS As Control = PAGINA.Page.FindControl("CSS")
+            If Not oCSS Is Nothing Then
+                oCSS.Controls.AddAt(0, oLink)
+            End If
+        End Sub
+
+    End Class
+
+End Namespace

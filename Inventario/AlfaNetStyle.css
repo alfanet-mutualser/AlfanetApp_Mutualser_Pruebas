@@ -1,0 +1,1867 @@
+﻿body, div, p, h1, h2, h3, h4, ul, li, table
+{
+	border-style: none;
+	border-color: inherit;
+	border-width: medium;
+	margin: 0 0 0px 0;
+	padding: 0;
+}
+
+body
+{
+	/*background: WHITE url(AlfaNetImagen/MainMaster/after_BackGround.png)  ;*/
+	font-family: Tahoma, Arial, sans-serif;
+	/* background-repeat: repeat;*/ 
+	font-size:75%;
+	height: 1004px;
+}
+
+/* Master Page Layout */
+#master_header
+{
+	margin: -1px auto 0 auto;
+	width: 800px;
+}
+
+#master_headertop
+{
+	background: url(images/headertop_img.jpg) no-repeat left top;
+}
+
+#master_headerbottom
+{
+	background: url(images/headerbottom_img.png) no-repeat left top;
+}
+
+#master_page
+{
+	margin: 5px auto 20px auto;
+	width: 800px;
+}
+
+#master_menu
+{
+	float: left;
+	width: 240px;
+	padding-right: 10px;
+}
+
+#LnkCerrar
+{
+		color: #FFF;
+}
+.sidebar
+{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.sidebarheader
+{
+	height: 24px;
+	padding: 10px 0 0 35px;
+	background: url(images/sidebar_header.png) no-repeat left top;
+	color: #FFF;
+	font-family: Arial, Sans-Serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.sidebarcontent
+{	
+	border: 1px solid #0F2543;
+	padding: 20px 20px 20px 30px;
+	line-height: 1.5em;
+	font-weight: bold;
+}
+
+#master_sidebarSamples
+{	
+	padding-top: 72px;
+	background: #FFF url(images/samples_bg.gif) no-repeat left top;
+}
+
+#master_sidebarWalkthroughs
+{
+	padding-top: 72px;
+	background: #FFF url(images/walkthrough_bg.gif) no-repeat left top;
+}
+
+.sidebarcontent a
+{
+	padding: 2px 5px;
+	color: #5377A9;
+	text-decoration: none;
+}
+
+.sidebarcontent a:hover
+{
+	background-color: #0F2543;
+	color: #FFF;
+}
+
+.sidebarcontent a:visited
+{
+	font-weight: normal;
+}
+
+#master_content
+{
+	float: left;
+	width: 550px;
+	margin-right: -550px;
+	color: #666666;
+}
+
+#master_content ul
+{
+	margin: 0 25px 0 30px;
+}
+
+#master_content ul li ul li
+{
+	list-style-type: disc;
+}
+
+#master_contentheader
+{
+	height: 19px;
+	background: url(images/rightcoltop.gif) no-repeat right top;
+}
+
+#master_contentplaceholder
+{
+	padding: 30px 20px 40px 20px;
+	border-left: 1px solid #0F2543;
+	border-right: 1px solid #0F2543;
+	border-bottom: 1px solid #0F2543;
+	background-color: #EFEFEF;
+	line-height: 1.5em;
+}
+
+#master_contentfooter
+{
+	clear: both;
+	padding: 10px 0 5px 10px;
+	color: #333;
+	font-size: 0.8em;
+	letter-spacing: 0.1em;
+}
+
+/* Content Page Layout */
+.demoarea {
+	padding:20px;
+	background:#FFF url(images/demotop.png) no-repeat left top;
+}
+
+.demoarea p 
+{
+	padding:5px;
+}
+
+.demoheading {
+	padding-bottom:20px;
+	color:#5377A9;
+	font-family:Arial, Sans-Serif;
+	font-weight:bold;
+	font-size:1.5em;
+}
+
+.demobottom {
+	height:8px;
+	background:#FFF url(images/demobottom.png) no-repeat left bottom;
+}
+
+
+.heading {
+	padding: 1em 0 1em 0;
+	color:#5377A9;
+	font-family:Arial, Sans-Serif;
+	font-weight:bold;
+	font-size:1.2em;
+}
+
+.subheading{
+	padding:.8em 0 0.5em 0;
+	color:#0F2543;
+	font-weight:bold;
+	font-family:Arial, Sans-Serif;
+	font-size:1.1em;
+}
+
+p {}
+
+em {font-style:italic}
+
+i {font-style: italic;}
+
+strong {font-weight:bold;}
+
+.codeReference
+{
+	font-family: 'Courier New', Monospace;
+	font-style: normal;
+	font-weight: bold;
+}
+
+pre, code {
+	display:block;
+	margin:15px 15px 15px 0;
+	padding:10px;
+	border:1px dashed #CCC;
+	background-color:#FFF;
+	color:#000;
+	font-family:'Courier New', Monospace;
+	font-size:0.9em;
+	font-style:normal;
+}
+
+.releaseList {
+	list-style-type:disc;
+}
+
+
+/* Styles for the Animation Reference */
+.animationReferenceTable
+{
+}
+
+.animationReferenceRow
+{
+}
+
+.animationReferenceField
+{
+	text-align: right;
+	vertical-align: top;
+	padding-top: 5px;
+}
+
+.animationReferenceCode
+{
+	margin-top: 5px;
+	vertical-align: top;
+	font-family: 'Courier New', Monospace;
+	font-style: normal;
+	font-weight: bold;
+	
+	display:block;
+	background-color:#FFF;
+	color:#000;
+	font-family:'Courier New', Monospace;
+	font-size:0.9em;
+	font-style:normal;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.animationReferenceItems
+{
+	vertical-align: top;
+}
+
+.animationReferenceItemTable
+{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.animationReferenceItemRow
+{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.animationReferenceItem
+{
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	padding-bottom: 10px;
+}
+
+.animationReferenceItemCode
+{
+	display:block;
+	background-color:#FFF;
+	color:#000;
+	font-family:'Courier New', Monospace;
+	font-size:0.9em;
+	font-style:normal;
+	font-weight: bold;
+}
+
+/******************************/
+/**Styling information specific to individual content pages**/
+
+/* Accordion */
+.accordionHeader
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #2E4d7B;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#master_content .accordionHeader a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+#master_content .accordionHeader a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+
+.accordionHeaderSelected
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #5078B3;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#master_content .accordionHeaderSelected a
+{
+	color: #FFFFFF;
+	background: none;
+	text-decoration: none;
+}
+
+#master_content .accordionHeaderSelected a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+
+.accordionContent
+{
+    background-color: #FFFFFF;
+    border: 1px dashed #2F4F4F;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+/*AutoComplete flyout */
+
+.autocomplete_completionListElement 
+{  
+	visibility : hidden;
+	margin : 0px!important;
+	background-color : inherit;
+	color : windowtext;
+	border : buttonshadow;
+	border-width : 1px;
+	border-style : solid;	
+	cursor : 'default';
+	overflow :scroll;
+	height : 200px;
+    text-align : left; 
+    list-style-type : none;
+    font-family: Arial, Sans-Serif;
+    font-size:11px;
+    position:inherit;
+}
+
+/* AutoComplete highlighted item */
+
+.autocomplete_highlightedListItem
+{
+	/*background-color: #ffff99;*/
+	background-color:ActiveCaption;
+	color: WHITE;
+	padding: 1px;
+	font-family: Arial, Sans-Serif;
+	font-size:12px;
+}
+
+/* AutoComplete item */
+
+.autocomplete_listItem 
+{
+	background-color : window;
+	border : buttonshadow;
+	border-width : 1px;
+	border-style : solid;	
+	color : windowtext;
+	padding : 1px;
+	font-family: Arial, Sans-Serif;
+	font-size:11px;
+}
+
+
+/*Cascading DropDown*/
+
+/*CollapsiblePanel*/
+.collapsePanel {
+	
+	background-color:white;
+	overflow:hidden;
+}
+
+.collapsePanelHeader{
+	width:100%;
+	height:30px;
+	background-image: url(imagenes/bg-menu-main.png);
+	background-repeat:repeat-x;
+	color:#FFF;
+	font-weight:bold;
+}
+
+#master_content .collapsePanelHeader a {color:#FFF;}
+#master_content .collapsePanelHeader a:hover {text-decoration:none;background:none;}
+
+/*Confirm Button*/
+
+/* DropShadow */
+
+#master_content .dropShadowPanel span {color:white;text-decoration:underline;}
+#master_content .dropShadowPanel span:hover {text-decoration:none;}
+
+
+.dropShadowPanel 
+{
+	width:300px;
+	background-color:#5377A9;
+	color:white;
+	font-weight:bold;
+}
+
+/*Drag Panel*/
+.dragMe {
+	width:100%;
+	height:21px;
+	background-color:#FFF;
+	background-image:url(images/header-opened.png);
+	text-align:center;
+	cursor:move;
+	font-weight:bold;
+}
+
+.overflowHidden {overflow:hidden;}
+
+.overflowScroll {overflow:hidden;}
+
+/*Hover Menu*/
+.popupMenu {
+	position:absolute;
+	visibility:hidden;
+	background-color:#F5F7F8;
+	opacity:.9;
+	filter: alpha(opacity=90);
+}
+
+.popupHover {
+	background-image:url(images/header-opened.png);
+	background-repeat:repeat-x;
+	background-position:left top;
+	background-color:#F5F7F8;
+}
+
+/* PagingBulletedList */
+.selectIndex {
+    font-weight: bold;
+    text-decoration:none;
+}
+.unselectIndex {
+    font-weight:normal;
+    text-decoration:underline;
+}
+
+
+/*Modal Popup*/
+.modalBackground {
+	background-color:Gray;
+	filter:alpha(opacity=70);
+	opacity:0.7;
+}
+
+.modalPopup {
+	background-color:#ffffdd;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	width:250px;
+}
+
+.sampleStyleA {
+	background-color:#FFF;
+}
+
+.sampleStyleB {
+	background-color:#FFF;
+	font-family:monospace;
+	font-size:10pt;
+	font-weight:bold;
+}
+
+.sampleStyleC {
+	background-color:#ddffdd;
+	font-family:sans-serif;
+	font-size:10pt;
+	font-style:italic;
+}
+
+.sampleStyleD {
+	background-color:Blue;
+	color:White;
+	font-family:Arial;
+	font-size:10pt;
+}
+
+/*Popup Control*/
+.popupControl{
+	background-color:White;
+	position:absolute;
+	visibility:hidden;
+}
+
+/*Reorder List*/
+.dragHandle {
+	width:10px;
+	height:15px;
+	background-color:Blue;
+	background-image:url(images/bg-menu-main.png);
+	cursor:move;
+	border:outset thin white;
+}
+
+.callbackStyle {
+	border:thin blue inset;		
+}
+
+.callbackStyle table {
+	background-color:#5377A9;	
+	color:Black;
+}
+
+
+.reorderListDemo li {
+	list-style:none;
+	margin:2px;
+	background-image:url(images/bg_nav.gif);
+	background-repeat:repeat-x;
+	color:#FFF;
+}
+
+.reorderListDemo li a {color:#FFF !important; font-weight:bold;}
+
+.reorderCue {
+	border:dashed thin black;
+	width:100%;
+	height:25px;
+}
+
+.itemArea {
+	margin-left:15px;
+	font-family:Arial, Verdana, sans-serif;
+	font-size:1em;
+	text-align:left;
+}
+
+
+/* Rounded Corners*/
+
+.roundedPanel
+{	
+	width:300px;
+	background-color:#5377A9;
+	color:white;
+	font-weight:bold;
+}
+
+/* ResizableControl */
+
+.frameImage
+{
+	width:130px;
+	height:65px;
+	overflow:hidden;
+	float:left;
+	padding:3px;
+}
+
+.frameText
+{
+	width:100px;
+	height:100px;
+	overflow:auto;
+	float:left;
+	background-color:#ffffff;
+	border-style:solid;
+	border-width:2px;
+	border-color:Gray;
+	font-family:Helvetica;
+	line-height:normal;
+}
+
+.handleImage
+{
+	width:15px;
+	height:16px;
+	background-image:url(images/HandleHand.png);
+	overflow:hidden;
+	cursor:se-resize;
+}
+
+.handleText
+{
+	width:16px;
+	height:16px;
+	background-image:url(images/HandleGrip.png);
+	overflow:hidden;
+	cursor:se-resize;
+}
+
+.resizingImage
+{
+	padding:0px;
+	border-style:solid;
+	border-width:3px;
+	border-color:#B4D35D;
+}
+
+.resizingText
+{
+	padding:0px;
+	border-style:solid;
+	border-width:2px;
+	border-color:#7391BA;
+}
+        .WaterMarkedTextBox
+        {
+            width:99%;
+            height: 2%;
+            border: 1px solid #BEBEBE;
+            /*font-size: 8pt;
+            text-align: center;*/
+        }
+/*Textbox Watermark*/
+
+.unwatermarked {
+	height:18px;
+	width:148px;
+}
+
+.watermarked {
+	height:20px;
+	width:150px;
+	padding:2px 0 0 2px;
+	border:1px solid #BEBEBE;
+	background-color:#F0F8FF;
+	color:gray;
+}	
+
+/* Rating */
+.ratingStar {
+    font-size: 0pt;
+    width: 13px;
+    height: 12px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.filledRatingStar {
+    background-image: url(Images/FilledStar.png);
+
+}
+
+.emptyRatingStar {
+    background-image: url(Images/EmptyStar.png);
+}
+
+.savedRatingStar {
+    background-image: url(Images/SavedStar.png);
+}
+
+
+/*Toggle Button*/
+
+/*Setup*/
+.walkthrough li {padding-bottom:5px;}
+
+/*Using a sample extender*/
+
+/*Creating a new extender*/
+.walkthroughNote {
+	padding-left:25px;
+	font-style:italic;
+}
+
+/*Other neat stuff*/
+
+
+
+
+
+/************ PasswordStrength Related Styles ***********************/
+.TextIndicator_TextBox1
+{
+     background-color:Gray;
+     color:White;
+     font-family:Arial;
+     font-size:x-small;
+     font-style:italic;
+     padding: 2px 3px 2px 3px;
+}
+
+.BarIndicator_TextBox2_weak
+{
+    color:Red;
+    background-color:Red;
+}
+.BarIndicator_TextBox2_average
+{
+    color:Blue;
+    background-color:Blue;
+}
+.BarIndicator_TextBox2_good
+{
+    color:Green;
+    background-color:Green;
+}
+
+.BarBorder_TextBox2
+{
+    border-style:solid;
+    border-width:1px;
+    padding:2px 2px 2px 2px;
+    width:200px;
+    vertical-align:middle;
+}
+
+.TextIndicator_TextBox3
+{
+     background-color:Blue;
+     color:Yellow;
+     font-size:small;
+     font-variant:small-caps;
+     padding: 2px 3px 2px 3px;
+}
+
+.TextIndicator_TextBox3_Handle
+{
+	width:16px;
+	height:14px;
+	background-image:url(images/Question.png);
+	overflow:hidden;
+	cursor:help;
+}
+
+.TextIndicator_TextBox1_Strength1
+{
+     background-color:Gray;
+     color:White;
+     font-family:Arial;
+     font-size:x-small;
+     font-style:italic;
+     padding: 2px 3px 2px 3px;
+     font-weight:bold;
+}
+.TextIndicator_TextBox1_Strength2
+{
+     background-color:Gray;
+     color:Yellow;
+     font-family:Arial;
+     font-size:x-small;
+     font-style:italic;
+     padding: 2px 3px 2px 3px;
+     font-weight:bold;
+}
+.TextIndicator_TextBox1_Strength3
+{
+     background-color:Gray;
+     color: #FFCAAF;
+     font-family:Arial;
+     font-size:x-small;
+     font-style:italic;
+     padding: 2px 3px 2px 3px;
+     font-weight:bold;
+}
+.TextIndicator_TextBox1_Strength4
+{
+     background-color:Gray;
+     color:Aqua;
+     font-family:Arial;
+     font-size:x-small;
+     font-style:italic;
+     padding: 2px 3px 2px 3px;
+     font-weight:bold;
+}
+.TextIndicator_TextBox1_Strength5
+{
+     background-color:Gray;
+     color: #93FF9E;
+     font-family:Arial;
+     font-size:x-small;
+     font-style:italic;
+     padding: 2px 3px 2px 3px;
+     font-weight:bold;
+}
+
+
+
+.dynamicPopulate_Normal
+{
+	border:silver 1px inset;
+	padding:2px;
+	text-align:center;
+	height:2em;
+	margin:5px;
+	width:200px;
+}
+
+.dynamicPopulate_Updating 
+{
+	background-image:url(images/loading.gif);
+	background-repeat:no-repeat;
+	border:silver 1px inset;
+	text-align:center;
+	padding:2px;
+	height:2em;
+	margin:5px;
+	width:200px;
+}
+/************ MaskedEdit Related Styles ***********************/
+.MaskedEditFocus
+{
+    background-color: #ffffcc;
+    color: #000000;
+}
+.MaskedEditMessage
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+.MaskedEditError
+{
+    background-color: #ffcccc;
+}
+.MaskedEditFocusNegative
+{
+    background-color: #ffffcc;
+    color: #ff0000;
+}
+.MaskedEditBlurNegative
+{
+    color: #ff0000;
+}
+
+.MyCalendar .ajax__calendar_container {
+    border:1px solid #646464;
+    background-color: lemonchiffon;
+    color: red;
+}
+.MyCalendar .ajax__calendar_other .ajax__calendar_day,
+.MyCalendar .ajax__calendar_other .ajax__calendar_year {
+    color: black;
+}
+.MyCalendar .ajax__calendar_hover .ajax__calendar_day,
+.MyCalendar .ajax__calendar_hover .ajax__calendar_month,
+.MyCalendar .ajax__calendar_hover .ajax__calendar_year {
+    color: black;
+}
+.MyCalendar .ajax__calendar_active .ajax__calendar_day,
+.MyCalendar .ajax__calendar_active .ajax__calendar_month,
+.MyCalendar .ajax__calendar_active .ajax__calendar_year {
+    color: black;
+    font-weight:bold;
+}
+
+/* SlideShow styles */
+
+.slideTitle
+{
+	font-weight:bold;
+	font-size:small;
+	font-style:italic;
+}
+
+.slideDescription
+{
+	font-size:small;
+	font-weight:bold;
+}
+
+.validatorCalloutHighlight
+{
+    background-color: lemonchiffon;
+}
+
+.ListSearchExtenderPrompt
+{
+	font-style:italic;
+	color:Gray;
+	background-color:white;
+}
+	
+	
+	.MessageStyle
+    {
+        background-color: Gray;
+        filter: alpha(opacity=70);
+        opacity: 0.7;
+    }
+    
+    .DVStyle
+    {
+		width: 370px;
+		height:  50px;
+		vertical-align: middle;
+		text-align: left;
+		
+    }
+    
+    .DVLblStyle
+    {
+		width: 280px;
+    }
+    
+    .DVTxtStyle
+    {
+		width: 250px;
+    }
+    
+    .DVRbtnLstStyle
+    {
+		width: 250px;
+    }
+    
+    .DVChkLstStyle
+    {
+		width: 250px;
+    }
+    
+    .TxtStyle
+    {
+		width: 150px;
+    }
+    
+    .TxtStyleAutoComplete
+    {
+	  width: 200px;
+	  background-color: LightSteelBlue;
+	  Font-Size: 11Px;	
+    }
+    
+    .TxtAutoComplete
+    {
+	  width: 300px;
+	  background-color: White;	
+	  Font-Size:11px;
+	  font-family: Arial, Sans-Serif;
+	  cursor:pointer;  
+    }
+    .TxtAutoCompleteMini
+    {	
+	  Font-Size: 7Pt;
+	  font-family: Arial, Sans-Serif; 
+    }
+    .TxtMaestro
+    {
+	  width: 250px;
+	  font-family: Arial, Sans-Serif;
+	   
+    }
+    .TxtMaestroPadre
+    {
+	  width: 200px;	
+	  font-family: Arial, Sans-Serif;
+	   
+    }
+    .TxtMaestroPadre1
+    {
+	  width: 250px;
+	  font-family: Arial, Sans-Serif;	
+	   
+    }
+    .LblSearch
+	{
+	  width: 250px;
+	  background-color: #ffe6a0;	  
+    }
+	.LstBoxStyle
+	{
+		width: 250px;
+		height: 25px;
+
+		 outline-style:none;
+		 border: none;
+	}
+	.TxtFormulario
+	{
+		Font-Size: 10Pt;
+		Color: #4282b5;
+		font-weight:normal;
+ 
+	}
+	.TxtDefaulValues
+	{
+		Font-Size: 10Pt;
+		Color:WindowText;
+		font-weight:normal;
+		background-color: #ffe6a0;
+	}
+	
+	
+.ContextMenuPanel 
+{
+	border: 1px solid #868686;
+	z-index: 1000;
+	background: url(images/menu-bg.gif) repeat-y 0 0 #FAFAFA;
+	cursor: default;
+	padding: 1px 1px 0px 1px;
+	font-size: 10px;
+}
+
+.ContextMenuBreak
+{
+	margin:1px 1px 1px 32px;
+	padding:0;
+	height:1px;
+	overflow:hidden;
+	display:block;
+	border-top: 1px solid #C5C5C5;	
+}
+
+a.ContextMenuItem
+{
+	margin: 1px 0 1px 0;
+	display: block;
+	color: #003399;
+	text-decoration: none;
+	cursor: pointer;	
+	padding: 4px 19px 4px 33px;
+	white-space: nowrap;
+}
+
+a.ContextMenuItem-Selected
+{
+	font-weight: bold;
+}
+
+a.ContextMenuItem:hover
+{
+	background-color: #FFE6A0;
+	color: #003399;
+	border: 1px solid #D2B47A;
+	padding: 3px 18px 3px 32px;
+}	
+
+.accordionContent
+{
+    /* background-color: #D3DEEF;*/
+    border: 1px dashed #2F4F4F;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.accordionHeader
+{
+	border: 1px solid #2F4F4F;
+	color: Black;
+	background: url(Imagenes/bg-menu-main.png);
+	 /* background-color: #2E4d7B;*/
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px;
+	margin-top: 5px;
+	cursor: pointer;
+	text-align: left;
+}
+
+.accordionHeaderSelected
+{
+    border: 1px solid #2F4F4F;
+    background: url(Imagenes/bg-menu-main.png);
+    /*background-color: #5078B3;*/
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.accordionLink
+{
+	color: White;
+}
+
+
+/************ PasswordStrength Related Styles ***********************/
+.TextIndicator_TextBox1
+{
+     background-color:Gray;
+     color:White;
+     font-family:Arial;
+     font-size:x-small;
+     font-style:italic;
+     padding: 2px 3px 2px 3px;
+}
+
+.BarIndicator_TextBox2_weak
+{
+    color:Red;
+    background-color:Red;
+}
+.BarIndicator_TextBox2_average
+{
+    color:Blue;
+    background-color:Blue;
+}
+.BarIndicator_TextBox2_good
+{
+    color:Green;
+    background-color:Green;
+}
+
+.BarBorder_TextBox2
+{
+    border-style:inset
+    border-width:1px;
+    padding:2px 2px 2px 2px;
+    width:80px;
+    vertical-align:middle;
+}
+
+.TextIndicator_TextBox3
+{
+     background-color:Blue;
+     color:Yellow;
+     font-size:small;
+     font-variant:small-caps;
+     padding: 2px 3px 2px 3px;
+}
+
+.TextIndicator_TextBox3_Handle
+{
+	width:16px;
+	height:14px;
+	background-image:url(images/Question.png);
+	overflow:hidden;
+	cursor:help;
+}
+
+.TextIndicator_TextBox1_Strength1
+{
+     background-color:Gray;
+     color:White;
+     font-family:Arial;
+     font-size:x-small;
+     font-style:italic;
+     padding: 2px 3px 2px 3px;
+     font-weight:bold;
+}
+.TextIndicator_TextBox1_Strength2
+{
+     background-color:Gray;
+     color:Yellow;
+     font-family:Arial;
+     font-size:x-small;
+     font-style:italic;
+     padding: 2px 3px 2px 3px;
+     font-weight:bold;
+}
+.TextIndicator_TextBox1_Strength3
+{
+     background-color:Gray;
+     color: #FFCAAF;
+     font-family:Arial;
+     font-size:x-small;
+     font-style:italic;
+     padding: 2px 3px 2px 3px;
+     font-weight:bold;
+}
+.TextIndicator_TextBox1_Strength4
+{
+     background-color:Gray;
+     color:Aqua;
+     font-family:Arial;
+     font-size:x-small;
+     font-style:italic;
+     padding: 2px 3px 2px 3px;
+     font-weight:bold;
+}
+.TextIndicator_TextBox1_Strength5
+{
+     background-color:Gray;
+     color: #93FF9E;
+     font-family:Arial;
+     font-size:x-small;
+     font-style:italic;
+     padding: 2px 3px 2px 3px;
+     font-weight:bold;
+}
+
+.dynamicPopulate_Normal
+{
+	border:silver 1px inset;
+	padding:2px;
+	text-align:center;
+	height:2em;
+	margin:5px;
+	width:200px;
+}
+
+.dynamicPopulate_Updating 
+{
+	background-image:url(images/loading.gif);
+	background-repeat:no-repeat;
+	border:silver 1px inset;
+	text-align:center;
+	padding:2px;
+	height:2em;
+	margin:5px;
+	width:200px;
+}
+
+.heading {
+	color:#5377A9;
+	font-family:Arial, Sans-Serif;
+	font-weight:bold;
+	font-size:8pt;
+}
+.watermark
+{
+	background: #FFAAFF;
+}
+
+.popupControl
+{
+	background-color: white;
+	position: absolute;
+	visibility: hidden;
+	border-style: solid;
+	border-color: Black;
+	border-width: 1px;
+}
+
+.demoheading {
+	padding-bottom:20px;
+	color:#5377A9;
+	font-family:Arial, Sans-Serif;
+	font-weight:bold;
+	font-size:1.5em;
+}
+
+.collapsePanelHeader{
+	width:100%;
+	height:30px;
+	background-image: url(~/AlfaNetImagen/MainMaster/LightBlue.jpg);
+	background-repeat:repeat-x;
+	color:#FFF;
+	font-weight:bold;
+}
+
+/*CollapsiblePanel*/
+.collapsePanel {
+	background-color:white;
+	overflow:hidden;
+}
+
+.popupMenu 
+{
+	height:200%;
+	width:300%;
+	position:absolute;
+	visibility:hidden;
+	background-color:#F5F7F8;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	cursor: pointer;
+}
+
+.PointerCursor
+{
+	font-family: MS Reference Sans Serif;
+	font-size:11px;
+	color: White;
+	cursor: pointer;
+}
+
+LabelContextMenuItem
+{
+	background-color: #FFE6A0;
+	color: #003399;
+	border: 1px solid #D2B47A;
+	padding: 3px 18px 3px 32px;
+}	
+
+        .modalBackground {
+            background-color:Gray;
+            filter:alpha(opacity=70);
+            opacity:0.7;
+        }
+        .thumbnail{
+            height: 100px;
+            width: 130px;
+            cursor: hand;
+        } 
+        .imgpopup{
+            height: 500px;
+            width: 600px;
+        }    
+        
+        
+	.BtnOutlook
+	{
+		background-image: url(~/AlfaNetImagen/ToolBar/btnOutlook.gif);
+		
+	}
+	.LabelStyle
+	{
+	font-family: MS Reference Sans Serif;
+	font-size:11px;
+	color: White;
+	/*background-image: url(AlfaNetImagen/MainMaster/Label_bg.png);*/
+	border-color: White;
+	border-style:dotted;
+	border-width:160px;
+	font-weight: bold;
+	
+		 background-color:CornflowerBlue;
+		 border: 2px solid #B5C7DE;
+		 color: #ffffff;
+		 font-size:small;
+		
+	}
+		
+	  .myImageItem
+     {
+       border: solid 1px Black;
+       margin-top:5px;
+       background-color: White;
+       filter: alpha(opacity=25); 
+       opacity:0.25;
+     }
+
+     .mySelectedImageItem
+     {
+       border: solid 1px Red;
+       filter: alpha(opacity=100);
+     }
+     .LinKBtnStyle
+	{	 
+		 font-size:smaller;
+		 background-color: Transparent;
+		 border:None;
+		 font-style:normal;
+	     color:Blue;
+	     font:Underline;
+	     cursor:pointer;
+	     text-decoration: underline;
+		
+	}
+	.LinKBtnStyleBig
+	{	 
+		 background-color: Transparent;
+		 border:None;
+		 font-style:normal;
+		 font-size:85%;
+	     color:Blue;	     
+	     font:Underline;
+	     cursor:pointer;
+	     text-decoration: underline;
+	     
+		
+	}
+	.LabelStyleGrid
+	{
+		 font-size:XX-Small;
+		 
+		
+	}
+	.TextBoxStyleGrid
+	{
+		 
+		 cursor:pointer;
+		
+	}
+	.ImageButtonStyleF
+	{
+		 font-size:XX-Small;
+		
+	}
+	
+	.Splitters{
+        font-family:calibri, verdana, arial;
+        font-size:12px;
+        width:300px;
+        float:left;
+        margin-top:1px;
+        margin-left:1px;
+    }
+    
+    .SplitterBar{
+        background-image:none;
+        background-color:#fafafa;
+        padding:1px 0px;
+    }
+    
+    .SplitterBarHover{
+        padding:0px;
+        border:1px solid #f3f3f3;
+        border-width:1px 0px;
+       
+    }
+    
+    .SplitterBarThickness{
+        height:8px;
+    }
+    
+    .container
+	{
+		background-color: #EBEBEB;
+		width: 100%;
+		height: 100%;
+	}
+	
+
+
+	H1
+	{
+    font-family: Sans-Serif, Arial, Tahoma;
+    font-size: 14pt;
+    color: #0066CC;
+	}
+
+	.viewerContainer
+	{
+    overflow:scroll;
+    width: 100%;
+    height: 100%;
+    background-color: Gray;
+    padding: 20px 0px 20px 0px;
+	}
+
+	.viewerHeader
+	{
+    background-color: #EBEBEB;
+	}
+	
+	.input {
+    border: 1px solid #006;
+    background: #ffc;
+    }
+    
+   .input:hover {
+    border: 1px solid #f00;
+    background: #ff6;
+    }
+    
+a.lnkbtn:link,
+a.lnkbtn:visited 
+{
+	color: #fff;
+	
+	background-image: url(AlfaNetImagen/MainMaster/button_bg.png);
+	background-repeat: repeat-y;
+    background-position:top;
+    
+    text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+	position:static;
+	
+   }
+
+a.lnkbtn:hover {
+     
+    color: #fff;
+	
+	background-image: url(AlfaNetImagen/MainMaster/tab_bottom_hover.gif);
+	background-repeat: repeat-y;
+    background-position:top;
+    
+    text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+    
+   }
+
+a.lnkbtn:active {
+ 	color: #fff;
+	
+	background-image: url(AlfaNetImagen/MainMaster/button_bg.png);
+	background-repeat: repeat-y;
+    background-position:top;    
+    text-decoration: none;
+	padding-left: 10px;
+	padding-right: 10px;
+   } 
+   
+   
+
+.tmanual
+{
+	font-size:xx-large;
+	font-family:Calibri;
+	color:Navy;
+	
+}
+
+.contmanual
+{
+	font-size: medium;
+	font-family:Berlin Sans FB ;
+	color: Black;
+}
+
+.textosalfa
+{
+	font-size: smaller;
+	font-family: MS Reference Sans Serif;
+	color: Black;
+}
+
+.textosacordeones
+{
+	font-size: 11px;
+	font-family: MS Reference Sans Serif;
+}
+/* propiedades de los Label de las pantallas de Inicio*/
+.PropLabelsInicio
+{
+	/* font-family: MS Reference Sans Serif;*/
+	font-size:11px;
+	color: black;
+}	
+/* */
+.PropLabels
+{
+	font-family: Arial, Sans-Serif;
+	font-size:12px;
+	color: White;
+	background-color: CornFlowerBlue;
+	border-color: White;
+	border-style:dotted;
+	border-width:1px;
+	font-weight: bold;
+}
+
+/* */
+.PropLabelsFecha
+{
+	font-size:11px;
+	color: Black;
+	background-color: LightGray;
+	border-style:dotted;
+	border-width:1px;
+	font-family: Arial, Sans-Serif;
+}
+	
+/* Propiedades de los Labels del formulario Copia - Radicación*/
+.PropLabels2
+{
+	/*font-family: MS Reference Sans Serif;*/
+	font-family: Arial, Sans-Serif;
+	font-size:11px;
+	color:Navy;
+	background-color: White;
+	border-color: Navy;
+	border-style:dotted;
+	border-width:1px;
+}	
+
+.TxtProp
+  {
+	 background-color: White;	
+	 Font-Size:11px;
+	 font-family:MS Reference Sans Serif;
+  }
+
+.TxtOpciones
+  {
+	 background-color:White;	
+	 Font-Size:11px;
+	 color:RoyalBlue;
+	 font-family:MS Reference Sans Serif;
+  }
+  
+  .PropAccordion
+  {
+	 font-family: MS Reference Sans Serif;
+	 Font-Size:11px;
+	 color:white;
+  }
+  .CentradaLL 
+  { position:absolute; 
+	top:1%; 
+	left:10%;
+	width:100%; 
+	/*height:80%;*/ 
+	}
+	
+#CentradaPor
+  { position:absolute; 
+	/*top:1%; */
+	left:10%;
+	/*width:100%;*/ 
+	/*height:80%;*/ 
+	}	
+	
+	#global {width:100% ; 
+		   margin :1px auto }
+	#global_900 {width:800px ; 
+		   margin :1px auto }	   
+	#globalh{height:700px ; 
+		  }
+	#CentrandoPru 
+	{  
+	top:1%; 
+	left:30%;
+	width:100%; 
+	/*height:80%;*/ 
+	}		   
+		   
+	#CentrandoPa {padding: 20px 10px 10px 200px	 
+	} 
+ #CentrandoMar{ margin: 20px 10px 10px 260px	   
+ }
+ #CentrandoMar_100{ margin: 20px 10px 10px 360px	   
+ }
+ #CentrandoMar_110{ margin: 20px 10px 10px 170px	   
+ }
+ #CentrandoMar_120{ margin: 20px 10px 10px 180px	   
+ }
+ #CentrandoMar_130{ margin: 20px 10px 10px 190px	   
+ }
+ #CentrandoMar_140{ margin: 20px 10px 10px 200px	   
+ }
+  #CentrandoMar_250{ margin: 20px 10px 10px 310px	   
+ }
+  #CentrandoMar_280{ margin: 20px 10px 10px 340px	   
+ }
+  #CentrandoMar_230{ margin: 20px 10px 10px 290px	   
+ }
+ #CentrandoMar_150{ margin: 20px 10px 10px 210px	   
+ }
+  #CentrandoMar_180{ margin: 20px 10px 10px 240px	   
+ }
+  #CentrandoMar_150s{ margin: 0px 10px 10px 260px	   
+ }
+  #CentrandoMar_200s{ margin: 0px 10px 0px 260px	   
+ }
+ #CentrandoMar_190s{ margin: 0px 10px 0px 250px	   
+ }
+  #CentrandoMar_160{ margin: 20px 10px 10px 220px	   
+ }
+   #CentrandoMar_170{ margin: 20px 10px 10px 230px	   
+ }
+ 
+ #CentrandoMar_190{ margin: 20px 10px 10px 250px	   
+ }
+ #CentrandoMar_190c{ margin: 20px 10px 10px 250px	   
+ }
+   #CentrandoMar_200{ margin: 20px 10px 10px 260px	   
+ }
+  #CentrandoMar_50{ margin: 20px 10px 10px 110px	   
+ }
+   #CentrandoMar_50s{ margin: 20px 10px 10px 100px	   
+ }
+  #CentrandoMar_80{ margin: 20px 10px 10px 140px	   
+ }
+ #CentrandoMar_80s{ margin: 0px 10px 0px 180px	   
+ }
+ #CentrandoMar_30{ margin: 20px 10px 10px 90px	   
+ }
+  #CentrandoMar_10{ margin: 20px 10px 10px 70px	   
+ }
+ #CentrandoMar_100b{ margin: 20px 10px 10px 160px	   
+ }
+  #CentrandoMar_80b{ margin: 20px 10px 10px 80px	   
+ }
+ 
+ .viewerContainer
+{
+    overflow:scroll;
+    width: 100%;
+    height: 100%;
+    background-color: Gray;
+    padding: 20px 0px 20px 0px;
+}
+
+/*Estilos para el panel de historial wf*/
+
+.shiftcontainer{
+position: relative;
+left: 5px; /*Number should match -left shadow depth below*/
+top: 5px; /*Number should match -top shadow depth below*/
+}
+
+.shadowcontainer{
+width: 300px; /* container width*/
+background-color: #d1cfd0;
+}
+
+.shadowcontainer .innerdiv{
+/* Add container height here if desired */
+background-color: white;
+border: 1px solid gray;
+padding: 6px;
+position: relative;
+left: -5px; /*shadow depth*/
+top: -5px; /*shadow depth*/
+
+}
+
+
+/*Estilos para Jquery Pannel en WorkFlow*/
+.PanelDes
+{
+	width:100%;
+	border-color:#1052a0;	
+	
+}
+.PanelMovible
+{
+	width:100%;
+	height:30px;
+	background-image: url(AlfaNetImagen/JQPAnel/bg-menu-main.png);
+	background-repeat:repeat-x;
+	color:#FFF;
+	font-weight:bold;
+	cursor:pointer;
+}
+.HeaderNumero
+{
+	float:left;
+	padding-left:10px;
+	padding-top:5px;
+}
+.HeaderTitulo
+{
+	float:left;
+	padding-left:10px;
+	padding-top:5px;
+	
+}
+.ExpandTexto
+{
+    
+	float:left;
+    margin-left:200px;
+    padding-top:5px;
+}
+.ContenidoPanel
+{
+	
+}
+.ArrowSube
+{
+	background-image: url(AlfaNetImagen/JQPAnel/expand_blue.jpg);
+	width:13px;
+	height:13px;
+	float:right;
+	margin-top:5px;
+	margin-right:200px;
+}
+.ArrowSube:hover
+{
+	cursor:hand;
+}
+.ArrowBaja
+{
+	background-image: url(AlfaNetImagen/JQPAnel/collapse_blue.jpg);
+	width:13px;
+	height:13px;
+	float:right;
+	margin-top:5px;
+	margin-right:200px;
+}
+.ArrowBaja:hover
+{
+	cursor:hand;
+}
+/*Paneles genericos*/
+.PanelDes2
+{
+	width:99%;
+	border:0px;
+}
+.PanelMovible2
+{
+    
+	width:99%;
+	height:30px;
+	font-weight:bold;
+	color: activecaption;
+    font-size: smaller;
+	cursor:pointer;
+}
+.HeaderNumero2
+{
+	float:left;
+	padding-left:10px;
+	padding-top:5px;
+}
+.HeaderTitulo2
+{
+	float:left;
+	padding-left:10px;
+	padding-top:5px;
+	
+}
+.ArrowSube2
+{
+	background-image: url(AlfaNetImagen/JQPAnel/expand_blue.jpg);
+	width:13px;
+	height:13px;
+	float:right;
+	margin-top:8px;
+	margin-right:200px;
+}
+.ArrowSube2:hover
+{
+	cursor:hand;
+}
+.ArrowBaja2
+{
+	background-image: url(AlfaNetImagen/JQPAnel/collapse_blue.jpg);
+	width:13px;
+	height:13px;
+	float:right;
+	margin-top:8px;
+	margin-right:200px;
+}
+.ArrowBaja2:hover
+{
+	cursor:hand;
+}
+.ExpandTexto2
+{
+    
+	float:right;
+    padding-right:200px;
+	padding-top:5px;
+}
+.ContenidoPanel2
+{
+	
+}

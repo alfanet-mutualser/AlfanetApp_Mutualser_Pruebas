@@ -1,0 +1,395 @@
+.igtab_PeachControl
+{
+	background-position:bottom ;
+	background-image: url(images/addnew.jpg);
+	border:solid 1px #DE8068;
+}
+
+
+.igtab_PeachControl_Outer
+{
+	border-left-width:0px;
+	border-left-style:solid;
+}
+
+
+.igtab_PeachDefaultTab_Top
+{
+	background-color:#D0D0F0;
+	background-image: url(images/tab_top_normal_f.gif);
+	font-size:9pt;
+	font-family: Tahoma;
+	border:solid 1px #535353;
+	padding:2px;
+	text-align:center;
+}
+
+
+.igtab_PeachDefaultTab_Top_Rounded
+{
+	background-color:Transparent !important;
+	background-image: url(images/tab_top_normal.gif);
+	font-size:10pt;
+	font-family: Tahoma;
+	border-style:solid;
+	border-width:0px;
+	border-bottom-width:1px;
+	border-bottom-color:#DE8068;
+	padding:2px 8px 1px 10px;
+	height: 100%;
+	cursor:pointer;
+	color:#DE8068;
+	text-align:center;
+}
+
+
+.igtab_PeachDefaultTab_Top_Edge
+{
+	background-position:right top ;
+	font-size:2px;
+	padding:0px;
+}
+
+
+.igtab_PeachButton
+{
+}
+
+
+.igtab_PeachDefaultTab_Bottom
+{
+	background-color:#D0D0F0;
+	background-position:bottom ;
+	background-image: url(images/tab_bottom_normal_f.gif);
+	font-size:9pt;
+	font-family: Tahoma;
+	border:solid 1px #535353;
+	padding:2px;
+}
+
+
+.igtab_PeachDefaultTab_Bottom_Rounded
+{
+	background-color:Transparent !important;
+	background-repeat:no-repeat;
+	background-position:left bottom ;
+	background-image: url(images/tab_bottom_normal.gif);
+	font-size:9pt;
+	font-family: Tahoma;
+	border:solid 1px #535353;
+	border-right-width:0px;
+	border-bottom-width:0px;
+	border-left-width:0px;
+	padding:5px 5px 5px 7px;
+	height: 100%;
+	cursor:pointer;
+	color:#DE8068;
+}
+
+
+.igtab_PeachDefaultTab_Bottom_Edge
+{
+	background-position:right bottom ;
+	font-size:2px;
+	padding:0px;
+}
+
+
+.igtab_PeachDefaultTab_Left
+{
+	background-color:#D0D0F0;
+	background-image: url(images/tab_left_normal_f.gif);
+	font-size:9pt;
+	font-family: Tahoma;
+	border:solid 1px #535353;
+	padding:5px 2px 5px 2px;
+}
+
+
+.igtab_PeachDefaultTab_Left_Rounded
+{
+	background-color:Transparent !important;
+	background-repeat:no-repeat;
+	background-position:left top ;
+	background-image: url(images/tab_left_normal.gif);
+	font-size:9pt;
+	font-family: Tahoma;
+	border:solid 1px #535353;
+	border-top-width:0px;
+	border-bottom-width:0px;
+	border-left-width:0px;
+	margin-top:0px;
+	margin-right:5px;
+	margin-bottom:0px;
+	padding:5px 0px 0px 4px;
+	cursor:pointer;
+	color:#DE8068;
+}
+
+
+.igtab_PeachDefaultTab_Left_Edge
+{
+	background-position:left bottom ;
+	font-size:2px;
+	padding:3px;
+}
+
+
+.igtab_PeachDefaultTab_Right
+{
+	background-color:#D0D0F0;
+	background-position:right ;
+	background-image: url(images/tab_right_normal_f.gif);
+	font-size:9pt;
+	font-family: Tahoma;
+	border:solid 1px #535353;
+	padding:5px 2px 5px 2px;
+}
+
+
+.igtab_PeachDefaultTab_Right_Rounded
+{
+	background-color:Transparent !important;
+	background-repeat:no-repeat;
+	background-position:right top ;
+	background-image: url(images/tab_right_normal.gif);
+	font-size:9pt;
+	font-family: Tahoma;
+	border:solid 1px #535353;
+	border-top-width:0px;
+	border-right-width:0px;
+	border-bottom-width:0px;
+	padding:5px 4px 7px 0px;
+	cursor:pointer;
+	color:#DE8068;
+}
+
+
+.igtab_PeachDefaultTab_Right_Edge
+{
+	background-position:right bottom ;
+	font-size:2px;
+	padding:0px;
+}
+
+
+.igtab_PeachButtonHover
+{
+}
+
+
+.igtab_PeachButtonPressed
+{
+}
+
+
+.igtab_PeachButtonDisabled
+{
+}
+
+
+.igtab_PeachHoverTab_Top
+{
+	background-color:#F0F0FF;
+	background-image: url(images/tab_top_hover_f.gif);
+}
+
+
+.igtab_PeachSeparator_Top
+{
+	border-bottom:solid 1px #DE8068;
+	border-top-width:0px;
+	border-right-width:0px;
+	border-left-width:0px;
+}
+
+
+.igtab_PeachHoverTab_Top_Rounded
+{
+	background-image: url(images/tab_top_hover.gif);
+	border-bottom:solid 1px #DE8068;
+	color:Black;
+}
+
+
+.igtab_PeachHoverTab_Bottom
+{
+	background-color:#F0F0FF;
+	background-image: url(images/tab_bottom_hover_f.gif);
+}
+
+
+.igtab_PeachSeparator_Bottom
+{
+	border-top:solid 1px #535353;
+	border-right-width:0px;
+	border-bottom-width:0px;
+	border-left-width:0px;
+}
+
+
+.igtab_PeachHoverTab_Bottom_Rounded
+{
+	background-image: url(images/tab_bottom_hover.gif);
+	color:Black;
+}
+
+
+.igtab_PeachHoverTab_Left
+{
+	background-color:#F0F0FF;
+	background-image: url(images/tab_left_hover_f.gif);
+}
+
+
+.igtab_PeachSeparator_Left
+{
+	border-right:solid 1px #535353;
+	border-top-width:0px;
+	border-bottom-width:0px;
+	border-left-width:0px;
+}
+
+
+.igtab_PeachHoverTab_Left_Rounded
+{
+	background-image: url(images/tab_left_hover.gif);
+	color:Black;
+}
+
+
+.igtab_PeachHoverTab_Right
+{
+	background-color:#F0F0FF;
+	background-image: url(images/tab_right_hover_f.gif);
+}
+
+
+.igtab_PeachSeparator_Right
+{
+	border-left:solid 1px #535353;
+	border-top-width:0px;
+	border-right-width:0px;
+	border-bottom-width:0px;
+}
+
+
+.igtab_PeachHoverTab_Right_Rounded
+{
+	background-image: url(images/tab_right_hover.gif);
+	color:Black;
+}
+
+
+.igtab_PeachSelectedTab_Top
+{
+	background-color:#FEF0F0;
+	background-image: url(images/tab_top_f.gif);
+	border-bottom-color:#535353;
+}
+
+
+.igtab_PeachSelectedTab_Top_Rounded
+{
+	background-image: url(images/tab_top.gif);
+	border-width:0px;
+	border-bottom:solid 1px #DE8068;
+	cursor:default;
+	color:Black;
+}
+
+
+.igtab_PeachSelectedTab_Bottom
+{
+	background-color:#FEF0F0;
+	background-image: url(images/tab_bottom_f.gif);
+}
+
+
+.igtab_PeachSelectedTab_Bottom_Rounded
+{
+	background-image: url(images/tab_bottom.gif);
+	cursor:default;
+	color:Black;
+}
+
+
+.igtab_PeachSelectedTab_Left
+{
+	background-color:#FEF0F0;
+	background-image: url(images/tab_left_f.gif);
+}
+
+
+.igtab_PeachSelectedTab_Left_Rounded
+{
+	background-image: url(images/tab_left.gif);
+	border-color:#535353;
+	cursor:default;
+	color:Black;
+}
+
+
+.igtab_PeachSelectedTab_Right
+{
+	background-color:#FEF0F0;
+	background-image: url(images/tab_right_f.gif);
+}
+
+
+.igtab_PeachSelectedTab_Right_Rounded
+{
+	background-image: url(images/tab_right.gif);
+	cursor:default;
+	color:Black;
+}
+
+
+.igtab_PeachDisabledTab_Top
+{
+	color:Gainsboro;
+}
+
+
+.igtab_PeachDisabledTab_Top_Rounded
+{
+	color:Gainsboro;
+}
+
+
+.igtab_PeachDisabledTab_Bottom
+{
+	color:Gainsboro;
+}
+
+
+.igtab_PeachDisabledTab_Bottom_Rounded
+{
+	color:Gainsboro;
+}
+
+
+.igtab_PeachDisabledTab_Left
+{
+	color:Gainsboro;
+}
+
+
+.igtab_PeachDisabledTab_Left_Rounded
+{
+	color:Gainsboro;
+}
+
+
+.igtab_PeachDisabledTab_Right
+{
+	color:Gainsboro;
+}
+
+
+.igtab_PeachDisabledTab_Right_Rounded
+{
+	color:Gainsboro;
+}
+
+

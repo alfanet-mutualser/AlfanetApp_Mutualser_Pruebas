@@ -1,0 +1,61 @@
+.igtxt_HarvestEditWithButtons
+{
+	background-color:#FFFDF9;
+	background-repeat:repeat-x;
+	background-position:top ;
+	background-image: url(images/itembg.jpg);
+	font-family: Verdana;
+	border:solid 1px LightGrey;
+}
+
+
+.igtxt_HarvestEdit
+{
+	background-color:#FFFDF9;
+	background-repeat:repeat-x;
+	background-position:top ;
+	background-image: url(images/itembg.jpg);
+	font-family: Verdana;
+	border:solid 1px LightGrey;
+}
+
+
+.igtxt_HarvestEditInContainer
+{
+	background-color:Transparent;
+	border-width:0px;
+	margin:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+
+.igtxt_HarvestButton
+{
+	background-color:#DE810B;
+	font-size:1px;
+	border:solid 1px #EAF2FB;
+}
+
+
+.igtxt_HarvestButtonHover
+{
+	background-color:#FF732D;
+	border:solid 1px #ABC1DE;
+}
+
+
+.igtxt_HarvestButtonPressed
+{
+	background-color:#FFA738;
+	border:solid 1px #ABC1DE;
+}
+
+
+.igtxt_HarvestButtonDisabled
+{
+	background-color:#EAF2FB;
+	border:solid 1px White;
+}
+
+

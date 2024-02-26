@@ -1,0 +1,261 @@
+/*
+** Month Frame Oriented Classes
+*/
+.igmv_Month 
+{  
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: x-small;
+	/*font-weight: bold;	*/
+	color: #ffffff; 
+	line-height: 25px;
+	table-layout: fixed;  
+	overflow: hidden;
+	/* border-collapse: collapse; */
+	margin-top: 5px;
+	border: 1px solid #B0B6BE;
+	
+}
+
+.igmv_WeekNumber 
+{ 
+	
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	font-size: xx-small; 
+
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	background-color: #F0F1F2; 
+	text-align: center;
+	width: 20px; 
+	padding-right: 1px;
+}
+.igmv_MonthDayOfWeekHeader 
+{ 
+	border-bottom-width: 0px;
+	background-color: #EBEBEB;
+	text-align: center;
+	height:20px; 
+	padding: 3px 2px 1px 0px;
+
+	margin-left: 1px;
+	margin-right: 1px;
+	margin-top: 1px;
+	cursor:default;
+	font-size: x-small;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.igmv_MonthHeader 
+{ 
+	text-align: center;
+	height: 25px;
+	width: 100%;
+}
+
+.igmv_CaptionHeader {
+	
+	background-image: url(WebSchedule/MonthHeaderCaption_bg.png);
+	background-repeat: repeat-x;
+
+	border-right: 0px solid #002D96;
+	border-bottom: 0px solid #002D96;
+
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-weight: bold;	
+	font-size: xx-small;
+	text-align: center;
+	color: #ffffff;
+
+	line-height: 25px;
+	height: 25px;
+	
+}
+
+/*
+** Day Oriented Classes
+*/
+.igmv_Day 
+{ 
+background-color: #FFFFFF;
+	/*background-image: url(WebSchedule/urlcell_bg.png);*/
+	background-repeat: repeat-x;
+	border-left: 1px solid #9199A4;
+	border-top: 1px solid #9199A4;
+	color: Black; 
+}
+/*
+** NOTE: OtherMonthDay does not inherit from Day because Day by definition is non-Trailing. 
+*/
+.igmv_OtherMonthDay 
+{ 
+	color: #000000; 
+	background-color: #C7CBD1;
+
+	border-left: 1px solid #B0B6BE;
+	border-top: 1px solid #B0B6BE;
+	border-bottom: 0px solid #B0B6BE;
+	color: Black; 
+
+}
+.igmv_Today 
+{
+	border-left: 2px solid #EE9311;
+	border-right: 2px solid #EE9311;
+	border-bottom: 2px solid #EE9311;
+}
+.igmv_ActiveDay 
+{ 
+	background-color: #E8EAEC;
+	/*background-image: url(WebSchedule/urlcellActive_bg.png);*/
+	background-position:center;
+	background-repeat: repeat-x;
+	background-position: top;
+	font-weight:bold;
+}
+
+
+/*
+** DayHeader Oriented Classes.
+*/
+
+.igmv_DayHeader 
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	font-weight: bold;
+	color: #000000;
+	/* height: 15px; */
+	
+	background-image:url(WebSchedule/MonthDayOfWeekHeader_bg.png);
+	background-position:center;
+
+	padding-right: 2px;
+	padding-top: 1px;
+	/* border-left: 1px solid #B0B6BE; */
+	border-top: 0px solid #B0B6BE;
+	text-align: left;
+}
+
+
+/*
+** NOTE: OtherMonthDayHeader does not inherit from DayHeader because DayHeader by definition is non-Trailing. 
+*/
+.igmv_OtherMonthDayHeader 
+{  
+
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size: xx-small;
+	color: #000000; 
+	/* height: 15px; */
+	background-color: #E4F7FF;
+	background-image:url(WebSchedule/MonthDayOfWeekHeader_bg.png);
+	background-position:center;
+
+	font-weight: bold;
+	padding-bottom: 2px;
+	padding-top: 1px;
+	padding-right: 2px;
+	text-align: left;
+	/* border-left: 1px solid #B0B6BE; */
+	border-bottom: 1px solid #B0B6BE;
+	
+	}
+.igmv_TodayHeader 
+{
+	color: #000000;
+	background-color: #FFFFFF;
+	background-image: url(WebSchedule/TodayHeader_bg.png);
+	background-position:center;
+	background-repeat: repeat-x;
+	
+/* 	border-left: 1px solid #EE9311; */
+	border-right: 0px solid #EE9311;
+	border-top: 2px solid #EE9311;
+}
+
+.igmv_ActiveDayHeader 
+{
+	color: #000000;
+	
+	background-color: #FFFFFF;
+	/*background-image: url(WebSchedule/urlMonthDayOfWeekHeader_bg.png);*/
+	background-position:center;
+	background-repeat: repeat-x;
+	/* border-bottom: 1px solid #b0b6be; */
+	padding-top: 1px;
+	padding-right: 1px;
+	/* height: 13px; */
+
+}
+
+
+/*
+** Appointment Oriented Classes
+*/
+.igmv_Appointment 
+{ 
+	font-size: xx-small; 
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	text-align: left;
+	color: #000000;
+	background-image:url(WebSchedule/appoinment_bg.png);
+
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 1px;
+	cursor: hand;
+
+	height: 15px;
+	position: relative;
+	top: 0;
+	padding-left: 1px;
+}
+.igmv_AllDayEvent 
+{ 
+	font-size: xx-small; 
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	text-align: left;
+
+	background-color: #FFFFFF;
+
+	border: 1px solid #ACB5B5;
+
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 1px;
+	cursor: hand;
+}
+.igmv_SelectedAppointment 
+{ 
+
+	FONT-SIZE: xx-small; 
+	line-height: 15px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 1px;
+	cursor: hand;
+
+	height: 15px; 
+	position: relative;
+	top: 0px;
+
+	color: #FFFFFF;
+	background-color: #B0B6BE;	
+	padding-left: 1px;
+	padding-bottom: 2px;
+}
+
+
+
+.igmv_NavigationButton { 
+	margin-left:5px;
+	margin-right:5px;
+	padding: 0px;
+	height: 24px;
+	line-height: 25px;
+	border: 0px;
+	background-image: url(WebSchedule/MonthHeaderCaption_bg.png);
+	background-position: top left;
+}
+

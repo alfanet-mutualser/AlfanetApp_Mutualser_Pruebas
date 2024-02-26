@@ -1,0 +1,58 @@
+.igtxt_RadioFlyerEditWithButtons
+{
+	background-position:bottom ;
+	background-image: url(images/item_back.gif);
+	font-family: Verdana;
+	border:solid 1px #CE9CA5;
+}
+
+
+.igtxt_RadioFlyerEdit
+{
+	background-position:bottom ;
+	background-image: url(images/item_back.gif);
+	font-family: Verdana;
+	border:solid 1px #CE9CA5;
+}
+
+
+.igtxt_RadioFlyerEditInContainer
+{
+	background-position:bottom ;
+	background-image: url(images/item_back.gif);
+	border-width:0px;
+	margin:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+
+.igtxt_RadioFlyerButton
+{
+	background-color:#A50819;
+	font-size:1px;
+	border:solid 1px #A50819;
+}
+
+
+.igtxt_RadioFlyerButtonHover
+{
+	background-color:RosyBrown;
+	border:solid 1px RosyBrown;
+}
+
+
+.igtxt_RadioFlyerButtonPressed
+{
+	background-color:IndianRed;
+	border:solid 1px IndianRed;
+}
+
+
+.igtxt_RadioFlyerButtonDisabled
+{
+	background-color:#EAF2FB;
+	border:solid 1px White;
+}
+
+

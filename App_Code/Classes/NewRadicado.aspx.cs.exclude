@@ -1,0 +1,59 @@
+﻿using System;
+using System.Data;
+using System.Configuration;
+using System.Collections;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Web.UI.HtmlControls;
+
+public partial class _NewRadicado : System.Web.UI.Page 
+{
+ 
+    
+    protected void Page_Load(object sender, EventArgs e)
+    {  
+        try
+        {
+            if (!IsPostBack)
+                {
+                    //this.DateFechaRad.Text = DateTime.Now.ToLongDateString() + " " + DateTime.Now.ToShortTimeString();
+                    this.RangeVFecVen.MinimumValue = DateTime.Now.ToShortDateString();
+                    
+                }
+            else
+                {
+                     
+                      
+                }
+                      
+        }             
+        catch (Exception Error)
+        {
+            throw new Exception(Error.Message);
+        }
+    }
+    protected void RadBtnLstFindby_SelectedIndexChanged(object sender, EventArgs e)
+    {
+        if (RadBtnLstFindby.SelectedValue == "1")
+        {
+            this.AutoCompleteExtender2.ServiceMethod = "GetProcedenciaByTextNombre";
+        }
+        else if (RadBtnLstFindby.SelectedValue == "2")
+        {
+            this.AutoCompleteExtender2.ServiceMethod = "GetProcedenciaByTextId";
+        }
+    }
+
+
+    protected void ImgBtnFindProcedencia_Click(object sender, ImageClickEventArgs e)
+    {
+        ScriptManager scriptManager = ScriptManager.GetCurrent(this.Page);
+        scriptManager.SetFocus(TxtProcedencia);
+    }
+}
+        
+           
+      

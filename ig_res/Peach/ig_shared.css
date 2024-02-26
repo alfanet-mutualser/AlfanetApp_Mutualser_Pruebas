@@ -1,0 +1,105 @@
+.ig_PeachControl
+{
+	background-color:White;
+	font-size:xx-small;
+	font-family: verdana;
+	cursor:default;
+	color:Black;
+}
+
+
+.ig_PeachItem
+{
+	background-color:White;
+	font-size:10px;
+	font-family: verdana;
+	padding-left:1px;
+}
+
+
+.ig_PeachButton
+{
+	cursor:hand;
+}
+
+
+.ig_PeachButtonHover
+{
+}
+
+
+.ig_PeachButtonPressed
+{
+}
+
+
+.ig_PeachButtonDisabled
+{
+}
+
+
+.ig_PeachHover
+{
+}
+
+
+.ig_PeachSelected
+{
+}
+
+
+.ig_PeachDisabled
+{
+}
+
+
+.ig_PeachHeader
+{
+}
+
+
+.ig_PeachFooter
+{
+}
+
+
+.ig_PeachEditWithButtons
+{
+}
+
+
+.ig_PeachEdit
+{
+}
+
+
+.ig_PeachEditInContainer
+{
+}
+
+
+.ig_PeachAlt
+{
+	border-top:solid 1px #E3EFFF;
+	border-right:solid 0px #FFFFFF;
+	border-bottom:solid 1px #E3EFFF;
+	border-left:solid 0px #FFFFFF;
+}
+
+
+.ig_PeachDropDown
+{
+}
+
+
+.ig_PeachEditSelected
+{
+}
+
+
+Body
+{
+	cursor:default;
+}
+
+

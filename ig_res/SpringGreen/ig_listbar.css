@@ -1,0 +1,174 @@
+.iglb_SpringGreenControl
+{
+	font-size:medium;
+	border:solid 1px #4C7B04;
+	margin-bottom:0px;
+}
+
+
+.iglb_SpringGreenControl_Exp
+{
+	font-size:medium;
+	border:solid 1px #4C7B04;
+}
+
+
+.iglb_SpringGreenButton
+{
+	background-position:center ;
+	background-image: url(images/header.gif);
+	font-size:smaller;
+	padding-top:2px;
+	padding-bottom:1px;
+	padding-left:3px;
+	color:White;
+}
+
+
+.iglb_SpringGreenButtonHover
+{
+	background-position:center ;
+	background-image: url(images/header_hover.gif);
+	font-size:smaller;
+	padding-top:2px;
+	padding-bottom:1px;
+	padding-left:3px;
+}
+
+
+.iglb_SpringGreenButtonSelected
+{
+	background-position:center ;
+	background-image: url(images/header_hover.gif);
+	font-size:smaller;
+	padding-top:2px;
+	padding-bottom:1px;
+	padding-left:3px;
+	cursor:hand;
+}
+
+
+.iglb_SpringGreenHeaderCollapsed
+{
+	background-position:center ;
+	background-image: url(images/header.gif);
+	font-size:smaller;
+	padding-top:0px;
+	padding-bottom:3px;
+	padding-left:3px;
+	color:White;
+}
+
+
+.iglb_SpringGreenHeaderExpanded
+{
+	background-position:center ;
+	background-image: url(images/header.gif);
+	font-size:smaller;
+	padding-top:0px;
+	padding-bottom:3px;
+	padding-left:3px;
+	color:White;
+}
+
+
+.iglb_SpringGreenHeaderHover
+{
+	background-position:center ;
+	background-image: url(images/header_hover.gif);
+	font-size:smaller;
+	padding-top:0px;
+	padding-bottom:3px;
+	padding-left:3px;
+	cursor:hand;
+}
+
+
+.iglb_SpringGreenGroup
+{
+}
+
+
+.iglb_SpringGreenGroup_Exp
+{
+	margin-bottom:0px;
+}
+
+
+.iglb_SpringGreenItem
+{
+	margin-top:8px;
+	margin-bottom:3px;
+	padding-left:4px;
+	text-align:left;
+}
+
+
+.iglb_SpringGreenItem_Exp
+{
+	font-size:xx-small;
+	margin-top:4px;
+	margin-bottom:0px;
+	padding-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	text-align:left;
+}
+
+
+.iglb_SpringGreenItemHover
+{
+	font-size:xx-small;
+	margin-top:8px;
+	margin-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:#5E8D00;
+	text-align:left;
+	text-decoration:underline;
+}
+
+
+.iglb_SpringGreenItemHover_Exp
+{
+	font-size:xx-small;
+	margin-top:4px;
+	margin-bottom:0px;
+	padding-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:#5E8D00;
+	text-align:left;
+	text-decoration:underline;
+}
+
+
+.iglb_SpringGreenItemSelected
+{
+	background-color:#FAFAFA;
+	font-weight:bold;
+	font-size:xx-small;
+	margin-top:8px;
+	margin-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:#5E8D00;
+	text-align:left;
+}
+
+
+.iglb_SpringGreenItemSelected_Exp
+{
+	background-color:#FAFAFA;
+	font-weight:bold;
+	font-size:xx-small;
+	margin-top:4px;
+	margin-bottom:0px;
+	padding-bottom:3px;
+	padding-left:4px;
+	cursor:hand;
+	color:#5E8D00;
+	text-align:left;
+}
+
+

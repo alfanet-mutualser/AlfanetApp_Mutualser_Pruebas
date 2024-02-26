@@ -1,0 +1,40 @@
+Imports Microsoft.VisualBasic
+Imports DotNetNuke
+Imports DotNetNuke.Entities.Modules
+
+Namespace Cooproconas
+
+    Public Class PrintHTML
+
+        Public Shared Function linkPopupPrint(ByVal myPage As Page, ByVal TABID As Integer, ByVal TYPE As String, ByVal ITEM As String)
+            jsPopupPrint(myPage)
+
+            Dim cmdLink As String = "javascript:PopupPrint('" + NavigateURL(TABID)
+            If cmdLink.IndexOf("?") < 0 Then
+                cmdLink = cmdLink + "?"
+            Else
+                cmdLink = cmdLink + "&"
+            End If
+            cmdLink = cmdLink + "TYPE=" + TYPE + "&" + "ITEM=" + ITEM + "'); "
+            Return cmdLink
+        End Function
+
+        ' Agregar el js para buscar un proceso
+        Public Shared Sub jsPopupPrint(ByVal myPage As Page)
+
+            Dim oLink As New HtmlGenericControl("script")
+
+            If myPage.Request.ApplicationPath = "/" Then
+                oLink.Attributes("src") = "/js/PopupPrint.js"
+            Else
+                oLink.Attributes("src") = myPage.Request.ApplicationPath + "/js/PopupPrint.js"
+            End If
+
+            Dim oCSS As Control = myPage.Page.FindControl("CSS")
+            If Not oCSS Is Nothing Then
+                oCSS.Controls.AddAt(0, oLink)
+            End If
+        End Sub
+    End Class
+
+End Namespace

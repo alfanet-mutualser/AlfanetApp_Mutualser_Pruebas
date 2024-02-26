@@ -1,0 +1,53 @@
+﻿body 
+{
+ font-size:smaller;
+}
+
+<style type="text/css">
+.desplegar{
+font-size:2px; 
+font-weight:bold;
+font-family:arial; 
+}
+</style>
+
+/*.list {
+	border: 1px solid #090;
+	list-style-type: none;
+	margin: 0px;
+	background-color: #FFF;
+	text-align: right;
+}
+
+	ul.list li {
+		padding: 2px 5px;
+	}
+
+	.listitem {
+		color: #090;
+	}
+
+	.hoverlistitem {
+		background-color: #F0FFF8;
+	}
+
+.list2 {
+	border: 1px solid #009;
+	list-style-type: none;
+	margin: 0px;
+	background-color: #FFF;
+	text-align: right;
+}
+
+	ul.list2 li {
+		padding: 2px 5px;
+	}
+
+	.listitem2 {
+		color: #00A;
+	}
+
+	.hoverlistitem2 {
+		background-color: #F0F8FF;
+	}*/
+

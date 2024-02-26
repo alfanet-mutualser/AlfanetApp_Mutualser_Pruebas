@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2005/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSources>
+    <DataSource Name="ConnStrSQLServer">
+      <rd:DataSourceID>03464761-5a22-463c-b068-2af81074a077</rd:DataSourceID>
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+    </DataSource>
+  </DataSources>
+  <InteractiveHeight>29.7cm</InteractiveHeight>
+  <rd:DrawGrid>true</rd:DrawGrid>
+  <InteractiveWidth>21cm</InteractiveWidth>
+  <rd:GridSpacing>0.25cm</rd:GridSpacing>
+  <rd:SnapToGrid>true</rd:SnapToGrid>
+  <RightMargin>2.5cm</RightMargin>
+  <LeftMargin>2.5cm</LeftMargin>
+  <BottomMargin>2.5cm</BottomMargin>
+  <rd:ReportID>25095460-5ddd-423f-82f3-d6f762f82ba8</rd:ReportID>
+  <EmbeddedImages>
+    <EmbeddedImage Name="logoempresa">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <PageWidth>21cm</PageWidth>
+  <DataSets>
+    <DataSet Name="DSRadicado_RadicadoReporte">
+      <Fields>
+        <Field Name="RadicadoCodigo">
+          <DataField>RadicadoCodigo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="WFMovimientoFecha">
+          <DataField>WFMovimientoFecha</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="RadicadoNumeroExterno">
+          <DataField>RadicadoNumeroExterno</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RadicadoFechaProcedencia">
+          <DataField>RadicadoFechaProcedencia</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="RadicadoFechaVencimiento">
+          <DataField>RadicadoFechaVencimiento</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="RadicadoDetalle">
+          <DataField>RadicadoDetalle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NaturalezaNombre">
+          <DataField>NaturalezaNombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MedioNombre">
+          <DataField>MedioNombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ExpedienteNombre">
+          <DataField>ExpedienteNombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DependenciaNombre">
+          <DataField>DependenciaNombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="WFAccionNombre">
+          <DataField>WFAccionNombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ProcedenciaNombre">
+          <DataField>ProcedenciaNombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RadicadoAnexo">
+          <DataField>RadicadoAnexo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>ConnStrSQLServer</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>dbo.Radicado_ReadRadicadoReporte</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DSRadicado</rd:DataSetName>
+        <rd:TableName>RadicadoReporte</rd:TableName>
+        <rd:TableAdapterName>RadicadoReporteTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>FillRadicadoReporte</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetRadicadoReporte</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="DSRegistro_Registro_ReadRegistro">
+      <Fields>
+        <Field Name="RegistroCodigo">
+          <DataField>RegistroCodigo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="WFMovimientoFecha">
+          <DataField>WFMovimientoFecha</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="ProcedenciaCodDestino">
+          <DataField>ProcedenciaCodDestino</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DependenciaCodDestino">
+          <DataField>DependenciaCodDestino</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DependenciaCodigo">
+          <DataField>DependenciaCodigo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NaturalezaCodigo">
+          <DataField>NaturalezaCodigo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RadicadoCodigo">
+          <DataField>RadicadoCodigo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="RegistroDetalle">
+          <DataField>RegistroDetalle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RegistroGuia">
+          <DataField>RegistroGuia</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RegistroEmpGuia">
+          <DataField>RegistroEmpGuia</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AnexoExtRegistro">
+          <DataField>AnexoExtRegistro</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LogDigitador">
+          <DataField>LogDigitador</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ExpedienteCodigo">
+          <DataField>ExpedienteCodigo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MedioCodigo">
+          <DataField>MedioCodigo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SerieCodigo">
+          <DataField>SerieCodigo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RegPesoEnvio">
+          <DataField>RegPesoEnvio</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RegValorEnvio">
+          <DataField>RegValorEnvio</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RegistroTipo">
+          <DataField>RegistroTipo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GrupoCodigo">
+          <DataField>GrupoCodigo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DependenciaNombre">
+          <DataField>DependenciaNombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DependenciaNombre1">
+          <DataField>DependenciaNombre1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NaturalezaNombre">
+          <DataField>NaturalezaNombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MedioNombre">
+          <DataField>MedioNombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ExpedienteNombre">
+          <DataField>ExpedienteNombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ProcedenciaNombre">
+          <DataField>ProcedenciaNombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>ConnStrSQLServer</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>dbo.Registro_ReadRegistro</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DSRegistro</rd:DataSetName>
+        <rd:TableName>Registro_ReadRegistro</rd:TableName>
+        <rd:TableAdapterName>Registro_ReadRegistroTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterFillMethod>FillRegistroById</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetRegistroById</rd:TableAdapterGetDataMethod>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Width>16.29365cm</Width>
+  <Body>
+    <ColumnSpacing>1cm</ColumnSpacing>
+    <ReportItems>
+      <Image Name="image1">
+        <Sizing>Fit</Sizing>
+        <Top>0.75cm</Top>
+        <Width>2.25cm</Width>
+        <MIMEType>image/png</MIMEType>
+        <Source>Embedded</Source>
+        <Style />
+        <ZIndex>32</ZIndex>
+        <Left>2.25cm</Left>
+        <Height>1.25cm</Height>
+        <Value>logoempresa</Value>
+      </Image>
+      <Rectangle Name="rectangle15">
+        <Left>12cm</Left>
+        <ZIndex>31</ZIndex>
+        <Top>1cm</Top>
+        <Width>3.03968cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>0.63492cm</Height>
+      </Rectangle>
+      <Textbox Name="textbox13">
+        <Top>12.5cm</Top>
+        <Width>3.25cm</Width>
+        <Style>
+          <Color>DarkBlue</Color>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>30</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.5cm</Left>
+        <Height>0.5cm</Height>
+        <Value>Valor</Value>
+      </Textbox>
+      <Rectangle Name="rectangle13">
+        <Left>4.5cm</Left>
+        <ZIndex>29</ZIndex>
+        <Top>5.5cm</Top>
+        <Width>11.25cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>0.63492cm</Height>
+      </Rectangle>
+      <Textbox Name="textbox16">
+        <Top>5.5cm</Top>
+        <Width>3.75cm</Width>
+        <Style>
+          <Color>DarkBlue</Color>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>28</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.5cm</Left>
+        <Height>0.5cm</Height>
+        <Value>RadicadoFuente</Value>
+      </Textbox>
+      <Rectangle Name="rectangle6">
+        <Left>4.5cm</Left>
+        <ZIndex>27</ZIndex>
+        <Top>4.75cm</Top>
+        <Width>11.25cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>0.5cm</Height>
+      </Rectangle>
+      <Textbox Name="textbox6">
+        <Top>4.75cm</Top>
+        <Width>3.75cm</Width>
+        <Style>
+          <Color>DarkBlue</Color>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>26</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.5cm</Left>
+        <Height>0.5cm</Height>
+        <Value>DependenciaDestino</Value>
+      </Textbox>
+      <Rectangle Name="rectangle3">
+        <Left>11.75cm</Left>
+        <ZIndex>25</ZIndex>
+        <Top>2.5cm</Top>
+        <Width>4cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>0.5cm</Height>
+      </Rectangle>
+      <Textbox Name="textbox2">
+        <Top>2.5cm</Top>
+        <Width>2.75cm</Width>
+        <Style>
+          <Color>MidnightBlue</Color>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>24</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>8.5cm</Left>
+        <Height>0.5cm</Height>
+        <Value>Tipo Registro</Value>
+      </Textbox>
+      <Rectangle Name="rectangle12">
+        <Left>0.5cm</Left>
+        <ZIndex>23</ZIndex>
+        <Top>13.75cm</Top>
+        <Width>15.25cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>1.5cm</Height>
+      </Rectangle>
+      <Textbox Name="textbox18">
+        <Top>13.25cm</Top>
+        <Width>3.25cm</Width>
+        <Style>
+          <Color>DarkBlue</Color>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>22</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.5cm</Left>
+        <Height>0.5cm</Height>
+        <Value>Anexos</Value>
+      </Textbox>
+      <Rectangle Name="rectangle5">
+        <Left>0.5cm</Left>
+        <ZIndex>21</ZIndex>
+        <Top>6.75cm</Top>
+        <Width>15.25cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>1.75cm</Height>
+      </Rectangle>
+      <Rectangle Name="rectangle7">
+        <Left>4cm</Left>
+        <ZIndex>20</ZIndex>
+        <Top>8.75cm</Top>
+        <Width>11.75cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>0.5cm</Height>
+      </Rectangle>
+      <Rectangle Name="rectangle10">
+        <Left>4cm</Left>
+        <ZIndex>19</ZIndex>
+        <Top>11cm</Top>
+        <Width>11.75cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>0.5cm</Height>
+      </Rectangle>
+      <Rectangle Name="rectangle11">
+        <Left>4cm</Left>
+        <ZIndex>18</ZIndex>
+        <Top>11.75cm</Top>
+        <Width>11.75cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>0.5cm</Height>
+      </Rectangle>
+      <Textbox Name="textbox12">
+        <Top>11.75cm</Top>
+        <Width>3.25cm</Width>
+        <Style>
+          <Color>DarkBlue</Color>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>17</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.5cm</Left>
+        <Height>0.5cm</Height>
+        <Value>Peso</Value>
+      </Textbox>
+      <Textbox Name="textbox11">
+        <Top>11cm</Top>
+        <Width>3.25cm</Width>
+        <Style>
+          <Color>DarkBlue</Color>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>16</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.5cm</Left>
+        <Height>0.5cm</Height>
+        <Value>Guia</Value>
+      </Textbox>
+      <Textbox Name="textbox10">
+        <Top>10.25cm</Top>
+        <Width>3.25cm</Width>
+        <Style>
+          <Color>DarkBlue</Color>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>15</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.5cm</Left>
+        <Height>0.5cm</Height>
+        <Value>Expediente</Value>
+      </Textbox>
+      <Textbox Name="textbox9">
+        <Top>9.5cm</Top>
+        <Width>3.25cm</Width>
+        <Style>
+          <Color>DarkBlue</Color>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>14</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.5cm</Left>
+        <Height>0.5cm</Height>
+        <Value>Medio</Value>
+      </Textbox>
+      <Textbox Name="textbox8">
+        <Top>8.75cm</Top>
+        <Width>3.25cm</Width>
+        <Style>
+          <Color>DarkBlue</Color>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>13</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.5cm</Left>
+        <Height>0.5cm</Height>
+        <Value>Naturaleza</Value>
+      </Textbox>
+      <Rectangle Name="rectangle4">
+        <Left>4.5cm</Left>
+        <ZIndex>12</ZIndex>
+        <Top>2.5cm</Top>
+        <Width>3.75cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>0.5cm</Height>
+      </Rectangle>
+      <Textbox Name="textbox1">
+        <Top>2.5cm</Top>
+        <Width>3.75cm</Width>
+        <Style>
+          <Color>MidnightBlue</Color>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>11</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.5cm</Left>
+        <Height>0.5cm</Height>
+        <Value>FechaRegistro</Value>
+      </Textbox>
+      <Textbox Name="textbox5">
+        <Top>4cm</Top>
+        <Width>3.75cm</Width>
+        <Style>
+          <Color>DarkBlue</Color>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>10</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.5cm</Left>
+        <Height>0.5cm</Height>
+        <Value>ProcedenciaDestino</Value>
+      </Textbox>
+      <Textbox Name="textbox7">
+        <Top>3.25cm</Top>
+        <Width>3.75cm</Width>
+        <Style>
+          <Color>MidnightBlue</Color>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>9</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.5cm</Left>
+        <Height>0.5cm</Height>
+        <Value>DependenciaRemite</Value>
+      </Textbox>
+      <Rectangle Name="rectangle1">
+        <Left>4.5cm</Left>
+        <ZIndex>8</ZIndex>
+        <Top>3.25cm</Top>
+        <Width>11.25cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>0.5cm</Height>
+      </Rectangle>
+      <Line Name="line2">
+        <Top>0.25cm</Top>
+        <Width>15.25cm</Width>
+        <Style>
+          <BorderColor>
+            <Default>DimGray</Default>
+          </BorderColor>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <BorderWidth>
+            <Default>2pt</Default>
+          </BorderWidth>
+        </Style>
+        <ZIndex>7</ZIndex>
+        <Left>0.5cm</Left>
+        <Height>0cm</Height>
+      </Line>
+      <Textbox Name="textbox3">
+        <rd:DefaultName>textbox3</rd:DefaultName>
+        <Top>1cm</Top>
+        <Width>3.625cm</Width>
+        <Style>
+          <Color>Red</Color>
+          <FontSize>16pt</FontSize>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>6</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>8.25cm</Left>
+        <Height>0.75cm</Height>
+        <Value>Registro No</Value>
+      </Textbox>
+      <Line Name="line1">
+        <Top>2.25cm</Top>
+        <Width>7.75cm</Width>
+        <Style>
+          <BorderColor>
+            <Default>DimGray</Default>
+          </BorderColor>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+          <BorderWidth>
+            <Default>2pt</Default>
+          </BorderWidth>
+        </Style>
+        <ZIndex>5</ZIndex>
+        <Left>8cm</Left>
+        <Height>0cm</Height>
+      </Line>
+      <Rectangle Name="rectangle8">
+        <Left>4cm</Left>
+        <ZIndex>4</ZIndex>
+        <Top>9.5cm</Top>
+        <Width>11.75cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>0.5cm</Height>
+      </Rectangle>
+      <Rectangle Name="rectangle9">
+        <Left>4cm</Left>
+        <ZIndex>3</ZIndex>
+        <Top>10.25cm</Top>
+        <Width>11.75cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>0.5cm</Height>
+      </Rectangle>
+      <Rectangle Name="rectangle2">
+        <Left>4.5cm</Left>
+        <ZIndex>2</ZIndex>
+        <Top>4cm</Top>
+        <Width>11.25cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>0.5cm</Height>
+      </Rectangle>
+      <Textbox Name="textbox4">
+        <Top>6.25cm</Top>
+        <Width>3.25cm</Width>
+        <Style>
+          <Color>DarkBlue</Color>
+          <FontWeight>700</FontWeight>
+          <TextAlign>Left</TextAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+        <ZIndex>1</ZIndex>
+        <CanGrow>true</CanGrow>
+        <Left>0.5cm</Left>
+        <Height>0.5cm</Height>
+        <Value>Detalle</Value>
+      </Textbox>
+      <Rectangle Name="rectangle14">
+        <Left>4cm</Left>
+        <Top>12.5cm</Top>
+        <Width>11.75cm</Width>
+        <Style>
+          <BorderStyle>
+            <Default>Solid</Default>
+          </BorderStyle>
+        </Style>
+        <Height>0.5cm</Height>
+      </Rectangle>
+    </ReportItems>
+    <Height>15.5cm</Height>
+  </Body>
+  <Language>es-ES</Language>
+  <TopMargin>2.5cm</TopMargin>
+  <PageHeight>29.7cm</PageHeight>
+</Report>

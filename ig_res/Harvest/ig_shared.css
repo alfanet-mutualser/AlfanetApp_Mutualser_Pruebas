@@ -1,0 +1,105 @@
+.ig_HarvestControl
+{
+	background-color:White;
+	font-size:xx-small;
+	font-family: verdana;
+	cursor:default;
+	color:Black;
+}
+
+
+.ig_HarvestItem
+{
+	background-color:White;
+	font-size:10px;
+	font-family: verdana;
+	padding-left:1px;
+}
+
+
+.ig_HarvestButton
+{
+	cursor:hand;
+}
+
+
+.ig_HarvestButtonHover
+{
+}
+
+
+.ig_HarvestButtonPressed
+{
+}
+
+
+.ig_HarvestButtonDisabled
+{
+}
+
+
+.ig_HarvestHover
+{
+}
+
+
+.ig_HarvestSelected
+{
+}
+
+
+.ig_HarvestDisabled
+{
+}
+
+
+.ig_HarvestHeader
+{
+}
+
+
+.ig_HarvestFooter
+{
+}
+
+
+.ig_HarvestEditWithButtons
+{
+}
+
+
+.ig_HarvestEdit
+{
+}
+
+
+.ig_HarvestEditInContainer
+{
+}
+
+
+.ig_HarvestAlt
+{
+	border-top:solid 1px #E3EFFF;
+	border-right:solid 0px #FFFFFF;
+	border-bottom:solid 1px #E3EFFF;
+	border-left:solid 0px #FFFFFF;
+}
+
+
+.ig_HarvestDropDown
+{
+}
+
+
+.ig_HarvestEditSelected
+{
+}
+
+
+Body
+{
+	cursor:default;
+}
+
+

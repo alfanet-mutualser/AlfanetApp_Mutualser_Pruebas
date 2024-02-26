@@ -1,0 +1,124 @@
+.igwv_PearControl
+{
+	border-width:0px;
+	margin-top:2px;
+}
+
+
+.igwv_PearCaptionHeader
+{
+	background-color:#636A4C;
+	background-repeat:repeat-x;
+	background-position:center ;
+	font-weight:bold;
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top:3px;
+	padding-bottom:2px;
+	line-height: 16px;
+	height: 17px;
+	color:White;
+	text-align:center;
+}
+
+
+.igwv_PearDayHeader
+{
+	background-color:#BBD17E;
+	background-repeat:repeat-x;
+	background-position:center ;
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:0px 2px 0px 0px;
+	height: 18px;
+	cursor:default;
+	text-align:right;
+}
+
+
+.igwv_PearDay
+{
+	background-color:#D5E88F;
+	font-size:8pt;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
+	cursor:hand;
+}
+
+
+.igwv_PearAppointment
+{
+	margin:0px 1px 0px 1px;
+	padding:2px;
+	line-height: 150%;
+	white-space: nowrap;
+	cursor:pointer;
+}
+
+
+.igwv_PearAllDayEvent
+{
+	background-color:#FAFAFA;
+	border:solid 1px Silver;
+}
+
+
+.igwv_PearNavigationButton
+{
+	background-color:Transparent;
+	border-width:0px;
+	width: 17px;
+	cursor:hand;
+	vertical-align:middle;
+}
+
+
+.igwv_PearDayArea
+{
+	border:solid 1px #4F7600;
+}
+
+
+.igwv_PearTodayHeader
+{
+	background-color:#636A4C;
+	background-repeat:repeat-x;
+	background-position:top center ;
+	font-weight:bold;
+	color:White;
+}
+
+
+.igwv_PearToday
+{
+}
+
+
+.igwv_PearSelectedAppointment
+{
+	background-color:#DAEAFF;
+	margin-top:1px;
+	margin-right:1px;
+	margin-left:1px;
+	padding:1px;
+	cursor:pointer;
+	color:Black;
+}
+
+
+.igwv_PearActiveDayHeader
+{
+	background-repeat:repeat-x;
+	background-position:center ;
+	color:White;
+}
+
+
+.igwv_PearActiveDay
+{
+	background-color:White;
+	background-position:top ;
+	background-image: url(images/gradient.png);
+}
+
+

@@ -1,0 +1,51 @@
+.igpnl_RadioFlyerControl
+{
+	border:solid 1px #9C2131;
+}
+
+
+.igpnl_RadioFlyerPanel
+{
+	background-color:#F8F8F8;
+	background-position:bottom bottom ;
+	background-image: url(images/body_back.gif);
+}
+
+
+.igpnl_RadioFlyerHeaderExpanded
+{
+	background-position:center ;
+	background-image: url(images/header.gif);
+	font-weight:bold;
+	font-size:xx-small;
+	font-family: Verdana;
+	margin-top:3px;
+	margin-bottom:3px;
+	padding-top:2px;
+	padding-bottom:3px;
+	cursor:hand;
+	color:White;
+}
+
+
+.igpnl_RadioFlyerHeaderCollapsed
+{
+}
+
+
+.igpnl_RadioFlyerHeaderHover
+{
+	background-image: url(images/header_hover.gif);
+	color:#9C2131;
+}
+
+
+.igpnl_RadioFlyerGroupBoxControl
+{
+	background-color:#F0F0F0;
+	background-position:bottom ;
+	background-image: url(images/body_back.gif);
+	border:solid 1px #9C2131;
+}
+
+
