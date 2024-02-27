@@ -47,7 +47,10 @@ style="HEIGHT: 46px"></TD></TR><TR><TD></TD><TD colSpan=2> <asp:Label style="TE
                                         <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" HorizontalPadding="5px"
                                 NodeSpacing="0px" VerticalPadding="0px"  />
                                     </asp:TreeView> &nbsp; </DIV></asp:Panel> 
-</TD></TR><TR><TD style="HEIGHT: 21px" 
+</TD></TR><TR><TD><asp:RequiredFieldValidator id="RFVDependencia0" runat="server" ErrorMessage="Debe Ingresar el nombre de la persona para Prestamo" ControlToValidate="TxtBDependencia">*</asp:RequiredFieldValidator></TD><TD><asp:Label id="LblDependencia0" runat="server" Text="*Nombre de Quien Recibe.:" CssClass="LabelStyle"></asp:Label> 
+                        </TD><TD><asp:TextBox id="TxtRecibe" runat="server" Width="350px"></asp:TextBox> 
+<ajaxToolkit:AutoCompleteExtender id="TxtRecibe_AutoCompleteExtender" runat="server" CompletionListHighlightedItemCssClass="autocomplete_highlightedListItem" CompletionListItemCssClass="autocomplete_listItem " CompletionListCssClass="autocomplete_completionListElement" TargetControlID="TxtRecibe" ServicePath="../../AutoComplete.asmx" ServiceMethod="GetDependenciaByText" MinimumPrefixLength="1">
+                            </ajaxToolkit:AutoCompleteExtender> </TD><TD>&nbsp;</TD></TR><TR><TD style="HEIGHT: 21px" 
 colSpan=1></TD><TD style="HEIGHT: 21px" 
 colSpan=3><asp:HiddenField id="HFWFMovimientoFecha" runat="server"></asp:HiddenField> 
 </TD></TR><TR><TD colSpan=1></TD><TD colSpan=3><asp:Table id="Table3" runat="server" CellSpacing="2" CellPadding="0">
@@ -106,7 +109,7 @@ colSpan=3><asp:HiddenField id="HFWFMovimientoFecha" runat="server"></asp:HiddenF
 <asp:Label id="ExceptionDetails" runat="server" Width="100%" ForeColor="Red"></asp:Label></TD></TR><TR><TD colSpan=1></TD><TD colSpan=3> &nbsp;</TD></TR></TBODY></TABLE></TD>
         <td style="width: 10%; text-align: center">
         </td>
-    </TR><TR></TR><TR></TR></TBODY></TABLE>
+    </TR></TBODY></TABLE>
 </asp:Content>
 
 

@@ -66,7 +66,10 @@
 		<siteMapNode title="Plantillas" url="~/AlfaNetPlantilla/EditorPlantillas.aspx">
 			<siteMapNode title="Permisos Plantillas" url="~/AlfaNetPlantilla/PermisosPlantillas.aspx"/>
 		</siteMapNode>
-		
+		<siteMapNode title="Inventario" url="~/AlfaNetDocumentos/Inventario/CargarUnidad.aspx" >
+        	<siteMapNode title="Importar Datos" url="~/AlfaNetDocumentos/Inventario/ImportarDatos.aspx" />
+        	<siteMapNode title="Actualizar Unidad Documental" url="~/AlfaNetDocumentos/Inventario/Actualizarunidad.aspx" />
+      	</siteMapNode>
 		<siteMapNode title="Reportes Logs" url="#">
         <siteMapNode title="Logs Movimiento" url="~/AlfaNetReportes/ReportesLog/LogsMovimiento.aspx" />
         <siteMapNode title="Logs Imagenes" url="~/AlfaNetReportes/ReportesLog/LogsImagenes.aspx" />
@@ -89,6 +92,7 @@
 			<siteMapNode title="Expedientes" url="~/AlfaNetConsultas/Gestion/Expediente.aspx" />
 			<siteMapNode title="Recibidos" url="~/AlfaNetConsultas/Gestion/DocRecibido.aspx" />
 			<siteMapNode title="Enviados" url="~/AlfaNetConsultas/Gestion/DocEnviado.aspx" />
+			<siteMapNode title="Inventarios" url="~/AlfaNetConsultas/Gestion/Inventarios.aspx" />
 			<!--<siteMapNode title="Facturas" url="~/AlfaNetConsultas/Gestion/ConsultaFacturas.aspx" /> -->
 			<siteMapNode title="Facturas" url="~/AlfaNetConsultas/Gestion/ConsultaFactura.aspx" />
 			<siteMapNode title="Series" url="~/AlfaNetConsultas/Gestion/ConsultaSerie.aspx" />

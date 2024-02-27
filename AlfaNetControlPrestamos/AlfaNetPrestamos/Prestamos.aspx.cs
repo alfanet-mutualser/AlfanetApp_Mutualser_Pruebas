@@ -16,7 +16,7 @@ public partial class _Prestamos : System.Web.UI.Page
 {
     PrestamosBLL Prestamos = new PrestamosBLL();
     DSPrestamos.PrestamosDataTable DTPrestamos = new DSPrestamos.PrestamosDataTable();
-    string ModuloLog = "PRESTAMOS";
+string ModuloLog = "PRESTAMOS";
     string ConsecutivoCodigo = "11";
     string ConsecutivoCodigoErr = "4";
     string ActividadLogCodigoErr = "ERROR";
@@ -25,7 +25,7 @@ public partial class _Prestamos : System.Web.UI.Page
     {
         try
         {
-            IPHostEntry host;
+IPHostEntry host;
             string localIP = "";
             host = Dns.GetHostEntry(Dns.GetHostName());
             foreach (IPAddress ip in host.AddressList)
@@ -50,7 +50,7 @@ public partial class _Prestamos : System.Web.UI.Page
                 this.cmdActualizar.Enabled = false;
                 this.cmdAceptar.Enabled = true;
                 this.TreeVSerie.Attributes["onClick"] = "return OnTreeClick(event);";
-                this.TreeVDependencia.Attributes["onClick"] = "return OnTreeDependenciaClick(event);";
+                this.TreeVDependencia.Attributes["onClick"] = "return OnTreeDependenciaClick(event);";  
 
                 //LOG ACCESO
                 string ActLogCod = "ACCESO";
@@ -90,7 +90,7 @@ public partial class _Prestamos : System.Web.UI.Page
         catch (Exception Error)
         {
             this.ExceptionDetails.Text = "Problema" + Error;
-            //Variables de LOG ERROR
+//Variables de LOG ERROR
             DateTime FechaInicio = DateTime.Now;
             string grupoo = "";
             //OBTENER CONSECUTIVO DE LOGS
@@ -149,13 +149,12 @@ public partial class _Prestamos : System.Web.UI.Page
     }
     protected void cmdAceptar_Click(object sender, EventArgs e)
     {
-        this.cmdAceptar.Enabled = false;
+this.cmdAceptar.Enabled = false;
         try
         {
+           string UserName = User.Identity.Name;
             //DSPrestamos.PrestamosDataTable DTPrestamos = new DSPrestamos.PrestamosDataTable();
-            String PrestamoCodigo = Prestamos.Create_Prestamos(null, "3", DateTime.Now, this.TxtBDependencia.Text, this.TxtBSerie.Text, TxtBCarpeta.Text);
-            TxtBDependencia.Text = "";
-            TxtBSerie.Text = "";
+            String PrestamoCodigo = Prestamos.Create_Prestamos(null, "3", DateTime.Now, UserName, this.TxtBDependencia.Text, this.TxtBSerie.Text, TxtBCarpeta.Text, this.TxtRecibe.Text);
             //this.ODSPrestamos.InsertParameters["PrestamoCodigo"].DefaultValue = null;
             //this.ODSPrestamos.InsertParameters["GrupoCodigo"].DefaultValue = "3";
             //this.ODSPrestamos.InsertParameters["SerieCodigo"].DefaultValue = this.TxtBSerie.Text;
@@ -164,18 +163,14 @@ public partial class _Prestamos : System.Web.UI.Page
             //this.ODSPrestamos.InsertParameters["PrestamoCarpeta"].DefaultValue = this.TxtBCarpeta.Text;
 
             //int PrestamoCodigo = this.ODSPrestamos.Insert();
-            this.Label22.Text = "Prestamo Creado Número" + " " + PrestamoCodigo + " Hora de Prestamo: " + DateTime.Now.ToString();
+            this.Label22.Text = "Prestamo Creado Número" + " " + PrestamoCodigo +" Hora de Prestamo: "+DateTime.Now.ToString();
             this.LblMessageBox.Text = "Prestamo Creado Número" + " " + PrestamoCodigo;
             this.ModalPopupExtender1.Show();
-
+            
         }
         catch (Exception Error)
         {
-            this.ExceptionDetails.Text = "Problema: No se puede Generar el prestamo, uno de los Datos ingresados no es correcto." + Error;
-        }
-        finally
-        {
-            this.cmdAceptar.Enabled = true;
+            this.ExceptionDetails.Text = "Problema" + Error;
         }
     }
    
@@ -183,11 +178,12 @@ public partial class _Prestamos : System.Web.UI.Page
     {
         try
         {
-            String PrestamoCodigo = Prestamos.Update_Prestamos(this.TextBox1.Text, "3", Convert.ToDateTime(HFWFMovimientoFecha.Value), this.TxtBDependencia.Text, this.TxtBSerie.Text, TxtBCarpeta.Text, "1");
+            string UserName = User.Identity.Name;
+            String PrestamoCodigo = Prestamos.Update_Prestamos(this.TextBox1.Text, "3", Convert.ToDateTime(HFWFMovimientoFecha.Value), UserName, this.TxtBDependencia.Text, this.TxtBSerie.Text, TxtBCarpeta.Text, "1", this.TxtRecibe.Text);
 
             this.LblMessageBox.Text = "Prestamo Actualizado Nro" + " " + PrestamoCodigo;
             this.ModalPopupExtender1.Show();
-            //LOG ACTUALIZAR
+//LOG ACTUALIZAR
             string ActLogCod = "ACTUALIZAR";
             DateTime Fechain = DateTime.Now;
             //OBTENER CONSECUTIVO DE LOGS
@@ -221,7 +217,7 @@ public partial class _Prestamos : System.Web.UI.Page
         catch (Exception Error)
         {
             this.ExceptionDetails.Text = "Problema" + Error;
-            //Variables de LOG ERROR
+//Variables de LOG ERROR
             DateTime FechaInicio = DateTime.Now;
             string grupoo = "";
             //OBTENER CONSECUTIVO DE LOGS
@@ -286,8 +282,8 @@ public partial class _Prestamos : System.Web.UI.Page
             this.TxtBDependencia.Text = DTPrestamos.Rows[0].ItemArray[3].ToString().Trim() + " | " + DTPrestamos.Rows[0].ItemArray[7].ToString().Trim();
             this.TxtBCarpeta.Text = DTPrestamos.Rows[0].ItemArray[5].ToString().Trim();
             this.HFWFMovimientoFecha.Value = DTPrestamos.Rows[0].ItemArray[2].ToString().Trim();
-
-            //LOG BUSCAR
+            this.TxtRecibe.Text = DTPrestamos.Rows[0].ItemArray[11].ToString().Trim();
+             //LOG BUSCAR
             string ActLogCod = "BUSCAR";
             DateTime Fechain = DateTime.Now;
             //OBTENER CONSECUTIVO DE LOGS
@@ -322,7 +318,7 @@ public partial class _Prestamos : System.Web.UI.Page
         catch (Exception err)
         {
             this.ExceptionDetails.Text = "Error: " + err.Message.ToString();
-            //Variables de LOG ERROR
+//Variables de LOG ERROR
             DateTime FechaInicio = DateTime.Now;
             string grupoo = "";
             //OBTENER CONSECUTIVO DE LOGS
