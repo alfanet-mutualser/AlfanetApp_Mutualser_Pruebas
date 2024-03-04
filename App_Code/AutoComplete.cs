@@ -717,19 +717,19 @@ public class AutoComplete : System.Web.Services.WebService {
 
         return (PrestamosList.ToArray());
     }
-    // [WebMethod]
-    // public string[] Getaspnet_UsersByUserName(string prefixText)
-    // {
-        // List<String> aspnet_UsersList = new List<string>(20);
-        // DSaspnet_UsersTableAdapters.Aspnet_Users_ReadUsersByUserNameTableAdapter aspnet_Users = new DSaspnet_UsersTableAdapters.Aspnet_Users_ReadUsersByUserNameTableAdapter();
+	[WebMethod]
+    public string[] Getaspnet_UsersByUserName(string prefixText)
+    {
+        List<String> aspnet_UsersList = new List<string>(20);
+        DSaspnet_UsersTableAdapters.Aspnet_Users_ReadUsersByUserNameTableAdapter aspnet_Users = new DSaspnet_UsersTableAdapters.Aspnet_Users_ReadUsersByUserNameTableAdapter();
 
-        // foreach (DataRow DataRowCurrent in aspnet_Users.Getaspnet_UsersByUsers(prefixText))
-        // {
-            // aspnet_UsersList.Add(DataRowCurrent[1].ToString());
-        // }
+        foreach (DataRow DataRowCurrent in aspnet_Users.Getaspnet_UsersByUsers(prefixText))
+        {
+            aspnet_UsersList.Add(DataRowCurrent[1].ToString());
+        }
 
-        // return (aspnet_UsersList.ToArray());
-    // }
+        return (aspnet_UsersList.ToArray());
+    }
 	[WebMethod]
     public string[] GetADUsername(string prefixText)
     { 
@@ -773,20 +773,34 @@ public class AutoComplete : System.Web.Services.WebService {
         search.Dispose();
         return (usrname.ToArray());
     }
-    // [WebMethod]
-    // public string[] GetUsuariosByNombres(string prefixText)
-    // {
-        // List<String> UsuariosxNombresList = new List<string>(20);
-        // DSUsuarioTableAdapters.UsuariosxdependenciaTableAdapter UsuarioxNombre = new DSUsuarioTableAdapters.UsuariosxdependenciaTableAdapter();
-        // //DSaspnet_UsersTableAdapters.Aspnet_Users_ReadUsersByUserNameTableAdapter aspnet_Users = new DSaspnet_UsersTableAdapters.Aspnet_Users_ReadUsersByUserNameTableAdapter();
+    [WebMethod]
+    public string[] GetUsuariosByNombres(string prefixText)
+    {
+        List<String> UsuariosxNombresList = new List<string>(20);
+        DSUsuarioTableAdapters.UsuariosxdependenciaTableAdapter UsuarioxNombre = new DSUsuarioTableAdapters.UsuariosxdependenciaTableAdapter();
+        //DSaspnet_UsersTableAdapters.Aspnet_Users_ReadUsersByUserNameTableAdapter aspnet_Users = new DSaspnet_UsersTableAdapters.Aspnet_Users_ReadUsersByUserNameTableAdapter();
 
-        // foreach (DataRow DataRowCurrent in UsuarioxNombre.GetUsuarioByNombres(prefixText))
-        // {
-            // UsuariosxNombresList.Add(DataRowCurrent[2].ToString() + " | " + DataRowCurrent[3].ToString());
-        // }
+        foreach (DataRow DataRowCurrent in UsuarioxNombre.GetUsuarioByNombres(prefixText))
+        {
+            UsuariosxNombresList.Add(DataRowCurrent[2].ToString() + " | " + DataRowCurrent[3].ToString());
+        }
 
-        // return (UsuariosxNombresList.ToArray());
-    // }
+        return (UsuariosxNombresList.ToArray());
+    }
+    [WebMethod]
+    public string[] GetUsuariosByApellidos(string prefixText)
+    {
+        List<String> UsuariosxApellidosList = new List<string>(20);
+        DSUsuarioTableAdapters.UsuariosxdependenciaTableAdapter UsuarioxApellidos = new DSUsuarioTableAdapters.UsuariosxdependenciaTableAdapter();
+        //DSaspnet_UsersTableAdapters.Aspnet_Users_ReadUsersByUserNameTableAdapter aspnet_Users = new DSaspnet_UsersTableAdapters.Aspnet_Users_ReadUsersByUserNameTableAdapter();
+
+        foreach (DataRow DataRowCurrent in UsuarioxApellidos.GetUsuarioByApellidos(prefixText))
+        {
+            UsuariosxApellidosList.Add(DataRowCurrent[3].ToString() + " | " + DataRowCurrent[2].ToString());
+        }
+
+        return (UsuariosxApellidosList.ToArray());
+    }
 	[WebMethod]
     public string[] GetADUsers(string prefixText)
     {
@@ -827,21 +841,6 @@ public class AutoComplete : System.Web.Services.WebService {
         return (rst.ToArray());
        
     }
-    // [WebMethod]
-    // public string[] GetUsuariosByApellidos(string prefixText)
-    // {
-        // List<String> UsuariosxApellidosList = new List<string>(20);
-        // DSUsuarioTableAdapters.UsuariosxdependenciaTableAdapter UsuarioxApellidos = new DSUsuarioTableAdapters.UsuariosxdependenciaTableAdapter();
-        // //DSaspnet_UsersTableAdapters.Aspnet_Users_ReadUsersByUserNameTableAdapter aspnet_Users = new DSaspnet_UsersTableAdapters.Aspnet_Users_ReadUsersByUserNameTableAdapter();
-
-        // foreach (DataRow DataRowCurrent in UsuarioxApellidos.GetUsuarioByApellidos(prefixText))
-        // {
-            // UsuariosxApellidosList.Add(DataRowCurrent[3].ToString() + " | " + DataRowCurrent[2].ToString());
-        // }
-
-        // return (UsuariosxApellidosList.ToArray());
-    // }
-    // 
 	[WebMethod]
     public string[] GetADApellidos(string prefixText)
     {
@@ -923,6 +922,30 @@ public class AutoComplete : System.Web.Services.WebService {
         }
 
         return (RegistroList.ToArray());
+    }
+
+    [WebMethod]
+    public string[] GetSerieYDependenciaTxt(string prefixText)
+    {
+        //obtener dependencias
+        List<string> DependenciaList = new List<string>(20);
+        DependenciaBLL dependencias = new DependenciaBLL();
+        foreach (DataRow DataRowCurrent in dependencias.GetDependenciaByText(prefixText, "1"))
+        {
+            DependenciaList.Add(DataRowCurrent[0].ToString() + " | " + DataRowCurrent[1].ToString());
+        }
+        //return (DependenciaList.ToArray());
+
+        //obtener series
+        List<String> SerieList = new List<string>(20);
+        SerieBLL Series = new SerieBLL();
+        //foreach (DataRow DataRowCurrent in Series.GetSerieByText(prefixText,"1"))
+        //{
+        //    DependenciaList.Add(DataRowCurrent[0].ToString() + " | " + DataRowCurrent[1].ToString().ToUpper());
+        //}
+        return (DependenciaList.ToArray());
+
+
     }
 
 }

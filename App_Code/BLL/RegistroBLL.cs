@@ -414,6 +414,126 @@ public class RegistroBLL
         {
             throw new ApplicationException("Error en la capa BLL. " + e.Message);
         }
+}
+
+    // CREATE Registro BDU METHOD
+    [System.ComponentModel.DataObjectMethodAttribute(System.ComponentModel.DataObjectMethodType.Insert, true)]
+
+    public string AddRegistroBDU(String GrupoCodigo, DateTime WFMovimientoFecha, String ProcedenciaCodDestino, String DependenciaCodDestino, String DependenciaCodigo,
+                              String NaturalezaCodigo, int RadicadoCodigo, String RegistroDetalle, String RegistroGuia, String RegPesoEnvio, String RegistroEmpGuia,
+                              String AnexoExtRegistro, String LogDigitador, String ExpedienteCodigo, String MedioCodigo, String SerieCodigo, String RegValorEnvio,
+                              String RegistroTipo, String WFAccionCodigo, DateTime WFMovimientoFechaEst, DateTime WFMovimientoFechaFin, int WFMovimientoTipo,
+                              String WFMovimientoNotas, String WFMovimientoMultitarea)
+    {
+        try
+        {
+            DSRegistro.Registro_CreateRegistroDataTable Registros = new DSRegistro.Registro_CreateRegistroDataTable();
+            DSRegistro.Registro_CreateRegistroRow Registro = Registros.NewRegistro_CreateRegistroRow();
+
+            if (DependenciaCodigo != null)
+            {
+                if (DependenciaCodigo.Contains(" | "))
+                {
+                    DependenciaCodigo = DependenciaCodigo.Remove(DependenciaCodigo.IndexOf(" | "));
+                }
+
+            }
+            if (DependenciaCodDestino != null)
+            {
+                if (DependenciaCodDestino.Contains(" | "))
+                {
+                    DependenciaCodDestino = DependenciaCodDestino.Remove(DependenciaCodDestino.IndexOf(" | "));
+                }
+
+            }
+            if (ProcedenciaCodDestino != null)
+            {
+                if (ProcedenciaCodDestino.Contains(" | "))
+                {
+                    ProcedenciaCodDestino = ProcedenciaCodDestino.Remove(ProcedenciaCodDestino.IndexOf(" | "));
+                }
+
+            }
+            if (NaturalezaCodigo != null)
+            {
+                if (NaturalezaCodigo.Contains(" | "))
+                {
+                    NaturalezaCodigo = NaturalezaCodigo.Remove(NaturalezaCodigo.IndexOf(" | "));
+                }
+
+            }
+            if (ExpedienteCodigo != null)
+            {
+                if (ExpedienteCodigo.Contains(" | "))
+                {
+                    ExpedienteCodigo = ExpedienteCodigo.Remove(ExpedienteCodigo.IndexOf(" | "));
+                }
+
+            }
+            if (MedioCodigo != null)
+            {
+                if (MedioCodigo.Contains(" | "))
+                {
+                    MedioCodigo = MedioCodigo.Remove(MedioCodigo.IndexOf(" | "));
+                }
+
+            }
+            if (WFAccionCodigo != null)
+            {
+                if (WFAccionCodigo.Contains(" | "))
+                {
+                    WFAccionCodigo = WFAccionCodigo.Remove(WFAccionCodigo.IndexOf(" | "));
+                }
+
+            }
+            if (SerieCodigo != null)
+            {
+                if (SerieCodigo.Contains(" | "))
+                {
+                    SerieCodigo = SerieCodigo.Remove(SerieCodigo.IndexOf(" | "));
+                }
+            }
+
+            String UserId;
+            MembershipUser user = Membership.GetUser();
+            if (user != null)
+            {
+                Object CodigoRuta = user.ProviderUserKey;
+                UserId = Convert.ToString(CodigoRuta);
+            }
+            else
+            {
+                UserId = LogDigitador;
+                LogDigitador = "TLINEA";
+            }
+
+            int? Result = 1;
+            Object ObjRptaAddReg = null;
+            DSRegistro.Registro_CreateRegistroDataTable DTCREREG = new DSRegistro.Registro_CreateRegistroDataTable();
+            DTCREREG = AdapterRegistro.GetCreateRegistroBdu(ref  Result, GrupoCodigo, WFMovimientoFecha, ProcedenciaCodDestino, DependenciaCodDestino,
+                                                                  DependenciaCodigo, NaturalezaCodigo, RadicadoCodigo, RegistroDetalle, RegistroGuia,
+                                                                  RegistroEmpGuia, AnexoExtRegistro, LogDigitador, ExpedienteCodigo, MedioCodigo, SerieCodigo,
+                                                                  RegPesoEnvio, RegValorEnvio, RegistroTipo, WFAccionCodigo, WFMovimientoFechaEst,
+                                                                  WFMovimientoFechaFin, WFMovimientoTipo, WFMovimientoNotas, WFMovimientoMultitarea, UserId);
+
+
+            string regiscod;
+            if (DTCREREG.Count == 0)
+            {
+                String RptaAddReg = Convert.ToString(ObjRptaAddReg);
+                regiscod = Convert.ToString(Result);
+            }
+            else
+            {
+                string coderror = DTCREREG[0].ErrorMessage;
+                regiscod = "Error al crear registro. Verifique que los parametros sean validos" + coderror;
+            }
+            return regiscod;
+        }
+        catch (Exception e)
+        {
+            throw new ApplicationException("Error en la capa BLL. " + e.Message);
+        }
         }
 
         // Copias Registro METHOD
