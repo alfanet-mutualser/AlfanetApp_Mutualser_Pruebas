@@ -24,7 +24,7 @@
     </script>
     <script type="text/javascript">
         function openModal() {
-            var confirmar = confirm("Creará un nuevo registro. Seguro que desea continuar?");
+            var confirmar = confirm("Crearï¿½ un nuevo registro. Seguro que desea continuar?");
 
             if (confirmar == true) {
                 return true;
@@ -384,6 +384,6 @@
     </asp:UpdatePanel> 
     <asp:HiddenField ID="firma" runat="server" />  
     <%--<div id="dialog-confirm" title="Continuar?">
-    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Se creará un registro. Seguro que desea continuar?</p>
+    <p><span class="ui-icon ui-icon-alert" style="float: left; margin: 0 7px 20px 0;"></span>Se crearï¿½ un registro. Seguro que desea continuar?</p>
 </div>--%>
 </asp:Content>

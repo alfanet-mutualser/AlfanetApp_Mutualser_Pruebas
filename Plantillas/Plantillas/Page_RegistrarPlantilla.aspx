@@ -258,7 +258,7 @@
                                             CompletionListItemCssClass="autocomplete_listItem" 
                                             CompletionListCssClass="autocomplete_completionListElement"
                                             TargetControlID="TxtSerie" ServicePath="~/AutoComplete.asmx" ServiceMethod="GetSerieByText"
-                                            MinimumPrefixLength="0" EnableCaching="true" CompletionSetCount="12" CompletionInterval="100">
+                                            MinimumPrefixLength="-1" EnableCaching="true" CompletionSetCount="12" CompletionInterval="100">
                                 </asp:AutoCompleteExtender>
                                 <asp:TextBoxWatermarkExtender ID="TBWMSerie" runat="server" TargetControlID="TxtSerie" 
                                         WatermarkText="Seleccione una Serie ...">
